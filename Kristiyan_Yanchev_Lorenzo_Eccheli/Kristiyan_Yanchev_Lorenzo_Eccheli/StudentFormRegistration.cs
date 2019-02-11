@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
-    public partial class Form1 : Form
+    public partial class StudentFormRegistration : Form
     {
-        public Form1()
+        public StudentFormRegistration()
         {
             InitializeComponent();
         }
