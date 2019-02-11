@@ -47,12 +47,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="Models\Parents.cs" />
+    <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AbsencesRepository.cs" />
+    <Compile Include="Repositories\AnnualLeavesRepository.cs" />
+    <Compile Include="Repositories\BonusesRepository.cs" />
+    <Compile Include="Repositories\ClassesRepository.cs" />
+    <Compile Include="Repositories\GradesRepository.cs" />
+    <Compile Include="Repositories\ParentsRepository.cs" />
+    <Compile Include="Repositories\PeriodsRepository.cs" />
+    <Compile Include="Repositories\PhysiciansRepository.cs" />
+    <Compile Include="Repositories\ResponsibilitiesRepository.cs" />
+    <Compile Include="Repositories\SickLeavesRepository.cs" />
+    <Compile Include="Repositories\StudentsRepository.cs" />
+    <Compile Include="Repositories\TeachersRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
