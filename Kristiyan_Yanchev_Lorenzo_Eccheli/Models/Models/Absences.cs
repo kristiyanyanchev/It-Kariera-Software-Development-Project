@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Data.Repositories
+namespace Data.Models
 {
-    class PeriodsRepository
+    public class Absences
     {
+
     }
 }

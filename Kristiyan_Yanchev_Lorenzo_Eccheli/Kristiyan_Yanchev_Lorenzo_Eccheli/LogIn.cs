@@ -18,7 +18,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private bool ValidateUsername()
         {
-            if (usernameTextBox.Text != null /*Look if exist in DB*/)
+            if (usernameTextBox.Text != null) /*Look if exist in DB*/
             {
                 return true;
             }
@@ -27,7 +27,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private bool ValidatePassword()
         {
-            if(passwordTextBox.Text!=null /*Look if is true in DB*/)
+            if(passwordTextBox.Text!=null) /*Look if is true in DB*/
             {
                 return true;
             }
@@ -39,6 +39,11 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             this.Hide();
             Registration registration = new Registration();
             registration.ShowDialog();
+        }
+
+        private void logInBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

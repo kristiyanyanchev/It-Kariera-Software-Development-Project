@@ -15,5 +15,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
             InitializeComponent();
         }
+
+        private void registrationButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

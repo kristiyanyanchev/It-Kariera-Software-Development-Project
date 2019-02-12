@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleView", "ConsoleView\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{281173A8-5E85-4E35-B4FA-57482E71E8A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{5FF175C7-39E5-4C47-985E-0A568F03E77C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Models\Data.csproj", "{5FF175C7-39E5-4C47-985E-0A568F03E77C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleView.Tests", "ConsoleView.Tests\ConsoleView.Tests.csproj", "{8EDF4429-251A-416D-BB68-93F227191BCF}"
 EndProject
@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller.Tests", "Control
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsView.Tests", "WinFormsView.Tests\WinFormsView.Tests.csproj", "{8F224357-6CAA-4E51-A436-5FBDBA8E414A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models.Tests", "Models.Tests\Models.Tests.csproj", "{F757CF95-1639-4E4A-89DD-ADEEA93584AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Test", "Models.Tests\Data.Test.csproj", "{F757CF95-1639-4E4A-89DD-ADEEA93584AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
