@@ -52,7 +52,7 @@
     <Compile Include="Models\AnnualLeave.cs" />
     <Compile Include="Models\Bonus.cs" />
     <Compile Include="Models\Class.cs" />
-    <Compile Include="Models\Grade.cs" />
+    <Compile Include="Models\GradeRecord.cs" />
     <Compile Include="Models\Parent.cs" />
     <Compile Include="Models\Period.cs" />
     <Compile Include="Models\Physician.cs" />
