@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassBookContext.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Models\Absences.cs" />
     <Compile Include="Models\AnnualLeave.cs" />

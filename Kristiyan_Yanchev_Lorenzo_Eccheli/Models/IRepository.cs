@@ -9,7 +9,6 @@ namespace Data
     {
         T GetById(int id);
         IEnumerable<T> List();
-        IEnumerable<T> List(System.Linq.Expressions.Expression<Func<T, bool>> predicate);
         void Add(T entity);
         void Delete(T entity);
         void Edit(T entity);
