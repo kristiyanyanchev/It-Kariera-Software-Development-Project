@@ -19,25 +19,8 @@ namespace Data.Models
 
         public Student Student { get; set; }
 
-        public GradeRecord(int id, double grade, DateTime date, Student student)
+        public GradeRecord(double grade, DateTime date, Student student)
         {
-            if (id<0)
-            {
-                throw new ArgumentException("Id should be more than zero");
-            }
-            if (date == null)
-            {
-                throw new ArgumentException("Date cannot be null");
-            }
-            if (student == null)
-            {
-                throw new ArgumentException("Student cannot be null");
-            }
-            if (grade < 1)
-            {
-                throw new ArgumentException("Grade cannot be less than 1");
-            }
-            Id = id;
             Grade = grade;
             Date = date;
             Student = student;

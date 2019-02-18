@@ -22,7 +22,7 @@ namespace Data
         public DbSet<AnnualLeave> AnnualLeaves { get; set; }
         public DbSet<SickLeave> SickLeaves { get; set; }
 
-        private static string connectionString = "Server=.;Database=TestClassBook;Trusted_Connection=True;";
+        private static string connectionString = "Server=.;Database=ClassBookDb;Trusted_Connection=True;";
         public ClassBookContext() : base(connectionString)
         {
 

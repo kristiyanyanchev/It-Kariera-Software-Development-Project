@@ -39,28 +39,16 @@ namespace Data.Models
 
         public ICollection<Parent> Parents { get; set; }
 
-        public Student(int id, string firstName, string lastName, DateTime birthDate, bool inAbsentia, string ucn)
+        public Student(string firstName, string lastName, DateTime birthDate, bool inAbsentia, string uCN)
         {
-            if (id < 0)
-            {
-                throw new ArgumentException("Id should be more than zero ");
-            }
-            Id = id;
             FirstName = firstName;
             LastName = lastName;
             BirthDate = birthDate;
             InAbsentia = inAbsentia;
-            UCN = ucn;
+            UCN = uCN;
         }
 
-        public Student(int id, string firstName, string lastName, DateTime birthDate, bool inAbsentia, string ucn, string phoneNumber) : this(id, firstName, lastName, birthDate, inAbsentia, ucn)
-        {
-            PhoneNumber = phoneNumber;
-        }
 
-        public Student(int id, string firstName, string lastName, DateTime birthDate, bool inAbsentia, string ucn, string phoneNumber, string email) : this(id, firstName, lastName, birthDate, inAbsentia, ucn, phoneNumber)
-        {
-            Email = email;
-        }
+        
     }
 }

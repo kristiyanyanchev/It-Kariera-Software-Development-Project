@@ -16,23 +16,11 @@ namespace Data.Models
         public DateTime EndDate { get; set; }
         public Teacher Teacher { get; set; }
 
-        public AnnualLeave(int id, DateTime startDate, DateTime endDate)
+        public AnnualLeave(DateTime startDate, DateTime endDate, Teacher teacher)
         {
-            if (id < 0)
-            {
-                throw new ArgumentException("Id cannot be less than zero");
-            }
-            if (startDate == null)
-            {
-                throw new ArgumentException("StartTime cannot be null");
-            }
-            if (endDate == null)
-            {
-                throw new ArgumentException("EndTime cannot be null");
-            }
-            Id = id;
             StartDate = startDate;
             EndDate = endDate;
+            Teacher = teacher;
         }
     }
 }

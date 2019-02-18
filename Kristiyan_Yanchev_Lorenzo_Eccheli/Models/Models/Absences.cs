@@ -15,13 +15,8 @@ namespace Data.Models
         public Student Student { get; set; }
         public Period Period { get; set; }
 
-        public Absences(int id, bool isLate, Student student, Period period)
+        public Absences(bool isLate, Student student, Period period)
         {
-            if (id <0)
-            {
-                throw new ArgumentException("Id cannot be less than zero");
-            }
-            Id = id;
             IsLate = isLate;
             Student = student;
             Period = period;

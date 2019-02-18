@@ -15,14 +15,10 @@ namespace Data.Models
 
         public Teacher Teacher { get; set; }
 
-        public Class(int id, string className)
+        public Class(string className, Teacher teacher)
         {
-            if (id < 0)
-            {
-                throw new ArgumentException("Id should be more than zero ");
-            }
-            Id = id;
             ClassName = className;
+            Teacher = teacher;
         }
     }
 }

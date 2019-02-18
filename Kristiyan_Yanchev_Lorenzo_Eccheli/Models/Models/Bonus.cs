@@ -16,19 +16,11 @@ namespace Data.Models
         public string Description { get; set; }
         public Teacher Teacher { get; set; }
 
-        public Bonus(int id, decimal amount, string description)
+        public Bonus(decimal amount, string description, Teacher teacher)
         {
-            if (id < 0)
-            {
-                throw new ArgumentException("Id cannot be less than zero");
-            }
-            if (amount <=0)
-            {
-                throw new ArgumentException("Amount most be more than zero");
-            }
-            Id = id;
             Amount = amount;
             Description = description;
+            Teacher = teacher;
         }
     }
 }

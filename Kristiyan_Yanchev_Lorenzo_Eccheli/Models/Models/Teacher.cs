@@ -26,33 +26,14 @@ namespace Data.Models
         public Physician Physician { get; set; }
         public ICollection<Responsibility> Responsibilities { get; set; }
 
-        public Teacher(int id, string firstName, string lastName, string position, string uCN)
+        public Teacher(string firstName, string lastName, decimal salary, string position, string uCN)
         {
-            if (id < 0)
-            {
-                throw new ArgumentException("Id cannot be less than zero");
-            }
-            Id = id;
-            FirstName = firstName;
-            LastName = lastName;
-            Position = position;
-            UCN = uCN;
-        }
-
-        public Teacher(int id, string firstName, string lastName, decimal salary, string phoneNumber, string email, string position, string uCN)
-        {
-            if (id < 0)
-            {
-                throw new ArgumentException("Id cannot be less than zero");
-            }
-            Id = id;
             FirstName = firstName;
             LastName = lastName;
             Salary = salary;
-            PhoneNumber = phoneNumber;
-            Email = email;
             Position = position;
             UCN = uCN;
+            Responsibilities = new List<Responsibility>();
         }
     }
 }

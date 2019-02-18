@@ -16,14 +16,11 @@ namespace Data.Models
 
         public ICollection<Teacher> Teachers { get; set; }
 
-        public Responsibility(int id, string name)
+        public Responsibility(string name, string description)
         {
-            if (id < 0)
-            {
-                throw new ArgumentException("Id cannot be less than zero");
-            }
-            Id = id;
             Name = name;
+            Description = description;
+            Teachers = new List<Teacher>();
         }
     }
 }

@@ -28,27 +28,21 @@ namespace Data.Models
 
         public ICollection<Student> Children { get; set; }
 
-        public Parent(int id, string firstName, string lastName, string address)
+        public Parent(string firstName, string lastName, string address, string email, string phoneNumber)
         {
-            if (id <0)
-            {
-                throw new ArgumentException("Id should be more than 0");
-            }
-
-            Id = id;
             FirstName = firstName;
             LastName = lastName;
             Address = address;
-        }
-
-        public Parent(int id, string firstName, string lastName, string address, string email) : this(id, firstName, lastName, address)
-        {
             Email = email;
+            PhoneNumber = phoneNumber;
+            Children = new List<Student>();
         }
 
-        public Parent(int id, string firstName, string lastName, string address, string email, string phoneNumber) : this(id, firstName, lastName, address, email)
+        public Parent(string firstName, string lastName, string address)
         {
-            PhoneNumber = phoneNumber;
+            FirstName = firstName;
+            LastName = lastName;
+            Address = address;
         }
     }
 }

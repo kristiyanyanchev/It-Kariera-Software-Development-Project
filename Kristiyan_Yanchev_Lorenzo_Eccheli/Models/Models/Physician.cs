@@ -23,25 +23,19 @@ namespace Data.Models
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
 
-        public Physician(int id, string firstName, string lastName)
+        public Physician(string firstName, string lastName, string email, string phoneNumber, string address)
         {
-            Id = id;
             FirstName = firstName;
             LastName = lastName;
-        }
-
-        public Physician(int id, string firstName, string lastName, string email) : this(id, firstName, lastName)
-        {
             Email = email;
-        }
-
-        public Physician(int id, string firstName, string lastName, string email, string phoneNumber) : this(id, firstName, lastName, email)
-        {
             PhoneNumber = phoneNumber;
+            Address = address;
         }
 
-        public Physician(int id, string firstName, string lastName, string email, string phoneNumber, string address) : this(id, firstName, lastName, email, phoneNumber)
+        public Physician(string firstName, string lastName, string address)
         {
+            FirstName = firstName;
+            LastName = lastName;
             Address = address;
         }
     }

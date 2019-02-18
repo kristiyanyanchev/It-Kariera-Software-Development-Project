@@ -8,35 +8,57 @@ namespace Data.Repositories
 {
     public class StudentsRepository : IRepository<Student>
     {
-        static ClassBookContext context = new ClassBookContext();
+         
 
         public void Add(Student entity)
         {
-            context.Students.Add(entity);
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+               
+
+                context.Students.Add(entity);
+                context.SaveChanges();
+            }
+            
         }
 
         public void Delete(Student entity)
         {
-            context.Students.Remove(entity);
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                context.Students.Remove(entity);
+                context.SaveChanges();
+            }
+            
         }
 
         public void Edit(Student entity)
         {
-            var result = context.Students.Single(x => x.Id == entity.Id);
-            result = entity;
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                var result = context.Students.Single(x => x.Id == entity.Id);
+                result = entity;
+                context.SaveChanges();
+            }
+            
         }
 
         public Student GetById(int id)
         {
-            return context.Students.Single(x => x.Id == id);
+            using (var context = new ClassBookContext())
+            {
+                return context.Students.Single(x => x.Id == id);
+            }
+           
         }
 
         public IEnumerable<Student> List()
         {
-            return context.Students.ToList();
+            using (var context = new ClassBookContext())
+            {
+                return context.Students.ToList();
+            }
+            
         }
     }
 }
