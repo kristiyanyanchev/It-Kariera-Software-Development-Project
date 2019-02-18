@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.ModelInterfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace Data.Models
 {
-    public class Physician
+    public class Physician : IPhysician
     {
         [Key]
         public int Id { get; set; }

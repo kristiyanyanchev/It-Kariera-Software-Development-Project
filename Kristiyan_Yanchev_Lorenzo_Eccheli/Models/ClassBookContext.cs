@@ -15,7 +15,7 @@ namespace Data
         public DbSet<Class> Classes { get; set; }
         public DbSet<Physician> Physicians { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
-        public DbSet<Absences> Absences { get; set; }
+        public DbSet<Absence> Absences { get; set; }
         public DbSet<Responsibility> Responsibilities { get; set; }
         public DbSet<Period> Periods { get; set; }
         public DbSet<Bonus> Bonuses { get; set; }

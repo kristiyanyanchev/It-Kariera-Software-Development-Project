@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.ModelInterfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace Data.Models
 {
-    public class Student
+    public class Student : IStudent
     {
         [Key]
         public int Id { get; set; }
@@ -34,10 +35,10 @@ namespace Data.Models
 
         public string Email { get; set; }
 
-        public Class Class { get; set; }
-        public Physician Physician { get; set; }
+        public IClass Class { get; set; }
+        public IPhysician Physician { get; set; }
 
-        public ICollection<Parent> Parents { get; set; }
+        public ICollection<IParent> Parents { get; set; }
 
         public Student(string firstName, string lastName, DateTime birthDate, bool inAbsentia, string uCN)
         {
@@ -46,6 +47,7 @@ namespace Data.Models
             BirthDate = birthDate;
             InAbsentia = inAbsentia;
             UCN = uCN;
+            Parents = new List<IParent>();
         }
 
 

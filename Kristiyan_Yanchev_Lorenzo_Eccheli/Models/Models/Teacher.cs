@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.ModelInterfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace Data.Models
 {
-    public class Teacher
+    public class Teacher : ITeacher
     {
         [Key]
         public int Id { get; set; }
@@ -23,8 +24,8 @@ namespace Data.Models
         [MaxLength(10),MinLength(10)]
         public string UCN { get; set; }
 
-        public Physician Physician { get; set; }
-        public ICollection<Responsibility> Responsibilities { get; set; }
+        public IPhysician Physician { get; set; }
+        public ICollection<IResponsibility> Responsibilities { get; set; }
 
         public Teacher(string firstName, string lastName, decimal salary, string position, string uCN)
         {
@@ -33,7 +34,7 @@ namespace Data.Models
             Salary = salary;
             Position = position;
             UCN = uCN;
-            Responsibilities = new List<Responsibility>();
+            Responsibilities = new List<IResponsibility>();
         }
     }
 }

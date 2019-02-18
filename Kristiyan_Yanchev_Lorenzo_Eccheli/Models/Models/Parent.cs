@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.ModelInterfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Text.RegularExpressions;
 
 namespace Data.Models
 {
-    public class Parent
+    public class Parent : IParent
     {   
         [Key]
         public int Id { get; set; }
@@ -26,7 +27,7 @@ namespace Data.Models
         [MaxLength(10),MinLength(10)]
         public string PhoneNumber { get; set; }
 
-        public ICollection<Student> Children { get; set; }
+        public ICollection<IStudent> Children { get; set; }
 
         public Parent(string firstName, string lastName, string address, string email, string phoneNumber)
         {
@@ -35,7 +36,7 @@ namespace Data.Models
             Address = address;
             Email = email;
             PhoneNumber = phoneNumber;
-            Children = new List<Student>();
+            Children = new List<IStudent>();
         }
 
         public Parent(string firstName, string lastName, string address)
@@ -43,6 +44,7 @@ namespace Data.Models
             FirstName = firstName;
             LastName = lastName;
             Address = address;
+            Children = new List<IStudent>();
         }
     }
 }

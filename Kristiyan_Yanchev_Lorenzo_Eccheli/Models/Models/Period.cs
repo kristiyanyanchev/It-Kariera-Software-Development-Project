@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.ModelInterfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace Data.Models
 {
-    public class Period
+    public class Period : IPeriod
     {
         [Key]
         public int Id { get; set; }
@@ -17,10 +18,10 @@ namespace Data.Models
         [Required]
         public DateTime EndTime { get; set; }
 
-        public Teacher Teacher { get; set; }
-        public Class Class { get; set; }
+        public ITeacher Teacher { get; set; }
+        public IClass Class { get; set; }
 
-        public Period(string subject, DateTime startTime, DateTime endTime, Teacher teacher, Class @class)
+        public Period(string subject, DateTime startTime, DateTime endTime, ITeacher teacher, IClass @class)
         {
             Subject = subject;
             StartTime = startTime;

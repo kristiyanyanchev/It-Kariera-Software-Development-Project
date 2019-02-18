@@ -6,34 +6,34 @@ using System.Text;
 
 namespace Data.Repositories
 {
-    class AbsencesRepository : IRepository<Absences>
+    class AbsencesRepository : IRepository<Absence>
     {
         static ClassBookContext context = new ClassBookContext();
-        public void Add(Absences entity)
+        public void Add(Absence entity)
         {
             context.Absences.Add(entity);
             context.SaveChanges();
         }
 
-        public void Delete(Absences entity)
+        public void Delete(Absence entity)
         {
             context.Absences.Remove(entity);
             context.SaveChanges();
         }
 
-        public void Edit(Absences entity)
+        public void Edit(Absence entity)
         {
             var result = context.Absences.Single(x => x.Id == entity.Id);
             result = entity;
             context.SaveChanges();
         }
 
-        public Absences GetById(int id)
+        public Absence GetById(int id)
         {
             return context.Absences.Single(x => x.Id == id);
         }
 
-        public IEnumerable<Absences> List()
+        public IEnumerable<Absence> List()
         {
             return context.Absences.ToList();
         }

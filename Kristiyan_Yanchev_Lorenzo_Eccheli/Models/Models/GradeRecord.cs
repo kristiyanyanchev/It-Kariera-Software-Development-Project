@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data.ModelInterfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace Data.Models
 {
-    public class GradeRecord
+    public class GradeRecord : IGradeRecord
     {
         [Key]
         public int Id { get; set; }
@@ -17,9 +18,9 @@ namespace Data.Models
         [Required]
         public DateTime Date { get; set; }
 
-        public Student Student { get; set; }
+        public IStudent Student { get; set; }
 
-        public GradeRecord(double grade, DateTime date, Student student)
+        public GradeRecord(double grade, DateTime date, IStudent student)
         {
             Grade = grade;
             Date = date;
