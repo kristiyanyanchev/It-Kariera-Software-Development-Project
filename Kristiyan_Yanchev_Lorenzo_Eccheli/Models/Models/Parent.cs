@@ -29,22 +29,47 @@ namespace Data.Models
 
         public ICollection<IStudent> Children { get; set; }
 
-        public Parent(string firstName, string lastName, string address, string email, string phoneNumber)
+        public Parent(string firstName, string lastName, string address)
         {
+            if (firstName == null)
+            {
+                throw new ArgumentNullException("FirstName cannot be null");
+            }
+            if (lastName == null)
+            {
+                throw new ArgumentNullException("LastName cannot be null");
+            }
+            if (address == null)
+            {
+                throw new ArgumentNullException("Address cannot be null");
+            }
+
             FirstName = firstName;
             LastName = lastName;
             Address = address;
-            Email = email;
-            PhoneNumber = phoneNumber;
             Children = new List<IStudent>();
         }
 
-        public Parent(string firstName, string lastName, string address)
+        public Parent(string firstName, string lastName, string address, string email, string phoneNumber) : this(firstName,lastName,address)
         {
-            FirstName = firstName;
-            LastName = lastName;
-            Address = address;
-            Children = new List<IStudent>();
+            if (email == null)
+            {
+                throw new ArgumentNullException("Email cannot be null");
+            }
+            if (phoneNumber == null)
+            {
+                throw new ArgumentNullException("PhoneNumber cannot be null");
+            }
+            Email = email;
+            PhoneNumber = phoneNumber;
+            
         }
+        
+
+        
+
+        
+
+       
     }
 }

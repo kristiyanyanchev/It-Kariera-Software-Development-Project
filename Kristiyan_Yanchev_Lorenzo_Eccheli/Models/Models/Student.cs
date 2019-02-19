@@ -42,6 +42,23 @@ namespace Data.Models
 
         public Student(string firstName, string lastName, DateTime birthDate, bool inAbsentia, string uCN)
         {
+            if(firstName == null)
+            {
+                throw new ArgumentNullException("FirstName cannot be null");
+            }
+            if (lastName == null)
+            {
+                throw new ArgumentNullException("LastName cannot be null");
+            }
+            if (uCN == null)
+            {
+                throw new ArgumentNullException("UCN cannot be null");
+            }
+            if (DateTime.Compare(birthDate,new DateTime(1900,1,1)) < 0)
+            {
+                throw new ArgumentException("BirthDate cannot be before 1900");
+            }
+
             FirstName = firstName;
             LastName = lastName;
             BirthDate = birthDate;

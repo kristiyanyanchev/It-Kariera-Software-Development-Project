@@ -29,6 +29,26 @@ namespace Data.Models
 
         public Teacher(string firstName, string lastName, decimal salary, string position, string uCN)
         {
+            if (firstName == null)
+            {
+                throw new ArgumentNullException("FirstName cannot be null.");
+            }
+            if (lastName == null)
+            {
+                throw new ArgumentNullException("LastName cannot be null.");
+            }
+            if (salary < 0)
+            {
+                throw new ArgumentException("Salary must be positive number.");
+            }
+            if (position == null)
+            {
+                throw new ArgumentNullException("Position cannot be null.");
+            }
+            if (uCN == null)
+            {
+                throw new ArgumentNullException("UCN cannot be null.");
+            }
             FirstName = firstName;
             LastName = lastName;
             Salary = salary;

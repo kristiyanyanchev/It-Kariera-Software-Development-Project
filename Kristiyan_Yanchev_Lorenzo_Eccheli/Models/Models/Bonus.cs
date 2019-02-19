@@ -19,6 +19,18 @@ namespace Data.Models
 
         public Bonus(decimal amount, string description, ITeacher teacher)
         {
+            if (amount < 0)
+            {
+                throw new ArgumentException("Amount cannot be less than 0");
+            }
+            if (description == null)
+            {
+                throw new ArgumentException("Description cannot be null");
+            }
+            if (teacher == null)
+            {
+                throw new ArgumentNullException("Teacher cannot be null");
+            }
             Amount = amount;
             Description = description;
             Teacher = teacher;

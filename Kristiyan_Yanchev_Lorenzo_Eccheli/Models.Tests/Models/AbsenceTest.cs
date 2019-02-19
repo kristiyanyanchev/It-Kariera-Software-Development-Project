@@ -1,4 +1,6 @@
-﻿using Data.Models;
+﻿using Data.ModelInterfaces;
+using Data.Models;
+using Moq;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -14,7 +16,16 @@ namespace Data.Test.Models
         [Test]
         public void Constructor_NullStudent_ThrowsArgumentException()
         {
-            Assert.Throws<ArgumentException>(() => { var absence = new Absence(true,null,new Period("Math",DateTime.Today,DateTime.Now,new)); });
+            var period = new Mock<IPeriod>().Object;
+            Assert.Throws<ArgumentNullException>(() => { var absence = new Absence(true, null, period);  });
         }
+        
+        [Test]
+        public void Constructor_NullPeriod_ThrowsArgumentException()
+        {
+            var student = new Mock<IStudent>().Object;
+            Assert.Throws<ArgumentNullException>(() => { var absence = new Absence(true, student, null); });
+        }
+
     }
 }

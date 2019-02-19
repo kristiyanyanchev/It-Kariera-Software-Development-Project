@@ -20,5 +20,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
 
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

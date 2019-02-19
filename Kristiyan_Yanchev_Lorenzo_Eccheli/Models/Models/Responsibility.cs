@@ -19,6 +19,14 @@ namespace Data.Models
 
         public Responsibility(string name, string description)
         {
+            if (name == null)
+            {
+                throw new ArgumentNullException("Name cannot be null");
+            }
+            if (description== null)
+            {
+                throw new ArgumentNullException("Description cannot be null");
+            }
             Name = name;
             Description = description;
             Teachers = new List<ITeacher>();
