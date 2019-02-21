@@ -18,7 +18,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private bool ValidateData()
         {
-            if(nameTextBox.Text!=null && familyTextBox.Text!=null && passwordTextBox.Text!=null && emailTextBox.Text!=null && addressTextBox.Text!=null && phonenumberTextBox.Text!=null && roleComboBox.SelectedItem!=null)
+            if(nameTextBox.Text!=null && familyTextBox.Text!=null && 
+               passwordTextBox.Text!=null && emailTextBox.Text!=null && 
+               addressTextBox.Text!=null && phonenumberTextBox.Text!=null && 
+               roleComboBox.SelectedItem!=null)
             {
                 return true;
             }
@@ -27,7 +30,15 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
+        }
+
+        private void EnabeledButton()
+        {
+            if(ValidateData())
+            {
+                nextButton.Enabled = true;
+            }
         }
 
         private void nextButton_Click(object sender, EventArgs e)
@@ -37,6 +48,22 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 this.Hide();
                 StudentFormRegistration studentregistration = new StudentFormRegistration();
                 studentregistration.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Invalid data ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void visibleCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if(visibleCheckBox.Checked)
+            {
+                passwordTextBox.PasswordChar = '\0';
+            }
+            else
+            {
+                passwordTextBox.PasswordChar = '*';
             }
         }
     }

@@ -84,9 +84,9 @@
             // 
             // logInBtn
             // 
-            this.logInBtn.Location = new System.Drawing.Point(114, 168);
+            this.logInBtn.Location = new System.Drawing.Point(253, 154);
             this.logInBtn.Name = "logInBtn";
-            this.logInBtn.Size = new System.Drawing.Size(75, 23);
+            this.logInBtn.Size = new System.Drawing.Size(107, 46);
             this.logInBtn.TabIndex = 5;
             this.logInBtn.Text = "Log in";
             this.logInBtn.UseVisualStyleBackColor = true;
@@ -94,9 +94,9 @@
             // 
             // registerBtn
             // 
-            this.registerBtn.Location = new System.Drawing.Point(210, 168);
+            this.registerBtn.Location = new System.Drawing.Point(105, 154);
             this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(75, 23);
+            this.registerBtn.Size = new System.Drawing.Size(107, 46);
             this.registerBtn.TabIndex = 6;
             this.registerBtn.Text = "Register";
             this.registerBtn.UseVisualStyleBackColor = true;
@@ -104,12 +104,13 @@
             // 
             // exitBtn
             // 
-            this.exitBtn.Location = new System.Drawing.Point(336, 231);
+            this.exitBtn.Location = new System.Drawing.Point(310, 218);
             this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(75, 23);
+            this.exitBtn.Size = new System.Drawing.Size(107, 46);
             this.exitBtn.TabIndex = 7;
             this.exitBtn.Text = "Exit";
             this.exitBtn.UseVisualStyleBackColor = true;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // E_Journal
             // 

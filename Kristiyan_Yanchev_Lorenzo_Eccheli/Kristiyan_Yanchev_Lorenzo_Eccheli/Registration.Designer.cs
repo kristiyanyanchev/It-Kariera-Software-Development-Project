@@ -47,69 +47,76 @@
             this.partoneLabel = new System.Windows.Forms.Label();
             this.familyLabel = new System.Windows.Forms.Label();
             this.familyTextBox = new System.Windows.Forms.TextBox();
-            this.visibleChackBox = new System.Windows.Forms.CheckBox();
+            this.visibleCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // introductionLabel
             // 
             this.introductionLabel.AutoSize = true;
-            this.introductionLabel.Location = new System.Drawing.Point(197, 26);
+            this.introductionLabel.Location = new System.Drawing.Point(148, 21);
+            this.introductionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.introductionLabel.Name = "introductionLabel";
-            this.introductionLabel.Size = new System.Drawing.Size(216, 17);
+            this.introductionLabel.Size = new System.Drawing.Size(161, 13);
             this.introductionLabel.TabIndex = 0;
             this.introductionLabel.Text = "Registration  to School E-Journal";
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(12, 115);
+            this.nameLabel.Location = new System.Drawing.Point(9, 93);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(45, 17);
+            this.nameLabel.Size = new System.Drawing.Size(35, 13);
             this.nameLabel.TabIndex = 1;
             this.nameLabel.Text = "Name";
             // 
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(12, 150);
+            this.passwordLabel.Location = new System.Drawing.Point(9, 122);
+            this.passwordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(69, 17);
+            this.passwordLabel.Size = new System.Drawing.Size(53, 13);
             this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "Password";
             // 
             // emailLabel
             // 
             this.emailLabel.AutoSize = true;
-            this.emailLabel.Location = new System.Drawing.Point(12, 191);
+            this.emailLabel.Location = new System.Drawing.Point(9, 155);
+            this.emailLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(47, 17);
+            this.emailLabel.Size = new System.Drawing.Size(35, 13);
             this.emailLabel.TabIndex = 3;
             this.emailLabel.Text = "E-mail";
             // 
             // addressLabel
             // 
             this.addressLabel.AutoSize = true;
-            this.addressLabel.Location = new System.Drawing.Point(12, 235);
+            this.addressLabel.Location = new System.Drawing.Point(9, 191);
+            this.addressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.addressLabel.Name = "addressLabel";
-            this.addressLabel.Size = new System.Drawing.Size(60, 17);
+            this.addressLabel.Size = new System.Drawing.Size(45, 13);
             this.addressLabel.TabIndex = 4;
             this.addressLabel.Text = "Address";
             // 
             // phoneLabel
             // 
             this.phoneLabel.AutoSize = true;
-            this.phoneLabel.Location = new System.Drawing.Point(12, 283);
+            this.phoneLabel.Location = new System.Drawing.Point(9, 230);
+            this.phoneLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.phoneLabel.Name = "phoneLabel";
-            this.phoneLabel.Size = new System.Drawing.Size(103, 17);
+            this.phoneLabel.Size = new System.Drawing.Size(78, 13);
             this.phoneLabel.TabIndex = 5;
             this.phoneLabel.Text = "Phone Number";
             // 
             // roleLabel
             // 
             this.roleLabel.AutoSize = true;
-            this.roleLabel.Location = new System.Drawing.Point(316, 152);
+            this.roleLabel.Location = new System.Drawing.Point(237, 124);
+            this.roleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.roleLabel.Name = "roleLabel";
-            this.roleLabel.Size = new System.Drawing.Size(37, 17);
+            this.roleLabel.Size = new System.Drawing.Size(29, 13);
             this.roleLabel.TabIndex = 6;
             this.roleLabel.Text = "Role";
             // 
@@ -121,51 +128,59 @@
             "Parent",
             "Teacher",
             "Director"});
-            this.roleComboBox.Location = new System.Drawing.Point(359, 150);
+            this.roleComboBox.Location = new System.Drawing.Point(269, 122);
+            this.roleComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.roleComboBox.Name = "roleComboBox";
-            this.roleComboBox.Size = new System.Drawing.Size(121, 24);
+            this.roleComboBox.Size = new System.Drawing.Size(92, 21);
             this.roleComboBox.TabIndex = 7;
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(121, 115);
+            this.nameTextBox.Location = new System.Drawing.Point(91, 93);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(100, 22);
+            this.nameTextBox.Size = new System.Drawing.Size(76, 20);
             this.nameTextBox.TabIndex = 8;
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(121, 152);
+            this.passwordTextBox.Location = new System.Drawing.Point(91, 124);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(100, 22);
+            this.passwordTextBox.PasswordChar = '*';
+            this.passwordTextBox.Size = new System.Drawing.Size(76, 20);
             this.passwordTextBox.TabIndex = 9;
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(121, 191);
+            this.emailTextBox.Location = new System.Drawing.Point(91, 155);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(100, 22);
+            this.emailTextBox.Size = new System.Drawing.Size(76, 20);
             this.emailTextBox.TabIndex = 10;
             // 
             // addressTextBox
             // 
-            this.addressTextBox.Location = new System.Drawing.Point(121, 235);
+            this.addressTextBox.Location = new System.Drawing.Point(91, 191);
+            this.addressTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(100, 22);
+            this.addressTextBox.Size = new System.Drawing.Size(76, 20);
             this.addressTextBox.TabIndex = 11;
             // 
             // phonenumberTextBox
             // 
-            this.phonenumberTextBox.Location = new System.Drawing.Point(121, 283);
+            this.phonenumberTextBox.Location = new System.Drawing.Point(91, 230);
+            this.phonenumberTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.phonenumberTextBox.Name = "phonenumberTextBox";
-            this.phonenumberTextBox.Size = new System.Drawing.Size(100, 22);
+            this.phonenumberTextBox.Size = new System.Drawing.Size(76, 20);
             this.phonenumberTextBox.TabIndex = 12;
             // 
             // nextButton
             // 
-            this.nextButton.Location = new System.Drawing.Point(200, 344);
+            this.nextButton.Location = new System.Drawing.Point(151, 284);
+            this.nextButton.Margin = new System.Windows.Forms.Padding(2);
             this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(93, 51);
+            this.nextButton.Size = new System.Drawing.Size(70, 41);
             this.nextButton.TabIndex = 13;
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = true;
@@ -173,9 +188,10 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(415, 412);
+            this.exitButton.Location = new System.Drawing.Point(311, 335);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(2);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 51);
+            this.exitButton.Size = new System.Drawing.Size(56, 41);
             this.exitButton.TabIndex = 14;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -184,44 +200,49 @@
             // partoneLabel
             // 
             this.partoneLabel.AutoSize = true;
-            this.partoneLabel.Location = new System.Drawing.Point(248, 66);
+            this.partoneLabel.Location = new System.Drawing.Point(186, 54);
+            this.partoneLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.partoneLabel.Name = "partoneLabel";
-            this.partoneLabel.Size = new System.Drawing.Size(46, 17);
+            this.partoneLabel.Size = new System.Drawing.Size(35, 13);
             this.partoneLabel.TabIndex = 15;
             this.partoneLabel.Text = "Part 1";
             // 
             // familyLabel
             // 
             this.familyLabel.AutoSize = true;
-            this.familyLabel.Location = new System.Drawing.Point(316, 115);
+            this.familyLabel.Location = new System.Drawing.Point(237, 93);
+            this.familyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.familyLabel.Name = "familyLabel";
-            this.familyLabel.Size = new System.Drawing.Size(48, 17);
+            this.familyLabel.Size = new System.Drawing.Size(36, 13);
             this.familyLabel.TabIndex = 16;
             this.familyLabel.Text = "Family";
             // 
             // familyTextBox
             // 
-            this.familyTextBox.Location = new System.Drawing.Point(370, 115);
+            this.familyTextBox.Location = new System.Drawing.Point(278, 93);
+            this.familyTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.familyTextBox.Name = "familyTextBox";
-            this.familyTextBox.Size = new System.Drawing.Size(100, 22);
+            this.familyTextBox.Size = new System.Drawing.Size(76, 20);
             this.familyTextBox.TabIndex = 17;
             // 
-            // visibleChackBox
+            // visibleCheckBox
             // 
-            this.visibleChackBox.AutoSize = true;
-            this.visibleChackBox.Location = new System.Drawing.Point(239, 193);
-            this.visibleChackBox.Name = "visibleChackBox";
-            this.visibleChackBox.Size = new System.Drawing.Size(71, 21);
-            this.visibleChackBox.TabIndex = 18;
-            this.visibleChackBox.Text = "Visible";
-            this.visibleChackBox.UseVisualStyleBackColor = true;
+            this.visibleCheckBox.AutoSize = true;
+            this.visibleCheckBox.Location = new System.Drawing.Point(177, 123);
+            this.visibleCheckBox.Margin = new System.Windows.Forms.Padding(2);
+            this.visibleCheckBox.Name = "visibleCheckBox";
+            this.visibleCheckBox.Size = new System.Drawing.Size(56, 17);
+            this.visibleCheckBox.TabIndex = 18;
+            this.visibleCheckBox.Text = "Visible";
+            this.visibleCheckBox.UseVisualStyleBackColor = true;
+            this.visibleCheckBox.CheckedChanged += new System.EventHandler(this.visibleCheckBox_CheckedChanged);
             // 
             // Registration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 475);
-            this.Controls.Add(this.visibleChackBox);
+            this.ClientSize = new System.Drawing.Size(376, 386);
+            this.Controls.Add(this.visibleCheckBox);
             this.Controls.Add(this.familyTextBox);
             this.Controls.Add(this.familyLabel);
             this.Controls.Add(this.partoneLabel);
@@ -241,6 +262,7 @@
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.introductionLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -270,6 +292,6 @@
         private System.Windows.Forms.Label partoneLabel;
         private System.Windows.Forms.Label familyLabel;
         private System.Windows.Forms.TextBox familyTextBox;
-        private System.Windows.Forms.CheckBox visibleChackBox;
+        private System.Windows.Forms.CheckBox visibleCheckBox;
     }
 }
