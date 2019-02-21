@@ -18,6 +18,14 @@ namespace Data.Models
 
         public Class(string className, ITeacher teacher)
         {
+            if (className == null)
+            {
+                throw new ArgumentNullException("ClassName cannot be null");
+            }
+            if (teacher == null)
+            {
+                throw new ArgumentNullException("Teacher cannot be null");
+            }
             ClassName = className;
             Teacher = teacher;
         }

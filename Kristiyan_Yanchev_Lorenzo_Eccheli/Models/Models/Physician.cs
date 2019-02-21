@@ -24,17 +24,35 @@ namespace Data.Models
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
 
-        public Physician(string firstName, string lastName, string email, string phoneNumber, string address)
+        public Physician(string firstName, string lastName, string email, string phoneNumber, string address) : this(firstName,lastName,address)
         {
-            FirstName = firstName;
-            LastName = lastName;
+            if (email == null)
+            {
+                throw new ArgumentNullException("Email cannot be null.");
+            }
+            if (phoneNumber == null)
+            {
+                throw new ArgumentNullException("PhoneNumber cannot be null.");
+            }
             Email = email;
             PhoneNumber = phoneNumber;
-            Address = address;
         }
 
         public Physician(string firstName, string lastName, string address)
         {
+            if (firstName == null)
+            {
+                throw new ArgumentNullException("FirstName cannot be null.");
+            }
+            if (lastName == null)
+            {
+                throw new ArgumentNullException("LastName cannot be null.");
+            }
+            if (address == null)
+            {
+                throw new ArgumentNullException("Address cannot be null.");
+            }
+
             FirstName = firstName;
             LastName = lastName;
             Address = address;

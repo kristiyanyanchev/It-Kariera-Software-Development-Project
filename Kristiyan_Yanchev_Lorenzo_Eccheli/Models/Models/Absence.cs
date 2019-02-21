@@ -14,38 +14,38 @@ namespace Data.Models
         [Required]
         public bool IsLate { get; set; }
 
-        private Student student;
+        private IStudent student;
 
-        public Student Student
+        public IStudent Student
         {
             get { return student; }
             set
             {
                 if (value == null)
                 {
-                    throw new ArgumentException("Student cannot be null.");
+                    throw new ArgumentNullException("Student cannot be null.");
                 }
                 student = value;
             }
         }
 
-        private Period period;
+        private IPeriod period;
 
-        public Period Period
+        public IPeriod Period
         {
             get { return period; }
             set
             {
                 if (value == null)
                 {
-                    throw new ArgumentException("Period cannot be null.");
+                    throw new ArgumentNullException("Period cannot be null.");
                 }
                 period = value;
             }
         }
 
 
-        public Absence(bool isLate, Student student, Period period)
+        public Absence(bool isLate, IStudent student, IPeriod period)
         {
             IsLate = isLate;
             Student = student;
