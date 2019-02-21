@@ -1,4 +1,8 @@
-﻿using NUnit.Framework;
+﻿using Data.ModelInterfaces;
+using Data.Models;
+using Data.Repositories;
+using Moq;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +17,15 @@ namespace Data.Test.Repositories
         [Test]
         public void Add_NormalConditions_AddtoDb()
         {
-            using (var db = new TestContext())
-            {
-                
-            }
+            var repository = new AbsencesRepository();
+            var student = new Student("Ivan", "Dragan", DateTime.Today, true, "0000000001");
+            new StudentsRepository().Add(student);
+            var period = new Mock<IPeriod>().Object;
+            var absence = new Absence(true, student, period);
+
+            repository.Add(absence);
+
+            Assert.AreEqual(repository.List().Last().IsLate, true);
         }
     }
 }

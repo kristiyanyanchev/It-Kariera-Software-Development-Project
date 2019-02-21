@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Data.Repositories
 {
-    class AnnualLeavesRepository : IRepository<AnnualLeave>
+    public class AnnualLeavesRepository : IRepository<AnnualLeave>
     {
         static ClassBookContext context = new ClassBookContext();
 

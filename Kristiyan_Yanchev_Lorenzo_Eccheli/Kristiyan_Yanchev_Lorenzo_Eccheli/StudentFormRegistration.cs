@@ -23,11 +23,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             Application.Exit();
-=======
-
->>>>>>> 1724eb83fc1e8ef51ccad73d852d37189ddd911f
         }
     }
 }

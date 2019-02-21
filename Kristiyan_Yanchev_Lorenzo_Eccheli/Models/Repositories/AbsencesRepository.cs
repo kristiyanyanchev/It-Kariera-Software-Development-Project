@@ -6,13 +6,17 @@ using System.Text;
 
 namespace Data.Repositories
 {
-    class AbsencesRepository : IRepository<Absence>
+    public class AbsencesRepository : IRepository<Absence>
     {
         static ClassBookContext context = new ClassBookContext();
         public void Add(Absence entity)
         {
-            context.Absences.Add(entity);
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                context.Absences.Add(entity);
+                context.SaveChanges();
+            }
+           
         }
 
         public void Delete(Absence entity)

@@ -16,7 +16,7 @@ namespace Data.Models
 
         private IStudent student;
 
-        public IStudent Student
+        public virtual IStudent Student
         {
             get { return student; }
             set
@@ -31,7 +31,7 @@ namespace Data.Models
 
         private IPeriod period;
 
-        public IPeriod Period
+        public virtual IPeriod Period
         {
             get { return period; }
             set
@@ -44,9 +44,14 @@ namespace Data.Models
             }
         }
 
+        public Absence()
+        {
+
+        }
 
         public Absence(bool isLate, IStudent student, IPeriod period)
         {
+            
             IsLate = isLate;
             Student = student;
             Period = period;

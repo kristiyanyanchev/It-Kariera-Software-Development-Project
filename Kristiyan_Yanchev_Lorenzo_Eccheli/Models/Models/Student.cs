@@ -40,6 +40,11 @@ namespace Data.Models
 
         public ICollection<IParent> Parents { get; set; }
 
+        public Student()
+        {
+
+        }
+
         public Student(string firstName, string lastName, DateTime birthDate, bool inAbsentia, string uCN)
         {
             if(firstName == null)
