@@ -30,14 +30,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void EnabeledButton()
-        {
-            if(ValidateData())
+            DialogResult dialog=MessageBox.Show("Do you want really to exit", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
             {
-                nextButton.Enabled = true;
+                Application.Exit();
             }
         }
 

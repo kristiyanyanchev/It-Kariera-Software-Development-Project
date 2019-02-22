@@ -14,6 +14,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         public E_Journal()
         {
             InitializeComponent();
+            usernameTextBox.Focus();
         }
 
         private bool ValidateUsername()
@@ -48,7 +49,40 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult dialog = MessageBox.Show("Do you want really to exit", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(dialog==DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            
+        }
+
+        private void usernameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if(usernameTextBox.Text!=null && passwordTextBox.Text!=null)
+            {
+                logInBtn.Enabled = true;
+            }
+        }
+
+        private void passwordTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (usernameTextBox.Text != null && passwordTextBox.Text != null)
+            {
+                logInBtn.Enabled = true;
+            }
+        }
+
+        private void visibleCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if(visibleCheckBox.Checked)
+            {
+                passwordTextBox.PasswordChar = '\0';
+            }
+            else
+            {
+                passwordTextBox.PasswordChar = '*';
+            }
         }
     }
 }
