@@ -53,7 +53,7 @@
             // introductionLabel
             // 
             this.introductionLabel.AutoSize = true;
-            this.introductionLabel.Location = new System.Drawing.Point(148, 21);
+            this.introductionLabel.Location = new System.Drawing.Point(88, 9);
             this.introductionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.introductionLabel.Name = "introductionLabel";
             this.introductionLabel.Size = new System.Drawing.Size(161, 13);
@@ -177,7 +177,7 @@
             // 
             // nextButton
             // 
-            this.nextButton.Location = new System.Drawing.Point(151, 284);
+            this.nextButton.Location = new System.Drawing.Point(151, 274);
             this.nextButton.Margin = new System.Windows.Forms.Padding(2);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(70, 41);
@@ -200,7 +200,7 @@
             // partoneLabel
             // 
             this.partoneLabel.AutoSize = true;
-            this.partoneLabel.Location = new System.Drawing.Point(186, 54);
+            this.partoneLabel.Location = new System.Drawing.Point(148, 46);
             this.partoneLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.partoneLabel.Name = "partoneLabel";
             this.partoneLabel.Size = new System.Drawing.Size(35, 13);
@@ -267,6 +267,7 @@
             this.Name = "Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCLosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
