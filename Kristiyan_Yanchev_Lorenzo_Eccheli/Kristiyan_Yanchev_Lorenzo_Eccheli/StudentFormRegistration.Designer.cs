@@ -81,33 +81,19 @@
             // 
             // dateofbirthTextBox
             // 
-<<<<<<< HEAD
-            this.dateofbirthTextBox.Location = new System.Drawing.Point(209, 105);
-=======
             this.dateofbirthTextBox.Location = new System.Drawing.Point(136, 102);
->>>>>>> 1724eb83fc1e8ef51ccad73d852d37189ddd911f
             this.dateofbirthTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.dateofbirthTextBox.Name = "dateofbirthTextBox";
             this.dateofbirthTextBox.Size = new System.Drawing.Size(76, 20);
             this.dateofbirthTextBox.TabIndex = 20;
             // 
-<<<<<<< HEAD
             // egnTextBox
             // 
             this.egnTextBox.Location = new System.Drawing.Point(209, 148);
-=======
-            // schoolTextBox
-            // 
-            this.schoolTextBox.Location = new System.Drawing.Point(136, 145);
-            this.schoolTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.schoolTextBox.Name = "schoolTextBox";
-            this.schoolTextBox.Size = new System.Drawing.Size(76, 20);
-            this.schoolTextBox.TabIndex = 21;
             // 
             // egnTextBox
             // 
             this.egnTextBox.Location = new System.Drawing.Point(136, 185);
->>>>>>> 1724eb83fc1e8ef51ccad73d852d37189ddd911f
             this.egnTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.egnTextBox.Name = "egnTextBox";
             this.egnTextBox.Size = new System.Drawing.Size(76, 20);
@@ -115,11 +101,8 @@
             // 
             // registrationButton
             // 
-<<<<<<< HEAD
             this.registrationButton.Location = new System.Drawing.Point(153, 220);
-=======
             this.registrationButton.Location = new System.Drawing.Point(164, 240);
->>>>>>> 1724eb83fc1e8ef51ccad73d852d37189ddd911f
             this.registrationButton.Margin = new System.Windows.Forms.Padding(2);
             this.registrationButton.Name = "registrationButton";
             this.registrationButton.Size = new System.Drawing.Size(80, 42);
