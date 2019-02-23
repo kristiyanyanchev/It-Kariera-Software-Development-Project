@@ -1,6 +1,7 @@
 ﻿using Data.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 
@@ -8,7 +9,10 @@ namespace Data.Repositories
 {
     public class AbsencesRepository : IRepository<Absence>
     {
-        static ClassBookContext context = new ClassBookContext();
+        protected ClassBookContext context = new ClassBookContext();
+
+        protected DbContext Context { get; private set; }
+
         public void Add(Absence entity)
         {
             using (var context = new ClassBookContext())
@@ -21,15 +25,23 @@ namespace Data.Repositories
 
         public void Delete(Absence entity)
         {
-            context.Absences.Remove(entity);
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                context.Absences.Remove(entity);
+                context.SaveChanges();
+            }
+                
         }
 
         public void Edit(Absence entity)
         {
-            var result = context.Absences.Single(x => x.Id == entity.Id);
-            result = entity;
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                var result = context.Absences.Single(x => x.Id == entity.Id);
+                result = entity;
+                context.SaveChanges();
+            }
+            
         }
 
         public Absence GetById(int id)
@@ -41,5 +53,7 @@ namespace Data.Repositories
         {
             return context.Absences.ToList();
         }
+
+
     }
 }

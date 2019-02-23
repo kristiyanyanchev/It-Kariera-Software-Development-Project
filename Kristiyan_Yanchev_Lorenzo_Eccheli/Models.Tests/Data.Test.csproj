@@ -56,21 +56,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\AbsenceTest.cs" />
-    <Compile Include="Models\AnnualLeaveTest.cs" />
-    <Compile Include="Models\BonusTest.cs" />
-    <Compile Include="Models\ClassTest.cs" />
-    <Compile Include="Models\GradeRecordTest.cs" />
-    <Compile Include="Models\ParentTest.cs" />
-    <Compile Include="Models\PeriodTest.cs" />
-    <Compile Include="Models\PhysicianTest.cs" />
-    <Compile Include="Models\ResponsibilityTest.cs" />
-    <Compile Include="Models\SickLeaveTest.cs" />
-    <Compile Include="Models\StudentTest.cs" />
-    <Compile Include="Models\TeacherTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\AbsencesRepositoryTest.cs" />
-    <Compile Include="Repositories\TestContext.cs" />
+    <Compile Include="Repositories\AbsencesRepostiory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
