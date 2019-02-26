@@ -27,7 +27,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
             if (dialog == DialogResult.OK)
             {
-                Application.Exit();
+                Application.ExitThread();
             }
         }
     }

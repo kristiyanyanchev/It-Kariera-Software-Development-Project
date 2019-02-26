@@ -52,7 +52,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
             if(dialog==DialogResult.OK)
             {
-                Application.Exit();
+                Application.ExitThread();
             }
         }
 
@@ -90,6 +90,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             {
                 this.Text = "School E-journal";
                 languageLabel.Text = "Language";
+                visiblepasswordCheckBox.Text = "Visible";
                 introductionLabel.Text = "Welcome to the school E-Journal";
                 usernameLabel.Text = "Username";
                 passwordLabel.Text = "Password";
@@ -101,12 +102,27 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             {
                 this.Text = "Електроният училищен дневник";
                 languageLabel.Text = "Език";
+                visiblepasswordCheckBox.Text = "Видимо";
                 introductionLabel.Text = "Добре дошли в електрония училищен дневник";
                 usernameLabel.Text = "Име";
                 passwordLabel.Text = "Парола";
                 logInBtn.Text = "Влизане";
                 registerBtn.Text = "Регистрация";
                 exitBtn.Text = "Изход";
+            }
+        }
+
+        private void E_Journal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if(dialog==DialogResult.Yes)
+            {
+                Application.ExitThread();
+            }
+            else if(dialog==DialogResult.No)
+            {
+                e.Cancel = true;
             }
         }
     }

@@ -53,7 +53,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             if(nameTextBox.Text!=null && familyTextBox.Text!=null && 
                passwordTextBox.Text!=null && emailTextBox.Text!=null && 
                addressTextBox.Text!=null && phonenumberTextBox.Text!=null && 
-               roleComboBox.SelectedItem!=null)
+               roleComboBox.SelectedItem!=null && double.TryParse(phonenumberTextBox.Text,out double a))
             {
                 return true;
             }
@@ -66,7 +66,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
             if (dialog == DialogResult.OK)
             {
-                Application.Exit();
+                Application.ExitThread();
             }
         }
 
