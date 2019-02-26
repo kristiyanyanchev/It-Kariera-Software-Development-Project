@@ -49,18 +49,6 @@
   <ItemGroup>
     <Compile Include="ClassBookContext.cs" />
     <Compile Include="IRepository.cs" />
-    <Compile Include="ModelInterfaces\IAbsence.cs" />
-    <Compile Include="ModelInterfaces\IAnnualLeave.cs" />
-    <Compile Include="ModelInterfaces\IBonus.cs" />
-    <Compile Include="ModelInterfaces\IClass.cs" />
-    <Compile Include="ModelInterfaces\IGradeRecord.cs" />
-    <Compile Include="ModelInterfaces\IParent.cs" />
-    <Compile Include="ModelInterfaces\IPeriod.cs" />
-    <Compile Include="ModelInterfaces\IPhysician.cs" />
-    <Compile Include="ModelInterfaces\IResponsibility.cs" />
-    <Compile Include="ModelInterfaces\ISickLeave.cs" />
-    <Compile Include="ModelInterfaces\IStudent.cs" />
-    <Compile Include="ModelInterfaces\ITeacher.cs" />
     <Compile Include="Models\Absence.cs" />
     <Compile Include="Models\AnnualLeave.cs" />
     <Compile Include="Models\Bonus.cs" />
@@ -72,6 +60,7 @@
     <Compile Include="Models\Responsibility.cs" />
     <Compile Include="Models\SickLeave.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Subject.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AbsencesRepository.cs" />
