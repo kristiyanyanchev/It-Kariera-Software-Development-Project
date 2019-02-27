@@ -12,7 +12,7 @@ namespace ConsoleView
     {
         static void Main(string[] args)
         {
-           
+            
         }
     }
 }
