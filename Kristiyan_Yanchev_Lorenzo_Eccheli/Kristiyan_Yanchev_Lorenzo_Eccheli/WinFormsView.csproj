@@ -58,11 +58,23 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAccount.Designer.cs">
+      <DependentUpon>StudentAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentFormRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StudentFormRegistration.Designer.cs">
       <DependentUpon>StudentFormRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherCatalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherCatalog.Designer.cs">
+      <DependentUpon>TeacherCatalog.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
@@ -79,8 +91,14 @@
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StudentAccount.resx">
+      <DependentUpon>StudentAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentFormRegistration.resx">
       <DependentUpon>StudentFormRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherCatalog.resx">
+      <DependentUpon>TeacherCatalog.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

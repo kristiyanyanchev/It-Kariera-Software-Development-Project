@@ -16,10 +16,13 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             InitializeComponent();
         }
 
+        private string nextformlanguage;
+
         public Registration(string language)
         {
             if (language == "Bulgarian")
             {
+                nextformlanguage = language;
                 InitializeComponent();
                 introductionLabel.Text = "Регистрация в електронния училищен дневник";
                 partoneLabel.Text = "Част 1";
@@ -34,6 +37,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
             else if(language=="English")
             {
+                nextformlanguage = language;
                 InitializeComponent();
                 introductionLabel.Text = "Registration  to School E-Journal";
                 partoneLabel.Text = "Part 1";
@@ -75,7 +79,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             if(ValidateData())
             {
                 this.Hide();
-                StudentFormRegistration studentregistration = new StudentFormRegistration();
+                StudentFormRegistration studentregistration = new StudentFormRegistration(nextformlanguage);
                 studentregistration.ShowDialog();
             }
             else
@@ -102,7 +106,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
             if(dialog==DialogResult.Yes)
             {
-                Application.Exit();
+                Application.ExitThread();
             }
             else if(dialog==DialogResult.No)
             {
