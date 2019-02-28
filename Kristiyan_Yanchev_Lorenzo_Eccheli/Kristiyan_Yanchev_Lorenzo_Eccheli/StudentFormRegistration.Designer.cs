@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentFormRegistration));
             this.introductionLabel = new System.Windows.Forms.Label();
             this.parttwoLabel = new System.Windows.Forms.Label();
@@ -39,6 +40,7 @@
             this.studentdateofbirth = new System.Windows.Forms.DateTimePicker();
             this.classLabel = new System.Windows.Forms.Label();
             this.classTextBox = new System.Windows.Forms.TextBox();
+            this.formToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // introductionLabel
@@ -173,5 +175,6 @@
         private System.Windows.Forms.DateTimePicker studentdateofbirth;
         private System.Windows.Forms.Label classLabel;
         private System.Windows.Forms.TextBox classTextBox;
+        private System.Windows.Forms.ToolTip formToolTip;
     }
 }

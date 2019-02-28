@@ -34,6 +34,18 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 phoneLabel.Text = "Телефонен номер";
                 familyLabel.Text = "Фамилия";
                 roleLabel.Text = "Длъжност";
+                nextButton.Text = "Напред";
+                exitButton.Text = "Изход";
+                formToolTip.SetToolTip(nameTextBox, "Въведете първото си име.");
+                formToolTip.SetToolTip(familyTextBox, "Въведете фамилията си.");
+                formToolTip.SetToolTip(passwordTextBox, "Създайте си парола.");
+                formToolTip.SetToolTip(visibleCheckBox, "Направете паролата видима или невидима.");
+                formToolTip.SetToolTip(roleComboBox,"Изберете си длъжност.");
+                formToolTip.SetToolTip(emailTextBox,"Въведете си имайла.");
+                formToolTip.SetToolTip(addressTextBox,"Напишете си адреса.");
+                formToolTip.SetToolTip(phonenumberTextBox, "Сложете си телефонния номер.");
+                formToolTip.SetToolTip(nextButton, "Продължете с регистрацията.");
+                formToolTip.SetToolTip(exitButton, "Излезте от прилойението.");
             }
             else if(language=="English")
             {
@@ -49,6 +61,18 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 phoneLabel.Text = "Phone number";
                 familyLabel.Text = "Family";
                 roleLabel.Text = "Role";
+                nextButton.Text = "Next";
+                exitButton.Text = "Exit";
+                formToolTip.SetToolTip(nameTextBox, "Enter your first name.");
+                formToolTip.SetToolTip(familyTextBox, "Enter your family.");
+                formToolTip.SetToolTip(passwordTextBox, "Create new password.");
+                formToolTip.SetToolTip(visibleCheckBox, "Make your password visible or unvisible.");
+                formToolTip.SetToolTip(roleComboBox, "Choose your role.");
+                formToolTip.SetToolTip(emailTextBox, "Enter your e-mail address.");
+                formToolTip.SetToolTip(addressTextBox, "Enter your home address.");
+                formToolTip.SetToolTip(phonenumberTextBox, "Enter your phone number .");
+                formToolTip.SetToolTip(nextButton, "Continue with the registration.");
+                formToolTip.SetToolTip(exitButton, "Exit the application.");
             }
         }
 

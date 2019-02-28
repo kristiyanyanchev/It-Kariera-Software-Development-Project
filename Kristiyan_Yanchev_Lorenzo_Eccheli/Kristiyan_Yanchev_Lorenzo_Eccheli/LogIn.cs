@@ -97,6 +97,13 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 logInBtn.Text = "Log in";
                 registerBtn.Text = "Register";
                 exitBtn.Text = "Exit";
+                formToolTip.SetToolTip(usernameTextBox, "Enter your first name.");
+                formToolTip.SetToolTip(passwordTextBox, "Enter your account password.");
+                formToolTip.SetToolTip(registerBtn, "Make new E-journal account.");
+                formToolTip.SetToolTip(logInBtn, "Log in into an existing account.");
+                formToolTip.SetToolTip(visiblepasswordCheckBox, "Make your password visible or unvisible.");
+                formToolTip.SetToolTip(languageComboBox, "Change your language.");
+                formToolTip.SetToolTip(exitBtn, "Exit the application.");
             }
             else if(languageComboBox.SelectedItem.ToString()=="Bulgarian")
             {
@@ -109,6 +116,13 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 logInBtn.Text = "Влизане";
                 registerBtn.Text = "Регистрация";
                 exitBtn.Text = "Изход";
+                formToolTip.SetToolTip(usernameTextBox, "Напишете си първото име.");
+                formToolTip.SetToolTip(passwordTextBox, "Напишете си паролата на акаунта.");
+                formToolTip.SetToolTip(registerBtn, "Създайте нов акаунт.");
+                formToolTip.SetToolTip(logInBtn, "");
+                formToolTip.SetToolTip(visiblepasswordCheckBox, "Влезте в съществуващ вече акаунт.");
+                formToolTip.SetToolTip(languageComboBox, "Сменете езика.");
+                formToolTip.SetToolTip(exitBtn, "Излезте от приложението.");
             }
         }
 

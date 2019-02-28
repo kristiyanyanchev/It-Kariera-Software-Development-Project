@@ -22,6 +22,12 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 egnLabel.Text = "ЕГН";
                 registrationButton.Text = "Регистрация";
                 classLabel.Text = "Клас";
+                exitButton.Text = "Изход";
+                formToolTip.SetToolTip(studentdateofbirth,"Напишете си датата на раждане.");
+                formToolTip.SetToolTip(egnTextBox,"Напишете ЕГН-то си.");
+                formToolTip.SetToolTip(classTextBox,"Напишете кой клас сте.");
+                formToolTip.SetToolTip(registrationButton,"Регистрацията е довършена ако горните полета са попълнени вярно.");
+                formToolTip.SetToolTip(exitButton, "Излезте от прилойението.");
             }
             else
             {
@@ -31,6 +37,12 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 egnLabel.Text = "EGN";
                 registrationButton.Text = "Registration";
                 classLabel.Text = "Class";
+                exitButton.Text = "Exit";
+                formToolTip.SetToolTip(studentdateofbirth,"Enter your date of birth.");
+                formToolTip.SetToolTip(egnTextBox,"Enter your EGN");
+                formToolTip.SetToolTip(classTextBox,"Enter your class.");
+                formToolTip.SetToolTip(registrationButton,"Your registration will be done if everything is correct .");
+                formToolTip.SetToolTip(exitButton, "Exit the application.");
             }
         }
 

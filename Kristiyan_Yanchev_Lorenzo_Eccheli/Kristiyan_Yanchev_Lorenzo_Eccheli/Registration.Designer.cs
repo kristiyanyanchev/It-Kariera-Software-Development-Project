@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
             this.introductionLabel = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@
             this.familyLabel = new System.Windows.Forms.Label();
             this.familyTextBox = new System.Windows.Forms.TextBox();
             this.visibleCheckBox = new System.Windows.Forms.CheckBox();
+            this.formToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // introductionLabel
@@ -113,7 +115,7 @@
             // roleLabel
             // 
             this.roleLabel.AutoSize = true;
-            this.roleLabel.Location = new System.Drawing.Point(237, 124);
+            this.roleLabel.Location = new System.Drawing.Point(204, 162);
             this.roleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.roleLabel.Name = "roleLabel";
             this.roleLabel.Size = new System.Drawing.Size(29, 13);
@@ -128,7 +130,7 @@
             "Parent",
             "Teacher",
             "Director"});
-            this.roleComboBox.Location = new System.Drawing.Point(269, 122);
+            this.roleComboBox.Location = new System.Drawing.Point(278, 158);
             this.roleComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.roleComboBox.Name = "roleComboBox";
             this.roleComboBox.Size = new System.Drawing.Size(92, 21);
@@ -169,10 +171,10 @@
             // 
             // phonenumberTextBox
             // 
-            this.phonenumberTextBox.Location = new System.Drawing.Point(91, 230);
+            this.phonenumberTextBox.Location = new System.Drawing.Point(123, 223);
             this.phonenumberTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.phonenumberTextBox.Name = "phonenumberTextBox";
-            this.phonenumberTextBox.Size = new System.Drawing.Size(76, 20);
+            this.phonenumberTextBox.Size = new System.Drawing.Size(98, 20);
             this.phonenumberTextBox.TabIndex = 12;
             // 
             // nextButton
@@ -294,5 +296,6 @@
         private System.Windows.Forms.Label familyLabel;
         private System.Windows.Forms.TextBox familyTextBox;
         private System.Windows.Forms.CheckBox visibleCheckBox;
+        private System.Windows.Forms.ToolTip formToolTip;
     }
 }
