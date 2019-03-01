@@ -1,6 +1,6 @@
 ﻿namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
-    partial class StudentFormRegistration
+    partial class StudentRegistrationForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentFormRegistration));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentRegistrationForm));
             this.introductionLabel = new System.Windows.Forms.Label();
             this.parttwoLabel = new System.Windows.Forms.Label();
             this.dateofbirthLabel = new System.Windows.Forms.Label();

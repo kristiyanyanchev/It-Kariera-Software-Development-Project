@@ -103,7 +103,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             if(ValidateData())
             {
                 this.Hide();
-                StudentFormRegistration studentregistration = new StudentFormRegistration(nextformlanguage);
+                StudentRegistrationForm studentregistration = new StudentRegistrationForm(nextformlanguage);
                 studentregistration.ShowDialog();
             }
             else

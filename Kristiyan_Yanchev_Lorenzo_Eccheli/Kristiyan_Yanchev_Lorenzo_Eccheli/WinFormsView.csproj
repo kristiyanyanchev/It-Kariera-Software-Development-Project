@@ -64,11 +64,11 @@
     <Compile Include="StudentAccount.Designer.cs">
       <DependentUpon>StudentAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentFormRegistration.cs">
+    <Compile Include="StudentRegistrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentFormRegistration.Designer.cs">
-      <DependentUpon>StudentFormRegistration.cs</DependentUpon>
+    <Compile Include="StudentRegistrationForm.Designer.cs">
+      <DependentUpon>StudentRegistrationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TeacherCatalog.cs">
       <SubType>Form</SubType>
@@ -94,8 +94,8 @@
     <EmbeddedResource Include="StudentAccount.resx">
       <DependentUpon>StudentAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentFormRegistration.resx">
-      <DependentUpon>StudentFormRegistration.cs</DependentUpon>
+    <EmbeddedResource Include="StudentRegistrationForm.resx">
+      <DependentUpon>StudentRegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherCatalog.resx">
       <DependentUpon>TeacherCatalog.cs</DependentUpon>

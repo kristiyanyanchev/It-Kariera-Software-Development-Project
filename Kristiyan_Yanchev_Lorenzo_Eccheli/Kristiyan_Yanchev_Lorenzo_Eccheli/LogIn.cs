@@ -92,7 +92,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 languageLabel.Text = "Language";
                 visiblepasswordCheckBox.Text = "Visible";
                 introductionLabel.Text = "Welcome to the school E-Journal";
-                usernameLabel.Text = "Username";
+                nameLabel.Text = "Username";
                 passwordLabel.Text = "Password";
                 logInBtn.Text = "Log in";
                 registerBtn.Text = "Register";
@@ -111,7 +111,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 languageLabel.Text = "Език";
                 visiblepasswordCheckBox.Text = "Видимо";
                 introductionLabel.Text = "Добре дошли в електрония училищен дневник";
-                usernameLabel.Text = "Име";
+                nameLabel.Text = "Име";
                 passwordLabel.Text = "Парола";
                 logInBtn.Text = "Влизане";
                 registerBtn.Text = "Регистрация";

@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
-    public partial class StudentFormRegistration : Form
+    public partial class StudentRegistrationForm : Form
     {
-        public StudentFormRegistration(string language)
+        public StudentRegistrationForm(string language)
         {
             InitializeComponent();
             if (language == "Bulgarian")

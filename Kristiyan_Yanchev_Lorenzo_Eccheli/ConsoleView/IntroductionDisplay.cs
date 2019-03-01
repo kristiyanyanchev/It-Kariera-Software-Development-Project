@@ -19,6 +19,18 @@ namespace ConsoleView
         private void Command()
         {
             int command = int.Parse(Console.ReadLine());
+            if(command==1)
+            {
+                RegistrationDisplay registration = new RegistrationDisplay();
+            }
+            else if(command==2)
+            {
+                
+            }
+            else if(command==3)
+            {
+                Console.WriteLine("Goodbye.");
+            }
         }
     }
 }

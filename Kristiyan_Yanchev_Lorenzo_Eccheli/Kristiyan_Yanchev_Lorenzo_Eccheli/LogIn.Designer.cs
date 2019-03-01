@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(E_Journal));
-            this.usernameLabel = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
@@ -44,14 +44,14 @@
             this.formToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
-            // usernameLabel
+            // nameLabel
             // 
-            this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Location = new System.Drawing.Point(12, 62);
-            this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(55, 13);
-            this.usernameLabel.TabIndex = 0;
-            this.usernameLabel.Text = "Username";
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Location = new System.Drawing.Point(12, 62);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(35, 13);
+            this.nameLabel.TabIndex = 0;
+            this.nameLabel.Text = "Name";
             // 
             // passwordLabel
             // 
@@ -157,9 +157,9 @@
             this.languageLabel.AutoSize = true;
             this.languageLabel.Location = new System.Drawing.Point(272, 35);
             this.languageLabel.Name = "languageLabel";
-            this.languageLabel.Size = new System.Drawing.Size(51, 13);
+            this.languageLabel.Size = new System.Drawing.Size(55, 13);
             this.languageLabel.TabIndex = 10;
-            this.languageLabel.Text = "language";
+            this.languageLabel.Text = "Language";
             // 
             // E_Journal
             // 
@@ -177,7 +177,7 @@
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.passwordLabel);
-            this.Controls.Add(this.usernameLabel);
+            this.Controls.Add(this.nameLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(98, 97);
@@ -192,7 +192,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label usernameLabel;
+        private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.TextBox usernameTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
