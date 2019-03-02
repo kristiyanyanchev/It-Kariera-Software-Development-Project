@@ -26,6 +26,9 @@ namespace Data.Models
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
 
+        [Required]
+        public string ValidationCode { get; set; }
+
         public Class Class { get; set; }
         public Physician Physician { get; set; }
 

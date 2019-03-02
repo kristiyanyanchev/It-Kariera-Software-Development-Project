@@ -19,7 +19,11 @@ namespace Data.Models
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
 
+        [Required]
+        public string ValidationCode { get; set; }
+
         public ICollection<Student> Children { get; set; }
 
+        
     }
 }

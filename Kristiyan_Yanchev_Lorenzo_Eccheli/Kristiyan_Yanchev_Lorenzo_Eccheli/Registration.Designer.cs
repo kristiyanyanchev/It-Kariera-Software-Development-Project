@@ -31,23 +31,23 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
             this.introductionLabel = new System.Windows.Forms.Label();
-            this.nameLabel = new System.Windows.Forms.Label();
+            this.firstNameLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.emailLabel = new System.Windows.Forms.Label();
             this.addressLabel = new System.Windows.Forms.Label();
             this.phoneLabel = new System.Windows.Forms.Label();
             this.roleLabel = new System.Windows.Forms.Label();
             this.roleComboBox = new System.Windows.Forms.ComboBox();
-            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.firstNameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.addressTextBox = new System.Windows.Forms.TextBox();
-            this.phonenumberTextBox = new System.Windows.Forms.TextBox();
-            this.nextButton = new System.Windows.Forms.Button();
+            this.phoneNumberTextBox = new System.Windows.Forms.TextBox();
+            this.nextPageButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.partoneLabel = new System.Windows.Forms.Label();
-            this.familyLabel = new System.Windows.Forms.Label();
-            this.familyTextBox = new System.Windows.Forms.TextBox();
+            this.lastNameLabel = new System.Windows.Forms.Label();
+            this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.visibleCheckBox = new System.Windows.Forms.CheckBox();
             this.formToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
@@ -62,15 +62,15 @@
             this.introductionLabel.TabIndex = 0;
             this.introductionLabel.Text = "Registration  to School E-Journal";
             // 
-            // nameLabel
+            // firstNameLabel
             // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(9, 93);
-            this.nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(35, 13);
-            this.nameLabel.TabIndex = 1;
-            this.nameLabel.Text = "Name";
+            this.firstNameLabel.AutoSize = true;
+            this.firstNameLabel.Location = new System.Drawing.Point(9, 93);
+            this.firstNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.firstNameLabel.Name = "firstNameLabel";
+            this.firstNameLabel.Size = new System.Drawing.Size(57, 13);
+            this.firstNameLabel.TabIndex = 1;
+            this.firstNameLabel.Text = "First Name";
             // 
             // passwordLabel
             // 
@@ -129,20 +129,20 @@
             "Student",
             "Parent",
             "Teacher",
-            "Director"});
+            "Principal"});
             this.roleComboBox.Location = new System.Drawing.Point(278, 158);
             this.roleComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.roleComboBox.Name = "roleComboBox";
             this.roleComboBox.Size = new System.Drawing.Size(92, 21);
             this.roleComboBox.TabIndex = 7;
             // 
-            // nameTextBox
+            // firstNameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(91, 93);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(76, 20);
-            this.nameTextBox.TabIndex = 8;
+            this.firstNameTextBox.Location = new System.Drawing.Point(91, 93);
+            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.firstNameTextBox.Name = "firstNameTextBox";
+            this.firstNameTextBox.Size = new System.Drawing.Size(76, 20);
+            this.firstNameTextBox.TabIndex = 8;
             // 
             // passwordTextBox
             // 
@@ -169,24 +169,24 @@
             this.addressTextBox.Size = new System.Drawing.Size(76, 20);
             this.addressTextBox.TabIndex = 11;
             // 
-            // phonenumberTextBox
+            // phoneNumberTextBox
             // 
-            this.phonenumberTextBox.Location = new System.Drawing.Point(123, 223);
-            this.phonenumberTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.phonenumberTextBox.Name = "phonenumberTextBox";
-            this.phonenumberTextBox.Size = new System.Drawing.Size(98, 20);
-            this.phonenumberTextBox.TabIndex = 12;
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(123, 223);
+            this.phoneNumberTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.phoneNumberTextBox.Name = "phoneNumberTextBox";
+            this.phoneNumberTextBox.Size = new System.Drawing.Size(98, 20);
+            this.phoneNumberTextBox.TabIndex = 12;
             // 
-            // nextButton
+            // nextPageButton
             // 
-            this.nextButton.Location = new System.Drawing.Point(151, 274);
-            this.nextButton.Margin = new System.Windows.Forms.Padding(2);
-            this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(70, 41);
-            this.nextButton.TabIndex = 13;
-            this.nextButton.Text = "Next";
-            this.nextButton.UseVisualStyleBackColor = true;
-            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
+            this.nextPageButton.Location = new System.Drawing.Point(123, 283);
+            this.nextPageButton.Margin = new System.Windows.Forms.Padding(2);
+            this.nextPageButton.Name = "nextPageButton";
+            this.nextPageButton.Size = new System.Drawing.Size(70, 41);
+            this.nextPageButton.TabIndex = 13;
+            this.nextPageButton.Text = "Next Page";
+            this.nextPageButton.UseVisualStyleBackColor = true;
+            this.nextPageButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // exitButton
             // 
@@ -209,23 +209,23 @@
             this.partoneLabel.TabIndex = 15;
             this.partoneLabel.Text = "Part 1";
             // 
-            // familyLabel
+            // lastNameLabel
             // 
-            this.familyLabel.AutoSize = true;
-            this.familyLabel.Location = new System.Drawing.Point(237, 93);
-            this.familyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.familyLabel.Name = "familyLabel";
-            this.familyLabel.Size = new System.Drawing.Size(36, 13);
-            this.familyLabel.TabIndex = 16;
-            this.familyLabel.Text = "Family";
+            this.lastNameLabel.AutoSize = true;
+            this.lastNameLabel.Location = new System.Drawing.Point(221, 93);
+            this.lastNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lastNameLabel.Name = "lastNameLabel";
+            this.lastNameLabel.Size = new System.Drawing.Size(58, 13);
+            this.lastNameLabel.TabIndex = 16;
+            this.lastNameLabel.Text = "Last Name";
             // 
-            // familyTextBox
+            // lastNameTextBox
             // 
-            this.familyTextBox.Location = new System.Drawing.Point(278, 93);
-            this.familyTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.familyTextBox.Name = "familyTextBox";
-            this.familyTextBox.Size = new System.Drawing.Size(76, 20);
-            this.familyTextBox.TabIndex = 17;
+            this.lastNameTextBox.Location = new System.Drawing.Point(278, 90);
+            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastNameTextBox.Name = "lastNameTextBox";
+            this.lastNameTextBox.Size = new System.Drawing.Size(76, 20);
+            this.lastNameTextBox.TabIndex = 17;
             // 
             // visibleCheckBox
             // 
@@ -245,23 +245,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(376, 386);
             this.Controls.Add(this.visibleCheckBox);
-            this.Controls.Add(this.familyTextBox);
-            this.Controls.Add(this.familyLabel);
+            this.Controls.Add(this.lastNameTextBox);
+            this.Controls.Add(this.lastNameLabel);
             this.Controls.Add(this.partoneLabel);
             this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.nextButton);
-            this.Controls.Add(this.phonenumberTextBox);
+            this.Controls.Add(this.nextPageButton);
+            this.Controls.Add(this.phoneNumberTextBox);
             this.Controls.Add(this.addressTextBox);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.passwordTextBox);
-            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(this.firstNameTextBox);
             this.Controls.Add(this.roleComboBox);
             this.Controls.Add(this.roleLabel);
             this.Controls.Add(this.phoneLabel);
             this.Controls.Add(this.addressLabel);
             this.Controls.Add(this.emailLabel);
             this.Controls.Add(this.passwordLabel);
-            this.Controls.Add(this.nameLabel);
+            this.Controls.Add(this.firstNameLabel);
             this.Controls.Add(this.introductionLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -278,23 +278,23 @@
         #endregion
 
         private System.Windows.Forms.Label introductionLabel;
-        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Label firstNameLabel;
         private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.Label emailLabel;
         private System.Windows.Forms.Label addressLabel;
         private System.Windows.Forms.Label phoneLabel;
         private System.Windows.Forms.Label roleLabel;
         private System.Windows.Forms.ComboBox roleComboBox;
-        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.TextBox firstNameTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.TextBox addressTextBox;
-        private System.Windows.Forms.TextBox phonenumberTextBox;
-        private System.Windows.Forms.Button nextButton;
+        private System.Windows.Forms.TextBox phoneNumberTextBox;
+        private System.Windows.Forms.Button nextPageButton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label partoneLabel;
-        private System.Windows.Forms.Label familyLabel;
-        private System.Windows.Forms.TextBox familyTextBox;
+        private System.Windows.Forms.Label lastNameLabel;
+        private System.Windows.Forms.TextBox lastNameTextBox;
         private System.Windows.Forms.CheckBox visibleCheckBox;
         private System.Windows.Forms.ToolTip formToolTip;
     }

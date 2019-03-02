@@ -26,25 +26,25 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 InitializeComponent();
                 introductionLabel.Text = "Регистрация в електронния училищен дневник";
                 partoneLabel.Text = "Част 1";
-                nameLabel.Text = "Име";
+                firstNameLabel.Text = "Име";
                 passwordLabel.Text = "Парола";
                 visibleCheckBox.Text = "Видимост";
                 emailLabel.Text = "Емайл";
                 addressLabel.Text = "Адрес";
                 phoneLabel.Text = "Телефонен номер";
-                familyLabel.Text = "Фамилия";
+                lastNameLabel.Text = "Фамилия";
                 roleLabel.Text = "Длъжност";
-                nextButton.Text = "Напред";
+                nextPageButton.Text = "Напред";
                 exitButton.Text = "Изход";
-                formToolTip.SetToolTip(nameTextBox, "Въведете първото си име.");
-                formToolTip.SetToolTip(familyTextBox, "Въведете фамилията си.");
+                formToolTip.SetToolTip(firstNameTextBox, "Въведете първото си име.");
+                formToolTip.SetToolTip(lastNameTextBox, "Въведете фамилията си.");
                 formToolTip.SetToolTip(passwordTextBox, "Създайте си парола.");
                 formToolTip.SetToolTip(visibleCheckBox, "Направете паролата видима или невидима.");
                 formToolTip.SetToolTip(roleComboBox,"Изберете си длъжност.");
                 formToolTip.SetToolTip(emailTextBox,"Въведете си имайла.");
                 formToolTip.SetToolTip(addressTextBox,"Напишете си адреса.");
-                formToolTip.SetToolTip(phonenumberTextBox, "Сложете си телефонния номер.");
-                formToolTip.SetToolTip(nextButton, "Продължете с регистрацията.");
+                formToolTip.SetToolTip(phoneNumberTextBox, "Сложете си телефонния номер.");
+                formToolTip.SetToolTip(nextPageButton, "Продължете с регистрацията.");
                 formToolTip.SetToolTip(exitButton, "Излезте от прилойението.");
             }
             else if(language=="English")
@@ -53,35 +53,35 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 InitializeComponent();
                 introductionLabel.Text = "Registration  to School E-Journal";
                 partoneLabel.Text = "Part 1";
-                nameLabel.Text = "Name";
+                firstNameLabel.Text = "Name";
                 passwordLabel.Text = "Password";
                 visibleCheckBox.Text = "Visible";
                 emailLabel.Text = "E-mail";
                 addressLabel.Text = "Address";
                 phoneLabel.Text = "Phone number";
-                familyLabel.Text = "Family";
+                lastNameLabel.Text = "Family";
                 roleLabel.Text = "Role";
-                nextButton.Text = "Next";
+                nextPageButton.Text = "Next";
                 exitButton.Text = "Exit";
-                formToolTip.SetToolTip(nameTextBox, "Enter your first name.");
-                formToolTip.SetToolTip(familyTextBox, "Enter your family.");
+                formToolTip.SetToolTip(firstNameTextBox, "Enter your first name.");
+                formToolTip.SetToolTip(lastNameTextBox, "Enter your family.");
                 formToolTip.SetToolTip(passwordTextBox, "Create new password.");
                 formToolTip.SetToolTip(visibleCheckBox, "Make your password visible or unvisible.");
                 formToolTip.SetToolTip(roleComboBox, "Choose your role.");
                 formToolTip.SetToolTip(emailTextBox, "Enter your e-mail address.");
                 formToolTip.SetToolTip(addressTextBox, "Enter your home address.");
-                formToolTip.SetToolTip(phonenumberTextBox, "Enter your phone number .");
-                formToolTip.SetToolTip(nextButton, "Continue with the registration.");
+                formToolTip.SetToolTip(phoneNumberTextBox, "Enter your phone number .");
+                formToolTip.SetToolTip(nextPageButton, "Continue with the registration.");
                 formToolTip.SetToolTip(exitButton, "Exit the application.");
             }
         }
 
         private bool ValidateData()
         {
-            if(nameTextBox.Text!=null && familyTextBox.Text!=null && 
+            if(firstNameTextBox.Text!=null && lastNameTextBox.Text!=null && 
                passwordTextBox.Text!=null && emailTextBox.Text!=null && 
-               addressTextBox.Text!=null && phonenumberTextBox.Text!=null && 
-               roleComboBox.SelectedItem!=null && double.TryParse(phonenumberTextBox.Text,out double a))
+               addressTextBox.Text!=null && phoneNumberTextBox.Text!=null && 
+               roleComboBox.SelectedItem!=null && double.TryParse(phoneNumberTextBox.Text,out double a))
             {
                 return true;
             }

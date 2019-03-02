@@ -23,6 +23,9 @@ namespace Data.Models
         [Required]
         public string Ucn { get; set; }
 
+        [Required]
+        public string ValidationCode { get; set; }
+
         public Physician Physician { get; set; }
         public ICollection<Subject> Subjects { get; set; }
 
