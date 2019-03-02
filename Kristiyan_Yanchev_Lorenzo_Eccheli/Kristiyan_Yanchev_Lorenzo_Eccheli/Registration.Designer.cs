@@ -50,6 +50,8 @@
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.visibleCheckBox = new System.Windows.Forms.CheckBox();
             this.formToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.validationCodeLabel = new System.Windows.Forms.Label();
+            this.validationCodeTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // introductionLabel
@@ -171,7 +173,7 @@
             // 
             // phoneNumberTextBox
             // 
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(123, 223);
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(110, 223);
             this.phoneNumberTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.Size = new System.Drawing.Size(98, 20);
@@ -179,7 +181,7 @@
             // 
             // nextPageButton
             // 
-            this.nextPageButton.Location = new System.Drawing.Point(123, 283);
+            this.nextPageButton.Location = new System.Drawing.Point(123, 310);
             this.nextPageButton.Margin = new System.Windows.Forms.Padding(2);
             this.nextPageButton.Name = "nextPageButton";
             this.nextPageButton.Size = new System.Drawing.Size(70, 41);
@@ -239,11 +241,29 @@
             this.visibleCheckBox.UseVisualStyleBackColor = true;
             this.visibleCheckBox.CheckedChanged += new System.EventHandler(this.visibleCheckBox_CheckedChanged);
             // 
+            // validationCodeLabel
+            // 
+            this.validationCodeLabel.AutoSize = true;
+            this.validationCodeLabel.Location = new System.Drawing.Point(12, 267);
+            this.validationCodeLabel.Name = "validationCodeLabel";
+            this.validationCodeLabel.Size = new System.Drawing.Size(81, 13);
+            this.validationCodeLabel.TabIndex = 19;
+            this.validationCodeLabel.Text = "Validation Code";
+            // 
+            // validationCodeTextBox
+            // 
+            this.validationCodeTextBox.Location = new System.Drawing.Point(110, 259);
+            this.validationCodeTextBox.Name = "validationCodeTextBox";
+            this.validationCodeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.validationCodeTextBox.TabIndex = 20;
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(376, 386);
+            this.Controls.Add(this.validationCodeTextBox);
+            this.Controls.Add(this.validationCodeLabel);
             this.Controls.Add(this.visibleCheckBox);
             this.Controls.Add(this.lastNameTextBox);
             this.Controls.Add(this.lastNameLabel);
@@ -297,5 +317,7 @@
         private System.Windows.Forms.TextBox lastNameTextBox;
         private System.Windows.Forms.CheckBox visibleCheckBox;
         private System.Windows.Forms.ToolTip formToolTip;
+        private System.Windows.Forms.Label validationCodeLabel;
+        private System.Windows.Forms.TextBox validationCodeTextBox;
     }
 }
