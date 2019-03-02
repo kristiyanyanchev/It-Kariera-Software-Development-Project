@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,6 +59,12 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentGradesStatisticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentGradesStatisticsForm.Designer.cs">
+      <DependentUpon>StudentGradesStatisticsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +76,12 @@
     </Compile>
     <Compile Include="StudentRegistrationForm.Designer.cs">
       <DependentUpon>StudentRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentViewAbsencesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentViewAbsencesForm.Designer.cs">
+      <DependentUpon>StudentViewAbsencesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StudentViewGradesForm.cs">
       <SubType>Form</SubType>
@@ -91,11 +104,17 @@
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StudentGradesStatisticsForm.resx">
+      <DependentUpon>StudentGradesStatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentMainForm.resx">
       <DependentUpon>StudentMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentRegistrationForm.resx">
       <DependentUpon>StudentRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentViewAbsencesForm.resx">
+      <DependentUpon>StudentViewAbsencesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentViewGradesForm.resx">
       <DependentUpon>StudentViewGradesForm.cs</DependentUpon>

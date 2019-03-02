@@ -28,24 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gradesDataGrid = new System.Windows.Forms.DataGridView();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.viewStatisticButton = new System.Windows.Forms.Button();
+            this.closeButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.gradesDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // gradesDataGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gradesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gradesDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Date,
             this.Grade,
             this.Subject});
-            this.dataGridView1.Location = new System.Drawing.Point(144, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(343, 182);
-            this.dataGridView1.TabIndex = 0;
+            this.gradesDataGrid.Location = new System.Drawing.Point(144, 12);
+            this.gradesDataGrid.Name = "gradesDataGrid";
+            this.gradesDataGrid.Size = new System.Drawing.Size(343, 328);
+            this.gradesDataGrid.TabIndex = 0;
             // 
             // Date
             // 
@@ -65,24 +67,46 @@
             this.Subject.Name = "Subject";
             this.Subject.ReadOnly = true;
             // 
+            // viewStatisticButton
+            // 
+            this.viewStatisticButton.Location = new System.Drawing.Point(13, 13);
+            this.viewStatisticButton.Name = "viewStatisticButton";
+            this.viewStatisticButton.Size = new System.Drawing.Size(125, 23);
+            this.viewStatisticButton.TabIndex = 1;
+            this.viewStatisticButton.Text = "View Statistics";
+            this.viewStatisticButton.UseVisualStyleBackColor = true;
+            // 
+            // closeButton
+            // 
+            this.closeButton.Location = new System.Drawing.Point(13, 43);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(125, 23);
+            this.closeButton.TabIndex = 2;
+            this.closeButton.Text = "Close";
+            this.closeButton.UseVisualStyleBackColor = true;
+            // 
             // StudentViewGradesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(505, 401);
+            this.Controls.Add(this.closeButton);
+            this.Controls.Add(this.viewStatisticButton);
+            this.Controls.Add(this.gradesDataGrid);
             this.Name = "StudentViewGradesForm";
             this.Text = "StudentViewGradesForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gradesDataGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gradesDataGrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Grade;
         private System.Windows.Forms.DataGridViewTextBoxColumn Subject;
+        private System.Windows.Forms.Button viewStatisticButton;
+        private System.Windows.Forms.Button closeButton;
     }
 }
