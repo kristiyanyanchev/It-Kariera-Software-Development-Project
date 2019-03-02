@@ -58,11 +58,11 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentAccount.cs">
+    <Compile Include="StudentMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentAccount.Designer.cs">
-      <DependentUpon>StudentAccount.cs</DependentUpon>
+    <Compile Include="StudentMainForm.Designer.cs">
+      <DependentUpon>StudentMainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StudentRegistrationForm.cs">
       <SubType>Form</SubType>
@@ -70,11 +70,11 @@
     <Compile Include="StudentRegistrationForm.Designer.cs">
       <DependentUpon>StudentRegistrationForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherCatalog.cs">
+    <Compile Include="StudentViewGradesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherCatalog.Designer.cs">
-      <DependentUpon>TeacherCatalog.cs</DependentUpon>
+    <Compile Include="StudentViewGradesForm.Designer.cs">
+      <DependentUpon>StudentViewGradesForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
@@ -91,14 +91,14 @@
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentAccount.resx">
-      <DependentUpon>StudentAccount.cs</DependentUpon>
+    <EmbeddedResource Include="StudentMainForm.resx">
+      <DependentUpon>StudentMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentRegistrationForm.resx">
       <DependentUpon>StudentRegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherCatalog.resx">
-      <DependentUpon>TeacherCatalog.cs</DependentUpon>
+    <EmbeddedResource Include="StudentViewGradesForm.resx">
+      <DependentUpon>StudentViewGradesForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

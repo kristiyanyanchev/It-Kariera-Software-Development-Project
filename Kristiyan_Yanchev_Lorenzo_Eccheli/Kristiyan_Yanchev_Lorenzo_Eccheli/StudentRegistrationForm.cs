@@ -19,7 +19,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 introductionLabel.Text = "Регистрация в електронния дневник";
                 parttwoLabel.Text = "Част 2";
                 dateofbirthLabel.Text = "Дата на раждане";
-                egnLabel.Text = "ЕГН";
+                ucnLabel.Text = "ЕГН";
                 registrationButton.Text = "Регистрация";
                 classLabel.Text = "Клас";
                 exitButton.Text = "Изход";
@@ -34,7 +34,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 introductionLabel.Text = "Registration  to School E-Journal";
                 parttwoLabel.Text ="Part 2";
                 dateofbirthLabel.Text = "Date of birth";
-                egnLabel.Text = "EGN";
+                ucnLabel.Text = "EGN";
                 registrationButton.Text = "Registration";
                 classLabel.Text = "Class";
                 exitButton.Text = "Exit";

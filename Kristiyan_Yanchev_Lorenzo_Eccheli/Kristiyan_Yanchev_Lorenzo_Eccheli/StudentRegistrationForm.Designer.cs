@@ -33,7 +33,7 @@
             this.introductionLabel = new System.Windows.Forms.Label();
             this.parttwoLabel = new System.Windows.Forms.Label();
             this.dateofbirthLabel = new System.Windows.Forms.Label();
-            this.egnLabel = new System.Windows.Forms.Label();
+            this.ucnLabel = new System.Windows.Forms.Label();
             this.egnTextBox = new System.Windows.Forms.TextBox();
             this.registrationButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
@@ -73,15 +73,15 @@
             this.dateofbirthLabel.TabIndex = 17;
             this.dateofbirthLabel.Text = "Date of birth";
             // 
-            // egnLabel
+            // ucnLabel
             // 
-            this.egnLabel.AutoSize = true;
-            this.egnLabel.Location = new System.Drawing.Point(103, 151);
-            this.egnLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.egnLabel.Name = "egnLabel";
-            this.egnLabel.Size = new System.Drawing.Size(30, 13);
-            this.egnLabel.TabIndex = 19;
-            this.egnLabel.Text = "EGN";
+            this.ucnLabel.AutoSize = true;
+            this.ucnLabel.Location = new System.Drawing.Point(103, 151);
+            this.ucnLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ucnLabel.Name = "ucnLabel";
+            this.ucnLabel.Size = new System.Drawing.Size(30, 13);
+            this.ucnLabel.TabIndex = 19;
+            this.ucnLabel.Text = "UCN";
             // 
             // egnTextBox
             // 
@@ -138,7 +138,7 @@
             this.classTextBox.Size = new System.Drawing.Size(76, 20);
             this.classTextBox.TabIndex = 27;
             // 
-            // StudentFormRegistration
+            // StudentRegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -149,13 +149,13 @@
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.registrationButton);
             this.Controls.Add(this.egnTextBox);
-            this.Controls.Add(this.egnLabel);
+            this.Controls.Add(this.ucnLabel);
             this.Controls.Add(this.dateofbirthLabel);
             this.Controls.Add(this.parttwoLabel);
             this.Controls.Add(this.introductionLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "StudentFormRegistration";
+            this.Name = "StudentRegistrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "School E-Journal Register";
             this.ResumeLayout(false);
@@ -168,7 +168,7 @@
         private System.Windows.Forms.Label introductionLabel;
         private System.Windows.Forms.Label parttwoLabel;
         private System.Windows.Forms.Label dateofbirthLabel;
-        private System.Windows.Forms.Label egnLabel;
+        private System.Windows.Forms.Label ucnLabel;
         private System.Windows.Forms.TextBox egnTextBox;
         private System.Windows.Forms.Button registrationButton;
         private System.Windows.Forms.Button exitButton;
