@@ -45,20 +45,23 @@ namespace Data.Repositories
 
         public Student GetById(int id)
         {
+            Student result;
             using (var context = new ClassBookContext())
             {
-                return context.Students.Single(x => x.Id == id);
+                result = context.Students.Single(x => x.Id == id);
             }
-           
+            return result;
+
         }
 
         public IEnumerable<Student> List()
         {
+            List<Student> result;
             using (var context = new ClassBookContext())
             {
-                return context.Students.ToList();
+                result = context.Students.ToList();
             }
-            
+            return result;
         }
     }
 }

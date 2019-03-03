@@ -8,35 +8,56 @@ namespace Data.Repositories
 {
     public class PhysiciansRepository : IRepository<Physician>
     {
-        static ClassBookContext context = new ClassBookContext();
 
         public void Add(Physician entity)
         {
-            context.Physicians.Add(entity);
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                context.Physicians.Add(entity);
+                context.SaveChanges();
+            }
+            
         }
 
         public void Delete(Physician entity)
         {
-            context.Physicians.Remove(entity);
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                context.Physicians.Remove(entity);
+                context.SaveChanges();
+            }
+            
         }
 
         public void Edit(Physician entity)
         {
-            var result = context.Physicians.Single(x => x.Id == entity.Id);
-            result = entity;
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                var result = context.Physicians.Single(x => x.Id == entity.Id);
+                result = entity;
+                context.SaveChanges();
+            }
+            
         }
 
         public Physician GetById(int id)
         {
-            return context.Physicians.Single(x => x.Id == id);
+            Physician result;
+            using (var context = new ClassBookContext())
+            {
+                result = context.Physicians.Single(x => x.Id == id);
+            }
+            return result;
         }
 
         public IEnumerable<Physician> List()
         {
-            return context.Physicians.ToList();
+            List<Physician> result;
+            using (var context = new ClassBookContext())
+            {
+                result = context.Physicians.ToList();
+            }
+            return result;
         }
     }
 }

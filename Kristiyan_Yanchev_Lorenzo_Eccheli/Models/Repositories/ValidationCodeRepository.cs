@@ -6,58 +6,59 @@ using System.Text;
 
 namespace Data.Repositories
 {
-    public class SickLeavesRepository : IRepository<SickLeave>
+    class ValidationCodeRepository : IRepository<ValidationCode>
     {
-        
-        public void Add(SickLeave entity)
+        public void Add(ValidationCode entity)
+        {
+            
+            using (var context = new ClassBookContext())
+            {
+                context.ValidationCodes.Add(entity);
+                context.SaveChanges();
+            }
+        }
+
+        public void Delete(ValidationCode entity)
         {
             using (var context = new ClassBookContext())
             {
-                context.SickLeaves.Add(entity);
+                context.ValidationCodes.Remove(entity);
                 context.SaveChanges();
             }
             
         }
 
-        public void Delete(SickLeave entity)
+        public void Edit(ValidationCode entity)
         {
             using (var context = new ClassBookContext())
             {
-                context.SickLeaves.Remove(entity);
-                context.SaveChanges();
-            }
-            
-        }
-
-        public void Edit(SickLeave entity)
-        {
-            using (var context = new ClassBookContext())
-            {
-                var result = context.SickLeaves.Single(x => x.Id == entity.Id);
+                var result = context.ValidationCodes.Single(x => x.Id == entity.Id);
                 result = entity;
                 context.SaveChanges();
             }
             
         }
 
-        public SickLeave GetById(int id)
+        public ValidationCode GetById(int id)
         {
-            SickLeave result;
+            ValidationCode result;
             using (var context = new ClassBookContext())
             {
-                result = context.SickLeaves.Single(x => x.Id == id);
+                result = context.ValidationCodes.Single(x => x.Id == id);
             }
             return result;
+            
         }
 
-        public IEnumerable<SickLeave> List()
+        public IEnumerable<ValidationCode> List()
         {
-            List<SickLeave> result;
+            List<ValidationCode> result;
             using (var context = new ClassBookContext())
             {
-                result = context.SickLeaves.ToList();
+                result = context.ValidationCodes.ToList();
             }
             return result;
+            
         }
     }
 }
