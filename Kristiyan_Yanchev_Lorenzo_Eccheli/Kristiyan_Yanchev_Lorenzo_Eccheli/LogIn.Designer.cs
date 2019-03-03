@@ -47,18 +47,22 @@
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(32, 129);
+            this.nameLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.nameLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.nameLabel.Location = new System.Drawing.Point(12, 128);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(35, 13);
+            this.nameLabel.Size = new System.Drawing.Size(40, 19);
             this.nameLabel.TabIndex = 0;
             this.nameLabel.Text = "Name";
             // 
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(32, 207);
+            this.passwordLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.passwordLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.passwordLabel.Location = new System.Drawing.Point(12, 207);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(53, 13);
+            this.passwordLabel.Size = new System.Drawing.Size(63, 19);
             this.passwordLabel.TabIndex = 1;
             this.passwordLabel.Text = "Password";
             // 
@@ -88,7 +92,7 @@
             this.introductionLabel.AutoSize = true;
             this.introductionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.introductionLabel.Font = new System.Drawing.Font("Sitka Heading", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.introductionLabel.Location = new System.Drawing.Point(35, 9);
+            this.introductionLabel.Location = new System.Drawing.Point(16, 9);
             this.introductionLabel.Name = "introductionLabel";
             this.introductionLabel.Size = new System.Drawing.Size(285, 30);
             this.introductionLabel.TabIndex = 4;
@@ -99,6 +103,8 @@
             this.logInBtn.BackColor = System.Drawing.Color.OldLace;
             this.logInBtn.Enabled = false;
             this.logInBtn.FlatAppearance.BorderSize = 0;
+            this.logInBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logInBtn.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.logInBtn.Location = new System.Drawing.Point(215, 278);
             this.logInBtn.Name = "logInBtn";
             this.logInBtn.Size = new System.Drawing.Size(107, 46);
@@ -114,6 +120,8 @@
             this.registerBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.registerBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.registerBtn.FlatAppearance.BorderSize = 0;
+            this.registerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.registerBtn.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.registerBtn.Location = new System.Drawing.Point(35, 278);
             this.registerBtn.Name = "registerBtn";
             this.registerBtn.Size = new System.Drawing.Size(105, 46);
@@ -127,7 +135,9 @@
             // 
             this.exitBtn.BackColor = System.Drawing.Color.OldLace;
             this.exitBtn.FlatAppearance.BorderSize = 0;
-            this.exitBtn.Location = new System.Drawing.Point(336, 392);
+            this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitBtn.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.exitBtn.Location = new System.Drawing.Point(349, 402);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(107, 46);
             this.exitBtn.TabIndex = 7;
@@ -140,9 +150,10 @@
             // 
             this.visiblepasswordCheckBox.AutoSize = true;
             this.visiblepasswordCheckBox.BackColor = System.Drawing.Color.OldLace;
+            this.visiblepasswordCheckBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.visiblepasswordCheckBox.Location = new System.Drawing.Point(249, 207);
             this.visiblepasswordCheckBox.Name = "visiblepasswordCheckBox";
-            this.visiblepasswordCheckBox.Size = new System.Drawing.Size(56, 17);
+            this.visiblepasswordCheckBox.Size = new System.Drawing.Size(67, 23);
             this.visiblepasswordCheckBox.TabIndex = 8;
             this.visiblepasswordCheckBox.Text = "Visible";
             this.formToolTip.SetToolTip(this.visiblepasswordCheckBox, "Make your password visible or unvisible");
@@ -152,13 +163,14 @@
             // languageComboBox
             // 
             this.languageComboBox.BackColor = System.Drawing.Color.OldLace;
+            this.languageComboBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
             "English",
             "Bulgarian"});
-            this.languageComboBox.Location = new System.Drawing.Point(346, 113);
+            this.languageComboBox.Location = new System.Drawing.Point(349, 110);
             this.languageComboBox.Name = "languageComboBox";
-            this.languageComboBox.Size = new System.Drawing.Size(87, 21);
+            this.languageComboBox.Size = new System.Drawing.Size(87, 27);
             this.languageComboBox.TabIndex = 9;
             this.languageComboBox.Text = "English";
             this.formToolTip.SetToolTip(this.languageComboBox, "Change your language.");
@@ -167,9 +179,10 @@
             // languageLabel
             // 
             this.languageLabel.AutoSize = true;
-            this.languageLabel.Location = new System.Drawing.Point(246, 116);
+            this.languageLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.languageLabel.Location = new System.Drawing.Point(260, 113);
             this.languageLabel.Name = "languageLabel";
-            this.languageLabel.Size = new System.Drawing.Size(55, 13);
+            this.languageLabel.Size = new System.Drawing.Size(62, 19);
             this.languageLabel.TabIndex = 10;
             this.languageLabel.Text = "Language";
             // 
@@ -179,7 +192,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
-            this.ClientSize = new System.Drawing.Size(445, 450);
+            this.ClientSize = new System.Drawing.Size(468, 460);
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.visiblepasswordCheckBox);

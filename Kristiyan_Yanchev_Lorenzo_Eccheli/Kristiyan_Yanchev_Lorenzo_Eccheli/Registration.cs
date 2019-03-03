@@ -25,7 +25,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 nextformlanguage = language;
                 InitializeComponent();
                 introductionLabel.Text = "Регистрация в електронния училищен дневник";
-                partoneLabel.Text = "Част 1";
                 firstNameLabel.Text = "Име";
                 passwordLabel.Text = "Парола";
                 visibleCheckBox.Text = "Видимост";
@@ -52,7 +51,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 nextformlanguage = language;
                 InitializeComponent();
                 introductionLabel.Text = "Registration  to School E-Journal";
-                partoneLabel.Text = "Part 1";
                 firstNameLabel.Text = "Name";
                 passwordLabel.Text = "Password";
                 visibleCheckBox.Text = "Visible";
@@ -137,5 +135,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 e.Cancel = true;
             }
         }
+
+        
     }
 }
