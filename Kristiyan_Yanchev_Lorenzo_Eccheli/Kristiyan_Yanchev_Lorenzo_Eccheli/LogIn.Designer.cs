@@ -98,6 +98,7 @@
             // 
             this.logInBtn.BackColor = System.Drawing.Color.OldLace;
             this.logInBtn.Enabled = false;
+            this.logInBtn.FlatAppearance.BorderSize = 0;
             this.logInBtn.Location = new System.Drawing.Point(215, 278);
             this.logInBtn.Name = "logInBtn";
             this.logInBtn.Size = new System.Drawing.Size(107, 46);
@@ -111,9 +112,11 @@
             // 
             this.registerBtn.BackColor = System.Drawing.Color.OldLace;
             this.registerBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.registerBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.registerBtn.FlatAppearance.BorderSize = 0;
             this.registerBtn.Location = new System.Drawing.Point(35, 278);
             this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(107, 46);
+            this.registerBtn.Size = new System.Drawing.Size(105, 46);
             this.registerBtn.TabIndex = 6;
             this.registerBtn.Text = "Register";
             this.formToolTip.SetToolTip(this.registerBtn, "Make new E-journal account");
@@ -123,6 +126,7 @@
             // exitBtn
             // 
             this.exitBtn.BackColor = System.Drawing.Color.OldLace;
+            this.exitBtn.FlatAppearance.BorderSize = 0;
             this.exitBtn.Location = new System.Drawing.Point(336, 392);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(107, 46);
@@ -152,7 +156,7 @@
             this.languageComboBox.Items.AddRange(new object[] {
             "English",
             "Bulgarian"});
-            this.languageComboBox.Location = new System.Drawing.Point(346, 108);
+            this.languageComboBox.Location = new System.Drawing.Point(346, 113);
             this.languageComboBox.Name = "languageComboBox";
             this.languageComboBox.Size = new System.Drawing.Size(87, 21);
             this.languageComboBox.TabIndex = 9;
@@ -163,7 +167,7 @@
             // languageLabel
             // 
             this.languageLabel.AutoSize = true;
-            this.languageLabel.Location = new System.Drawing.Point(246, 111);
+            this.languageLabel.Location = new System.Drawing.Point(246, 116);
             this.languageLabel.Name = "languageLabel";
             this.languageLabel.Size = new System.Drawing.Size(55, 13);
             this.languageLabel.TabIndex = 10;
