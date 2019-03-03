@@ -47,7 +47,7 @@
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(12, 62);
+            this.nameLabel.Location = new System.Drawing.Point(32, 129);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(35, 13);
             this.nameLabel.TabIndex = 0;
@@ -56,7 +56,7 @@
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(14, 118);
+            this.passwordLabel.Location = new System.Drawing.Point(32, 207);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(53, 13);
             this.passwordLabel.TabIndex = 1;
@@ -64,8 +64,8 @@
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.usernameTextBox.Location = new System.Drawing.Point(96, 62);
+            this.usernameTextBox.BackColor = System.Drawing.Color.OldLace;
+            this.usernameTextBox.Location = new System.Drawing.Point(108, 129);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(100, 20);
             this.usernameTextBox.TabIndex = 2;
@@ -74,7 +74,8 @@
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(96, 115);
+            this.passwordTextBox.BackColor = System.Drawing.Color.OldLace;
+            this.passwordTextBox.Location = new System.Drawing.Point(108, 204);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(100, 20);
@@ -86,65 +87,72 @@
             // 
             this.introductionLabel.AutoSize = true;
             this.introductionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.introductionLabel.Location = new System.Drawing.Point(82, 9);
+            this.introductionLabel.Font = new System.Drawing.Font("Sitka Heading", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.introductionLabel.Location = new System.Drawing.Point(35, 9);
             this.introductionLabel.Name = "introductionLabel";
-            this.introductionLabel.Size = new System.Drawing.Size(165, 15);
+            this.introductionLabel.Size = new System.Drawing.Size(285, 30);
             this.introductionLabel.TabIndex = 4;
             this.introductionLabel.Text = "Welcome to the school E-Journal";
             // 
             // logInBtn
             // 
+            this.logInBtn.BackColor = System.Drawing.Color.OldLace;
             this.logInBtn.Enabled = false;
-            this.logInBtn.Location = new System.Drawing.Point(181, 183);
+            this.logInBtn.Location = new System.Drawing.Point(215, 278);
             this.logInBtn.Name = "logInBtn";
             this.logInBtn.Size = new System.Drawing.Size(107, 46);
             this.logInBtn.TabIndex = 5;
             this.logInBtn.Text = "Log in";
             this.formToolTip.SetToolTip(this.logInBtn, "Log in into an existing account.");
-            this.logInBtn.UseVisualStyleBackColor = true;
+            this.logInBtn.UseVisualStyleBackColor = false;
             this.logInBtn.Click += new System.EventHandler(this.logInBtn_Click);
             // 
             // registerBtn
             // 
-            this.registerBtn.Location = new System.Drawing.Point(29, 183);
+            this.registerBtn.BackColor = System.Drawing.Color.OldLace;
+            this.registerBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.registerBtn.Location = new System.Drawing.Point(35, 278);
             this.registerBtn.Name = "registerBtn";
             this.registerBtn.Size = new System.Drawing.Size(107, 46);
             this.registerBtn.TabIndex = 6;
             this.registerBtn.Text = "Register";
             this.formToolTip.SetToolTip(this.registerBtn, "Make new E-journal account");
-            this.registerBtn.UseVisualStyleBackColor = true;
+            this.registerBtn.UseVisualStyleBackColor = false;
             this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
             // 
             // exitBtn
             // 
-            this.exitBtn.Location = new System.Drawing.Point(329, 235);
+            this.exitBtn.BackColor = System.Drawing.Color.OldLace;
+            this.exitBtn.Location = new System.Drawing.Point(336, 392);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(107, 46);
             this.exitBtn.TabIndex = 7;
             this.exitBtn.Text = "Exit";
             this.formToolTip.SetToolTip(this.exitBtn, "Exit the application.");
-            this.exitBtn.UseVisualStyleBackColor = true;
+            this.exitBtn.UseVisualStyleBackColor = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // visiblepasswordCheckBox
             // 
             this.visiblepasswordCheckBox.AutoSize = true;
-            this.visiblepasswordCheckBox.Location = new System.Drawing.Point(249, 117);
+            this.visiblepasswordCheckBox.BackColor = System.Drawing.Color.OldLace;
+            this.visiblepasswordCheckBox.Location = new System.Drawing.Point(249, 207);
             this.visiblepasswordCheckBox.Name = "visiblepasswordCheckBox";
             this.visiblepasswordCheckBox.Size = new System.Drawing.Size(56, 17);
             this.visiblepasswordCheckBox.TabIndex = 8;
             this.visiblepasswordCheckBox.Text = "Visible";
             this.formToolTip.SetToolTip(this.visiblepasswordCheckBox, "Make your password visible or unvisible");
-            this.visiblepasswordCheckBox.UseVisualStyleBackColor = true;
+            this.visiblepasswordCheckBox.UseVisualStyleBackColor = false;
             this.visiblepasswordCheckBox.CheckedChanged += new System.EventHandler(this.visiblepasswordCheckBox_CheckedChanged);
             // 
             // languageComboBox
             // 
+            this.languageComboBox.BackColor = System.Drawing.Color.OldLace;
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
             "English",
             "Bulgarian"});
-            this.languageComboBox.Location = new System.Drawing.Point(350, 32);
+            this.languageComboBox.Location = new System.Drawing.Point(346, 108);
             this.languageComboBox.Name = "languageComboBox";
             this.languageComboBox.Size = new System.Drawing.Size(87, 21);
             this.languageComboBox.TabIndex = 9;
@@ -155,7 +163,7 @@
             // languageLabel
             // 
             this.languageLabel.AutoSize = true;
-            this.languageLabel.Location = new System.Drawing.Point(272, 35);
+            this.languageLabel.Location = new System.Drawing.Point(246, 111);
             this.languageLabel.Name = "languageLabel";
             this.languageLabel.Size = new System.Drawing.Size(55, 13);
             this.languageLabel.TabIndex = 10;
@@ -165,8 +173,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(445, 295);
+            this.BackColor = System.Drawing.Color.OldLace;
+            this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            this.ClientSize = new System.Drawing.Size(445, 450);
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.visiblepasswordCheckBox);
