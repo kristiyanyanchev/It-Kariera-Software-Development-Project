@@ -8,35 +8,56 @@ namespace Data.Repositories
 {
     public class GradesRepository : IRepository<GradeRecord>
     {
-        static ClassBookContext context = new ClassBookContext();
-
+        
         public void Add(GradeRecord entity)
         {
-            context.GradeRecords.Add(entity);
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                context.GradeRecords.Add(entity);
+                context.SaveChanges();
+            }
+            
         }
 
         public void Delete(GradeRecord entity)
         {
-            context.GradeRecords.Remove(entity);
+            using (var context = new ClassBookContext())
+            {
+                context.GradeRecords.Remove(entity);
+            }
+            
         }
 
         public void Edit(GradeRecord entity)
         {
-            var result = context.GradeRecords.Single(x => x.Id == entity.Id);
-            result = entity;
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                var result = context.GradeRecords.Single(x => x.Id == entity.Id);
+                result = entity;
+                context.SaveChanges();
+            }
+           
         }
 
         public GradeRecord GetById(int id)
         {
-            return context.GradeRecords.Single(x => x.Id == id);
+            GradeRecord result;
+            using (var context = new ClassBookContext())
+            {
+                result = context.GradeRecords.Single(x => x.Id == id);
+            }
+            return result;
 
         }
 
         public IEnumerable<GradeRecord> List()
         {
-            return context.GradeRecords.ToList();
+            List<GradeRecord> result;
+            using (var context = new ClassBookContext())
+            {
+                result = context.GradeRecords.ToList();
+            }
+            return result;
 
         }
     }

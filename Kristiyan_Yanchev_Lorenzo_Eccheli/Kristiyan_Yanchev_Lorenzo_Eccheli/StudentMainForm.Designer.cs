@@ -31,7 +31,6 @@
             this.viewGradesButton = new System.Windows.Forms.Button();
             this.viewAbsencesButton = new System.Windows.Forms.Button();
             this.viewSubjectsButton = new System.Windows.Forms.Button();
-            this.editInfoButton = new System.Windows.Forms.Button();
             this.viewScheduleButton = new System.Windows.Forms.Button();
             this.changePassword = new System.Windows.Forms.Button();
             this.searchStudent = new System.Windows.Forms.Button();
@@ -66,18 +65,9 @@
             this.viewSubjectsButton.Text = "Subjects";
             this.viewSubjectsButton.UseVisualStyleBackColor = true;
             // 
-            // editInfoButton
-            // 
-            this.editInfoButton.Location = new System.Drawing.Point(13, 112);
-            this.editInfoButton.Name = "editInfoButton";
-            this.editInfoButton.Size = new System.Drawing.Size(81, 38);
-            this.editInfoButton.TabIndex = 3;
-            this.editInfoButton.Text = "Edit Personal Information";
-            this.editInfoButton.UseVisualStyleBackColor = true;
-            // 
             // viewScheduleButton
             // 
-            this.viewScheduleButton.Location = new System.Drawing.Point(13, 156);
+            this.viewScheduleButton.Location = new System.Drawing.Point(12, 112);
             this.viewScheduleButton.Name = "viewScheduleButton";
             this.viewScheduleButton.Size = new System.Drawing.Size(82, 23);
             this.viewScheduleButton.TabIndex = 4;
@@ -86,7 +76,7 @@
             // 
             // changePassword
             // 
-            this.changePassword.Location = new System.Drawing.Point(13, 185);
+            this.changePassword.Location = new System.Drawing.Point(12, 141);
             this.changePassword.Name = "changePassword";
             this.changePassword.Size = new System.Drawing.Size(82, 38);
             this.changePassword.TabIndex = 5;
@@ -95,7 +85,7 @@
             // 
             // searchStudent
             // 
-            this.searchStudent.Location = new System.Drawing.Point(13, 230);
+            this.searchStudent.Location = new System.Drawing.Point(13, 185);
             this.searchStudent.Name = "searchStudent";
             this.searchStudent.Size = new System.Drawing.Size(81, 34);
             this.searchStudent.TabIndex = 6;
@@ -104,7 +94,7 @@
             // 
             // searchTeacher
             // 
-            this.searchTeacher.Location = new System.Drawing.Point(14, 270);
+            this.searchTeacher.Location = new System.Drawing.Point(12, 225);
             this.searchTeacher.Name = "searchTeacher";
             this.searchTeacher.Size = new System.Drawing.Size(81, 34);
             this.searchTeacher.TabIndex = 7;
@@ -113,7 +103,7 @@
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(12, 311);
+            this.closeButton.Location = new System.Drawing.Point(13, 265);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(83, 23);
             this.closeButton.TabIndex = 8;
@@ -130,7 +120,6 @@
             this.Controls.Add(this.searchStudent);
             this.Controls.Add(this.changePassword);
             this.Controls.Add(this.viewScheduleButton);
-            this.Controls.Add(this.editInfoButton);
             this.Controls.Add(this.viewSubjectsButton);
             this.Controls.Add(this.viewAbsencesButton);
             this.Controls.Add(this.viewGradesButton);
@@ -145,7 +134,6 @@
         private System.Windows.Forms.Button viewGradesButton;
         private System.Windows.Forms.Button viewAbsencesButton;
         private System.Windows.Forms.Button viewSubjectsButton;
-        private System.Windows.Forms.Button editInfoButton;
         private System.Windows.Forms.Button viewScheduleButton;
         private System.Windows.Forms.Button changePassword;
         private System.Windows.Forms.Button searchStudent;

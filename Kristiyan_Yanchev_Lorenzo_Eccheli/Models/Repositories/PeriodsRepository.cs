@@ -8,35 +8,57 @@ namespace Data.Repositories
 {
     public class PeriodsRepository : IRepository<Period>
     {
-        static ClassBookContext context = new ClassBookContext();
 
         public void Add(Period entity)
         {
-            context.Periods.Add(entity);
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                context.Periods.Add(entity);
+                context.SaveChanges();
+            }
+            
         }
 
         public void Delete(Period entity)
         {
-            context.Periods.Remove(entity);
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                context.Periods.Remove(entity);
+                context.SaveChanges();
+            }
+            
         }
 
         public void Edit(Period entity)
         {
-            var result = context.Periods.Single(x => x.Id == entity.Id);
-            result = entity;
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                var result = context.Periods.Single(x => x.Id == entity.Id);
+                result = entity;
+                context.SaveChanges();
+            }
+           
         }
 
         public Period GetById(int id)
         {
-            return context.Periods.Single(x => x.Id == id);
+            Period result;
+            using (var context = new ClassBookContext())
+            {
+                result = context.Periods.Single(x => x.Id == id);
+            }
+            return result;
+            
         }
 
         public IEnumerable<Period> List()
         {
-            return context.Periods.ToList();
+            List<Period> result;
+            using (var context = new ClassBookContext())
+            {
+                result = context.Periods.ToList();
+            }
+            return result;
         }
     }
 }

@@ -8,35 +8,56 @@ namespace Data.Repositories
 {
     public class BonusesRepository : IRepository<Bonus>
     {
-        static ClassBookContext context = new ClassBookContext();
 
         public void Add(Bonus entity)
         {
-            context.Bonuses.Add(entity);
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                context.Bonuses.Add(entity);
+                context.SaveChanges();
+            }
+            
         }
 
         public void Delete(Bonus entity)
         {
-            context.Bonuses.Remove(entity);
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                context.Bonuses.Remove(entity);
+                context.SaveChanges();
+            }
+           
         }
 
         public void Edit(Bonus entity)
         {
-            var result = context.Bonuses.Single(x => x.Id == entity.Id);
-            result = entity;
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                var result = context.Bonuses.Single(x => x.Id == entity.Id);
+                result = entity;
+                context.SaveChanges();
+            }
+            
         }
 
         public Bonus GetById(int id)
         {
-            return context.Bonuses.Single(x => x.Id == id);
+            Bonus result;
+            using (var context = new ClassBookContext())
+            {
+                result = context.Bonuses.Single(x => x.Id == id);
+            }
+            return result;
         }
 
         public IEnumerable<Bonus> List()
         {
-            return context.Bonuses.ToList();
+            List<Bonus> result;
+            using (var context = new ClassBookContext())
+            {
+                result = context.Bonuses.ToList();
+            }
+            return result;
         }
     }
 }

@@ -22,6 +22,7 @@ namespace Data
         public DbSet<AnnualLeave> AnnualLeaves { get; set; }
         public DbSet<SickLeave> SickLeaves { get; set; }
         public DbSet<Subject> Subjects { get; set; }
+        public DbSet<ValidationCode> ValidationCodes { get; set; }
 
         private static string connectionString = "Server=.;Database=ClassBookDb;Trusted_Connection=True;";
         public ClassBookContext() : base(connectionString)

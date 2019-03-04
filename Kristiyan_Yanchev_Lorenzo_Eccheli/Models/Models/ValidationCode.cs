@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Data.Models
 {
-    class ValidationCode
+    public class ValidationCode
     {
         [Key]
         public int Id { get; set; }

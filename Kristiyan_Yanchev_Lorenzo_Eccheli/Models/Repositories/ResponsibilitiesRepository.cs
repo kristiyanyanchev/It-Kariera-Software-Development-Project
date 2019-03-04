@@ -8,35 +8,56 @@ namespace Data.Repositories
 {
     public class ResponsibilitiesRepository : IRepository<Responsibility>
     {
-        static ClassBookContext context = new ClassBookContext();
-
+        
         public void Add(Responsibility entity)
         {
-            context.Responsibilities.Add(entity);
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                context.Responsibilities.Add(entity);
+                context.SaveChanges();
+            }
+            
         }
 
         public void Delete(Responsibility entity)
         {
-            context.Responsibilities.Remove(entity);
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                context.Responsibilities.Remove(entity);
+                context.SaveChanges();
+            }
+            
         }
 
         public void Edit(Responsibility entity)
         {
-            var result = context.Responsibilities.Single(x => x.Id == entity.Id);
-            result = entity;
-            context.SaveChanges();
+            using (var context = new ClassBookContext())
+            {
+                var result = context.Responsibilities.Single(x => x.Id == entity.Id);
+                result = entity;
+                context.SaveChanges();
+            }
+            
         }
 
         public Responsibility GetById(int id)
         {
-            return context.Responsibilities.Single(x => x.Id == id);
+            Responsibility result;
+            using (var context = new ClassBookContext())
+            {
+                result = context.Responsibilities.Single(x => x.Id == id);
+            }
+            return result;
         }
 
         public IEnumerable<Responsibility> List()
         {
-            return context.Responsibilities.ToList();
+            List<Responsibility> result;
+            using (var context = new ClassBookContext())
+            {
+                result = context.Responsibilities.ToList();
+            }
+            return result;
         }
     }
 }

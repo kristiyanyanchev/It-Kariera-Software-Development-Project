@@ -9,9 +9,6 @@ namespace Data.Repositories
 {
     public class AbsencesRepository : IRepository<Absence>
     {
-        protected ClassBookContext context = new ClassBookContext();
-
-        protected DbContext Context { get; private set; }
 
         public void Add(Absence entity)
         {
@@ -46,12 +43,22 @@ namespace Data.Repositories
 
         public Absence GetById(int id)
         {
-            return context.Absences.Single(x => x.Id == id);
+            Absence result;
+            using(var context = new ClassBookContext())
+            {
+                result = context.Absences.Single(x => x.Id == id);
+            }
+            return result;
         }
 
         public IEnumerable<Absence> List()
         {
-            return context.Absences.ToList();
+            List<Absence> result;
+            using (var context = new ClassBookContext())
+            {
+                result = context.Absences.ToList();
+            }
+            return result;
         }
 
 

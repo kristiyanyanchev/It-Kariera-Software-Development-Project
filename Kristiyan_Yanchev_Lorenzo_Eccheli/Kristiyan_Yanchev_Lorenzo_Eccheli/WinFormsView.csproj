@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentEnrollSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentEnrollSubjectForm.Designer.cs">
+      <DependentUpon>StudentEnrollSubjectForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,18 @@
     <Compile Include="StudentViewGradesForm.Designer.cs">
       <DependentUpon>StudentViewGradesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentViewSubjectsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentViewSubjectsForm.Designer.cs">
+      <DependentUpon>StudentViewSubjectsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChangePasswordForm.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentEnrollSubjectForm.resx">
+      <DependentUpon>StudentEnrollSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentViewGradesForm.resx">
       <DependentUpon>StudentViewGradesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentViewSubjectsForm.resx">
+      <DependentUpon>StudentViewSubjectsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
