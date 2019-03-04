@@ -15,5 +15,15 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
             InitializeComponent();
         }
+
+        private void studentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

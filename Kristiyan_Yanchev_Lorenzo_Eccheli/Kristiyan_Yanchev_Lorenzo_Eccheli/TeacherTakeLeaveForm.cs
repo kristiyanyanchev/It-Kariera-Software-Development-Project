@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
-    public partial class TeacherAnnualLeaveForm : Form
+    public partial class TeacherTakeLeaveForm : Form
     {
-        public TeacherAnnualLeaveForm()
+        public TeacherTakeLeaveForm()
         {
             InitializeComponent();
         }

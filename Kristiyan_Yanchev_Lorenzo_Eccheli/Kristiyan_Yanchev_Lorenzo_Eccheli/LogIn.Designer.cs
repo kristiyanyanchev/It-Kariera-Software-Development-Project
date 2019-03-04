@@ -68,7 +68,7 @@
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.BackColor = System.Drawing.Color.OldLace;
+            this.usernameTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.usernameTextBox.Location = new System.Drawing.Point(108, 129);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(100, 20);
@@ -90,6 +90,7 @@
             // introductionLabel
             // 
             this.introductionLabel.AutoSize = true;
+            this.introductionLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.introductionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.introductionLabel.Font = new System.Drawing.Font("Sitka Heading", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.introductionLabel.Location = new System.Drawing.Point(16, 9);
@@ -100,7 +101,7 @@
             // 
             // logInBtn
             // 
-            this.logInBtn.BackColor = System.Drawing.Color.OldLace;
+            this.logInBtn.BackColor = System.Drawing.Color.FloralWhite;
             this.logInBtn.Enabled = false;
             this.logInBtn.FlatAppearance.BorderSize = 0;
             this.logInBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -116,7 +117,7 @@
             // 
             // registerBtn
             // 
-            this.registerBtn.BackColor = System.Drawing.Color.OldLace;
+            this.registerBtn.BackColor = System.Drawing.Color.FloralWhite;
             this.registerBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.registerBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.registerBtn.FlatAppearance.BorderSize = 0;
@@ -133,10 +134,11 @@
             // 
             // exitBtn
             // 
-            this.exitBtn.BackColor = System.Drawing.Color.OldLace;
+            this.exitBtn.BackColor = System.Drawing.Color.FloralWhite;
             this.exitBtn.FlatAppearance.BorderSize = 0;
             this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitBtn.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.exitBtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.exitBtn.Location = new System.Drawing.Point(349, 402);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(107, 46);
@@ -149,7 +151,7 @@
             // visiblepasswordCheckBox
             // 
             this.visiblepasswordCheckBox.AutoSize = true;
-            this.visiblepasswordCheckBox.BackColor = System.Drawing.Color.OldLace;
+            this.visiblepasswordCheckBox.BackColor = System.Drawing.Color.FloralWhite;
             this.visiblepasswordCheckBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.visiblepasswordCheckBox.Location = new System.Drawing.Point(249, 207);
             this.visiblepasswordCheckBox.Name = "visiblepasswordCheckBox";
@@ -162,7 +164,7 @@
             // 
             // languageComboBox
             // 
-            this.languageComboBox.BackColor = System.Drawing.Color.OldLace;
+            this.languageComboBox.BackColor = System.Drawing.Color.FloralWhite;
             this.languageComboBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
@@ -179,6 +181,7 @@
             // languageLabel
             // 
             this.languageLabel.AutoSize = true;
+            this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.languageLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.languageLabel.Location = new System.Drawing.Point(260, 113);
             this.languageLabel.Name = "languageLabel";

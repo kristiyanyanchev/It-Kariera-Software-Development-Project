@@ -53,6 +53,7 @@
     <Compile Include="IntroductionDisplay.cs" />
     <Compile Include="RegistrationDisplay.cs" />
     <Compile Include="StudentRegistrationDisplay.cs" />
+    <Compile Include="TeacherRegistrationDisplay.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Models\Data.csproj">

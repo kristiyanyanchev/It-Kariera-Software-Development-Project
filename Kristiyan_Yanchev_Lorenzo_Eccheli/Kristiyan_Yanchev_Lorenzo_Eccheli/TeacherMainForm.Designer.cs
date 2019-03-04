@@ -28,104 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gradesButton = new System.Windows.Forms.Button();
-            this.absencesButton = new System.Windows.Forms.Button();
-            this.changePasswordButton = new System.Windows.Forms.Button();
-            this.addStudentButton = new System.Windows.Forms.Button();
-            this.takeAnnualLeaveButton = new System.Windows.Forms.Button();
-            this.takeSickLeave = new System.Windows.Forms.Button();
-            this.viewStudentButton = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.teacherMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.studentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addGradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teacherMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gradesButton
+            // teacherMenu
             // 
-            this.gradesButton.Location = new System.Drawing.Point(13, 13);
-            this.gradesButton.Name = "gradesButton";
-            this.gradesButton.Size = new System.Drawing.Size(75, 23);
-            this.gradesButton.TabIndex = 0;
-            this.gradesButton.Text = "Grades";
-            this.gradesButton.UseVisualStyleBackColor = true;
+            this.teacherMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.studentsToolStripMenuItem,
+            this.addGradeToolStripMenuItem,
+            this.changePasswordToolStripMenuItem});
+            this.teacherMenu.Name = "teacherMenu";
+            this.teacherMenu.Size = new System.Drawing.Size(181, 92);
             // 
-            // absencesButton
+            // studentsToolStripMenuItem
             // 
-            this.absencesButton.Location = new System.Drawing.Point(12, 42);
-            this.absencesButton.Name = "absencesButton";
-            this.absencesButton.Size = new System.Drawing.Size(75, 23);
-            this.absencesButton.TabIndex = 1;
-            this.absencesButton.Text = "Absences";
-            this.absencesButton.UseVisualStyleBackColor = true;
+            this.studentsToolStripMenuItem.Name = "studentsToolStripMenuItem";
+            this.studentsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.studentsToolStripMenuItem.Text = "Students";
+            this.studentsToolStripMenuItem.Click += new System.EventHandler(this.studentsToolStripMenuItem_Click);
             // 
-            // changePasswordButton
+            // addGradeToolStripMenuItem
             // 
-            this.changePasswordButton.Location = new System.Drawing.Point(13, 71);
-            this.changePasswordButton.Name = "changePasswordButton";
-            this.changePasswordButton.Size = new System.Drawing.Size(75, 38);
-            this.changePasswordButton.TabIndex = 2;
-            this.changePasswordButton.Text = "Change Password";
-            this.changePasswordButton.UseVisualStyleBackColor = true;
+            this.addGradeToolStripMenuItem.Name = "addGradeToolStripMenuItem";
+            this.addGradeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addGradeToolStripMenuItem.Text = "Add Grade";
             // 
-            // addStudentButton
+            // changePasswordToolStripMenuItem
             // 
-            this.addStudentButton.Location = new System.Drawing.Point(13, 116);
-            this.addStudentButton.Name = "addStudentButton";
-            this.addStudentButton.Size = new System.Drawing.Size(75, 42);
-            this.addStudentButton.TabIndex = 3;
-            this.addStudentButton.Text = "Add Student";
-            this.addStudentButton.UseVisualStyleBackColor = true;
-            // 
-            // takeAnnualLeaveButton
-            // 
-            this.takeAnnualLeaveButton.Location = new System.Drawing.Point(13, 164);
-            this.takeAnnualLeaveButton.Name = "takeAnnualLeaveButton";
-            this.takeAnnualLeaveButton.Size = new System.Drawing.Size(75, 47);
-            this.takeAnnualLeaveButton.TabIndex = 4;
-            this.takeAnnualLeaveButton.Text = "Take Annual Leave";
-            this.takeAnnualLeaveButton.UseVisualStyleBackColor = true;
-            // 
-            // takeSickLeave
-            // 
-            this.takeSickLeave.Location = new System.Drawing.Point(13, 217);
-            this.takeSickLeave.Name = "takeSickLeave";
-            this.takeSickLeave.Size = new System.Drawing.Size(75, 47);
-            this.takeSickLeave.TabIndex = 5;
-            this.takeSickLeave.Text = "Take Sick Leave";
-            this.takeSickLeave.UseVisualStyleBackColor = true;
-            // 
-            // viewStudentButton
-            // 
-            this.viewStudentButton.Location = new System.Drawing.Point(13, 271);
-            this.viewStudentButton.Name = "viewStudentButton";
-            this.viewStudentButton.Size = new System.Drawing.Size(75, 35);
-            this.viewStudentButton.TabIndex = 6;
-            this.viewStudentButton.Text = "View Student";
-            this.viewStudentButton.UseVisualStyleBackColor = true;
+            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.changePasswordToolStripMenuItem.Text = "Change Password";
+            this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
             // 
             // TeacherMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.viewStudentButton);
-            this.Controls.Add(this.takeSickLeave);
-            this.Controls.Add(this.takeAnnualLeaveButton);
-            this.Controls.Add(this.addStudentButton);
-            this.Controls.Add(this.changePasswordButton);
-            this.Controls.Add(this.absencesButton);
-            this.Controls.Add(this.gradesButton);
             this.Name = "TeacherMainForm";
             this.Text = "TeacherMainForm";
+            this.teacherMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button gradesButton;
-        private System.Windows.Forms.Button absencesButton;
-        private System.Windows.Forms.Button changePasswordButton;
-        private System.Windows.Forms.Button addStudentButton;
-        private System.Windows.Forms.Button takeAnnualLeaveButton;
-        private System.Windows.Forms.Button takeSickLeave;
-        private System.Windows.Forms.Button viewStudentButton;
+        private System.Windows.Forms.ContextMenuStrip teacherMenu;
+        private System.Windows.Forms.ToolStripMenuItem studentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addGradeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
     }
 }

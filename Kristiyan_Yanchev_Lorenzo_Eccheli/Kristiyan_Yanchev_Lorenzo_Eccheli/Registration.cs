@@ -33,8 +33,9 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 phoneLabel.Text = "Телефонен номер";
                 lastNameLabel.Text = "Фамилия";
                 roleLabel.Text = "Длъжност";
-                nextPageButton.Text = "Напред";
+                registrationButton.Text = "Напред";
                 exitButton.Text = "Изход";
+                validationCodeLabel.Text = "*Код";
                 formToolTip.SetToolTip(firstNameTextBox, "Въведете първото си име.");
                 formToolTip.SetToolTip(lastNameTextBox, "Въведете фамилията си.");
                 formToolTip.SetToolTip(passwordTextBox, "Създайте си парола.");
@@ -43,8 +44,9 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 formToolTip.SetToolTip(emailTextBox,"Въведете си имайла.");
                 formToolTip.SetToolTip(addressTextBox,"Напишете си адреса.");
                 formToolTip.SetToolTip(phoneNumberTextBox, "Сложете си телефонния номер.");
-                formToolTip.SetToolTip(nextPageButton, "Продължете с регистрацията.");
+                formToolTip.SetToolTip(registrationButton, "Акаунтът ви ще е регистриран.");
                 formToolTip.SetToolTip(exitButton, "Излезте от прилойението.");
+                formToolTip.SetToolTip(validationCodeLabel, "Задължителен код даден от училището.");
             }
             else if(language=="English")
             {
@@ -59,8 +61,9 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 phoneLabel.Text = "Phone number";
                 lastNameLabel.Text = "Family";
                 roleLabel.Text = "Role";
-                nextPageButton.Text = "Next";
+                registrationButton.Text = "Next";
                 exitButton.Text = "Exit";
+                validationCodeLabel.Text = "*Validation Code";
                 formToolTip.SetToolTip(firstNameTextBox, "Enter your first name.");
                 formToolTip.SetToolTip(lastNameTextBox, "Enter your family.");
                 formToolTip.SetToolTip(passwordTextBox, "Create new password.");
@@ -69,8 +72,9 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 formToolTip.SetToolTip(emailTextBox, "Enter your e-mail address.");
                 formToolTip.SetToolTip(addressTextBox, "Enter your home address.");
                 formToolTip.SetToolTip(phoneNumberTextBox, "Enter your phone number .");
-                formToolTip.SetToolTip(nextPageButton, "Continue with the registration.");
+                formToolTip.SetToolTip(registrationButton, "Your account will be registered.");
                 formToolTip.SetToolTip(exitButton, "Exit the application.");
+                formToolTip.SetToolTip(validationCodeLabel, "Required code given by the school.");
             }
         }
 
@@ -96,18 +100,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
         }
 
-        private void nextButton_Click(object sender, EventArgs e)
+        private void registrationButton_Click(object sender, EventArgs e)
         {
-            if(ValidateData())
-            {
-                this.Hide();
-                StudentRegistrationForm studentregistration = new StudentRegistrationForm(nextformlanguage);
-                studentregistration.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Invalid data ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            TeacherMainForm teacherMain = new TeacherMainForm();
+            teacherMain.ShowDialog();
         }
 
         private void visibleCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -136,6 +132,96 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
         }
 
-        
+        private void Makeinvisible()
+        {
+            nameofchildLabel.Visible = false;
+            nameofchildTextBox.Visible = false;
+            egnLabel.Visible = false;
+            egnTextBox.Visible = false;
+            birthdayLabel.Visible = false;
+            birthdatePicker.Visible = false;
+            scholarshipLabel.Visible = false;
+            scholarshipTextBox.Visible = false;
+            classnameLabel.Visible = false;
+            classnameTextBox.Visible = false;
+            subjectLabel.Visible = false;
+            subjectTextBox.Visible = false;
+
+        }
+
+        private void roleComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Makeinvisible();
+            if(roleComboBox.SelectedItem.ToString()=="Student")
+            {
+                if (firstNameLabel.Text == "Name")
+                {
+                    egnLabel.Visible = true;
+                    egnTextBox.Visible = true;
+                    birthdayLabel.Visible = true;
+                    birthdatePicker.Visible = true;
+                    scholarshipLabel.Visible = true;
+                    scholarshipTextBox.Visible = true;
+                    classnameLabel.Visible = true;
+                    classnameTextBox.Visible = true;
+                    egnLabel.Text = "EGN";
+                    birthdayLabel.Text = "Date of birth";
+                    scholarshipLabel.Text = "Scholarship";
+                    classnameLabel.Text = "Class";
+                }
+                else
+                {
+                    egnLabel.Visible = true;
+                    egnTextBox.Visible = true;
+                    birthdayLabel.Visible = true;
+                    birthdatePicker.Visible = true;
+                    scholarshipLabel.Visible = true;
+                    scholarshipTextBox.Visible = true;
+                    classnameLabel.Visible = true;
+                    classnameTextBox.Visible = true;
+                    egnLabel.Text = "ЕГН";
+                    birthdayLabel.Text = "Дата на раждане";
+                    scholarshipLabel.Text = "Стипендия";
+                    classnameLabel.Text = "Клас";
+                }
+            }
+            else if(roleComboBox.SelectedItem.ToString()=="Parent")
+            {
+                if(firstNameLabel.Text=="Name")
+                {
+                    nameofchildLabel.Visible = true;
+                    nameofchildTextBox.Visible = true;
+                    nameofchildLabel.Text = "Name of child";
+                }
+                else
+                {
+                    nameofchildLabel.Visible = true;
+                    nameofchildTextBox.Visible = true;
+                    nameofchildLabel.Text = "Име на детето";
+                }
+            }
+            else if(roleComboBox.SelectedItem.ToString() == "Teacher")
+            {
+                if (firstNameLabel.Text == "Name")
+                {
+                    subjectLabel.Visible = true;
+                    subjectTextBox.Visible = true;
+                    classnameLabel.Visible = true;
+                    classnameTextBox.Visible = true;
+                    subjectLabel.Text = "Subject";
+                    classnameLabel.Text = "Class";
+
+                }
+                else
+                {
+                    subjectLabel.Visible = true;
+                    subjectTextBox.Visible = true;
+                    classnameLabel.Visible = true;
+                    classnameTextBox.Visible = true;
+                    subjectLabel.Text = "Предмет";
+                    classnameLabel.Text = "Клас";
+                }
+            }
+        }
     }
 }

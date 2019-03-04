@@ -1,6 +1,6 @@
 ﻿namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
-    partial class TeacherAnnualLeaveForm
+    partial class TeacherTakeLeaveForm
     {
         /// <summary>
         /// Required designer variable.
