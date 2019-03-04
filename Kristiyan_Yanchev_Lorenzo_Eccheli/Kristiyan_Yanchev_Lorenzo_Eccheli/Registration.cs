@@ -102,8 +102,14 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void registrationButton_Click(object sender, EventArgs e)
         {
-            TeacherMainForm teacherMain = new TeacherMainForm();
-            teacherMain.ShowDialog();
+            if (ValidateData())
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Invalid data ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void visibleCheckBox_CheckedChanged(object sender, EventArgs e)
