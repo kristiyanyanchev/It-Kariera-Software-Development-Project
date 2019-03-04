@@ -51,6 +51,12 @@
     <Compile Include="ChangePasswordForm.Designer.cs">
       <DependentUpon>ChangePasswordForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChangeInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeInformationForm.Designer.cs">
+      <DependentUpon>ChangeInformationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentEnrollSubjectForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,8 +113,29 @@
     <Compile Include="StudentViewSubjectsForm.Designer.cs">
       <DependentUpon>StudentViewSubjectsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeacherAbsencesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherAbsencesForm.Designer.cs">
+      <DependentUpon>TeacherAbsencesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherGradesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherGradesForm.Designer.cs">
+      <DependentUpon>TeacherGradesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherMainForm.Designer.cs">
+      <DependentUpon>TeacherMainForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChangePasswordForm.resx">
       <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeInformationForm.resx">
+      <DependentUpon>ChangeInformationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentEnrollSubjectForm.resx">
       <DependentUpon>StudentEnrollSubjectForm.cs</DependentUpon>
@@ -146,6 +173,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentViewSubjectsForm.resx">
       <DependentUpon>StudentViewSubjectsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherAbsencesForm.resx">
+      <DependentUpon>TeacherAbsencesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherGradesForm.resx">
+      <DependentUpon>TeacherGradesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherMainForm.resx">
+      <DependentUpon>TeacherMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
