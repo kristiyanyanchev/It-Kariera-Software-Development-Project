@@ -52,7 +52,6 @@
             this.validationCodeLabel = new System.Windows.Forms.Label();
             this.validationCodeTextBox = new System.Windows.Forms.TextBox();
             this.birthdatePicker = new System.Windows.Forms.DateTimePicker();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.egnTextBox = new System.Windows.Forms.TextBox();
             this.birthdayLabel = new System.Windows.Forms.Label();
             this.egnLabel = new System.Windows.Forms.Label();
@@ -62,11 +61,14 @@
             this.classnameTextBox = new System.Windows.Forms.TextBox();
             this.nameofchildLabel = new System.Windows.Forms.Label();
             this.nameofchildTextBox = new System.Windows.Forms.TextBox();
+            this.subjectLabel = new System.Windows.Forms.Label();
+            this.subjectTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // introductionLabel
             // 
             this.introductionLabel.AutoSize = true;
+            this.introductionLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.introductionLabel.Font = new System.Drawing.Font("Sitka Heading", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.introductionLabel.Location = new System.Drawing.Point(11, 9);
             this.introductionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -401,12 +403,38 @@
             this.nameofchildTextBox.TabIndex = 30;
             this.nameofchildTextBox.Visible = false;
             // 
+            // subjectLabel
+            // 
+            this.subjectLabel.AutoSize = true;
+            this.subjectLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.subjectLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.subjectLabel.Location = new System.Drawing.Point(327, 174);
+            this.subjectLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.subjectLabel.Name = "subjectLabel";
+            this.subjectLabel.Size = new System.Drawing.Size(50, 19);
+            this.subjectLabel.TabIndex = 31;
+            this.subjectLabel.Text = "Subject";
+            this.subjectLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.subjectLabel.Visible = false;
+            // 
+            // subjectTextBox
+            // 
+            this.subjectTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.subjectTextBox.Location = new System.Drawing.Point(438, 175);
+            this.subjectTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.subjectTextBox.Name = "subjectTextBox";
+            this.subjectTextBox.Size = new System.Drawing.Size(98, 20);
+            this.subjectTextBox.TabIndex = 32;
+            this.subjectTextBox.Visible = false;
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(609, 520);
+            this.Controls.Add(this.subjectTextBox);
+            this.Controls.Add(this.subjectLabel);
             this.Controls.Add(this.nameofchildTextBox);
             this.Controls.Add(this.nameofchildLabel);
             this.Controls.Add(this.classnameTextBox);
@@ -473,7 +501,6 @@
         private System.Windows.Forms.Label validationCodeLabel;
         private System.Windows.Forms.TextBox validationCodeTextBox;
         private System.Windows.Forms.DateTimePicker birthdatePicker;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TextBox egnTextBox;
         private System.Windows.Forms.Label birthdayLabel;
         private System.Windows.Forms.Label egnLabel;
@@ -483,5 +510,7 @@
         private System.Windows.Forms.TextBox classnameTextBox;
         private System.Windows.Forms.Label nameofchildLabel;
         private System.Windows.Forms.TextBox nameofchildTextBox;
+        private System.Windows.Forms.Label subjectLabel;
+        private System.Windows.Forms.TextBox subjectTextBox;
     }
 }

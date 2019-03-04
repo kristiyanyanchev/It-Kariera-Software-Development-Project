@@ -102,14 +102,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void registrationButton_Click(object sender, EventArgs e)
         {
-            if(ValidateData())
-            {
-                
-            }
-            else
-            {
-                MessageBox.Show("Invalid data ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            TeacherMainForm teacherMain = new TeacherMainForm();
+            teacherMain.ShowDialog();
         }
 
         private void visibleCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -138,11 +132,28 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
         }
 
+        private void Makeinvisible()
+        {
+            nameofchildLabel.Visible = false;
+            nameofchildTextBox.Visible = false;
+            egnLabel.Visible = false;
+            egnTextBox.Visible = false;
+            birthdayLabel.Visible = false;
+            birthdatePicker.Visible = false;
+            scholarshipLabel.Visible = false;
+            scholarshipTextBox.Visible = false;
+            classnameLabel.Visible = false;
+            classnameTextBox.Visible = false;
+            subjectLabel.Visible = false;
+            subjectTextBox.Visible = false;
+
+        }
+
         private void roleComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Makeinvisible();
             if(roleComboBox.SelectedItem.ToString()=="Student")
             {
-
                 if (firstNameLabel.Text == "Name")
                 {
                     egnLabel.Visible = true;
@@ -187,6 +198,28 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                     nameofchildLabel.Visible = true;
                     nameofchildTextBox.Visible = true;
                     nameofchildLabel.Text = "Име на детето";
+                }
+            }
+            else if(roleComboBox.SelectedItem.ToString() == "Teacher")
+            {
+                if (firstNameLabel.Text == "Name")
+                {
+                    subjectLabel.Visible = true;
+                    subjectTextBox.Visible = true;
+                    classnameLabel.Visible = true;
+                    classnameTextBox.Visible = true;
+                    subjectLabel.Text = "Subject";
+                    classnameLabel.Text = "Class";
+
+                }
+                else
+                {
+                    subjectLabel.Visible = true;
+                    subjectTextBox.Visible = true;
+                    classnameLabel.Visible = true;
+                    classnameTextBox.Visible = true;
+                    subjectLabel.Text = "Предмет";
+                    classnameLabel.Text = "Клас";
                 }
             }
         }
