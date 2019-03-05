@@ -37,7 +37,16 @@
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.classTextBox = new System.Windows.Forms.TextBox();
             this.birthDateTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.inAbsentiaLabel = new System.Windows.Forms.Label();
+            this.inAbsentiaTextBox = new System.Windows.Forms.TextBox();
+            this.birthDateLabel = new System.Windows.Forms.Label();
+            this.addressTextBox = new System.Windows.Forms.TextBox();
+            this.schoolarshipLabel = new System.Windows.Forms.Label();
+            this.schoolarshipTextBox = new System.Windows.Forms.TextBox();
+            this.ucnTextBox = new System.Windows.Forms.TextBox();
+            this.phoneNumberTextBox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.closeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // searchFirstNameTextBox
@@ -85,45 +94,123 @@
             // 
             this.firstNameTextbox.Location = new System.Drawing.Point(12, 86);
             this.firstNameTextbox.Name = "firstNameTextbox";
-            this.firstNameTextbox.Size = new System.Drawing.Size(100, 20);
+            this.firstNameTextbox.Size = new System.Drawing.Size(166, 20);
             this.firstNameTextbox.TabIndex = 5;
             // 
             // lastNameTextBox
             // 
-            this.lastNameTextBox.Location = new System.Drawing.Point(118, 86);
+            this.lastNameTextBox.Location = new System.Drawing.Point(181, 86);
             this.lastNameTextBox.Name = "lastNameTextBox";
-            this.lastNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.lastNameTextBox.Size = new System.Drawing.Size(166, 20);
             this.lastNameTextBox.TabIndex = 6;
             // 
             // classTextBox
             // 
-            this.classTextBox.Location = new System.Drawing.Point(224, 86);
+            this.classTextBox.Location = new System.Drawing.Point(353, 86);
             this.classTextBox.Name = "classTextBox";
             this.classTextBox.Size = new System.Drawing.Size(36, 20);
             this.classTextBox.TabIndex = 7;
             // 
             // birthDateTextBox
             // 
-            this.birthDateTextBox.Location = new System.Drawing.Point(12, 112);
+            this.birthDateTextBox.Location = new System.Drawing.Point(78, 110);
             this.birthDateTextBox.Name = "birthDateTextBox";
             this.birthDateTextBox.Size = new System.Drawing.Size(100, 20);
             this.birthDateTextBox.TabIndex = 8;
             // 
-            // label1
+            // inAbsentiaLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 139);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "label1";
+            this.inAbsentiaLabel.AutoSize = true;
+            this.inAbsentiaLabel.Location = new System.Drawing.Point(12, 139);
+            this.inAbsentiaLabel.Name = "inAbsentiaLabel";
+            this.inAbsentiaLabel.Size = new System.Drawing.Size(60, 13);
+            this.inAbsentiaLabel.TabIndex = 9;
+            this.inAbsentiaLabel.Text = "In Absentia";
+            // 
+            // inAbsentiaTextBox
+            // 
+            this.inAbsentiaTextBox.Location = new System.Drawing.Point(78, 136);
+            this.inAbsentiaTextBox.Name = "inAbsentiaTextBox";
+            this.inAbsentiaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.inAbsentiaTextBox.TabIndex = 10;
+            // 
+            // birthDateLabel
+            // 
+            this.birthDateLabel.AutoSize = true;
+            this.birthDateLabel.Location = new System.Drawing.Point(12, 117);
+            this.birthDateLabel.Name = "birthDateLabel";
+            this.birthDateLabel.Size = new System.Drawing.Size(54, 13);
+            this.birthDateLabel.TabIndex = 11;
+            this.birthDateLabel.Text = "Birth Date";
+            // 
+            // addressTextBox
+            // 
+            this.addressTextBox.Location = new System.Drawing.Point(12, 162);
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(335, 20);
+            this.addressTextBox.TabIndex = 12;
+            // 
+            // schoolarshipLabel
+            // 
+            this.schoolarshipLabel.AutoSize = true;
+            this.schoolarshipLabel.Location = new System.Drawing.Point(9, 197);
+            this.schoolarshipLabel.Name = "schoolarshipLabel";
+            this.schoolarshipLabel.Size = new System.Drawing.Size(68, 13);
+            this.schoolarshipLabel.TabIndex = 13;
+            this.schoolarshipLabel.Text = "Schoolarship";
+            // 
+            // schoolarshipTextBox
+            // 
+            this.schoolarshipTextBox.Location = new System.Drawing.Point(83, 194);
+            this.schoolarshipTextBox.Name = "schoolarshipTextBox";
+            this.schoolarshipTextBox.Size = new System.Drawing.Size(100, 20);
+            this.schoolarshipTextBox.TabIndex = 14;
+            // 
+            // ucnTextBox
+            // 
+            this.ucnTextBox.Location = new System.Drawing.Point(12, 220);
+            this.ucnTextBox.Name = "ucnTextBox";
+            this.ucnTextBox.Size = new System.Drawing.Size(171, 20);
+            this.ucnTextBox.TabIndex = 15;
+            // 
+            // phoneNumberTextBox
+            // 
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(12, 247);
+            this.phoneNumberTextBox.Name = "phoneNumberTextBox";
+            this.phoneNumberTextBox.Size = new System.Drawing.Size(171, 20);
+            this.phoneNumberTextBox.TabIndex = 16;
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.Location = new System.Drawing.Point(12, 273);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(171, 20);
+            this.emailTextBox.TabIndex = 17;
+            // 
+            // closeButton
+            // 
+            this.closeButton.Location = new System.Drawing.Point(12, 337);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(75, 23);
+            this.closeButton.TabIndex = 18;
+            this.closeButton.Text = "Close";
+            this.closeButton.UseVisualStyleBackColor = true;
             // 
             // TeacerViewStudentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.closeButton);
+            this.Controls.Add(this.emailTextBox);
+            this.Controls.Add(this.phoneNumberTextBox);
+            this.Controls.Add(this.ucnTextBox);
+            this.Controls.Add(this.schoolarshipTextBox);
+            this.Controls.Add(this.schoolarshipLabel);
+            this.Controls.Add(this.addressTextBox);
+            this.Controls.Add(this.birthDateLabel);
+            this.Controls.Add(this.inAbsentiaTextBox);
+            this.Controls.Add(this.inAbsentiaLabel);
             this.Controls.Add(this.birthDateTextBox);
             this.Controls.Add(this.classTextBox);
             this.Controls.Add(this.lastNameTextBox);
@@ -151,6 +238,15 @@
         private System.Windows.Forms.TextBox lastNameTextBox;
         private System.Windows.Forms.TextBox classTextBox;
         private System.Windows.Forms.TextBox birthDateTextBox;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label inAbsentiaLabel;
+        private System.Windows.Forms.TextBox inAbsentiaTextBox;
+        private System.Windows.Forms.Label birthDateLabel;
+        private System.Windows.Forms.TextBox addressTextBox;
+        private System.Windows.Forms.Label schoolarshipLabel;
+        private System.Windows.Forms.TextBox schoolarshipTextBox;
+        private System.Windows.Forms.TextBox ucnTextBox;
+        private System.Windows.Forms.TextBox phoneNumberTextBox;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.Button closeButton;
     }
 }
