@@ -44,6 +44,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidationClasses\Password\DefaultPasswordValidator.cs" />
     <Compile Include="ValidationClasses\Password\IPasswordValidator.cs" />
+    <Compile Include="ValidationClasses\Username\DefaultUsernameValidator.cs" />
+    <Compile Include="ValidationClasses\Username\IUsernameValidator.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

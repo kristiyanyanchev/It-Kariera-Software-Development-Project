@@ -1,24 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
-namespace Controller.ValidationClasses.Password
+namespace Controller.ValidationClasses.Username
 {
-    public class DefaultPasswordValidator : IPasswordValidator
+    public class DefaultUsernameValidator : IUsernameValidator
     {
         private string RegexPattern { get; set; }
 
-        public DefaultPasswordValidator()
+        public DefaultUsernameValidator()
         {
-            RegexPattern = "[A-Za-z0-9!@#$%^&*]+";
+            RegexPattern = "[-.A-Za-z0-9_!@#$%^&*]+";
         }
 
-        public bool Validate(string password)
+        public bool Validate(string username)
         {
-            if (ValidateLength(password) && ValidateForbiddenChars(password))
+            if (ValidateForbiddenChars(username) && ValidateLength(username))
             {
                 return true;
             }
@@ -28,9 +26,9 @@ namespace Controller.ValidationClasses.Password
             }
         }
 
-        private bool ValidateLength(string password)
+        private bool ValidateLength(string username)
         {
-            if (password.Length < 8)
+            if (username.Length < 8)
             {
                 return false;
             }
@@ -40,9 +38,9 @@ namespace Controller.ValidationClasses.Password
             }
         }
 
-        private bool ValidateForbiddenChars(string password)
+        private bool ValidateForbiddenChars(string username)
         {
-            if (Regex.Match(password,RegexPattern).Length < password.Length)
+            if (Regex.Match(username, RegexPattern).Length < username.Length)
             {
                 return false;
             }
