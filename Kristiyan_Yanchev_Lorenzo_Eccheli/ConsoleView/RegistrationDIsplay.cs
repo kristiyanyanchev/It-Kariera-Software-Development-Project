@@ -8,7 +8,7 @@ namespace ConsoleView
     public class RegistrationDisplay
     {
         private DateTime dateofbirth;
-        private string egn,name,family,role,password,email,address,phonenumber,dateofbirth;
+        private string egn, name;//,family,role,password,email,address,phonenumber,dateofbirth;
 
         public string Name
         {
