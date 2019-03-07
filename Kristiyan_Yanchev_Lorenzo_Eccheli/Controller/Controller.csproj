@@ -52,12 +52,13 @@
     <Compile Include="ValidationClasses\NameOfChild\INameOfChildValidator.cs" />
     <Compile Include="ValidationClasses\Password\DefaultPasswordValidator.cs" />
     <Compile Include="ValidationClasses\Password\IPasswordValidator.cs" />
+    <Compile Include="ValidationClasses\PhoneNumber\DefaultPhoneNumberValidator.cs" />
+    <Compile Include="ValidationClasses\PhoneNumber\IPhoneNumberValidator.cs" />
     <Compile Include="ValidationClasses\Username\DefaultUsernameValidator.cs" />
     <Compile Include="ValidationClasses\Username\IUsernameValidator.cs" />
+    <Compile Include="ValidationClasses\ValidationCode\DefaultValidationCodeValidator.cs" />
+    <Compile Include="ValidationClasses\ValidationCode\IValidationCodeValidator.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ValidationClasses\PhoneNumber\" />
-    <Folder Include="ValidationClasses\ValidationCode\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

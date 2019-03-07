@@ -42,7 +42,9 @@
     <Compile Include="ValidationClasses\FirstNameAndLastName\DefaultNameValidatorTest.cs" />
     <Compile Include="ValidationClasses\NameOfChild\DefaultNameOfChildValidatorTest.cs" />
     <Compile Include="ValidationClasses\Password\DefaultPasswordValidatorTest.cs" />
+    <Compile Include="ValidationClasses\PhoneNumber\DefaultPhoneNumberValidatorTest.cs" />
     <Compile Include="ValidationClasses\Username\DefaultUsernameValidatorTest.cs" />
+    <Compile Include="ValidationClasses\ValidationCode\DefaultValidationCodeValidatorTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
