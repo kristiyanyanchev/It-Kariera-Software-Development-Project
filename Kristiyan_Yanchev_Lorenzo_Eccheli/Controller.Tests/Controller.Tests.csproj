@@ -37,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidationClasses\Address\DefaultAddressValidatorTest.cs" />
     <Compile Include="ValidationClasses\Email\DefaultEmailValidatorTest.cs" />
     <Compile Include="ValidationClasses\FirstNameAndLastName\DefaultNameValidatorTest.cs" />
     <Compile Include="ValidationClasses\NameOfChild\DefaultNameOfChildValidatorTest.cs" />
