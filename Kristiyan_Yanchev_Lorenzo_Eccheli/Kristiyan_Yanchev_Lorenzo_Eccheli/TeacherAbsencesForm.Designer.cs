@@ -33,6 +33,7 @@
             this.classesListBox = new System.Windows.Forms.ListView();
             this.studentsListBox = new System.Windows.Forms.ListView();
             this.closeButton = new System.Windows.Forms.Button();
+            this.isLateCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // newAbsenceButton
@@ -78,11 +79,22 @@
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
             // 
+            // isLateCheckBox
+            // 
+            this.isLateCheckBox.AutoSize = true;
+            this.isLateCheckBox.Location = new System.Drawing.Point(407, 19);
+            this.isLateCheckBox.Name = "isLateCheckBox";
+            this.isLateCheckBox.Size = new System.Drawing.Size(58, 17);
+            this.isLateCheckBox.TabIndex = 5;
+            this.isLateCheckBox.Text = "Is Late";
+            this.isLateCheckBox.UseVisualStyleBackColor = true;
+            // 
             // TeacherAbsencesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.isLateCheckBox);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.studentsListBox);
             this.Controls.Add(this.classesListBox);
@@ -91,6 +103,7 @@
             this.Name = "TeacherAbsencesForm";
             this.Text = "TeacherAbsencesForm";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -101,5 +114,6 @@
         private System.Windows.Forms.ListView classesListBox;
         private System.Windows.Forms.ListView studentsListBox;
         private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.CheckBox isLateCheckBox;
     }
 }
