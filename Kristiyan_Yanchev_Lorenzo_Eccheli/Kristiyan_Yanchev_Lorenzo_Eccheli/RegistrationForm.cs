@@ -45,7 +45,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 formToolTip.SetToolTip(addressTextBox,"Напишете си адреса.");
                 formToolTip.SetToolTip(phoneNumberTextBox, "Сложете си телефонния номер.");
                 formToolTip.SetToolTip(registrationButton, "Акаунтът ви ще е регистриран.");
-                formToolTip.SetToolTip(exitButton, "Излезте от прилойението.");
+                formToolTip.SetToolTip(exitButton, "Излезте от приложението.");
                 formToolTip.SetToolTip(validationCodeLabel, "Задължителен код даден от училището.");
             }
             else if(language=="English")
@@ -53,13 +53,13 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 nextformlanguage = language;
                 InitializeComponent();
                 introductionLabel.Text = "Registration  to School E-Journal";
-                usernameLabel.Text = "Name";
+                usernameLabel.Text = "Username";
                 passwordLabel.Text = "Password";
                 visibleCheckBox.Text = "Visible";
                 emailLabel.Text = "E-mail";
                 addressLabel.Text = "Address";
                 phoneLabel.Text = "Phone number";
-                lastNameLabel.Text = "Family";
+                lastNameLabel.Text = "Last Name";
                 roleLabel.Text = "Role";
                 registrationButton.Text = "Registration";
                 exitButton.Text = "Exit";

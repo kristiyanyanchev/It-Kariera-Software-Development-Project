@@ -44,6 +44,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidationClasses\Address\DefaultAddressValidator.cs" />
     <Compile Include="ValidationClasses\Address\IAddressValidator.cs" />
+    <Compile Include="ValidationClasses\Class\DefaultClassValidator.cs" />
+    <Compile Include="ValidationClasses\Class\IClassValidator.cs" />
     <Compile Include="ValidationClasses\Email\DefaultEmailValidator.cs" />
     <Compile Include="ValidationClasses\Email\IEmailValidator.cs" />
     <Compile Include="ValidationClasses\FirstNameAndLastName\DefaultNameValidator.cs" />
@@ -54,11 +56,15 @@
     <Compile Include="ValidationClasses\Password\IPasswordValidator.cs" />
     <Compile Include="ValidationClasses\PhoneNumber\DefaultPhoneNumberValidator.cs" />
     <Compile Include="ValidationClasses\PhoneNumber\IPhoneNumberValidator.cs" />
+    <Compile Include="ValidationClasses\StudentValidator.cs" />
     <Compile Include="ValidationClasses\Username\DefaultUsernameValidator.cs" />
     <Compile Include="ValidationClasses\Username\IUsernameValidator.cs" />
     <Compile Include="ValidationClasses\ValidationCode\DefaultValidationCodeValidator.cs" />
     <Compile Include="ValidationClasses\ValidationCode\IValidationCodeValidator.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ValidationClasses\Money\" />
+    <Folder Include="ValidationClasses\UCN\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
