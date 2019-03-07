@@ -46,6 +46,8 @@
     <Compile Include="ValidationClasses\Email\IEmailValidator.cs" />
     <Compile Include="ValidationClasses\FirstNameAndLastName\DefaultNameValidator.cs" />
     <Compile Include="ValidationClasses\FirstNameAndLastName\INameValidator.cs" />
+    <Compile Include="ValidationClasses\NameOfChild\DefaultNameOfChildValidator.cs" />
+    <Compile Include="ValidationClasses\NameOfChild\INameOfChildValidator.cs" />
     <Compile Include="ValidationClasses\Password\DefaultPasswordValidator.cs" />
     <Compile Include="ValidationClasses\Password\IPasswordValidator.cs" />
     <Compile Include="ValidationClasses\Username\DefaultUsernameValidator.cs" />
@@ -53,7 +55,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ValidationClasses\Address\" />
-    <Folder Include="ValidationClasses\NameOfChild\" />
     <Folder Include="ValidationClasses\PhoneNumber\" />
     <Folder Include="ValidationClasses\ValidationCode\" />
   </ItemGroup>
