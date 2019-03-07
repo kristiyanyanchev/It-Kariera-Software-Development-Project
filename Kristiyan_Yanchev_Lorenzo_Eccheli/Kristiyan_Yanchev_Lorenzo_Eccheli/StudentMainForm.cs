@@ -14,6 +14,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         public StudentMainForm()
         {
             InitializeComponent();
+            languageComboBox.SelectedItem = "English";
         }
 
         private void viewGradesButton_Click(object sender, EventArgs e)
@@ -76,7 +77,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(languageComboBox.SelectedIndex.ToString()=="Bulgarian")
+            if(languageComboBox.SelectedIndex.ToString()== "Bulgarian")
             {
                 introductionLabel.Text = "Добре дошли в електронния дневник";
                 searchTeacher.Text = "Търси учител";
@@ -105,5 +106,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 exitButton.Text = "Exit";
             }
         }
+
     }
 }

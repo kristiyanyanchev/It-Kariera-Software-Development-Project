@@ -45,6 +45,7 @@
             // viewGradesButton
             // 
             this.viewGradesButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.viewGradesButton.FlatAppearance.BorderSize = 0;
             this.viewGradesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewGradesButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.viewGradesButton.Location = new System.Drawing.Point(30, 262);
@@ -58,6 +59,7 @@
             // viewAbsencesButton
             // 
             this.viewAbsencesButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.viewAbsencesButton.FlatAppearance.BorderSize = 0;
             this.viewAbsencesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewAbsencesButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.viewAbsencesButton.Location = new System.Drawing.Point(334, 186);
@@ -71,6 +73,7 @@
             // viewSubjectsButton
             // 
             this.viewSubjectsButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.viewSubjectsButton.FlatAppearance.BorderSize = 0;
             this.viewSubjectsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewSubjectsButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.viewSubjectsButton.Location = new System.Drawing.Point(30, 338);
@@ -84,6 +87,7 @@
             // viewScheduleButton
             // 
             this.viewScheduleButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.viewScheduleButton.FlatAppearance.BorderSize = 0;
             this.viewScheduleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewScheduleButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.viewScheduleButton.Location = new System.Drawing.Point(334, 107);
@@ -97,6 +101,7 @@
             // changePassword
             // 
             this.changePassword.BackColor = System.Drawing.Color.FloralWhite;
+            this.changePassword.FlatAppearance.BorderSize = 0;
             this.changePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.changePassword.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.changePassword.Location = new System.Drawing.Point(334, 262);
@@ -110,6 +115,7 @@
             // searchStudent
             // 
             this.searchStudent.BackColor = System.Drawing.Color.FloralWhite;
+            this.searchStudent.FlatAppearance.BorderSize = 0;
             this.searchStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.searchStudent.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.searchStudent.Location = new System.Drawing.Point(30, 186);
@@ -123,6 +129,7 @@
             // searchTeacher
             // 
             this.searchTeacher.BackColor = System.Drawing.Color.FloralWhite;
+            this.searchTeacher.FlatAppearance.BorderSize = 0;
             this.searchTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.searchTeacher.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.searchTeacher.Location = new System.Drawing.Point(30, 107);
@@ -136,6 +143,7 @@
             // exitButton
             // 
             this.exitButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.exitButton.FlatAppearance.BorderSize = 0;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.exitButton.Location = new System.Drawing.Point(549, 434);
@@ -149,6 +157,7 @@
             // changeInformation
             // 
             this.changeInformation.BackColor = System.Drawing.Color.FloralWhite;
+            this.changeInformation.FlatAppearance.BorderSize = 0;
             this.changeInformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.changeInformation.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.changeInformation.Location = new System.Drawing.Point(334, 338);

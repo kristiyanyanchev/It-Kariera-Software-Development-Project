@@ -25,5 +25,74 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 Application.ExitThread();
             }
         }
+
+        private void viewstudentsButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TeacerViewStudentsForm teacerview = new TeacerViewStudentsForm();
+            teacerview.ShowDialog();
+        }
+
+        private void addgradeButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TeacherGradesForm teachergrade = new TeacherGradesForm();
+            teachergrade.ShowDialog();
+        }
+
+        private void addstudentButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TeacherAddStudentForm teacheradd = new TeacherAddStudentForm();
+            teacheradd.ShowDialog();
+        }
+
+
+        private void absensesButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TeacherAbsencesForm teacherabsenses = new TeacherAbsencesForm();
+            teacherabsenses.ShowDialog();
+        }
+
+        private void changePasswordButton_Click(object sender, EventArgs e)
+        {
+            ChangePasswordForm changepassword = new ChangePasswordForm();
+            changepassword.ShowDialog();
+        }
+
+        private void changeinformationButton_Click(object sender, EventArgs e)
+        {
+            ChangeInformationForm changeinformation = new ChangeInformationForm();
+            changeinformation.ShowDialog();
+        }
+
+        private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(languageComboBox.SelectedItem.ToString()=="English")
+            {
+                introductionLabel.Text = "Welcome to E-journal ,Teacher";
+                languageLabel.Text = "Language";
+                viewstudentsButton.Text = "View Students";
+                addgradeButton.Text = "Add Grade";
+                addstudentButton.Text = "Add Student";
+                absensesButton.Text = "Absenses";
+                changePasswordButton.Text = "Change Password";
+                changeinformationButton.Text = "Change Information";
+                exitButton.Text = "Exit";
+            }
+            else
+            {
+                introductionLabel.Text = "Добре дошли в електронния дневник";
+                languageLabel.Text = "Език";
+                viewstudentsButton.Text = "Виж ученици";
+                addgradeButton.Text = "Добави оценка";
+                addstudentButton.Text = "Добави ученик";
+                absensesButton.Text = "Отсъствия";
+                changePasswordButton.Text = "Смени паролата";
+                changeinformationButton.Text = "Смени информация";
+                exitButton.Text = "Изход";
+            }
+        }
     }
 }
