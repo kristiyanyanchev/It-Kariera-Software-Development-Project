@@ -16,34 +16,33 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             InitializeComponent();
         }
 
-        private bool ValidateUsername()
-        {
-            if (usernameTextBox.Text != null) /*Look if exist in DB*/
-            {
-                return true;
-            }
-            return false;
-        }
 
-        private bool ValidatePassword()
+        private bool Validation()
         {
-            if(passwordTextBox.Text!=null) /*Look if is true in DB*/
+            if (passwordTextBox.Text != null && usernameTextBox.Text != null)
             {
                 return true;
             }
-            return false;
+            else
+            {
+                return false;
+            }
         }
 
         private void registerBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Registration registration = new Registration(languageComboBox.SelectedItem.ToString());
+            RegistrationForm registration = new RegistrationForm(languageComboBox.SelectedItem.ToString());
             registration.ShowDialog();
         }
 
         private void logInBtn_Click(object sender, EventArgs e)
         {
 
+            if(Validate())
+            {
+
+            }
         }
 
         private void exitBtn_Click(object sender, EventArgs e)

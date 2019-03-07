@@ -1,6 +1,6 @@
 ﻿namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
-    partial class Registration
+    partial class RegistrationForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationForm));
             this.introductionLabel = new System.Windows.Forms.Label();
-            this.firstNameLabel = new System.Windows.Forms.Label();
+            this.usernameLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.emailLabel = new System.Windows.Forms.Label();
             this.addressLabel = new System.Windows.Forms.Label();
@@ -52,17 +52,15 @@
             this.validationCodeLabel = new System.Windows.Forms.Label();
             this.validationCodeTextBox = new System.Windows.Forms.TextBox();
             this.birthdatePicker = new System.Windows.Forms.DateTimePicker();
-            this.egnTextBox = new System.Windows.Forms.TextBox();
+            this.ucnTextBox = new System.Windows.Forms.TextBox();
             this.birthdayLabel = new System.Windows.Forms.Label();
-            this.egnLabel = new System.Windows.Forms.Label();
+            this.ucnLabel = new System.Windows.Forms.Label();
             this.scholarshipLabel = new System.Windows.Forms.Label();
             this.scholarshipTextBox = new System.Windows.Forms.TextBox();
             this.classnameLabel = new System.Windows.Forms.Label();
             this.classnameTextBox = new System.Windows.Forms.TextBox();
             this.nameofchildLabel = new System.Windows.Forms.Label();
             this.nameofchildTextBox = new System.Windows.Forms.TextBox();
-            this.subjectLabel = new System.Windows.Forms.Label();
-            this.subjectTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // introductionLabel
@@ -77,16 +75,16 @@
             this.introductionLabel.TabIndex = 0;
             this.introductionLabel.Text = "Registration  to School E-Journal";
             // 
-            // firstNameLabel
+            // usernameLabel
             // 
-            this.firstNameLabel.AutoSize = true;
-            this.firstNameLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.firstNameLabel.Location = new System.Drawing.Point(8, 105);
-            this.firstNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(40, 19);
-            this.firstNameLabel.TabIndex = 1;
-            this.firstNameLabel.Text = "Name";
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.usernameLabel.Location = new System.Drawing.Point(8, 105);
+            this.usernameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(64, 19);
+            this.usernameLabel.TabIndex = 1;
+            this.usernameLabel.Text = "Username";
             // 
             // passwordLabel
             // 
@@ -291,28 +289,28 @@
             // 
             // birthdatePicker
             // 
-            this.birthdatePicker.Location = new System.Drawing.Point(439, 159);
+            this.birthdatePicker.Location = new System.Drawing.Point(438, 270);
             this.birthdatePicker.Name = "birthdatePicker";
             this.birthdatePicker.Size = new System.Drawing.Size(159, 20);
             this.birthdatePicker.TabIndex = 21;
             this.birthdatePicker.Visible = false;
             // 
-            // egnTextBox
+            // ucnTextBox
             // 
-            this.egnTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.egnTextBox.Location = new System.Drawing.Point(438, 199);
-            this.egnTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.egnTextBox.Name = "egnTextBox";
-            this.egnTextBox.Size = new System.Drawing.Size(98, 20);
-            this.egnTextBox.TabIndex = 22;
-            this.egnTextBox.Visible = false;
+            this.ucnTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.ucnTextBox.Location = new System.Drawing.Point(438, 199);
+            this.ucnTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ucnTextBox.Name = "ucnTextBox";
+            this.ucnTextBox.Size = new System.Drawing.Size(98, 20);
+            this.ucnTextBox.TabIndex = 22;
+            this.ucnTextBox.Visible = false;
             // 
             // birthdayLabel
             // 
             this.birthdayLabel.AutoSize = true;
             this.birthdayLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.birthdayLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.birthdayLabel.Location = new System.Drawing.Point(322, 159);
+            this.birthdayLabel.Location = new System.Drawing.Point(321, 270);
             this.birthdayLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.birthdayLabel.Name = "birthdayLabel";
             this.birthdayLabel.Size = new System.Drawing.Size(75, 19);
@@ -320,18 +318,18 @@
             this.birthdayLabel.Text = "Day of birth";
             this.birthdayLabel.Visible = false;
             // 
-            // egnLabel
+            // ucnLabel
             // 
-            this.egnLabel.AutoSize = true;
-            this.egnLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.egnLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.egnLabel.Location = new System.Drawing.Point(327, 200);
-            this.egnLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.egnLabel.Name = "egnLabel";
-            this.egnLabel.Size = new System.Drawing.Size(33, 19);
-            this.egnLabel.TabIndex = 24;
-            this.egnLabel.Text = "EGN";
-            this.egnLabel.Visible = false;
+            this.ucnLabel.AutoSize = true;
+            this.ucnLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.ucnLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.ucnLabel.Location = new System.Drawing.Point(327, 200);
+            this.ucnLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ucnLabel.Name = "ucnLabel";
+            this.ucnLabel.Size = new System.Drawing.Size(33, 19);
+            this.ucnLabel.TabIndex = 24;
+            this.ucnLabel.Text = "UCN";
+            this.ucnLabel.Visible = false;
             // 
             // scholarshipLabel
             // 
@@ -361,7 +359,7 @@
             this.classnameLabel.AutoSize = true;
             this.classnameLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.classnameLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.classnameLabel.Location = new System.Drawing.Point(322, 287);
+            this.classnameLabel.Location = new System.Drawing.Point(322, 163);
             this.classnameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.classnameLabel.Name = "classnameLabel";
             this.classnameLabel.Size = new System.Drawing.Size(38, 19);
@@ -372,7 +370,7 @@
             // classnameTextBox
             // 
             this.classnameTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.classnameTextBox.Location = new System.Drawing.Point(438, 288);
+            this.classnameTextBox.Location = new System.Drawing.Point(438, 164);
             this.classnameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.classnameTextBox.Name = "classnameTextBox";
             this.classnameTextBox.Size = new System.Drawing.Size(98, 20);
@@ -403,47 +401,21 @@
             this.nameofchildTextBox.TabIndex = 30;
             this.nameofchildTextBox.Visible = false;
             // 
-            // subjectLabel
-            // 
-            this.subjectLabel.AutoSize = true;
-            this.subjectLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.subjectLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.subjectLabel.Location = new System.Drawing.Point(327, 174);
-            this.subjectLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.subjectLabel.Name = "subjectLabel";
-            this.subjectLabel.Size = new System.Drawing.Size(50, 19);
-            this.subjectLabel.TabIndex = 31;
-            this.subjectLabel.Text = "Subject";
-            this.subjectLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.subjectLabel.Visible = false;
-            // 
-            // subjectTextBox
-            // 
-            this.subjectTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.subjectTextBox.Location = new System.Drawing.Point(438, 175);
-            this.subjectTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.subjectTextBox.Name = "subjectTextBox";
-            this.subjectTextBox.Size = new System.Drawing.Size(98, 20);
-            this.subjectTextBox.TabIndex = 32;
-            this.subjectTextBox.Visible = false;
-            // 
-            // Registration
+            // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(609, 520);
-            this.Controls.Add(this.subjectTextBox);
-            this.Controls.Add(this.subjectLabel);
             this.Controls.Add(this.nameofchildTextBox);
             this.Controls.Add(this.nameofchildLabel);
             this.Controls.Add(this.classnameTextBox);
             this.Controls.Add(this.classnameLabel);
             this.Controls.Add(this.scholarshipTextBox);
             this.Controls.Add(this.scholarshipLabel);
-            this.Controls.Add(this.egnLabel);
+            this.Controls.Add(this.ucnLabel);
             this.Controls.Add(this.birthdayLabel);
-            this.Controls.Add(this.egnTextBox);
+            this.Controls.Add(this.ucnTextBox);
             this.Controls.Add(this.birthdatePicker);
             this.Controls.Add(this.validationCodeTextBox);
             this.Controls.Add(this.validationCodeLabel);
@@ -463,12 +435,12 @@
             this.Controls.Add(this.addressLabel);
             this.Controls.Add(this.emailLabel);
             this.Controls.Add(this.passwordLabel);
-            this.Controls.Add(this.firstNameLabel);
+            this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.introductionLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.Name = "Registration";
+            this.Name = "RegistrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCLosing);
@@ -480,7 +452,7 @@
         #endregion
 
         private System.Windows.Forms.Label introductionLabel;
-        private System.Windows.Forms.Label firstNameLabel;
+        private System.Windows.Forms.Label usernameLabel;
         private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.Label emailLabel;
         private System.Windows.Forms.Label addressLabel;
@@ -501,16 +473,14 @@
         private System.Windows.Forms.Label validationCodeLabel;
         private System.Windows.Forms.TextBox validationCodeTextBox;
         private System.Windows.Forms.DateTimePicker birthdatePicker;
-        private System.Windows.Forms.TextBox egnTextBox;
+        private System.Windows.Forms.TextBox ucnTextBox;
         private System.Windows.Forms.Label birthdayLabel;
-        private System.Windows.Forms.Label egnLabel;
+        private System.Windows.Forms.Label ucnLabel;
         private System.Windows.Forms.Label scholarshipLabel;
         private System.Windows.Forms.TextBox scholarshipTextBox;
         private System.Windows.Forms.Label classnameLabel;
         private System.Windows.Forms.TextBox classnameTextBox;
         private System.Windows.Forms.Label nameofchildLabel;
         private System.Windows.Forms.TextBox nameofchildTextBox;
-        private System.Windows.Forms.Label subjectLabel;
-        private System.Windows.Forms.TextBox subjectTextBox;
     }
 }

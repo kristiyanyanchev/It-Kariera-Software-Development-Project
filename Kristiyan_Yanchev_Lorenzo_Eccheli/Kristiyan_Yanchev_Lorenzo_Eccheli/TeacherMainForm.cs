@@ -16,14 +16,14 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             InitializeComponent();
         }
 
-        private void studentsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exitButton_Click(object sender, EventArgs e)
         {
+            DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
-        }
-
-        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            if (dialog == DialogResult.OK)
+            {
+                Application.ExitThread();
+            }
         }
     }
 }

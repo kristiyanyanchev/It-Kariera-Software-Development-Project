@@ -28,13 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.addgradeButton = new System.Windows.Forms.Button();
+            this.gradeinfoButton = new System.Windows.Forms.Button();
+            this.searchStudentButton = new System.Windows.Forms.Button();
+            this.changePasswordButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.searchTeacherButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // addgradeButton
+            // 
+            this.addgradeButton.Location = new System.Drawing.Point(12, 12);
+            this.addgradeButton.Name = "addgradeButton";
+            this.addgradeButton.Size = new System.Drawing.Size(75, 34);
+            this.addgradeButton.TabIndex = 0;
+            this.addgradeButton.Text = "Add Grade";
+            this.addgradeButton.UseVisualStyleBackColor = true;
+            // 
+            // gradeinfoButton
+            // 
+            this.gradeinfoButton.Location = new System.Drawing.Point(124, 12);
+            this.gradeinfoButton.Name = "gradeinfoButton";
+            this.gradeinfoButton.Size = new System.Drawing.Size(75, 34);
+            this.gradeinfoButton.TabIndex = 1;
+            this.gradeinfoButton.Text = "Look Grade";
+            this.gradeinfoButton.UseVisualStyleBackColor = true;
+            // 
+            // searchStudentButton
+            // 
+            this.searchStudentButton.Location = new System.Drawing.Point(223, 12);
+            this.searchStudentButton.Name = "searchStudentButton";
+            this.searchStudentButton.Size = new System.Drawing.Size(81, 34);
+            this.searchStudentButton.TabIndex = 7;
+            this.searchStudentButton.Text = "Search Student";
+            this.searchStudentButton.UseVisualStyleBackColor = true;
+            // 
+            // changePasswordButton
+            // 
+            this.changePasswordButton.Location = new System.Drawing.Point(387, 10);
+            this.changePasswordButton.Name = "changePasswordButton";
+            this.changePasswordButton.Size = new System.Drawing.Size(82, 38);
+            this.changePasswordButton.TabIndex = 8;
+            this.changePasswordButton.Text = "Change Password";
+            this.changePasswordButton.UseVisualStyleBackColor = true;
+            // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(674, 365);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(83, 23);
+            this.exitButton.TabIndex = 9;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // searchTeacherButton
+            // 
+            this.searchTeacherButton.Location = new System.Drawing.Point(300, 10);
+            this.searchTeacherButton.Name = "searchTeacherButton";
+            this.searchTeacherButton.Size = new System.Drawing.Size(81, 34);
+            this.searchTeacherButton.TabIndex = 10;
+            this.searchTeacherButton.Text = "Search Teacher";
+            this.searchTeacherButton.UseVisualStyleBackColor = true;
             // 
             // TeacherMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(769, 400);
+            this.Controls.Add(this.searchTeacherButton);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.changePasswordButton);
+            this.Controls.Add(this.searchStudentButton);
+            this.Controls.Add(this.gradeinfoButton);
+            this.Controls.Add(this.addgradeButton);
             this.Name = "TeacherMainForm";
             this.Text = "TeacherMainForm";
             this.ResumeLayout(false);
@@ -42,5 +109,12 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button addgradeButton;
+        private System.Windows.Forms.Button gradeinfoButton;
+        private System.Windows.Forms.Button searchStudentButton;
+        private System.Windows.Forms.Button changePasswordButton;
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button searchTeacherButton;
     }
 }

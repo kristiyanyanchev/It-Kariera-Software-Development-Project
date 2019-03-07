@@ -35,7 +35,7 @@
             this.changePassword = new System.Windows.Forms.Button();
             this.searchStudent = new System.Windows.Forms.Button();
             this.searchTeacher = new System.Windows.Forms.Button();
-            this.closeButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // viewGradesButton
@@ -46,6 +46,7 @@
             this.viewGradesButton.TabIndex = 0;
             this.viewGradesButton.Text = "Grades";
             this.viewGradesButton.UseVisualStyleBackColor = true;
+            this.viewGradesButton.Click += new System.EventHandler(this.viewGradesButton_Click);
             // 
             // viewAbsencesButton
             // 
@@ -55,6 +56,7 @@
             this.viewAbsencesButton.TabIndex = 1;
             this.viewAbsencesButton.Text = "Absences";
             this.viewAbsencesButton.UseVisualStyleBackColor = true;
+            this.viewAbsencesButton.Click += new System.EventHandler(this.viewAbsencesButton_Click);
             // 
             // viewSubjectsButton
             // 
@@ -64,6 +66,7 @@
             this.viewSubjectsButton.TabIndex = 2;
             this.viewSubjectsButton.Text = "Subjects";
             this.viewSubjectsButton.UseVisualStyleBackColor = true;
+            this.viewSubjectsButton.Click += new System.EventHandler(this.viewSubjectsButton_Click);
             // 
             // viewScheduleButton
             // 
@@ -82,6 +85,7 @@
             this.changePassword.TabIndex = 5;
             this.changePassword.Text = "Change Password";
             this.changePassword.UseVisualStyleBackColor = true;
+            this.changePassword.Click += new System.EventHandler(this.changePassword_Click);
             // 
             // searchStudent
             // 
@@ -91,6 +95,7 @@
             this.searchStudent.TabIndex = 6;
             this.searchStudent.Text = "Search Student";
             this.searchStudent.UseVisualStyleBackColor = true;
+            this.searchStudent.Click += new System.EventHandler(this.searchStudent_Click);
             // 
             // searchTeacher
             // 
@@ -101,21 +106,22 @@
             this.searchTeacher.Text = "Search Teacher";
             this.searchTeacher.UseVisualStyleBackColor = true;
             // 
-            // closeButton
+            // exitButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(13, 265);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(83, 23);
-            this.closeButton.TabIndex = 8;
-            this.closeButton.Text = "Close";
-            this.closeButton.UseVisualStyleBackColor = true;
+            this.exitButton.Location = new System.Drawing.Point(481, 307);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(83, 23);
+            this.exitButton.TabIndex = 8;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // StudentMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(576, 352);
-            this.Controls.Add(this.closeButton);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.searchTeacher);
             this.Controls.Add(this.searchStudent);
             this.Controls.Add(this.changePassword);
@@ -138,6 +144,6 @@
         private System.Windows.Forms.Button changePassword;
         private System.Windows.Forms.Button searchStudent;
         private System.Windows.Forms.Button searchTeacher;
-        private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.Button exitButton;
     }
 }
