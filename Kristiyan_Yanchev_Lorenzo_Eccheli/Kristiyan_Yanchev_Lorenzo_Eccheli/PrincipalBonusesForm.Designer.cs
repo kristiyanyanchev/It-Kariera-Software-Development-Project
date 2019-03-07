@@ -1,6 +1,6 @@
 ﻿namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
-    partial class PrincipalBonuses
+    partial class PrincipalBonusesForm
     {
         /// <summary>
         /// Required designer variable.

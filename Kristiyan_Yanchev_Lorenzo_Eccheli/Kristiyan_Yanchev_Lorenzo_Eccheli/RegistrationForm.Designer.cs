@@ -68,7 +68,7 @@
             this.introductionLabel.AutoSize = true;
             this.introductionLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.introductionLabel.Font = new System.Drawing.Font("Sitka Heading", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.introductionLabel.Location = new System.Drawing.Point(11, 9);
+            this.introductionLabel.Location = new System.Drawing.Point(132, 9);
             this.introductionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.introductionLabel.Name = "introductionLabel";
             this.introductionLabel.Size = new System.Drawing.Size(288, 28);
@@ -135,7 +135,7 @@
             this.roleLabel.AutoSize = true;
             this.roleLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.roleLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.roleLabel.Location = new System.Drawing.Point(322, 89);
+            this.roleLabel.Location = new System.Drawing.Point(335, 103);
             this.roleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.roleLabel.Name = "roleLabel";
             this.roleLabel.Size = new System.Drawing.Size(33, 19);
@@ -151,7 +151,7 @@
             "Parent",
             "Teacher",
             "Principal"});
-            this.roleComboBox.Location = new System.Drawing.Point(438, 87);
+            this.roleComboBox.Location = new System.Drawing.Point(468, 101);
             this.roleComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.roleComboBox.Name = "roleComboBox";
             this.roleComboBox.Size = new System.Drawing.Size(92, 21);
@@ -210,7 +210,7 @@
             this.registrationButton.FlatAppearance.BorderSize = 0;
             this.registrationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.registrationButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.registrationButton.Location = new System.Drawing.Point(326, 411);
+            this.registrationButton.Location = new System.Drawing.Point(322, 423);
             this.registrationButton.Margin = new System.Windows.Forms.Padding(2);
             this.registrationButton.Name = "registrationButton";
             this.registrationButton.Size = new System.Drawing.Size(98, 51);
@@ -225,7 +225,7 @@
             this.exitButton.FlatAppearance.BorderSize = 0;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.exitButton.Location = new System.Drawing.Point(516, 450);
+            this.exitButton.Location = new System.Drawing.Point(582, 449);
             this.exitButton.Margin = new System.Windows.Forms.Padding(2);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(82, 59);
@@ -289,7 +289,7 @@
             // 
             // birthdatePicker
             // 
-            this.birthdatePicker.Location = new System.Drawing.Point(438, 270);
+            this.birthdatePicker.Location = new System.Drawing.Point(468, 355);
             this.birthdatePicker.Name = "birthdatePicker";
             this.birthdatePicker.Size = new System.Drawing.Size(159, 20);
             this.birthdatePicker.TabIndex = 21;
@@ -298,7 +298,7 @@
             // ucnTextBox
             // 
             this.ucnTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.ucnTextBox.Location = new System.Drawing.Point(438, 199);
+            this.ucnTextBox.Location = new System.Drawing.Point(468, 248);
             this.ucnTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.ucnTextBox.Name = "ucnTextBox";
             this.ucnTextBox.Size = new System.Drawing.Size(98, 20);
@@ -310,7 +310,7 @@
             this.birthdayLabel.AutoSize = true;
             this.birthdayLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.birthdayLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.birthdayLabel.Location = new System.Drawing.Point(321, 270);
+            this.birthdayLabel.Location = new System.Drawing.Point(330, 357);
             this.birthdayLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.birthdayLabel.Name = "birthdayLabel";
             this.birthdayLabel.Size = new System.Drawing.Size(75, 19);
@@ -323,7 +323,7 @@
             this.ucnLabel.AutoSize = true;
             this.ucnLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.ucnLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.ucnLabel.Location = new System.Drawing.Point(327, 200);
+            this.ucnLabel.Location = new System.Drawing.Point(335, 249);
             this.ucnLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ucnLabel.Name = "ucnLabel";
             this.ucnLabel.Size = new System.Drawing.Size(33, 19);
@@ -336,7 +336,7 @@
             this.scholarshipLabel.AutoSize = true;
             this.scholarshipLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.scholarshipLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.scholarshipLabel.Location = new System.Drawing.Point(321, 240);
+            this.scholarshipLabel.Location = new System.Drawing.Point(330, 308);
             this.scholarshipLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.scholarshipLabel.Name = "scholarshipLabel";
             this.scholarshipLabel.Size = new System.Drawing.Size(74, 19);
@@ -347,7 +347,7 @@
             // scholarshipTextBox
             // 
             this.scholarshipTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.scholarshipTextBox.Location = new System.Drawing.Point(438, 239);
+            this.scholarshipTextBox.Location = new System.Drawing.Point(468, 307);
             this.scholarshipTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.scholarshipTextBox.Name = "scholarshipTextBox";
             this.scholarshipTextBox.Size = new System.Drawing.Size(98, 20);
@@ -359,7 +359,7 @@
             this.classnameLabel.AutoSize = true;
             this.classnameLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.classnameLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.classnameLabel.Location = new System.Drawing.Point(322, 163);
+            this.classnameLabel.Location = new System.Drawing.Point(335, 192);
             this.classnameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.classnameLabel.Name = "classnameLabel";
             this.classnameLabel.Size = new System.Drawing.Size(38, 19);
@@ -370,7 +370,7 @@
             // classnameTextBox
             // 
             this.classnameTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.classnameTextBox.Location = new System.Drawing.Point(438, 164);
+            this.classnameTextBox.Location = new System.Drawing.Point(468, 191);
             this.classnameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.classnameTextBox.Name = "classnameTextBox";
             this.classnameTextBox.Size = new System.Drawing.Size(98, 20);
@@ -382,7 +382,7 @@
             this.nameofchildLabel.AutoSize = true;
             this.nameofchildLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.nameofchildLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.nameofchildLabel.Location = new System.Drawing.Point(322, 127);
+            this.nameofchildLabel.Location = new System.Drawing.Point(335, 145);
             this.nameofchildLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nameofchildLabel.Name = "nameofchildLabel";
             this.nameofchildLabel.Size = new System.Drawing.Size(83, 19);
@@ -394,7 +394,7 @@
             // nameofchildTextBox
             // 
             this.nameofchildTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.nameofchildTextBox.Location = new System.Drawing.Point(438, 126);
+            this.nameofchildTextBox.Location = new System.Drawing.Point(468, 144);
             this.nameofchildTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameofchildTextBox.Name = "nameofchildTextBox";
             this.nameofchildTextBox.Size = new System.Drawing.Size(98, 20);
@@ -406,7 +406,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
-            this.ClientSize = new System.Drawing.Size(609, 520);
+            this.ClientSize = new System.Drawing.Size(675, 519);
             this.Controls.Add(this.nameofchildTextBox);
             this.Controls.Add(this.nameofchildLabel);
             this.Controls.Add(this.classnameTextBox);

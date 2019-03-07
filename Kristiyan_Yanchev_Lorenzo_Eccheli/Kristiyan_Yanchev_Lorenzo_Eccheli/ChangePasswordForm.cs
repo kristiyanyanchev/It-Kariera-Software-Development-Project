@@ -15,5 +15,19 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
             InitializeComponent();
         }
+
+        private void visibleCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (visibleCheckBox.Checked)
+            {
+                newPasswordTextBox.PasswordChar = '\0';
+                confirmNewPasswordTextBox.PasswordChar = '\0';
+            }
+            else
+            {
+                newPasswordTextBox.PasswordChar = '*';
+                confirmNewPasswordTextBox.PasswordChar = '*';
+            }
+        }
     }
 }

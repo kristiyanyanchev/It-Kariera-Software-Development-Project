@@ -15,5 +15,25 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
             InitializeComponent();
         }
+
+        private void changePasswordButton_Click(object sender, EventArgs e)
+        {
+            ChangePasswordForm changepassword = new ChangePasswordForm();
+            changepassword.ShowDialog();
+        }
+
+        private void bonusesButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PrincipalBonusesForm principalbonus = new PrincipalBonusesForm();
+            principalbonus.ShowDialog();
+        }
+
+        private void removeStudentButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PrincipalRemoveStudentForm principalremovestudent = new PrincipalRemoveStudentForm();
+            principalremovestudent.ShowDialog();
+        }
     }
 }

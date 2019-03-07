@@ -39,7 +39,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void changePassword_Click(object sender, EventArgs e)
         {
-            this.Hide();
             ChangePasswordForm changepassword = new ChangePasswordForm();
             changepassword.ShowDialog();
         }
@@ -56,6 +55,54 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             if (dialog == DialogResult.OK)
             {
                 Application.ExitThread();
+            }
+        }
+
+        private void searchTeacher_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void viewScheduleButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void changeInformationButton_Click(object sender, EventArgs e)
+        {
+            ChangeInformationForm changeInformation = new ChangeInformationForm();
+            changeInformation.ShowDialog();
+        }
+
+        private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(languageComboBox.SelectedIndex.ToString()=="Bulgarian")
+            {
+                introductionLabel.Text = "Добре дошли в електронния дневник";
+                searchTeacher.Text = "Търси учител";
+                searchStudent.Text = "Търси ученик";
+                viewGradesButton.Text = "Оценки";
+                viewSubjectsButton.Text = "Предмети";
+                viewScheduleButton.Text = "Програма";
+                viewAbsencesButton.Text = "Отсъствия";
+                changePassword.Text = "Смени паролата";
+                changeInformation.Text = "Смени информация";
+                languageLabel.Text = "Език";
+                exitButton.Text = "Изход";
+            }
+            else
+            {
+                introductionLabel.Text = "Welcome to E-journal , Student";
+                searchTeacher.Text = "Search Teacher";
+                searchStudent.Text = "Search Student";
+                viewGradesButton.Text = "Grades";
+                viewSubjectsButton.Text = "Subjects";
+                viewScheduleButton.Text = "Schedule";
+                viewAbsencesButton.Text = "Absence";
+                changePassword.Text = "Change Password";
+                changeInformation.Text = "Change Information";
+                languageLabel.Text = "Language";
+                exitButton.Text = "Exit";
             }
         }
     }

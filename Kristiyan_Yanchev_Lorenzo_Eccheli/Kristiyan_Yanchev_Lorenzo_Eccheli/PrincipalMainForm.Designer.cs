@@ -41,6 +41,7 @@
             this.removeStudentButton = new System.Windows.Forms.Button();
             this.subjectsButton = new System.Windows.Forms.Button();
             this.teachersButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gradesButton
@@ -78,6 +79,7 @@
             this.changePasswordButton.TabIndex = 3;
             this.changePasswordButton.Text = "Change Password";
             this.changePasswordButton.UseVisualStyleBackColor = true;
+            this.changePasswordButton.Click += new System.EventHandler(this.changePasswordButton_Click);
             // 
             // addStudentButton
             // 
@@ -132,6 +134,7 @@
             this.bonusesButton.TabIndex = 9;
             this.bonusesButton.Text = "Bonuses";
             this.bonusesButton.UseVisualStyleBackColor = true;
+            this.bonusesButton.Click += new System.EventHandler(this.bonusesButton_Click);
             // 
             // removeStudentButton
             // 
@@ -141,6 +144,7 @@
             this.removeStudentButton.TabIndex = 10;
             this.removeStudentButton.Text = "Remove Student";
             this.removeStudentButton.UseVisualStyleBackColor = true;
+            this.removeStudentButton.Click += new System.EventHandler(this.removeStudentButton_Click);
             // 
             // subjectsButton
             // 
@@ -160,11 +164,21 @@
             this.teachersButton.Text = "Teachers";
             this.teachersButton.UseVisualStyleBackColor = true;
             // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(713, 403);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 35);
+            this.exitButton.TabIndex = 13;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            // 
             // PrincipalMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.teachersButton);
             this.Controls.Add(this.subjectsButton);
             this.Controls.Add(this.removeStudentButton);
@@ -199,5 +213,6 @@
         private System.Windows.Forms.Button removeStudentButton;
         private System.Windows.Forms.Button subjectsButton;
         private System.Windows.Forms.Button teachersButton;
+        private System.Windows.Forms.Button exitButton;
     }
 }

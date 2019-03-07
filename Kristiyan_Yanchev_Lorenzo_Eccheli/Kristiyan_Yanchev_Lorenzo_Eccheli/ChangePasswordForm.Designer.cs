@@ -36,6 +36,7 @@
             this.confirmNewPasswordTextBox = new System.Windows.Forms.TextBox();
             this.changePasswordButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
+            this.visibleCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // oldPasswordLabel
@@ -76,6 +77,7 @@
             // 
             this.newPasswordTextBox.Location = new System.Drawing.Point(109, 49);
             this.newPasswordTextBox.Name = "newPasswordTextBox";
+            this.newPasswordTextBox.PasswordChar = '*';
             this.newPasswordTextBox.Size = new System.Drawing.Size(100, 20);
             this.newPasswordTextBox.TabIndex = 4;
             // 
@@ -83,12 +85,13 @@
             // 
             this.confirmNewPasswordTextBox.Location = new System.Drawing.Point(109, 75);
             this.confirmNewPasswordTextBox.Name = "confirmNewPasswordTextBox";
+            this.confirmNewPasswordTextBox.PasswordChar = '*';
             this.confirmNewPasswordTextBox.Size = new System.Drawing.Size(100, 20);
             this.confirmNewPasswordTextBox.TabIndex = 5;
             // 
             // changePasswordButton
             // 
-            this.changePasswordButton.Location = new System.Drawing.Point(13, 126);
+            this.changePasswordButton.Location = new System.Drawing.Point(87, 112);
             this.changePasswordButton.Name = "changePasswordButton";
             this.changePasswordButton.Size = new System.Drawing.Size(90, 40);
             this.changePasswordButton.TabIndex = 6;
@@ -97,18 +100,30 @@
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(119, 126);
+            this.closeButton.Location = new System.Drawing.Point(214, 161);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(90, 40);
             this.closeButton.TabIndex = 7;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
             // 
+            // visibleCheckBox
+            // 
+            this.visibleCheckBox.AutoSize = true;
+            this.visibleCheckBox.Location = new System.Drawing.Point(231, 49);
+            this.visibleCheckBox.Name = "visibleCheckBox";
+            this.visibleCheckBox.Size = new System.Drawing.Size(56, 17);
+            this.visibleCheckBox.TabIndex = 9;
+            this.visibleCheckBox.Text = "Visible";
+            this.visibleCheckBox.UseVisualStyleBackColor = true;
+            this.visibleCheckBox.CheckedChanged += new System.EventHandler(this.visibleCheckBox_CheckedChanged);
+            // 
             // ChangePasswordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(241, 239);
+            this.ClientSize = new System.Drawing.Size(316, 213);
+            this.Controls.Add(this.visibleCheckBox);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.changePasswordButton);
             this.Controls.Add(this.confirmNewPasswordTextBox);
@@ -134,5 +149,6 @@
         private System.Windows.Forms.TextBox confirmNewPasswordTextBox;
         private System.Windows.Forms.Button changePasswordButton;
         private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.CheckBox visibleCheckBox;
     }
 }

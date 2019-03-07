@@ -38,34 +38,34 @@
             // 
             // addgradeButton
             // 
-            this.addgradeButton.Location = new System.Drawing.Point(12, 12);
+            this.addgradeButton.Location = new System.Drawing.Point(12, 11);
             this.addgradeButton.Name = "addgradeButton";
-            this.addgradeButton.Size = new System.Drawing.Size(75, 34);
+            this.addgradeButton.Size = new System.Drawing.Size(82, 36);
             this.addgradeButton.TabIndex = 0;
             this.addgradeButton.Text = "Add Grade";
             this.addgradeButton.UseVisualStyleBackColor = true;
             // 
             // gradeinfoButton
             // 
-            this.gradeinfoButton.Location = new System.Drawing.Point(124, 12);
+            this.gradeinfoButton.Location = new System.Drawing.Point(226, 9);
             this.gradeinfoButton.Name = "gradeinfoButton";
-            this.gradeinfoButton.Size = new System.Drawing.Size(75, 34);
+            this.gradeinfoButton.Size = new System.Drawing.Size(81, 36);
             this.gradeinfoButton.TabIndex = 1;
             this.gradeinfoButton.Text = "Look Grade";
             this.gradeinfoButton.UseVisualStyleBackColor = true;
             // 
             // searchStudentButton
             // 
-            this.searchStudentButton.Location = new System.Drawing.Point(223, 12);
+            this.searchStudentButton.Location = new System.Drawing.Point(139, 9);
             this.searchStudentButton.Name = "searchStudentButton";
-            this.searchStudentButton.Size = new System.Drawing.Size(81, 34);
+            this.searchStudentButton.Size = new System.Drawing.Size(81, 36);
             this.searchStudentButton.TabIndex = 7;
             this.searchStudentButton.Text = "Search Student";
             this.searchStudentButton.UseVisualStyleBackColor = true;
             // 
             // changePasswordButton
             // 
-            this.changePasswordButton.Location = new System.Drawing.Point(387, 10);
+            this.changePasswordButton.Location = new System.Drawing.Point(431, 10);
             this.changePasswordButton.Name = "changePasswordButton";
             this.changePasswordButton.Size = new System.Drawing.Size(82, 38);
             this.changePasswordButton.TabIndex = 8;
@@ -84,7 +84,7 @@
             // 
             // searchTeacherButton
             // 
-            this.searchTeacherButton.Location = new System.Drawing.Point(300, 10);
+            this.searchTeacherButton.Location = new System.Drawing.Point(331, 10);
             this.searchTeacherButton.Name = "searchTeacherButton";
             this.searchTeacherButton.Size = new System.Drawing.Size(81, 34);
             this.searchTeacherButton.TabIndex = 10;

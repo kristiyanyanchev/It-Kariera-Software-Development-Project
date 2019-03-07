@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
-    public partial class PrincipalBonuses : Form
+    public partial class PrincipalBonusesForm : Form
     {
-        public PrincipalBonuses()
+        public PrincipalBonusesForm()
         {
             InitializeComponent();
         }
