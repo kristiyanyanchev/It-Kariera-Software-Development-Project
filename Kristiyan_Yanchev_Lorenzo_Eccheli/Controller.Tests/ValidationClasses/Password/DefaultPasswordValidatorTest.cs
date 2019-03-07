@@ -15,7 +15,7 @@ namespace Controller.Tests.ValidationClasses.Password
         [TestCase ("aboo123")]
         [TestCase ("12345")]
         [TestCase ("@!#")]
-        public void Validate_LessThanZero_ReturnsFalse(string password)
+        public void Validate_LessThanRequiredLength_ReturnsFalse(string password)
         {
             var validator = new DefaultPasswordValidator();
 

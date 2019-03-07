@@ -42,11 +42,20 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidationClasses\Email\DefaultEmailValidator.cs" />
+    <Compile Include="ValidationClasses\Email\IEmailValidator.cs" />
+    <Compile Include="ValidationClasses\FirstNameAndLastName\DefaultNameValidator.cs" />
+    <Compile Include="ValidationClasses\FirstNameAndLastName\INameValidator.cs" />
     <Compile Include="ValidationClasses\Password\DefaultPasswordValidator.cs" />
     <Compile Include="ValidationClasses\Password\IPasswordValidator.cs" />
     <Compile Include="ValidationClasses\Username\DefaultUsernameValidator.cs" />
     <Compile Include="ValidationClasses\Username\IUsernameValidator.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ValidationClasses\Address\" />
+    <Folder Include="ValidationClasses\NameOfChild\" />
+    <Folder Include="ValidationClasses\PhoneNumber\" />
+    <Folder Include="ValidationClasses\ValidationCode\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
