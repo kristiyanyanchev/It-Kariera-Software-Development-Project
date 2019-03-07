@@ -8,7 +8,7 @@ namespace ConsoleView
     public class RegistrationDisplay
     {
         private DateTime dateofbirth;
-        private string egn, name;//,family,role,password,email,address,phonenumber,dateofbirth;
+        private string egn, name , family , role , password , email , address , phonenumber ;
 
         public string Name
         {
@@ -25,12 +25,111 @@ namespace ConsoleView
                 else throw new Exception("Invalid name");
             }
         }
-        public string Family { get; set; }
-        public string Role { get; set; }
-        public string Password { get; set; }
-        public string Email { get; set; }
-        public string Address { get; set; }
-        public string PhoneNumber { get; set; }
+        public string Family
+        {
+            get
+            {
+                return family;
+            }
+            set
+            {
+                if (value.Length >= 4 && value.Length < 12 && value != null)
+                {
+                    name = value;
+                }
+                else throw new Exception("Invalid family");
+            }
+        }
+        public string Role
+        {
+            get
+            {
+                return role;
+            }
+            set
+            {
+                if (value != "Parent" || value!="Student" || value!="Principal" || value!="Teacher")
+                {
+                    role = value;
+                }
+                else
+                {
+                    throw new Exception("Invalid role");
+                }
+            }
+        }
+        public string Password
+        {
+            get
+            {
+                return password;
+            }
+            set
+            {
+                if(password.Length>0 && password.Length<20)
+                {
+                    password = value;
+                }
+                else
+                {
+                    throw new Exception("Invalid password");
+                }
+            }
+        }
+        public string Email
+        {
+            get
+            {
+                return email;
+            }
+            set
+            {
+                if(email.Length>0 && email.Contains("@"))
+                {
+                    email = value;
+                }
+                else
+                {
+                    throw new Exception("Invalid email");
+                }
+            }
+        }
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                if(address.Length>0 && address.Length<30)
+                {
+                    address = value;
+                }
+                else
+                {
+                    throw new Exception("Invalid adress");
+                }
+            }
+        }
+        public string PhoneNumber
+        {
+            get
+            {
+                return phonenumber;
+            }
+            set
+            {
+                if(phonenumber.Length!=10 && phonenumber[0]!='0')
+                {
+                    phonenumber = value;
+                }
+                else
+                {
+                    throw new Exception("Invalid phone number");
+                }
+            }
+        }
         public DateTime DateBirth
         {
             get
