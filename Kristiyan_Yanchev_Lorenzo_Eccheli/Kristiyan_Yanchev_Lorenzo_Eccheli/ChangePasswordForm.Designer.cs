@@ -97,6 +97,7 @@
             this.changePasswordButton.TabIndex = 6;
             this.changePasswordButton.Text = "Change Password";
             this.changePasswordButton.UseVisualStyleBackColor = true;
+            this.changePasswordButton.Click += new System.EventHandler(this.changePasswordButton_Click);
             // 
             // closeButton
             // 
@@ -133,7 +134,7 @@
             this.Controls.Add(this.newPasswordLabel);
             this.Controls.Add(this.oldPasswordLabel);
             this.Name = "ChangePasswordForm";
-            this.Text = "ChangePasswordForm";
+            this.Text = "Change password";
             this.ResumeLayout(false);
             this.PerformLayout();
 

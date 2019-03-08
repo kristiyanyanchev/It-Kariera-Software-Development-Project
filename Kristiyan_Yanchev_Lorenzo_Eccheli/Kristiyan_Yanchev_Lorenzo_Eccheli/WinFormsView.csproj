@@ -313,5 +313,11 @@
   <ItemGroup>
     <None Include="Resources\Background.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Data.csproj">
+      <Project>{5ff175c7-39e5-4c47-985e-0a568f03e77c}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

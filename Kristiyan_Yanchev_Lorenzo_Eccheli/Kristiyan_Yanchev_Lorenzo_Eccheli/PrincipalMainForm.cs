@@ -35,5 +35,37 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             PrincipalRemoveStudentForm principalremovestudent = new PrincipalRemoveStudentForm();
             principalremovestudent.ShowDialog();
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (dialog == DialogResult.OK)
+            {
+                Application.ExitThread();
+            }
+        }
+
+        private void addStudentButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void viewStudentButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sickLeaveButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void subjectsButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PrincipalSubjectsForm prinicpalsubject = new PrincipalSubjectsForm();
+            prinicpalsubject.ShowDialog();
+        }
     }
 }

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Data.Models;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -17,6 +18,9 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         }
 
         private string nextformlanguage;
+        private Student student;
+        private Teacher teacher;
+        private Parent parent;
 
         public RegistrationForm(string language)
         {
@@ -82,6 +86,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
             if(firstNameTextBox.Text!=null && lastNameTextBox.Text!=null && 
                passwordTextBox.Text!=null && emailTextBox.Text!=null && 
+               nameTextBox.Text!=null &&
                addressTextBox.Text!=null && phoneNumberTextBox.Text!=null && 
                roleComboBox.SelectedItem!=null && double.TryParse(phoneNumberTextBox.Text,out double a))
             {
@@ -98,6 +103,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             {
                 Application.ExitThread();
             }
+            
         }
 
         private void registrationButton_Click(object sender, EventArgs e)
@@ -107,6 +113,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 if(roleComboBox.SelectedItem.ToString()=="Student")
                 {
                     this.Hide();
+                    student = new Student(firstNameTextBox.Text,lastNameTextBox.Text,Convert.ToDateTime(birthdatePicker),addressTextBox.Text,ucnTextBox.Text,phoneNumberTextBox.Text,emailTextBox.Text);
                     StudentMainForm studentform = new StudentMainForm();
                     studentform.ShowDialog();
                 }
@@ -119,6 +126,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 else if(roleComboBox.SelectedItem.ToString() == "Parent")
                 {
                     this.Hide();
+                    ParentForm parentform = new ParentForm();
+                    parentform.ShowDialog();
 
                 }
                 else
@@ -169,8 +178,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             ucnTextBox.Visible = false;
             birthdayLabel.Visible = false;
             birthdatePicker.Visible = false;
-            scholarshipLabel.Visible = false;
-            scholarshipTextBox.Visible = false;
             classnameLabel.Visible = false;
             classnameTextBox.Visible = false;
 
@@ -187,13 +194,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                     ucnTextBox.Visible = true;
                     birthdayLabel.Visible = true;
                     birthdatePicker.Visible = true;
-                    scholarshipLabel.Visible = true;
-                    scholarshipTextBox.Visible = true;
                     classnameLabel.Visible = true;
                     classnameTextBox.Visible = true;
                     ucnLabel.Text = "UCN" ;
                     birthdayLabel.Text = "Date of birth";
-                    scholarshipLabel.Text = "Scholarship";
                     classnameLabel.Text = "Class";
                 }
                 else
@@ -202,13 +206,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                     ucnTextBox.Visible = true;
                     birthdayLabel.Visible = true;
                     birthdatePicker.Visible = true;
-                    scholarshipLabel.Visible = true;
-                    scholarshipTextBox.Visible = true;
                     classnameLabel.Visible = true;
                     classnameTextBox.Visible = true;
                     ucnLabel.Text = "ЕГН";
                     birthdayLabel.Text = "Дата на раждане";
-                    scholarshipLabel.Text = "Стипендия";
                     classnameLabel.Text = "Клас";
                 }
             }

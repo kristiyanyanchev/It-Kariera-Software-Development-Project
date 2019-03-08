@@ -191,7 +191,7 @@
             this.Controls.Add(this.changePasswordButton);
             this.Controls.Add(this.addgradeButton);
             this.Name = "TeacherMainForm";
-            this.Text = "TeacherMainForm";
+            this.Text = "E-journal";
             this.ResumeLayout(false);
             this.PerformLayout();
 

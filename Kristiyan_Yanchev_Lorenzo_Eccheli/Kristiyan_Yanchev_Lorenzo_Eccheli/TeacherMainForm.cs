@@ -24,6 +24,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             {
                 Application.ExitThread();
             }
+            
         }
 
         private void viewstudentsButton_Click(object sender, EventArgs e)

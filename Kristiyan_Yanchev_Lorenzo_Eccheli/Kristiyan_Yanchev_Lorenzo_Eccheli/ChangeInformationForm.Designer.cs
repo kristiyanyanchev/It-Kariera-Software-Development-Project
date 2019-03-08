@@ -86,19 +86,19 @@
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
             // 
-            // StudentChangeInformationForm
+            // ChangeInformationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(220, 165);
+            this.ClientSize = new System.Drawing.Size(249, 166);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.saveChangesButton);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.emailLabel);
             this.Controls.Add(this.PhoneNumberTextBox);
             this.Controls.Add(this.phoneNumberLabel);
-            this.Name = "StudentChangeInformationForm";
-            this.Text = "StudentChangeInformationForm";
+            this.Name = "ChangeInformationForm";
+            this.Text = "Change information";
             this.ResumeLayout(false);
             this.PerformLayout();
 

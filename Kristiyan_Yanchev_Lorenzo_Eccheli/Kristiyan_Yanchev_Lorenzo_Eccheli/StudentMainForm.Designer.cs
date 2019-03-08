@@ -223,7 +223,7 @@
             this.Controls.Add(this.viewAbsencesButton);
             this.Controls.Add(this.viewGradesButton);
             this.Name = "StudentMainForm";
-            this.Text = "Student account";
+            this.Text = "E-journal";
             this.ResumeLayout(false);
             this.PerformLayout();
 

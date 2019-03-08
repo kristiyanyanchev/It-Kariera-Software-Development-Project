@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.closeButton = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.teacherListBox = new System.Windows.Forms.ListBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.phoneNumberTextBox = new System.Windows.Forms.TextBox();
             this.selectButton = new System.Windows.Forms.Button();
@@ -44,13 +44,13 @@
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // teacherListBox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(13, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(209, 433);
-            this.listBox1.TabIndex = 14;
+            this.teacherListBox.FormattingEnabled = true;
+            this.teacherListBox.Location = new System.Drawing.Point(13, 12);
+            this.teacherListBox.Name = "teacherListBox";
+            this.teacherListBox.Size = new System.Drawing.Size(209, 433);
+            this.teacherListBox.TabIndex = 14;
             // 
             // emailTextBox
             // 
@@ -83,7 +83,7 @@
             this.Controls.Add(this.selectButton);
             this.Controls.Add(this.phoneNumberTextBox);
             this.Controls.Add(this.emailTextBox);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.teacherListBox);
             this.Controls.Add(this.closeButton);
             this.Name = "ParentForm";
             this.Text = "ParentForm";
@@ -95,7 +95,7 @@
         #endregion
 
         private System.Windows.Forms.Button closeButton;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox teacherListBox;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.TextBox phoneNumberTextBox;
         private System.Windows.Forms.Button selectButton;

@@ -29,5 +29,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 confirmNewPasswordTextBox.PasswordChar = '*';
             }
         }
+
+        private void changePasswordButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
