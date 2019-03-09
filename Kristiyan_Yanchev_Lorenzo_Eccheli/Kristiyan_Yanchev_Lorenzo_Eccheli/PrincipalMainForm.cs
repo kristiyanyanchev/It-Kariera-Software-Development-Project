@@ -144,6 +144,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             else
             {
                 introductionLabel.Text = "Welcome to e-journal";
+                gradesButton.Text = "Grades";
                 addStudentButton.Text = "Add Student";
                 viewStudentButton.Text = "View Student";
                 removeStudentButton.Text = "Remove Student";
