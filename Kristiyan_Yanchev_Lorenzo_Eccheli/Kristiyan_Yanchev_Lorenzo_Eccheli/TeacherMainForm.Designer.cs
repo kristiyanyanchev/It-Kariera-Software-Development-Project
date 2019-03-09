@@ -192,6 +192,7 @@
             this.Controls.Add(this.addgradeButton);
             this.Name = "TeacherMainForm";
             this.Text = "E-journal";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TeacherMainForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

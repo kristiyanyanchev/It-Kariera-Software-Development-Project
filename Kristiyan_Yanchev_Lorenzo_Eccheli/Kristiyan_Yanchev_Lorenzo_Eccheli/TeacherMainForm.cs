@@ -16,6 +16,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             InitializeComponent();
         }
 
+        private string language;
+
         private void exitButton_Click(object sender, EventArgs e)
         {
             DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -30,14 +32,14 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void viewstudentsButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TeacerViewStudentsForm teacerview = new TeacerViewStudentsForm();
+            TeacherViewStudentsForm teacerview = new TeacherViewStudentsForm();
             teacerview.ShowDialog();
         }
 
         private void addgradeButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            TeacherGradesForm teachergrade = new TeacherGradesForm();
+            language = languageComboBox.SelectedItem.ToString();
+            TeacherGradesForm teachergrade = new TeacherGradesForm(language);
             teachergrade.ShowDialog();
         }
 
@@ -47,7 +49,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             TeacherAddStudentForm teacheradd = new TeacherAddStudentForm();
             teacheradd.ShowDialog();
         }
-
 
         private void absensesButton_Click(object sender, EventArgs e)
         {
@@ -93,6 +94,20 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 changePasswordButton.Text = "Смени паролата";
                 changeinformationButton.Text = "Смени информация";
                 exitButton.Text = "Изход";
+            }
+        }
+
+        private void TeacherMainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialog == DialogResult.Yes)
+            {
+                Application.ExitThread();
+            }
+            else if (dialog == DialogResult.No)
+            {
+                e.Cancel = true;
             }
         }
     }

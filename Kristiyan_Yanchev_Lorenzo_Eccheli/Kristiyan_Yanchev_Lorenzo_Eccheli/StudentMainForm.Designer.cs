@@ -33,8 +33,6 @@
             this.viewSubjectsButton = new System.Windows.Forms.Button();
             this.viewScheduleButton = new System.Windows.Forms.Button();
             this.changePassword = new System.Windows.Forms.Button();
-            this.searchStudent = new System.Windows.Forms.Button();
-            this.searchTeacher = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.changeInformation = new System.Windows.Forms.Button();
             this.languageComboBox = new System.Windows.Forms.ComboBox();
@@ -48,7 +46,7 @@
             this.viewGradesButton.FlatAppearance.BorderSize = 0;
             this.viewGradesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewGradesButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.viewGradesButton.Location = new System.Drawing.Point(30, 262);
+            this.viewGradesButton.Location = new System.Drawing.Point(53, 152);
             this.viewGradesButton.Name = "viewGradesButton";
             this.viewGradesButton.Size = new System.Drawing.Size(130, 60);
             this.viewGradesButton.TabIndex = 0;
@@ -62,7 +60,7 @@
             this.viewAbsencesButton.FlatAppearance.BorderSize = 0;
             this.viewAbsencesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewAbsencesButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.viewAbsencesButton.Location = new System.Drawing.Point(334, 186);
+            this.viewAbsencesButton.Location = new System.Drawing.Point(357, 152);
             this.viewAbsencesButton.Name = "viewAbsencesButton";
             this.viewAbsencesButton.Size = new System.Drawing.Size(130, 60);
             this.viewAbsencesButton.TabIndex = 1;
@@ -76,7 +74,7 @@
             this.viewSubjectsButton.FlatAppearance.BorderSize = 0;
             this.viewSubjectsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewSubjectsButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.viewSubjectsButton.Location = new System.Drawing.Point(30, 338);
+            this.viewSubjectsButton.Location = new System.Drawing.Point(53, 231);
             this.viewSubjectsButton.Name = "viewSubjectsButton";
             this.viewSubjectsButton.Size = new System.Drawing.Size(130, 60);
             this.viewSubjectsButton.TabIndex = 2;
@@ -90,7 +88,7 @@
             this.viewScheduleButton.FlatAppearance.BorderSize = 0;
             this.viewScheduleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewScheduleButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.viewScheduleButton.Location = new System.Drawing.Point(334, 107);
+            this.viewScheduleButton.Location = new System.Drawing.Point(53, 307);
             this.viewScheduleButton.Name = "viewScheduleButton";
             this.viewScheduleButton.Size = new System.Drawing.Size(130, 60);
             this.viewScheduleButton.TabIndex = 4;
@@ -104,41 +102,13 @@
             this.changePassword.FlatAppearance.BorderSize = 0;
             this.changePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.changePassword.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.changePassword.Location = new System.Drawing.Point(334, 262);
+            this.changePassword.Location = new System.Drawing.Point(357, 231);
             this.changePassword.Name = "changePassword";
             this.changePassword.Size = new System.Drawing.Size(130, 60);
             this.changePassword.TabIndex = 5;
             this.changePassword.Text = "Change Password";
             this.changePassword.UseVisualStyleBackColor = false;
             this.changePassword.Click += new System.EventHandler(this.changePassword_Click);
-            // 
-            // searchStudent
-            // 
-            this.searchStudent.BackColor = System.Drawing.Color.FloralWhite;
-            this.searchStudent.FlatAppearance.BorderSize = 0;
-            this.searchStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchStudent.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.searchStudent.Location = new System.Drawing.Point(30, 186);
-            this.searchStudent.Name = "searchStudent";
-            this.searchStudent.Size = new System.Drawing.Size(130, 60);
-            this.searchStudent.TabIndex = 6;
-            this.searchStudent.Text = "Search Student";
-            this.searchStudent.UseVisualStyleBackColor = false;
-            this.searchStudent.Click += new System.EventHandler(this.searchStudent_Click);
-            // 
-            // searchTeacher
-            // 
-            this.searchTeacher.BackColor = System.Drawing.Color.FloralWhite;
-            this.searchTeacher.FlatAppearance.BorderSize = 0;
-            this.searchTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchTeacher.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.searchTeacher.Location = new System.Drawing.Point(30, 107);
-            this.searchTeacher.Name = "searchTeacher";
-            this.searchTeacher.Size = new System.Drawing.Size(130, 60);
-            this.searchTeacher.TabIndex = 7;
-            this.searchTeacher.Text = "Search Teacher";
-            this.searchTeacher.UseVisualStyleBackColor = false;
-            this.searchTeacher.Click += new System.EventHandler(this.searchTeacher_Click);
             // 
             // exitButton
             // 
@@ -160,7 +130,7 @@
             this.changeInformation.FlatAppearance.BorderSize = 0;
             this.changeInformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.changeInformation.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.changeInformation.Location = new System.Drawing.Point(334, 338);
+            this.changeInformation.Location = new System.Drawing.Point(357, 307);
             this.changeInformation.Name = "changeInformation";
             this.changeInformation.Size = new System.Drawing.Size(130, 60);
             this.changeInformation.TabIndex = 9;
@@ -215,8 +185,6 @@
             this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.changeInformation);
             this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.searchTeacher);
-            this.Controls.Add(this.searchStudent);
             this.Controls.Add(this.changePassword);
             this.Controls.Add(this.viewScheduleButton);
             this.Controls.Add(this.viewSubjectsButton);
@@ -224,6 +192,7 @@
             this.Controls.Add(this.viewGradesButton);
             this.Name = "StudentMainForm";
             this.Text = "E-journal";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StudentMainForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,8 +205,6 @@
         private System.Windows.Forms.Button viewSubjectsButton;
         private System.Windows.Forms.Button viewScheduleButton;
         private System.Windows.Forms.Button changePassword;
-        private System.Windows.Forms.Button searchStudent;
-        private System.Windows.Forms.Button searchTeacher;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button changeInformation;
         private System.Windows.Forms.ComboBox languageComboBox;

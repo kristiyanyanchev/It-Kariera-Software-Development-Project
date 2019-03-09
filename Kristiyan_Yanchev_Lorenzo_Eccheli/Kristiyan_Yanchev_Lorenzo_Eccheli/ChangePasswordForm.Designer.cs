@@ -107,6 +107,7 @@
             this.closeButton.TabIndex = 7;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // visibleCheckBox
             // 

@@ -44,11 +44,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             changepassword.ShowDialog();
         }
 
-        private void searchStudent_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void closeButton_Click(object sender, EventArgs e)
         {
             DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -59,14 +54,11 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
         }
 
-        private void searchTeacher_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void viewScheduleButton_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            StudentScheludeForm studentschelude = new StudentScheludeForm();
+            studentschelude.ShowDialog();
         }
 
         private void changeInformationButton_Click(object sender, EventArgs e)
@@ -80,8 +72,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             if(languageComboBox.SelectedIndex.ToString()== "Bulgarian")
             {
                 introductionLabel.Text = "Добре дошли в електронния дневник";
-                searchTeacher.Text = "Търси учител";
-                searchStudent.Text = "Търси ученик";
                 viewGradesButton.Text = "Оценки";
                 viewSubjectsButton.Text = "Предмети";
                 viewScheduleButton.Text = "Програма";
@@ -94,8 +84,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             else
             {
                 introductionLabel.Text = "Welcome to E-journal , Student";
-                searchTeacher.Text = "Search Teacher";
-                searchStudent.Text = "Search Student";
                 viewGradesButton.Text = "Grades";
                 viewSubjectsButton.Text = "Subjects";
                 viewScheduleButton.Text = "Schedule";
@@ -107,5 +95,18 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
         }
 
+        private void StudentMainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialog == DialogResult.Yes)
+            {
+                Application.ExitThread();
+            }
+            else if (dialog == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }
