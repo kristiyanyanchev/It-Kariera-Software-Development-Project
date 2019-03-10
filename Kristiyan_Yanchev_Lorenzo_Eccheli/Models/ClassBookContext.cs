@@ -29,5 +29,12 @@ namespace Data
         {
 
         }
+
+        public ClassBookContext(string connectionString) : base(connectionString)
+        {
+
+        }
+        
+
     }
 }

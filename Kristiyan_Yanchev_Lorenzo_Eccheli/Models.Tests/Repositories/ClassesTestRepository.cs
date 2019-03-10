@@ -1,60 +1,57 @@
 ﻿using Data.Models;
+using Data.Repositories;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Data.Repositories 
+namespace Data.Test.Repositories
 {
-    public class ClassesRepository : IRepository<Class>
+    class ClassesTestRepository : ClassesRepository
     {
-       
-        public virtual void Add(Class entity)
+        public override void Add(Class entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 context.Classes.Add(entity);
                 context.SaveChanges();
             }
-            
         }
 
-        public virtual void Delete(Class entity)
+        public override void Delete(Class entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 context.Classes.Remove(entity);
                 context.SaveChanges();
             }
-           
         }
 
-        public virtual void Edit(Class entity)
+        public override void Edit(Class entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 var result = context.Classes.Single(x => x.Id == entity.Id);
                 result = entity;
                 context.SaveChanges();
             }
-           
         }
 
-        public virtual Class GetById(int id)
+        public override Class GetById(int id)
         {
             Class result;
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 result = context.Classes.Single(x => x.Id == id);
             }
             return result;
         }
 
-        public virtual IEnumerable<Class> List()
+        public override IEnumerable<Class> List()
         {
             List<Class> result;
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 result = context.Classes.ToList();
             }

@@ -57,14 +57,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AbsenceTestRepository.cs" />
+    <Compile Include="Repositories\AnnualLeaveTestRepository.cs" />
+    <Compile Include="Repositories\BonusesTestRepository.cs" />
+    <Compile Include="Repositories\ClassesTestRepository.cs" />
+    <Compile Include="Repositories\GradesTestRepository.cs" />
+    <Compile Include="Repositories\ParentsTestRepositroy.cs" />
+    <Compile Include="Repositories\PeriodsTestRepository.cs" />
+    <Compile Include="TestClassbookContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Models\Data.csproj">
       <Project>{5ff175c7-39e5-4c47-985e-0a568f03e77c}</Project>

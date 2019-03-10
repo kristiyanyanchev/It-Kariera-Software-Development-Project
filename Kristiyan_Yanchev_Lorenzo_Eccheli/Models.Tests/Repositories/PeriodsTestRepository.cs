@@ -1,57 +1,54 @@
 ﻿using Data.Models;
+using Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Data.Repositories
+namespace Data.Test.Repositories
 {
-    public class PeriodsRepository : IRepository<Period>
+    class PeriodsTestRepository : PeriodsRepository
     {
-
-        public virtual void Add(Period entity)
+        public override void Add(Period entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 context.Periods.Add(entity);
                 context.SaveChanges();
             }
-            
         }
 
-        public virtual void Delete(Period entity)
+        public override void Delete(Period entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 context.Periods.Remove(entity);
                 context.SaveChanges();
             }
-            
         }
 
-        public virtual void Edit(Period entity)
+        public override void Edit(Period entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 var result = context.Periods.Single(x => x.Id == entity.Id);
                 result = entity;
                 context.SaveChanges();
             }
-           
         }
 
-        public virtual Period GetById(int id)
+        public override Period GetById(int id)
         {
             Period result;
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 result = context.Periods.Single(x => x.Id == id);
             }
             return result;
-            
         }
 
-        public virtual IEnumerable<Period> List()
+        public override IEnumerable<Period> List()
         {
             List<Period> result;
             using (var context = new ClassBookContext())

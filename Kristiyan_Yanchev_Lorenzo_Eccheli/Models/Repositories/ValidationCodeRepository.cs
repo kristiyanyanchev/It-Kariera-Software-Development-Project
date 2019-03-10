@@ -8,7 +8,7 @@ namespace Data.Repositories
 {
     class ValidationCodeRepository : IRepository<ValidationCode>
     {
-        public void Add(ValidationCode entity)
+        public virtual void Add(ValidationCode entity)
         {
             
             using (var context = new ClassBookContext())
@@ -18,7 +18,7 @@ namespace Data.Repositories
             }
         }
 
-        public void Delete(ValidationCode entity)
+        public virtual void Delete(ValidationCode entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -28,7 +28,7 @@ namespace Data.Repositories
             
         }
 
-        public void Edit(ValidationCode entity)
+        public virtual void Edit(ValidationCode entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -39,7 +39,7 @@ namespace Data.Repositories
             
         }
 
-        public ValidationCode GetById(int id)
+        public virtual ValidationCode GetById(int id)
         {
             ValidationCode result;
             using (var context = new ClassBookContext())
@@ -50,7 +50,7 @@ namespace Data.Repositories
             
         }
 
-        public IEnumerable<ValidationCode> List()
+        public virtual IEnumerable<ValidationCode> List()
         {
             List<ValidationCode> result;
             using (var context = new ClassBookContext())

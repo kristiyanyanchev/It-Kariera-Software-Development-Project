@@ -9,7 +9,7 @@ namespace Data.Repositories
     public class PhysiciansRepository : IRepository<Physician>
     {
 
-        public void Add(Physician entity)
+        public virtual void Add(Physician entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -19,7 +19,7 @@ namespace Data.Repositories
             
         }
 
-        public void Delete(Physician entity)
+        public virtual void Delete(Physician entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -29,7 +29,7 @@ namespace Data.Repositories
             
         }
 
-        public void Edit(Physician entity)
+        public virtual void Edit(Physician entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -40,7 +40,7 @@ namespace Data.Repositories
             
         }
 
-        public Physician GetById(int id)
+        public virtual Physician GetById(int id)
         {
             Physician result;
             using (var context = new ClassBookContext())
@@ -50,7 +50,7 @@ namespace Data.Repositories
             return result;
         }
 
-        public IEnumerable<Physician> List()
+        public virtual IEnumerable<Physician> List()
         {
             List<Physician> result;
             using (var context = new ClassBookContext())

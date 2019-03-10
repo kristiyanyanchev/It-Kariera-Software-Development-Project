@@ -9,7 +9,7 @@ namespace Data.Repositories
     public class SickLeavesRepository : IRepository<SickLeave>
     {
         
-        public void Add(SickLeave entity)
+        public virtual void Add(SickLeave entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -19,7 +19,7 @@ namespace Data.Repositories
             
         }
 
-        public void Delete(SickLeave entity)
+        public virtual void Delete(SickLeave entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -29,7 +29,7 @@ namespace Data.Repositories
             
         }
 
-        public void Edit(SickLeave entity)
+        public virtual void Edit(SickLeave entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -40,7 +40,7 @@ namespace Data.Repositories
             
         }
 
-        public SickLeave GetById(int id)
+        public virtual SickLeave GetById(int id)
         {
             SickLeave result;
             using (var context = new ClassBookContext())
@@ -50,7 +50,7 @@ namespace Data.Repositories
             return result;
         }
 
-        public IEnumerable<SickLeave> List()
+        public virtual IEnumerable<SickLeave> List()
         {
             List<SickLeave> result;
             using (var context = new ClassBookContext())

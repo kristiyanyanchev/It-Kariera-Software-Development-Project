@@ -1,6 +1,6 @@
 ﻿namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
-    partial class TeacerViewStudentsForm
+    partial class TeacherViewStudentsForm
     {
         /// <summary>
         /// Required designer variable.

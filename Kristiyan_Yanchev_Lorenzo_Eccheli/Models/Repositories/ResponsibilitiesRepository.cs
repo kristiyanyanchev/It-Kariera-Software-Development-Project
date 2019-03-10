@@ -9,7 +9,7 @@ namespace Data.Repositories
     public class ResponsibilitiesRepository : IRepository<Responsibility>
     {
         
-        public void Add(Responsibility entity)
+        public virtual void Add(Responsibility entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -19,7 +19,7 @@ namespace Data.Repositories
             
         }
 
-        public void Delete(Responsibility entity)
+        public virtual void Delete(Responsibility entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -29,7 +29,7 @@ namespace Data.Repositories
             
         }
 
-        public void Edit(Responsibility entity)
+        public virtual void Edit(Responsibility entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -40,7 +40,7 @@ namespace Data.Repositories
             
         }
 
-        public Responsibility GetById(int id)
+        public virtual Responsibility GetById(int id)
         {
             Responsibility result;
             using (var context = new ClassBookContext())
@@ -50,7 +50,7 @@ namespace Data.Repositories
             return result;
         }
 
-        public IEnumerable<Responsibility> List()
+        public virtual IEnumerable<Responsibility> List()
         {
             List<Responsibility> result;
             using (var context = new ClassBookContext())

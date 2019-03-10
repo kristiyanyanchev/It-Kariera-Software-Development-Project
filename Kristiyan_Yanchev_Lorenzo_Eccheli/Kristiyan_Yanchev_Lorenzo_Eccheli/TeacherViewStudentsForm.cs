@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
-    public partial class TeacerViewStudentsForm : Form
+    public partial class TeacherViewStudentsForm : Form
     {
-        public TeacerViewStudentsForm()
+        public TeacherViewStudentsForm()
         {
             InitializeComponent();
         }

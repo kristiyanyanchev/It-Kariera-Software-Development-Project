@@ -1,66 +1,61 @@
 ﻿using Data.Models;
+using Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
- 
+using System.Threading.Tasks;
 
-namespace Data.Repositories
+namespace Data.Test.Repositories
 {
-    public class ParentsRepository : IRepository<Parent>
+    class ParentsTestRepositroy : ParentsRepository
     {
-        
-        public virtual void Add(Parent entity)
+        public override void Add(Parent entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 context.Parents.Add(entity);
                 context.SaveChanges();
             }
-            
         }
 
-        public virtual void Delete(Parent entity)
+        public override void Delete(Parent entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 context.Parents.Remove(entity);
                 context.SaveChanges();
             }
-            
         }
 
-        public virtual void Edit(Parent entity)
+        public override void Edit(Parent entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 var result = context.Parents.Single(x => x.Id == entity.Id);
                 result = entity;
                 context.SaveChanges();
             }
-            
         }
 
-        public virtual Parent GetById(int id)
+        public override Parent GetById(int id)
         {
             Parent result;
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 result = context.Parents.Single(x => x.Id == id);
             }
             return result;
         }
 
-        public virtual IEnumerable<Parent> List()
+        public override IEnumerable<Parent> List()
         {
             List<Parent> result;
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 result = context.Parents.ToList();
             }
             return result;
-
         }
     }
-
 }

@@ -10,7 +10,7 @@ namespace Data.Repositories
     {
          
 
-        public void Add(Student entity)
+        public virtual void Add(Student entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -22,7 +22,7 @@ namespace Data.Repositories
             
         }
 
-        public void Delete(Student entity)
+        public virtual void Delete(Student entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -32,7 +32,7 @@ namespace Data.Repositories
             
         }
 
-        public void Edit(Student entity)
+        public virtual void Edit(Student entity)
         {
             using (var context = new ClassBookContext())
             {
@@ -43,7 +43,7 @@ namespace Data.Repositories
             
         }
 
-        public Student GetById(int id)
+        public virtual Student GetById(int id)
         {
             Student result;
             using (var context = new ClassBookContext())
@@ -54,7 +54,7 @@ namespace Data.Repositories
 
         }
 
-        public IEnumerable<Student> List()
+        public virtual IEnumerable<Student> List()
         {
             List<Student> result;
             using (var context = new ClassBookContext())

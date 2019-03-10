@@ -1,65 +1,62 @@
 ﻿using Data.Models;
+using Data.Repositories;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Data.Repositories
+namespace Data.Test.Repositories
 {
-    public class AbsencesRepository : IRepository<Absence>
+    public class AbsenceTestRepository : AbsencesRepository
     {
-      
-        public virtual void Add(Absence entity)
+        //new TestClassbookContext()
+        public override void Add(Absence entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 context.Absences.Add(entity);
                 context.SaveChanges();
             }
-           
         }
 
-        public virtual void Delete(Absence entity)
+        public override void Delete(Absence entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 context.Absences.Remove(entity);
                 context.SaveChanges();
             }
-                
         }
 
-        public virtual void Edit(Absence entity)
+        public override void Edit(Absence entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 var result = context.Absences.Single(x => x.Id == entity.Id);
                 result = entity;
                 context.SaveChanges();
             }
-            
         }
 
-        public virtual Absence GetById(int id)
+        public override Absence GetById(int id)
         {
             Absence result;
-            using(var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 result = context.Absences.Single(x => x.Id == id);
             }
             return result;
         }
 
-        public virtual IEnumerable<Absence> List()
+        public override IEnumerable<Absence> List()
         {
             List<Absence> result;
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 result = context.Absences.ToList();
             }
             return result;
         }
-
     }
 }

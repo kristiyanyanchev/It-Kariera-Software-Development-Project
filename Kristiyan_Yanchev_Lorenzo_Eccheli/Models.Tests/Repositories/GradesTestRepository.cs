@@ -1,64 +1,60 @@
 ﻿using Data.Models;
+using Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Data.Repositories
+namespace Data.Test.Repositories
 {
-    public class GradesRepository : IRepository<GradeRecord>
+    class GradesTestRepository : GradesRepository
     {
-        
-        public virtual void Add(GradeRecord entity)
+        public override void Add(GradeRecord entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 context.GradeRecords.Add(entity);
                 context.SaveChanges();
             }
-            
         }
 
-        public virtual void Delete(GradeRecord entity)
+        public override void Delete(GradeRecord entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 context.GradeRecords.Remove(entity);
             }
-            
         }
 
-        public virtual void Edit(GradeRecord entity)
+        public override void Edit(GradeRecord entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 var result = context.GradeRecords.Single(x => x.Id == entity.Id);
                 result = entity;
                 context.SaveChanges();
             }
-           
         }
 
-        public virtual GradeRecord GetById(int id)
+        public override GradeRecord GetById(int id)
         {
             GradeRecord result;
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 result = context.GradeRecords.Single(x => x.Id == id);
             }
             return result;
-
         }
 
-        public virtual IEnumerable<GradeRecord> List()
+        public override IEnumerable<GradeRecord> List()
         {
             List<GradeRecord> result;
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 result = context.GradeRecords.ToList();
             }
             return result;
-
         }
     }
 }

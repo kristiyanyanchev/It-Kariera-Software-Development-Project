@@ -30,7 +30,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void viewstudentsButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TeacerViewStudentsForm teacerview = new TeacerViewStudentsForm();
+            TeacherViewStudentsForm teacerview = new TeacherViewStudentsForm();
             teacerview.ShowDialog();
         }
 

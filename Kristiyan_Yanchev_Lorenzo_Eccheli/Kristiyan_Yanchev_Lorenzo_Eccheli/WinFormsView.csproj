@@ -173,11 +173,11 @@
     <Compile Include="StudentViewSubjectsForm.Designer.cs">
       <DependentUpon>StudentViewSubjectsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacerViewStudentsForm.cs">
+    <Compile Include="TeacherViewStudentsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacerViewStudentsForm.Designer.cs">
-      <DependentUpon>TeacerViewStudentsForm.cs</DependentUpon>
+    <Compile Include="TeacherViewStudentsForm.Designer.cs">
+      <DependentUpon>TeacherViewStudentsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TeacherAbsencesForm.cs">
       <SubType>Form</SubType>
@@ -282,8 +282,8 @@
     <EmbeddedResource Include="StudentViewSubjectsForm.resx">
       <DependentUpon>StudentViewSubjectsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacerViewStudentsForm.resx">
-      <DependentUpon>TeacerViewStudentsForm.cs</DependentUpon>
+    <EmbeddedResource Include="TeacherViewStudentsForm.resx">
+      <DependentUpon>TeacherViewStudentsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherAbsencesForm.resx">
       <DependentUpon>TeacherAbsencesForm.cs</DependentUpon>
