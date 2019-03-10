@@ -1,61 +1,57 @@
 ﻿using Data.Models;
+using Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Data.Repositories
+namespace Data.Test.Repositories
 {
-    public class StudentsRepository : IRepository<Student>
+    class StudentsTestRepository : StudentsRepository
     {
-         
-
-        public virtual void Add(Student entity)
+        public override void Add(Student entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 context.Students.Add(entity);
                 context.SaveChanges();
             }
-            
         }
 
-        public virtual void Delete(Student entity)
+        public override void Delete(Student entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 context.Students.Remove(entity);
                 context.SaveChanges();
             }
-            
         }
 
-        public virtual void Edit(Student entity)
+        public override void Edit(Student entity)
         {
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 var result = context.Students.Single(x => x.Id == entity.Id);
                 result = entity;
                 context.SaveChanges();
             }
-            
         }
 
-        public virtual Student GetById(int id)
+        public override Student GetById(int id)
         {
             Student result;
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 result = context.Students.Single(x => x.Id == id);
             }
             return result;
-
         }
 
-        public virtual IEnumerable<Student> List()
+        public override IEnumerable<Student> List()
         {
             List<Student> result;
-            using (var context = new ClassBookContext())
+            using (var context = new TestClassbookContext())
             {
                 result = context.Students.ToList();
             }
