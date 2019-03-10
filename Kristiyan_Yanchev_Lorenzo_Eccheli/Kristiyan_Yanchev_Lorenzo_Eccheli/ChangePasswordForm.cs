@@ -29,7 +29,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 return false;
             }
             //мойе да даде грешка
-            //Nauchi angliiski po dqvolite 
         }
 
         private void visibleCheckBox_CheckedChanged(object sender, EventArgs e)

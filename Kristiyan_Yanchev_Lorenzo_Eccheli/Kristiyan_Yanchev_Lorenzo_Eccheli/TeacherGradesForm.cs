@@ -37,7 +37,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
         }
 
-        private bool validate()
+        private bool ValidateData()
         {
             if(classesListBox.SelectedItem!=null && studentsListbox.SelectedItem!=null &&
                 gradesListBox.SelectedItem!=null)
@@ -57,7 +57,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void removeGradeButton_Click(object sender, EventArgs e)
         {
-            if(validate())
+            if(ValidateData())
             {
                 gradesListBox.Items.Remove(gradesListBox.SelectedItem);
             }

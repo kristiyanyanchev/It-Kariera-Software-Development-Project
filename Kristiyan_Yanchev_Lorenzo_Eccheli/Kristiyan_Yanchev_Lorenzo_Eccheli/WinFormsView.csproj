@@ -179,6 +179,12 @@
     <Compile Include="StudentViewSubjectsForm.Designer.cs">
       <DependentUpon>StudentViewSubjectsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeacherViewStudentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherViewStudentsForm.Designer.cs">
+      <DependentUpon>TeacherViewStudentsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherAbsencesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentViewSubjectsForm.resx">
       <DependentUpon>StudentViewSubjectsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherViewStudentsForm.resx">
+      <DependentUpon>TeacherViewStudentsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherAbsencesForm.resx">
       <DependentUpon>TeacherAbsencesForm.cs</DependentUpon>
