@@ -8,7 +8,7 @@ namespace ConsoleView
     public class RegistrationDisplay
     {
         private DateTime dateofbirth;
-        private string egn, name , family , role , password , email , address , phonenumber ;
+        private string egn, name ,  family, role , password , email , address , phonenumber ;
 
         public string Name
         {
@@ -35,7 +35,7 @@ namespace ConsoleView
             {
                 if (value.Length >= 4 && value.Length < 12 && value != null)
                 {
-                    name = value;
+                    family = value;
                 }
                 else throw new Exception("Invalid family");
             }
