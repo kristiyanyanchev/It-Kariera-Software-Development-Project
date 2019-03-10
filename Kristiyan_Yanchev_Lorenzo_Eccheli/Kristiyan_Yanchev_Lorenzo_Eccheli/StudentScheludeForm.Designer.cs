@@ -1,6 +1,6 @@
 ﻿namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
-    partial class TeacherViewStudentsForm
+    partial class StudentScheludeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.scheludeListBox = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // scheludeListBox
+            // 
+            this.scheludeListBox.FormattingEnabled = true;
+            this.scheludeListBox.Location = new System.Drawing.Point(57, 44);
+            this.scheludeListBox.Name = "scheludeListBox";
+            this.scheludeListBox.Size = new System.Drawing.Size(120, 95);
+            this.scheludeListBox.TabIndex = 0;
+            // 
+            // StudentScheludeForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "TeacherViewStudentsForm";
+            this.Controls.Add(this.scheludeListBox);
+            this.Name = "StudentScheludeForm";
+            this.Text = "StudentScheludeForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox scheludeListBox;
     }
 }

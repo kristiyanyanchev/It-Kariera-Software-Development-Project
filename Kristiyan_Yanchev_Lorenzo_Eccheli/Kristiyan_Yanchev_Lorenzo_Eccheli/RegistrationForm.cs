@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Data.Models;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -18,9 +17,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         }
 
         private string nextformlanguage;
-        private Student student;
-        private Teacher teacher;
-        private Parent parent;
 
         public RegistrationForm(string language)
         {
@@ -113,7 +109,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 if(roleComboBox.SelectedItem.ToString()=="Student")
                 {
                     this.Hide();
-                    student = new Student(firstNameTextBox.Text,lastNameTextBox.Text,Convert.ToDateTime(birthdatePicker),addressTextBox.Text,ucnTextBox.Text,phoneNumberTextBox.Text,emailTextBox.Text);
                     StudentMainForm studentform = new StudentMainForm();
                     studentform.ShowDialog();
                 }

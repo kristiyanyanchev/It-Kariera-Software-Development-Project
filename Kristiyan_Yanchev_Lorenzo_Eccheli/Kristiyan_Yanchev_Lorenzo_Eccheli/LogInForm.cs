@@ -47,9 +47,9 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if(dialog==DialogResult.OK)
+            if (dialog == DialogResult.Yes)
             {
                 Application.ExitThread();
             }

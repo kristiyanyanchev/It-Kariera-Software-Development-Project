@@ -39,7 +39,7 @@
             // phoneNumberLabel
             // 
             this.phoneNumberLabel.AutoSize = true;
-            this.phoneNumberLabel.Location = new System.Drawing.Point(13, 13);
+            this.phoneNumberLabel.Location = new System.Drawing.Point(32, 29);
             this.phoneNumberLabel.Name = "phoneNumberLabel";
             this.phoneNumberLabel.Size = new System.Drawing.Size(78, 13);
             this.phoneNumberLabel.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // PhoneNumberTextBox
             // 
-            this.PhoneNumberTextBox.Location = new System.Drawing.Point(98, 13);
+            this.PhoneNumberTextBox.Location = new System.Drawing.Point(151, 26);
             this.PhoneNumberTextBox.Name = "PhoneNumberTextBox";
             this.PhoneNumberTextBox.Size = new System.Drawing.Size(100, 20);
             this.PhoneNumberTextBox.TabIndex = 1;
@@ -55,7 +55,7 @@
             // emailLabel
             // 
             this.emailLabel.AutoSize = true;
-            this.emailLabel.Location = new System.Drawing.Point(13, 47);
+            this.emailLabel.Location = new System.Drawing.Point(32, 64);
             this.emailLabel.Name = "emailLabel";
             this.emailLabel.Size = new System.Drawing.Size(32, 13);
             this.emailLabel.TabIndex = 2;
@@ -63,34 +63,37 @@
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(98, 44);
+            this.emailTextBox.Location = new System.Drawing.Point(151, 57);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(100, 20);
             this.emailTextBox.TabIndex = 3;
             // 
             // saveChangesButton
             // 
-            this.saveChangesButton.Location = new System.Drawing.Point(12, 82);
+            this.saveChangesButton.Location = new System.Drawing.Point(93, 116);
             this.saveChangesButton.Name = "saveChangesButton";
             this.saveChangesButton.Size = new System.Drawing.Size(105, 41);
             this.saveChangesButton.TabIndex = 4;
             this.saveChangesButton.Text = "Save Changes";
             this.saveChangesButton.UseVisualStyleBackColor = true;
+            this.saveChangesButton.Click += new System.EventHandler(this.saveChangesButton_Click);
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(123, 82);
+            this.closeButton.Location = new System.Drawing.Point(225, 180);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(75, 41);
             this.closeButton.TabIndex = 5;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // ChangeInformationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(249, 166);
+            this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            this.ClientSize = new System.Drawing.Size(312, 233);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.saveChangesButton);
             this.Controls.Add(this.emailTextBox);
