@@ -39,14 +39,15 @@
             // 
             // gradesDataGrid
             // 
+            this.gradesDataGrid.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.gradesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gradesDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Date,
             this.Grade,
             this.Subject});
-            this.gradesDataGrid.Location = new System.Drawing.Point(144, 12);
+            this.gradesDataGrid.Location = new System.Drawing.Point(2, 79);
             this.gradesDataGrid.Name = "gradesDataGrid";
-            this.gradesDataGrid.Size = new System.Drawing.Size(343, 328);
+            this.gradesDataGrid.Size = new System.Drawing.Size(320, 328);
             this.gradesDataGrid.TabIndex = 0;
             // 
             // Date
@@ -69,27 +70,34 @@
             // 
             // viewStatisticButton
             // 
-            this.viewStatisticButton.Location = new System.Drawing.Point(13, 13);
+            this.viewStatisticButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.viewStatisticButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.viewStatisticButton.Location = new System.Drawing.Point(540, 317);
             this.viewStatisticButton.Name = "viewStatisticButton";
-            this.viewStatisticButton.Size = new System.Drawing.Size(125, 23);
+            this.viewStatisticButton.Size = new System.Drawing.Size(125, 76);
             this.viewStatisticButton.TabIndex = 1;
             this.viewStatisticButton.Text = "View Statistics";
-            this.viewStatisticButton.UseVisualStyleBackColor = true;
+            this.viewStatisticButton.UseVisualStyleBackColor = false;
+            this.viewStatisticButton.Click += new System.EventHandler(this.viewStatisticButton_Click);
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(13, 43);
+            this.closeButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.closeButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.closeButton.Location = new System.Drawing.Point(540, 422);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(125, 23);
+            this.closeButton.Size = new System.Drawing.Size(125, 76);
             this.closeButton.TabIndex = 2;
             this.closeButton.Text = "Close";
-            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.UseVisualStyleBackColor = false;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // StudentViewGradesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(505, 401);
+            this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            this.ClientSize = new System.Drawing.Size(677, 510);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.viewStatisticButton);
             this.Controls.Add(this.gradesDataGrid);

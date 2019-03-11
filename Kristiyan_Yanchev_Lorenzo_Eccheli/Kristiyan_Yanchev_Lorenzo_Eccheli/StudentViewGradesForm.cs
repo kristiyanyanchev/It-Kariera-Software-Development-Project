@@ -15,5 +15,16 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
             InitializeComponent();
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void viewStatisticButton_Click(object sender, EventArgs e)
+        {
+            StudentGradesStatisticsForm studentstatistic = new StudentGradesStatisticsForm();
+            studentstatistic.ShowDialog();
+        }
     }
 }
