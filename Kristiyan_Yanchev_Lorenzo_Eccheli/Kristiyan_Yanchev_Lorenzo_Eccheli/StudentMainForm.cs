@@ -33,9 +33,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void viewSubjectsButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            StudentViewSubjectsForm studentsubject = new StudentViewSubjectsForm();
-            studentsubject.ShowDialog();
+            
         }
 
         private void changePassword_Click(object sender, EventArgs e)

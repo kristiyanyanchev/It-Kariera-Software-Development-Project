@@ -45,9 +45,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void addstudentButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            TeacherAddStudentForm teacheradd = new TeacherAddStudentForm();
-            teacheradd.ShowDialog();
+           //
         }
 
         private void absensesButton_Click(object sender, EventArgs e)

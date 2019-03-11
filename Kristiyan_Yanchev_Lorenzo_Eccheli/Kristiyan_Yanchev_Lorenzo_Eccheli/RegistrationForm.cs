@@ -127,9 +127,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 }
                 else
                 {
-                    this.Hide();
-                    PrincipalMainForm principalform = new PrincipalMainForm();
-                    principalform.ShowDialog();
+                    
                 }
                 
             }

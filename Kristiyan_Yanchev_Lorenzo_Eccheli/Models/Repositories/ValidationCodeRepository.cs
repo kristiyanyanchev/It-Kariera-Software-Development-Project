@@ -21,6 +21,7 @@ namespace Data.Repositories
         {
             using (var context = new ClassBookContext())
             {
+                context.ValidationCodes.Attach(entity);
                 context.ValidationCodes.Remove(entity);
                 context.SaveChanges();
             }
@@ -32,7 +33,9 @@ namespace Data.Repositories
             using (var context = new ClassBookContext())
             {
                 var result = context.ValidationCodes.Single(x => x.Id == entity.Id);
-                result = entity;
+                result.Role = entity.Role;
+                result.Used = entity.Used;
+                result.Code = entity.Code;
                 context.SaveChanges();
             }
             
