@@ -36,37 +36,42 @@
             // newStudentsListBox
             // 
             this.newStudentsListBox.FormattingEnabled = true;
-            this.newStudentsListBox.Location = new System.Drawing.Point(94, 12);
+            this.newStudentsListBox.ItemHeight = 16;
+            this.newStudentsListBox.Location = new System.Drawing.Point(559, 146);
+            this.newStudentsListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.newStudentsListBox.Name = "newStudentsListBox";
-            this.newStudentsListBox.Size = new System.Drawing.Size(123, 160);
+            this.newStudentsListBox.Size = new System.Drawing.Size(163, 196);
             this.newStudentsListBox.TabIndex = 0;
             // 
             // addToClassButton
             // 
-            this.addToClassButton.Location = new System.Drawing.Point(13, 13);
+            this.addToClassButton.Location = new System.Drawing.Point(311, 343);
+            this.addToClassButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addToClassButton.Name = "addToClassButton";
-            this.addToClassButton.Size = new System.Drawing.Size(75, 35);
+            this.addToClassButton.Size = new System.Drawing.Size(113, 54);
             this.addToClassButton.TabIndex = 1;
             this.addToClassButton.Text = "Add To Class";
             this.addToClassButton.UseVisualStyleBackColor = true;
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(13, 54);
+            this.closeButton.Location = new System.Drawing.Point(622, 399);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(75, 35);
+            this.closeButton.Size = new System.Drawing.Size(100, 43);
             this.closeButton.TabIndex = 2;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
             // 
             // TeacherAddStudentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 370);
+            this.ClientSize = new System.Drawing.Size(735, 455);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.addToClassButton);
             this.Controls.Add(this.newStudentsListBox);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TeacherAddStudentForm";
             this.Text = "TeacherAddStudentForm";
             this.ResumeLayout(false);

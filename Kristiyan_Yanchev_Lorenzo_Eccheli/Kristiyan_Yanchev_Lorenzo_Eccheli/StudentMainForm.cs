@@ -17,23 +17,51 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             languageComboBox.SelectedItem = "English";
         }
 
+        public StudentMainForm(string language,string username)
+        {
+            InitializeComponent();
+            if (language=="Bulgarian")
+            {
+                introductionLabel.Text = "Добре дошли в електронния дневник,"+username;
+                viewGradesButton.Text = "Оценки";
+                viewSubjectsButton.Text = "Предмети";
+                viewScheduleButton.Text = "Програма";
+                viewAbsencesButton.Text = "Отсъствия";
+                changePassword.Text = "Смени паролата";
+                changeInformation.Text = "Смени информация";
+                languageLabel.Text = "Език";
+                exitButton.Text = "Изход";
+            }
+            else
+            {
+                InitializeComponent();
+                introductionLabel.Text = "Welcome to E-journal , "+username;
+                viewGradesButton.Text = "Grades";
+                viewSubjectsButton.Text = "Subjects";
+                viewScheduleButton.Text = "Schedule";
+                viewAbsencesButton.Text = "Absence";
+                changePassword.Text = "Change Password";
+                changeInformation.Text = "Change Information";
+                languageLabel.Text = "Language";
+                exitButton.Text = "Exit";
+            }
+
+        }
+
         private void viewGradesButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             StudentViewGradesForm studentgrades = new StudentViewGradesForm();
             studentgrades.ShowDialog();
         }
 
         private void viewAbsencesButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             StudentViewAbsencesForm studentabsences = new StudentViewAbsencesForm();
             studentabsences.ShowDialog();
         }
 
         private void viewSubjectsButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             StudentViewSubjectsForm studentsubject = new StudentViewSubjectsForm();
             studentsubject.ShowDialog();
         }
@@ -56,7 +84,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void viewScheduleButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             StudentScheludeForm studentschelude = new StudentScheludeForm();
             studentschelude.ShowDialog();
         }

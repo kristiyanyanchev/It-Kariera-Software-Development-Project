@@ -38,7 +38,7 @@
             this.phoneLabel = new System.Windows.Forms.Label();
             this.roleLabel = new System.Windows.Forms.Label();
             this.roleComboBox = new System.Windows.Forms.ComboBox();
-            this.firstNameTextBox = new System.Windows.Forms.TextBox();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.addressTextBox = new System.Windows.Forms.TextBox();
@@ -149,8 +149,7 @@
             this.roleComboBox.Items.AddRange(new object[] {
             "Student",
             "Parent",
-            "Teacher",
-            "Principal"});
+            "Teacher"});
             this.roleComboBox.Location = new System.Drawing.Point(464, 103);
             this.roleComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.roleComboBox.Name = "roleComboBox";
@@ -158,14 +157,14 @@
             this.roleComboBox.TabIndex = 7;
             this.roleComboBox.SelectedIndexChanged += new System.EventHandler(this.roleComboBox_SelectedIndexChanged);
             // 
-            // firstNameTextBox
+            // usernameTextBox
             // 
-            this.firstNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.firstNameTextBox.Location = new System.Drawing.Point(121, 104);
-            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.firstNameTextBox.Name = "firstNameTextBox";
-            this.firstNameTextBox.Size = new System.Drawing.Size(98, 20);
-            this.firstNameTextBox.TabIndex = 8;
+            this.usernameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.usernameTextBox.Location = new System.Drawing.Point(121, 104);
+            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Size = new System.Drawing.Size(98, 20);
+            this.usernameTextBox.TabIndex = 8;
             // 
             // passwordTextBox
             // 
@@ -425,7 +424,7 @@
             this.Controls.Add(this.addressTextBox);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.passwordTextBox);
-            this.Controls.Add(this.firstNameTextBox);
+            this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.roleComboBox);
             this.Controls.Add(this.roleLabel);
             this.Controls.Add(this.phoneLabel);
@@ -456,7 +455,7 @@
         private System.Windows.Forms.Label phoneLabel;
         private System.Windows.Forms.Label roleLabel;
         private System.Windows.Forms.ComboBox roleComboBox;
-        private System.Windows.Forms.TextBox firstNameTextBox;
+        private System.Windows.Forms.TextBox usernameTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.TextBox addressTextBox;

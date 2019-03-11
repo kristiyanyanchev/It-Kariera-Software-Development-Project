@@ -15,5 +15,17 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
             InitializeComponent();
         }
+
+        private void newAbsenceButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TeacherMainForm teachermain = new TeacherMainForm();
+            teachermain.ShowDialog();
+        }
     }
 }

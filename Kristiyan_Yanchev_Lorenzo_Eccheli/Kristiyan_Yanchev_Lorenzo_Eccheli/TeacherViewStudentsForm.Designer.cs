@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.searchFirstNameTextBox = new System.Windows.Forms.TextBox();
             this.firstNameLabel = new System.Windows.Forms.Label();
             this.lastNameLabel = new System.Windows.Forms.Label();
@@ -52,156 +51,176 @@
             // 
             // searchFirstNameTextBox
             // 
-            this.searchFirstNameTextBox.Location = new System.Drawing.Point(76, 12);
+            this.searchFirstNameTextBox.Location = new System.Drawing.Point(101, 15);
+            this.searchFirstNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchFirstNameTextBox.Name = "searchFirstNameTextBox";
-            this.searchFirstNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.searchFirstNameTextBox.Size = new System.Drawing.Size(132, 22);
             this.searchFirstNameTextBox.TabIndex = 0;
             // 
             // firstNameLabel
             // 
             this.firstNameLabel.AutoSize = true;
-            this.firstNameLabel.Location = new System.Drawing.Point(12, 15);
+            this.firstNameLabel.Location = new System.Drawing.Point(16, 18);
+            this.firstNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(57, 13);
+            this.firstNameLabel.Size = new System.Drawing.Size(76, 17);
             this.firstNameLabel.TabIndex = 1;
             this.firstNameLabel.Text = "First Name";
             // 
             // lastNameLabel
             // 
             this.lastNameLabel.AutoSize = true;
-            this.lastNameLabel.Location = new System.Drawing.Point(183, 14);
+            this.lastNameLabel.Location = new System.Drawing.Point(244, 17);
+            this.lastNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(58, 13);
+            this.lastNameLabel.Size = new System.Drawing.Size(76, 17);
             this.lastNameLabel.TabIndex = 2;
             this.lastNameLabel.Text = "Last Name";
             // 
             // searchLastNameTextBox
             // 
-            this.searchLastNameTextBox.Location = new System.Drawing.Point(247, 12);
+            this.searchLastNameTextBox.Location = new System.Drawing.Point(329, 15);
+            this.searchLastNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchLastNameTextBox.Name = "searchLastNameTextBox";
-            this.searchLastNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.searchLastNameTextBox.Size = new System.Drawing.Size(132, 22);
             this.searchLastNameTextBox.TabIndex = 3;
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(354, 8);
+            this.searchButton.Location = new System.Drawing.Point(472, 10);
+            this.searchButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.Size = new System.Drawing.Size(100, 28);
             this.searchButton.TabIndex = 4;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
             // 
             // firstNameTextbox
             // 
-            this.firstNameTextbox.Location = new System.Drawing.Point(12, 86);
+            this.firstNameTextbox.Location = new System.Drawing.Point(16, 106);
+            this.firstNameTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.firstNameTextbox.Name = "firstNameTextbox";
-            this.firstNameTextbox.Size = new System.Drawing.Size(166, 20);
+            this.firstNameTextbox.Size = new System.Drawing.Size(220, 22);
             this.firstNameTextbox.TabIndex = 5;
             // 
             // lastNameTextBox
             // 
-            this.lastNameTextBox.Location = new System.Drawing.Point(181, 86);
+            this.lastNameTextBox.Location = new System.Drawing.Point(241, 106);
+            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lastNameTextBox.Name = "lastNameTextBox";
-            this.lastNameTextBox.Size = new System.Drawing.Size(166, 20);
+            this.lastNameTextBox.Size = new System.Drawing.Size(220, 22);
             this.lastNameTextBox.TabIndex = 6;
             // 
             // classTextBox
             // 
-            this.classTextBox.Location = new System.Drawing.Point(353, 86);
+            this.classTextBox.Location = new System.Drawing.Point(471, 106);
+            this.classTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.classTextBox.Name = "classTextBox";
-            this.classTextBox.Size = new System.Drawing.Size(36, 20);
+            this.classTextBox.Size = new System.Drawing.Size(47, 22);
             this.classTextBox.TabIndex = 7;
             // 
             // birthDateTextBox
             // 
-            this.birthDateTextBox.Location = new System.Drawing.Point(78, 110);
+            this.birthDateTextBox.Location = new System.Drawing.Point(104, 135);
+            this.birthDateTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.birthDateTextBox.Name = "birthDateTextBox";
-            this.birthDateTextBox.Size = new System.Drawing.Size(100, 20);
+            this.birthDateTextBox.Size = new System.Drawing.Size(132, 22);
             this.birthDateTextBox.TabIndex = 8;
             // 
             // inAbsentiaLabel
             // 
             this.inAbsentiaLabel.AutoSize = true;
-            this.inAbsentiaLabel.Location = new System.Drawing.Point(12, 139);
+            this.inAbsentiaLabel.Location = new System.Drawing.Point(16, 171);
+            this.inAbsentiaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.inAbsentiaLabel.Name = "inAbsentiaLabel";
-            this.inAbsentiaLabel.Size = new System.Drawing.Size(60, 13);
+            this.inAbsentiaLabel.Size = new System.Drawing.Size(78, 17);
             this.inAbsentiaLabel.TabIndex = 9;
             this.inAbsentiaLabel.Text = "In Absentia";
             // 
             // inAbsentiaTextBox
             // 
-            this.inAbsentiaTextBox.Location = new System.Drawing.Point(78, 136);
+            this.inAbsentiaTextBox.Location = new System.Drawing.Point(104, 167);
+            this.inAbsentiaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.inAbsentiaTextBox.Name = "inAbsentiaTextBox";
-            this.inAbsentiaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.inAbsentiaTextBox.Size = new System.Drawing.Size(132, 22);
             this.inAbsentiaTextBox.TabIndex = 10;
             // 
             // birthDateLabel
             // 
             this.birthDateLabel.AutoSize = true;
-            this.birthDateLabel.Location = new System.Drawing.Point(12, 117);
+            this.birthDateLabel.Location = new System.Drawing.Point(16, 144);
+            this.birthDateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.birthDateLabel.Name = "birthDateLabel";
-            this.birthDateLabel.Size = new System.Drawing.Size(54, 13);
+            this.birthDateLabel.Size = new System.Drawing.Size(71, 17);
             this.birthDateLabel.TabIndex = 11;
             this.birthDateLabel.Text = "Birth Date";
             // 
             // addressTextBox
             // 
-            this.addressTextBox.Location = new System.Drawing.Point(12, 162);
+            this.addressTextBox.Location = new System.Drawing.Point(16, 197);
+            this.addressTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(335, 20);
+            this.addressTextBox.Size = new System.Drawing.Size(445, 22);
             this.addressTextBox.TabIndex = 12;
             // 
             // schoolarshipLabel
             // 
             this.schoolarshipLabel.AutoSize = true;
-            this.schoolarshipLabel.Location = new System.Drawing.Point(9, 197);
+            this.schoolarshipLabel.Location = new System.Drawing.Point(12, 242);
+            this.schoolarshipLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.schoolarshipLabel.Name = "schoolarshipLabel";
-            this.schoolarshipLabel.Size = new System.Drawing.Size(68, 13);
+            this.schoolarshipLabel.Size = new System.Drawing.Size(90, 17);
             this.schoolarshipLabel.TabIndex = 13;
             this.schoolarshipLabel.Text = "Schoolarship";
             // 
             // schoolarshipTextBox
             // 
-            this.schoolarshipTextBox.Location = new System.Drawing.Point(83, 194);
+            this.schoolarshipTextBox.Location = new System.Drawing.Point(111, 239);
+            this.schoolarshipTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.schoolarshipTextBox.Name = "schoolarshipTextBox";
-            this.schoolarshipTextBox.Size = new System.Drawing.Size(100, 20);
+            this.schoolarshipTextBox.Size = new System.Drawing.Size(132, 22);
             this.schoolarshipTextBox.TabIndex = 14;
             // 
             // ucnTextBox
             // 
-            this.ucnTextBox.Location = new System.Drawing.Point(12, 220);
+            this.ucnTextBox.Location = new System.Drawing.Point(16, 271);
+            this.ucnTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ucnTextBox.Name = "ucnTextBox";
-            this.ucnTextBox.Size = new System.Drawing.Size(171, 20);
+            this.ucnTextBox.Size = new System.Drawing.Size(227, 22);
             this.ucnTextBox.TabIndex = 15;
             // 
             // phoneNumberTextBox
             // 
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(12, 247);
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(16, 304);
+            this.phoneNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
-            this.phoneNumberTextBox.Size = new System.Drawing.Size(171, 20);
+            this.phoneNumberTextBox.Size = new System.Drawing.Size(227, 22);
             this.phoneNumberTextBox.TabIndex = 16;
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(12, 273);
+            this.emailTextBox.Location = new System.Drawing.Point(16, 336);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(171, 20);
+            this.emailTextBox.Size = new System.Drawing.Size(227, 22);
             this.emailTextBox.TabIndex = 17;
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(12, 337);
+            this.closeButton.Location = new System.Drawing.Point(16, 415);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(75, 23);
+            this.closeButton.Size = new System.Drawing.Size(100, 28);
             this.closeButton.TabIndex = 18;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
             // 
-            // TeacerViewStudentsForm
+            // TeacherViewStudentsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            this.ClientSize = new System.Drawing.Size(679, 518);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.phoneNumberTextBox);
@@ -221,7 +240,8 @@
             this.Controls.Add(this.lastNameLabel);
             this.Controls.Add(this.firstNameLabel);
             this.Controls.Add(this.searchFirstNameTextBox);
-            this.Name = "TeacerViewStudentsForm";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "TeacherViewStudentsForm";
             this.Text = "TeacerViewStudentsForm";
             this.ResumeLayout(false);
             this.PerformLayout();
