@@ -38,14 +38,15 @@
             // 
             // absencesDataGrid
             // 
+            this.absencesDataGrid.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.absencesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.absencesDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.PeriodStartTime,
             this.PeriodEndTime,
             this.IsLate});
-            this.absencesDataGrid.Location = new System.Drawing.Point(151, 12);
+            this.absencesDataGrid.Location = new System.Drawing.Point(12, 12);
             this.absencesDataGrid.Name = "absencesDataGrid";
-            this.absencesDataGrid.Size = new System.Drawing.Size(343, 405);
+            this.absencesDataGrid.Size = new System.Drawing.Size(293, 405);
             this.absencesDataGrid.TabIndex = 0;
             // 
             // PeriodStartTime
@@ -68,17 +69,21 @@
             // 
             // CloseButton
             // 
-            this.CloseButton.Location = new System.Drawing.Point(13, 29);
+            this.CloseButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.CloseButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.CloseButton.Location = new System.Drawing.Point(382, 357);
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(109, 23);
+            this.CloseButton.Size = new System.Drawing.Size(109, 60);
             this.CloseButton.TabIndex = 1;
             this.CloseButton.Text = "Close";
-            this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.UseVisualStyleBackColor = false;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // StudentViewAbsencesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(503, 450);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.absencesDataGrid);

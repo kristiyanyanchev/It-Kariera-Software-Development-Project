@@ -40,51 +40,62 @@
             // 
             // GradesChart
             // 
+            this.GradesChart.BackColor = System.Drawing.Color.FloralWhite;
             chartArea1.Name = "ChartArea1";
             this.GradesChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.GradesChart.Legends.Add(legend1);
-            this.GradesChart.Location = new System.Drawing.Point(190, 4);
+            this.GradesChart.Location = new System.Drawing.Point(379, 44);
             this.GradesChart.Name = "GradesChart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.GradesChart.Series.Add(series1);
-            this.GradesChart.Size = new System.Drawing.Size(685, 300);
+            this.GradesChart.Size = new System.Drawing.Size(568, 289);
             this.GradesChart.TabIndex = 0;
             this.GradesChart.Text = "chart1";
             // 
             // selectSubjectListbox
             // 
+            this.selectSubjectListbox.BackColor = System.Drawing.Color.FloralWhite;
+            this.selectSubjectListbox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.selectSubjectListbox.FormattingEnabled = true;
-            this.selectSubjectListbox.Location = new System.Drawing.Point(13, 14);
+            this.selectSubjectListbox.ItemHeight = 19;
+            this.selectSubjectListbox.Location = new System.Drawing.Point(127, 44);
             this.selectSubjectListbox.Name = "selectSubjectListbox";
-            this.selectSubjectListbox.Size = new System.Drawing.Size(171, 290);
+            this.selectSubjectListbox.Size = new System.Drawing.Size(171, 289);
             this.selectSubjectListbox.TabIndex = 1;
             // 
             // selectSubjectButton
             // 
-            this.selectSubjectButton.Location = new System.Drawing.Point(13, 310);
+            this.selectSubjectButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.selectSubjectButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.selectSubjectButton.Location = new System.Drawing.Point(127, 387);
             this.selectSubjectButton.Name = "selectSubjectButton";
-            this.selectSubjectButton.Size = new System.Drawing.Size(171, 23);
+            this.selectSubjectButton.Size = new System.Drawing.Size(171, 66);
             this.selectSubjectButton.TabIndex = 2;
             this.selectSubjectButton.Text = "Select Subject";
-            this.selectSubjectButton.UseVisualStyleBackColor = true;
+            this.selectSubjectButton.UseVisualStyleBackColor = false;
+            this.selectSubjectButton.Click += new System.EventHandler(this.selectSubjectButton_Click);
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(13, 340);
+            this.closeButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.closeButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.closeButton.Location = new System.Drawing.Point(814, 437);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(171, 23);
+            this.closeButton.Size = new System.Drawing.Size(171, 68);
             this.closeButton.TabIndex = 3;
             this.closeButton.Text = "Close";
-            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.UseVisualStyleBackColor = false;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // StudentGradesStatisticsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(887, 450);
+            this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            this.ClientSize = new System.Drawing.Size(997, 517);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.selectSubjectButton);
             this.Controls.Add(this.selectSubjectListbox);

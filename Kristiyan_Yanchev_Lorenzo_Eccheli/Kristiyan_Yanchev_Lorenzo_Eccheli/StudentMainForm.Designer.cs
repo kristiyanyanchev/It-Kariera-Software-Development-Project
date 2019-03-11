@@ -44,7 +44,7 @@
             this.viewGradesButton.FlatAppearance.BorderSize = 0;
             this.viewGradesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewGradesButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.viewGradesButton.Location = new System.Drawing.Point(53, 152);
+            this.viewGradesButton.Location = new System.Drawing.Point(100, 162);
             this.viewGradesButton.Name = "viewGradesButton";
             this.viewGradesButton.Size = new System.Drawing.Size(130, 60);
             this.viewGradesButton.TabIndex = 0;
@@ -58,7 +58,7 @@
             this.viewAbsencesButton.FlatAppearance.BorderSize = 0;
             this.viewAbsencesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.viewAbsencesButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.viewAbsencesButton.Location = new System.Drawing.Point(357, 152);
+            this.viewAbsencesButton.Location = new System.Drawing.Point(100, 293);
             this.viewAbsencesButton.Name = "viewAbsencesButton";
             this.viewAbsencesButton.Size = new System.Drawing.Size(130, 60);
             this.viewAbsencesButton.TabIndex = 1;
@@ -72,7 +72,7 @@
             this.changePassword.FlatAppearance.BorderSize = 0;
             this.changePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.changePassword.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.changePassword.Location = new System.Drawing.Point(357, 231);
+            this.changePassword.Location = new System.Drawing.Point(341, 162);
             this.changePassword.Name = "changePassword";
             this.changePassword.Size = new System.Drawing.Size(130, 60);
             this.changePassword.TabIndex = 5;
@@ -86,7 +86,7 @@
             this.exitButton.FlatAppearance.BorderSize = 0;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.exitButton.Location = new System.Drawing.Point(549, 434);
+            this.exitButton.Location = new System.Drawing.Point(462, 434);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(144, 66);
             this.exitButton.TabIndex = 8;
@@ -100,7 +100,7 @@
             this.changeInformation.FlatAppearance.BorderSize = 0;
             this.changeInformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.changeInformation.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.changeInformation.Location = new System.Drawing.Point(357, 307);
+            this.changeInformation.Location = new System.Drawing.Point(341, 293);
             this.changeInformation.Name = "changeInformation";
             this.changeInformation.Size = new System.Drawing.Size(130, 60);
             this.changeInformation.TabIndex = 9;
@@ -116,7 +116,7 @@
             this.languageComboBox.Items.AddRange(new object[] {
             "Bulgarian",
             "English"});
-            this.languageComboBox.Location = new System.Drawing.Point(608, 70);
+            this.languageComboBox.Location = new System.Drawing.Point(510, 97);
             this.languageComboBox.Name = "languageComboBox";
             this.languageComboBox.Size = new System.Drawing.Size(76, 27);
             this.languageComboBox.TabIndex = 10;
@@ -127,7 +127,7 @@
             this.languageLabel.AutoSize = true;
             this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.languageLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.languageLabel.Location = new System.Drawing.Point(518, 70);
+            this.languageLabel.Location = new System.Drawing.Point(420, 97);
             this.languageLabel.Name = "languageLabel";
             this.languageLabel.Size = new System.Drawing.Size(62, 19);
             this.languageLabel.TabIndex = 11;
@@ -149,7 +149,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
-            this.ClientSize = new System.Drawing.Size(705, 512);
+            this.ClientSize = new System.Drawing.Size(618, 512);
             this.Controls.Add(this.introductionLabel);
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.languageComboBox);

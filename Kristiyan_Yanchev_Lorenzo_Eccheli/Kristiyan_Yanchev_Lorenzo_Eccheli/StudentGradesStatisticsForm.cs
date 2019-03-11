@@ -15,5 +15,27 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
             InitializeComponent();
         }
+
+        private bool Validate()
+        {
+            if (selectSubjectListbox.SelectedItem.ToString() != null)
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void selectSubjectButton_Click(object sender, EventArgs e)
+        {
+            if(Validate())
+            {
+
+            }
+        }
     }
 }

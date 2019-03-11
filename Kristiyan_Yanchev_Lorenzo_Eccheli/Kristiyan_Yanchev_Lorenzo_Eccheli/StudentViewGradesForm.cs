@@ -18,7 +18,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
 
         private void viewStatisticButton_Click(object sender, EventArgs e)

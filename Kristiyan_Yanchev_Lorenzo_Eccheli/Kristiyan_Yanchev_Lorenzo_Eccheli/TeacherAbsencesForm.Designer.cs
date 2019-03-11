@@ -38,25 +38,33 @@
             // 
             // newAbsenceButton
             // 
-            this.newAbsenceButton.Location = new System.Drawing.Point(13, 13);
+            this.newAbsenceButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.newAbsenceButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.newAbsenceButton.Location = new System.Drawing.Point(462, 178);
             this.newAbsenceButton.Name = "newAbsenceButton";
-            this.newAbsenceButton.Size = new System.Drawing.Size(91, 23);
+            this.newAbsenceButton.Size = new System.Drawing.Size(100, 55);
             this.newAbsenceButton.TabIndex = 0;
             this.newAbsenceButton.Text = "New Absence";
-            this.newAbsenceButton.UseVisualStyleBackColor = true;
+            this.newAbsenceButton.UseVisualStyleBackColor = false;
+            this.newAbsenceButton.Click += new System.EventHandler(this.newAbsenceButton_Click);
             // 
             // removeAbsenceButton
             // 
-            this.removeAbsenceButton.Location = new System.Drawing.Point(13, 42);
+            this.removeAbsenceButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.removeAbsenceButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.removeAbsenceButton.Location = new System.Drawing.Point(462, 284);
             this.removeAbsenceButton.Name = "removeAbsenceButton";
-            this.removeAbsenceButton.Size = new System.Drawing.Size(91, 35);
+            this.removeAbsenceButton.Size = new System.Drawing.Size(100, 55);
             this.removeAbsenceButton.TabIndex = 1;
             this.removeAbsenceButton.Text = "Remove Absence";
-            this.removeAbsenceButton.UseVisualStyleBackColor = true;
+            this.removeAbsenceButton.UseVisualStyleBackColor = false;
+            this.removeAbsenceButton.Click += new System.EventHandler(this.removeAbsenceButton_Click);
             // 
             // classesListBox
             // 
-            this.classesListBox.Location = new System.Drawing.Point(111, 13);
+            this.classesListBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.classesListBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.classesListBox.Location = new System.Drawing.Point(111, 56);
             this.classesListBox.Name = "classesListBox";
             this.classesListBox.Size = new System.Drawing.Size(137, 156);
             this.classesListBox.TabIndex = 2;
@@ -64,36 +72,44 @@
             // 
             // studentsListBox
             // 
-            this.studentsListBox.Location = new System.Drawing.Point(254, 12);
+            this.studentsListBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.studentsListBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.studentsListBox.Location = new System.Drawing.Point(111, 246);
             this.studentsListBox.Name = "studentsListBox";
-            this.studentsListBox.Size = new System.Drawing.Size(147, 156);
+            this.studentsListBox.Size = new System.Drawing.Size(137, 156);
             this.studentsListBox.TabIndex = 3;
             this.studentsListBox.UseCompatibleStateImageBehavior = false;
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(13, 83);
+            this.closeButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.closeButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.closeButton.Location = new System.Drawing.Point(462, 383);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(91, 35);
+            this.closeButton.Size = new System.Drawing.Size(100, 55);
             this.closeButton.TabIndex = 4;
             this.closeButton.Text = "Close";
-            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.UseVisualStyleBackColor = false;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // isLateCheckBox
             // 
             this.isLateCheckBox.AutoSize = true;
-            this.isLateCheckBox.Location = new System.Drawing.Point(407, 19);
+            this.isLateCheckBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.isLateCheckBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.isLateCheckBox.Location = new System.Drawing.Point(462, 66);
             this.isLateCheckBox.Name = "isLateCheckBox";
-            this.isLateCheckBox.Size = new System.Drawing.Size(58, 17);
+            this.isLateCheckBox.Size = new System.Drawing.Size(65, 23);
             this.isLateCheckBox.TabIndex = 5;
             this.isLateCheckBox.Text = "Is Late";
-            this.isLateCheckBox.UseVisualStyleBackColor = true;
+            this.isLateCheckBox.UseVisualStyleBackColor = false;
             // 
             // TeacherAbsencesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            this.ClientSize = new System.Drawing.Size(574, 450);
             this.Controls.Add(this.isLateCheckBox);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.studentsListBox);
