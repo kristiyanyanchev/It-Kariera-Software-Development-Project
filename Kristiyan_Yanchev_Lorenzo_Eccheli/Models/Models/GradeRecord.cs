@@ -12,9 +12,9 @@ namespace Data.Models
         public int Id { get; set; }
         public double Grade { get; set; }
         public DateTime Date { get; set; }
-
+        public string Subject { get; set; }
         public Student Student { get; set; }
-        public Subject Subject { get; set; }
+        
 
     }
 }

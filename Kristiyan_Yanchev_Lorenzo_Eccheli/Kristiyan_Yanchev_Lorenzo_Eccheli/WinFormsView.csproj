@@ -63,72 +63,6 @@
     <Compile Include="ParentForm.Designer.cs">
       <DependentUpon>ParentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PrincipalBonusesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrincipalBonusesForm.Designer.cs">
-      <DependentUpon>PrincipalBonusesForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PrincipalMainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrincipalMainForm.Designer.cs">
-      <DependentUpon>PrincipalMainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PrincipalRemoveStudentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrincipalRemoveStudentForm.Designer.cs">
-      <DependentUpon>PrincipalRemoveStudentForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PrincipalScholarshipForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrincipalScholarshipForm.Designer.cs">
-      <DependentUpon>PrincipalScholarshipForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PrincipalSubjectsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrincipalSubjectsForm.Designer.cs">
-      <DependentUpon>PrincipalSubjectsForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PrincipalTeacherSalaryForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrincipalTeacherSalaryForm.Designer.cs">
-      <DependentUpon>PrincipalTeacherSalaryForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PrincipalTeachersForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrincipalTeachersForm.Designer.cs">
-      <DependentUpon>PrincipalTeachersForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PrincipalValidationCodeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrincipalValidationCodeForm.Designer.cs">
-      <DependentUpon>PrincipalValidationCodeForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PrincipalViewLeavesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrincipalViewLeavesForm.Designer.cs">
-      <DependentUpon>PrincipalViewLeavesForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PrincipalViewTeachersForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrincipalViewTeachersForm.Designer.cs">
-      <DependentUpon>PrincipalViewTeachersForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StudentEnrollSubjectForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentEnrollSubjectForm.Designer.cs">
-      <DependentUpon>StudentEnrollSubjectForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="LogInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,12 +89,6 @@
     <Compile Include="StudentMainForm.Designer.cs">
       <DependentUpon>StudentMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentScheludeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentScheludeForm.Designer.cs">
-      <DependentUpon>StudentScheludeForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="StudentViewAbsencesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,12 +100,6 @@
     </Compile>
     <Compile Include="StudentViewGradesForm.Designer.cs">
       <DependentUpon>StudentViewGradesForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StudentViewSubjectsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentViewSubjectsForm.Designer.cs">
-      <DependentUpon>StudentViewSubjectsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TeacherViewStudentsForm.cs">
       <SubType>Form</SubType>
@@ -191,23 +113,11 @@
     <Compile Include="TeacherAbsencesForm.Designer.cs">
       <DependentUpon>TeacherAbsencesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherAddStudentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TeacherAddStudentForm.Designer.cs">
-      <DependentUpon>TeacherAddStudentForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="TeacherMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TeacherMainForm.Designer.cs">
       <DependentUpon>TeacherMainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TeacherTakeLeaveForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TeacherTakeLeaveForm.Designer.cs">
-      <DependentUpon>TeacherTakeLeaveForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TeacherGradesForm.cs">
       <SubType>Form</SubType>
@@ -223,39 +133,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ParentForm.resx">
       <DependentUpon>ParentForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalBonusesForm.resx">
-      <DependentUpon>PrincipalBonusesForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalMainForm.resx">
-      <DependentUpon>PrincipalMainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalRemoveStudentForm.resx">
-      <DependentUpon>PrincipalRemoveStudentForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalScholarshipForm.resx">
-      <DependentUpon>PrincipalScholarshipForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalSubjectsForm.resx">
-      <DependentUpon>PrincipalSubjectsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalTeacherSalaryForm.resx">
-      <DependentUpon>PrincipalTeacherSalaryForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalTeachersForm.resx">
-      <DependentUpon>PrincipalTeachersForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalValidationCodeForm.resx">
-      <DependentUpon>PrincipalValidationCodeForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalViewLeavesForm.resx">
-      <DependentUpon>PrincipalViewLeavesForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalViewTeachersForm.resx">
-      <DependentUpon>PrincipalViewTeachersForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentEnrollSubjectForm.resx">
-      <DependentUpon>StudentEnrollSubjectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
@@ -279,17 +156,11 @@
     <EmbeddedResource Include="StudentMainForm.resx">
       <DependentUpon>StudentMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentScheludeForm.resx">
-      <DependentUpon>StudentScheludeForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="StudentViewAbsencesForm.resx">
       <DependentUpon>StudentViewAbsencesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentViewGradesForm.resx">
       <DependentUpon>StudentViewGradesForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentViewSubjectsForm.resx">
-      <DependentUpon>StudentViewSubjectsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherViewStudentsForm.resx">
       <DependentUpon>TeacherViewStudentsForm.cs</DependentUpon>
@@ -297,14 +168,8 @@
     <EmbeddedResource Include="TeacherAbsencesForm.resx">
       <DependentUpon>TeacherAbsencesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherAddStudentForm.resx">
-      <DependentUpon>TeacherAddStudentForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TeacherMainForm.resx">
       <DependentUpon>TeacherMainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TeacherTakeLeaveForm.resx">
-      <DependentUpon>TeacherTakeLeaveForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherGradesForm.resx">
       <DependentUpon>TeacherGradesForm.cs</DependentUpon>

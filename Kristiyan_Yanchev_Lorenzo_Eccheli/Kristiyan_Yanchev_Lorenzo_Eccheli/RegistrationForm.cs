@@ -16,7 +16,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             InitializeComponent();
         }
 
-        private string nextformlanguage,username;
+        private string nextformlanguage;
 
         public RegistrationForm(string language)
         {
@@ -36,7 +36,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 registrationButton.Text = "Регистрация";
                 exitButton.Text = "Изход";
                 validationCodeLabel.Text = "*Код";
-                formToolTip.SetToolTip(usernameTextBox, "Въведете първото си име.");
+                formToolTip.SetToolTip(firstNameTextBox, "Въведете първото си име.");
                 formToolTip.SetToolTip(lastNameTextBox, "Въведете фамилията си.");
                 formToolTip.SetToolTip(passwordTextBox, "Създайте си парола.");
                 formToolTip.SetToolTip(visibleCheckBox, "Направете паролата видима или невидима.");
@@ -64,7 +64,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 registrationButton.Text = "Registration";
                 exitButton.Text = "Exit";
                 validationCodeLabel.Text = "*Validation Code";
-                formToolTip.SetToolTip(usernameTextBox, "Enter your first name.");
+                formToolTip.SetToolTip(firstNameTextBox, "Enter your first name.");
                 formToolTip.SetToolTip(lastNameTextBox, "Enter your family.");
                 formToolTip.SetToolTip(passwordTextBox, "Create new password.");
                 formToolTip.SetToolTip(visibleCheckBox, "Make your password visible or unvisible.");
@@ -80,29 +80,13 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private bool ValidateData()
         {
-            if(usernameTextBox.Text!=null && lastNameTextBox.Text!=null && 
+            if(firstNameTextBox.Text!=null && lastNameTextBox.Text!=null && 
                passwordTextBox.Text!=null && emailTextBox.Text!=null && 
                nameTextBox.Text!=null &&
                addressTextBox.Text!=null && phoneNumberTextBox.Text!=null && 
-               roleComboBox.SelectedItem!=null && double.TryParse(phoneNumberTextBox.Text,out double a)&&
-               phoneNumberTextBox.Text.Length==10)
+               roleComboBox.SelectedItem!=null && double.TryParse(phoneNumberTextBox.Text,out double a))
             {
-                if(roleComboBox.SelectedItem.ToString()=="Student" &&
-                    classnameTextBox.Text!=null && ucnTextBox.Text!=null)
-                {
-                    return true;
-                }
-            
-                else if(roleComboBox.SelectedItem.ToString() == "Teacher"&&
-                        classnameTextBox.Text!=null)
-                {
-                    return true;
-                }
-                else if(roleComboBox.SelectedItem.ToString() == "Parent" &&
-                    nameofchildTextBox.Text!=null)
-                {
-                    return true;
-                }
+                return true;
             }
             return false;
         }
@@ -125,8 +109,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 if(roleComboBox.SelectedItem.ToString()=="Student")
                 {
                     this.Hide();
-                    username = usernameTextBox.Text;
-                    StudentMainForm studentform = new StudentMainForm(nextformlanguage,username);
+                    StudentMainForm studentform = new StudentMainForm();
                     studentform.ShowDialog();
                 }
                 else if(roleComboBox.SelectedItem.ToString() == "Teacher")
@@ -200,7 +183,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             Makeinvisible();
             if(roleComboBox.SelectedItem.ToString()=="Student")
             {
-                if (usernameLabel.Text == "Username")
+                if (usernameLabel.Text == "Name")
                 {
                     ucnLabel.Visible = true;
                     ucnTextBox.Visible = true;
@@ -227,7 +210,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
             else if(roleComboBox.SelectedItem.ToString()=="Parent")
             {
-                if(usernameLabel.Text== "Username")
+                if(usernameLabel.Text=="Name")
                 {
                     nameofchildLabel.Visible = true;
                     nameofchildTextBox.Visible = true;
@@ -242,7 +225,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
             else if(roleComboBox.SelectedItem.ToString() == "Teacher")
             {
-                if (usernameLabel.Text == "Username")
+                if (usernameLabel.Text == "Name")
                 {
                     classnameLabel.Visible = true;
                     classnameTextBox.Visible = true;

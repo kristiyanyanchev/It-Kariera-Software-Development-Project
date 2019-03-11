@@ -16,5 +16,15 @@ namespace Data.Models
         public string Role { get; set; }
         public bool Used { get; set; }
 
+        public ValidationCode()
+        {
+
+        }
+
+        public ValidationCode(string code, string role)
+        {
+            Code = code;
+            Role = role;
+        }
     }
 }
