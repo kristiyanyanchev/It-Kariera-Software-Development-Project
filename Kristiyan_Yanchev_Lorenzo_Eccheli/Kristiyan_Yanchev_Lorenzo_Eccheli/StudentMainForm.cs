@@ -56,9 +56,9 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void viewScheduleButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            StudentScheludeForm studentschelude = new StudentScheludeForm();
-            studentschelude.ShowDialog();
+            //this.Hide();
+            //StudentScheludeForm studentschelude = new StudentScheludeForm();
+            //studentschelude.ShowDialog();
         }
 
         private void changeInformationButton_Click(object sender, EventArgs e)
@@ -73,8 +73,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             {
                 introductionLabel.Text = "Добре дошли в електронния дневник";
                 viewGradesButton.Text = "Оценки";
-                viewSubjectsButton.Text = "Предмети";
-                viewScheduleButton.Text = "Програма";
+                //viewSubjectsButton.Text = "Предмети";
+                //viewScheduleButton.Text = "Програма";
                 viewAbsencesButton.Text = "Отсъствия";
                 changePassword.Text = "Смени паролата";
                 changeInformation.Text = "Смени информация";
@@ -85,8 +85,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             {
                 introductionLabel.Text = "Welcome to E-journal , Student";
                 viewGradesButton.Text = "Grades";
-                viewSubjectsButton.Text = "Subjects";
-                viewScheduleButton.Text = "Schedule";
+                //viewSubjectsButton.Text = "Subjects";
+                //viewScheduleButton.Text = "Schedule";
                 viewAbsencesButton.Text = "Absence";
                 changePassword.Text = "Change Password";
                 changeInformation.Text = "Change Information";

@@ -13,7 +13,7 @@ namespace Data.Models
         [Required]
         public Student Student { get; set; }
         [Required]
-        public Period Period { get; set; }
+        public DateTime Period { get; set; }
         [Required]
         public bool IsLate { get; set; }
 

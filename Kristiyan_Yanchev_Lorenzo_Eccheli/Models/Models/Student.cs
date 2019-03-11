@@ -31,10 +31,12 @@ namespace Data.Models
         public string ValidationCode { get; set; }
 
         public Class Class { get; set; }
-        public Physician Physician { get; set; }
 
         public ICollection<Parent> Parents { get; set; }
-        public ICollection<Subject> Subjects { get; set; }
+        public Student()
+        {
+
+        }
 
         public Student(string firstname,string lastname,DateTime birthdate,string address,string ucn,string phonenumber,string email)
         {

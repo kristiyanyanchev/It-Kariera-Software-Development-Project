@@ -30,8 +30,6 @@
         {
             this.viewGradesButton = new System.Windows.Forms.Button();
             this.viewAbsencesButton = new System.Windows.Forms.Button();
-            this.viewSubjectsButton = new System.Windows.Forms.Button();
-            this.viewScheduleButton = new System.Windows.Forms.Button();
             this.changePassword = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.changeInformation = new System.Windows.Forms.Button();
@@ -67,34 +65,6 @@
             this.viewAbsencesButton.Text = "Absence";
             this.viewAbsencesButton.UseVisualStyleBackColor = false;
             this.viewAbsencesButton.Click += new System.EventHandler(this.viewAbsencesButton_Click);
-            // 
-            // viewSubjectsButton
-            // 
-            this.viewSubjectsButton.BackColor = System.Drawing.Color.FloralWhite;
-            this.viewSubjectsButton.FlatAppearance.BorderSize = 0;
-            this.viewSubjectsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.viewSubjectsButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.viewSubjectsButton.Location = new System.Drawing.Point(53, 231);
-            this.viewSubjectsButton.Name = "viewSubjectsButton";
-            this.viewSubjectsButton.Size = new System.Drawing.Size(130, 60);
-            this.viewSubjectsButton.TabIndex = 2;
-            this.viewSubjectsButton.Text = "Subjects";
-            this.viewSubjectsButton.UseVisualStyleBackColor = false;
-            this.viewSubjectsButton.Click += new System.EventHandler(this.viewSubjectsButton_Click);
-            // 
-            // viewScheduleButton
-            // 
-            this.viewScheduleButton.BackColor = System.Drawing.Color.FloralWhite;
-            this.viewScheduleButton.FlatAppearance.BorderSize = 0;
-            this.viewScheduleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.viewScheduleButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.viewScheduleButton.Location = new System.Drawing.Point(53, 307);
-            this.viewScheduleButton.Name = "viewScheduleButton";
-            this.viewScheduleButton.Size = new System.Drawing.Size(130, 60);
-            this.viewScheduleButton.TabIndex = 4;
-            this.viewScheduleButton.Text = "Schedule";
-            this.viewScheduleButton.UseVisualStyleBackColor = false;
-            this.viewScheduleButton.Click += new System.EventHandler(this.viewScheduleButton_Click);
             // 
             // changePassword
             // 
@@ -186,8 +156,6 @@
             this.Controls.Add(this.changeInformation);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.changePassword);
-            this.Controls.Add(this.viewScheduleButton);
-            this.Controls.Add(this.viewSubjectsButton);
             this.Controls.Add(this.viewAbsencesButton);
             this.Controls.Add(this.viewGradesButton);
             this.Name = "StudentMainForm";
@@ -202,8 +170,6 @@
 
         private System.Windows.Forms.Button viewGradesButton;
         private System.Windows.Forms.Button viewAbsencesButton;
-        private System.Windows.Forms.Button viewSubjectsButton;
-        private System.Windows.Forms.Button viewScheduleButton;
         private System.Windows.Forms.Button changePassword;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button changeInformation;
