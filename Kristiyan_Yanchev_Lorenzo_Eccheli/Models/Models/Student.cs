@@ -33,6 +33,8 @@ namespace Data.Models
         public Class Class { get; set; }
 
         public ICollection<Parent> Parents { get; set; }
+        public ICollection<Absence> Absences { get; set; }
+
         public Student()
         {
 

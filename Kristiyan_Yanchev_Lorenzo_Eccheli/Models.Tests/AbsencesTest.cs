@@ -14,29 +14,27 @@ namespace Data.Test
     public class AbsencesTest
     {
         [Test]
-        public void AddTest()
+        public void Add_NormalConditions()
         {
             var absence = new Absence()
             {
                 IsLate = true,
-                //Period = new Period()
-                //{
-                //    StartTime = DateTime.MinValue,
-                //    EndTime = DateTime.MaxValue,
-                //},
+                Period = DateTime.Today,
                 Student = new Student()
                 {
                     FirstName = "a",
                     LastName = "b",
-                    BirthDate = DateTime.MinValue,
+                    BirthDate = new DateTime(2010,10,1),
                     InAbsentia = true,
-                    Address = "se"
+                    Address = "se",
+                    ValidationCode = "0001"
                 }
             };
             var repo = new AbsenceTestRepository();
             repo.Add(absence);
-
-            Assert.AreSame(repo.List().Last(), absence);
+       
+            Assert.AreEqual(repo.List().Last().Id, absence.Id);
         }
+
     }
 }
