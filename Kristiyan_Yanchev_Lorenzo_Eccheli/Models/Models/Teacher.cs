@@ -28,5 +28,20 @@ namespace Data.Models
         public string ValidationCode { get; set; }
 
         public Class Class { get; set; }
+
+        public Teacher()
+        {
+
+        }
+
+        public Teacher(string firstName, string lastName, string subject, string position, string ucn, string validationCode)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Subject = subject;
+            Position = position;
+            Ucn = ucn;
+            ValidationCode = validationCode;
+        }
     }
 }

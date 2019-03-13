@@ -10,8 +10,20 @@ namespace Data.Models
     {
         [Key]
         public int Id { get; set; }
+        [Required]
         public string Name { get; set; }
-
+        [Required]
         public Teacher Teacher { get; set; }
+
+        public Class()
+        {
+
+        }
+
+        public Class(string name, Teacher teacher)
+        {
+            Name = name;
+            Teacher = teacher;
+        }
     }
 }
