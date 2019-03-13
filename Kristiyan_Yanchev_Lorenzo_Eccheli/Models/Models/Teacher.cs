@@ -27,5 +27,6 @@ namespace Data.Models
         [Required]
         public string ValidationCode { get; set; }
 
+        public Class Class { get; set; }
     }
 }

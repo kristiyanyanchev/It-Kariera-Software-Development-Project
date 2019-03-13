@@ -24,6 +24,7 @@ namespace Data.Test.Repositories
         {
             using (var context = new TestClassbookContext())
             {
+                context.Absences.Attach(entity);
                 context.Absences.Remove(entity);
                 context.SaveChanges();
             }

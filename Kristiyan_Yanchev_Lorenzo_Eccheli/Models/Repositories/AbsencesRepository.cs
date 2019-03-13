@@ -24,6 +24,7 @@ namespace Data.Repositories
         {
             using (var context = new ClassBookContext())
             {
+                context.Absences.Attach(entity);
                 context.Absences.Remove(entity);
                 context.SaveChanges();
             }
@@ -35,7 +36,10 @@ namespace Data.Repositories
             using (var context = new ClassBookContext())
             {
                 var result = context.Absences.Single(x => x.Id == entity.Id);
-                result = entity;
+                result.IsLate = entity.IsLate;
+                result.Period = entity.Period;
+                result.Student = entity.Student;
+                result.StudentId = result.StudentId;
                 context.SaveChanges();
             }
             
