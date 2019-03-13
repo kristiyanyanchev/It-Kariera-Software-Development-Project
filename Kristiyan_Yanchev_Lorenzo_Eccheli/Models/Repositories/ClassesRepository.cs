@@ -24,6 +24,7 @@ namespace Data.Repositories
         {
             using (var context = new ClassBookContext())
             {
+                context.Classes.Attach(entity);
                 context.Classes.Remove(entity);
                 context.SaveChanges();
             }

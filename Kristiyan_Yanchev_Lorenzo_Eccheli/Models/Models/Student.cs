@@ -26,6 +26,7 @@ namespace Data.Models
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
 
+       
 
         [Required]
         public string ValidationCode { get; set; }
@@ -34,13 +35,24 @@ namespace Data.Models
 
         public ICollection<Parent> Parents { get; set; }
         public ICollection<Absence> Absences { get; set; }
+        public ICollection<GradeRecord> GradeRecords { get; set; }
 
         public Student()
         {
 
         }
 
-        public Student(string firstname,string lastname,DateTime birthdate,string address,string ucn,string phonenumber,string email)
+        public Student(string firstName, string lastName, DateTime birthDate, bool inAbsentia, string address, string validationCode)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            BirthDate = birthDate;
+            InAbsentia = inAbsentia;
+            Address = address;
+            ValidationCode = validationCode;
+        }
+
+        public Student(string firstname,string lastname,DateTime birthdate,string address,string ucn,string phonenumber,string email, string validationCode)
         {
             FirstName = firstname;
             LastName = lastname;
@@ -49,6 +61,7 @@ namespace Data.Models
             Ucn = ucn;
             PhoneNumber = phonenumber;
             Email = email;
+            ValidationCode = validationCode;
         }
 
         public void AddScholarship(decimal scolarship)

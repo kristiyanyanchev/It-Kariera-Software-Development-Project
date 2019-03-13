@@ -23,7 +23,9 @@ namespace Data.Test.Repositories
         {
             using (var context = new TestClassbookContext())
             {
+                context.GradeRecords.Attach(entity);
                 context.GradeRecords.Remove(entity);
+                context.SaveChanges();
             }
         }
 
