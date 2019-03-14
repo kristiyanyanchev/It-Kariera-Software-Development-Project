@@ -36,6 +36,8 @@
             this.gradeButton = new System.Windows.Forms.Button();
             this.emailLabel = new System.Windows.Forms.Label();
             this.phonenumberLabel = new System.Windows.Forms.Label();
+            this.languageLabel = new System.Windows.Forms.Label();
+            this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // closeButton
@@ -65,7 +67,7 @@
             // 
             this.emailTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.emailTextBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.emailTextBox.Location = new System.Drawing.Point(425, 104);
+            this.emailTextBox.Location = new System.Drawing.Point(424, 142);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.ReadOnly = true;
             this.emailTextBox.Size = new System.Drawing.Size(131, 24);
@@ -75,7 +77,7 @@
             // 
             this.phoneNumberTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.phoneNumberTextBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(425, 167);
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(424, 205);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.ReadOnly = true;
             this.phoneNumberTextBox.Size = new System.Drawing.Size(131, 24);
@@ -110,7 +112,7 @@
             this.emailLabel.AutoSize = true;
             this.emailLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.emailLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.emailLabel.Location = new System.Drawing.Point(331, 107);
+            this.emailLabel.Location = new System.Drawing.Point(330, 145);
             this.emailLabel.Name = "emailLabel";
             this.emailLabel.Size = new System.Drawing.Size(40, 19);
             this.emailLabel.TabIndex = 19;
@@ -121,11 +123,35 @@
             this.phonenumberLabel.AutoSize = true;
             this.phonenumberLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.phonenumberLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.phonenumberLabel.Location = new System.Drawing.Point(331, 170);
+            this.phonenumberLabel.Location = new System.Drawing.Point(330, 208);
             this.phonenumberLabel.Name = "phonenumberLabel";
             this.phonenumberLabel.Size = new System.Drawing.Size(88, 19);
             this.phonenumberLabel.TabIndex = 20;
             this.phonenumberLabel.Text = "Phone number";
+            // 
+            // languageLabel
+            // 
+            this.languageLabel.AutoSize = true;
+            this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.languageLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.languageLabel.Location = new System.Drawing.Point(330, 52);
+            this.languageLabel.Name = "languageLabel";
+            this.languageLabel.Size = new System.Drawing.Size(62, 19);
+            this.languageLabel.TabIndex = 21;
+            this.languageLabel.Text = "Language";
+            // 
+            // languageComboBox
+            // 
+            this.languageComboBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.languageComboBox.FormattingEnabled = true;
+            this.languageComboBox.Items.AddRange(new object[] {
+            "English",
+            "Bulgarian"});
+            this.languageComboBox.Location = new System.Drawing.Point(424, 52);
+            this.languageComboBox.Name = "languageComboBox";
+            this.languageComboBox.Size = new System.Drawing.Size(121, 21);
+            this.languageComboBox.TabIndex = 22;
+            this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
             // 
             // ParentForm
             // 
@@ -133,6 +159,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(579, 450);
+            this.Controls.Add(this.languageComboBox);
+            this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.phonenumberLabel);
             this.Controls.Add(this.emailLabel);
             this.Controls.Add(this.gradeButton);
@@ -158,5 +186,7 @@
         private System.Windows.Forms.Button gradeButton;
         private System.Windows.Forms.Label emailLabel;
         private System.Windows.Forms.Label phonenumberLabel;
+        private System.Windows.Forms.Label languageLabel;
+        private System.Windows.Forms.ComboBox languageComboBox;
     }
 }

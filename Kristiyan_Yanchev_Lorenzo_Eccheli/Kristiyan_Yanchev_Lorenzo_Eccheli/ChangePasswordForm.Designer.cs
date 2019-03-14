@@ -42,89 +42,108 @@
             // oldPasswordLabel
             // 
             this.oldPasswordLabel.AutoSize = true;
-            this.oldPasswordLabel.Location = new System.Drawing.Point(12, 25);
+            this.oldPasswordLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.oldPasswordLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.oldPasswordLabel.Location = new System.Drawing.Point(12, 68);
             this.oldPasswordLabel.Name = "oldPasswordLabel";
-            this.oldPasswordLabel.Size = new System.Drawing.Size(72, 13);
+            this.oldPasswordLabel.Size = new System.Drawing.Size(85, 19);
             this.oldPasswordLabel.TabIndex = 0;
             this.oldPasswordLabel.Text = "Old Password";
             // 
             // newPasswordLabel
             // 
             this.newPasswordLabel.AutoSize = true;
-            this.newPasswordLabel.Location = new System.Drawing.Point(12, 56);
+            this.newPasswordLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.newPasswordLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.newPasswordLabel.Location = new System.Drawing.Point(12, 110);
             this.newPasswordLabel.Name = "newPasswordLabel";
-            this.newPasswordLabel.Size = new System.Drawing.Size(78, 13);
+            this.newPasswordLabel.Size = new System.Drawing.Size(91, 19);
             this.newPasswordLabel.TabIndex = 1;
             this.newPasswordLabel.Text = "New Password";
             // 
             // ConfirmPasswordLabel
             // 
             this.ConfirmPasswordLabel.AutoSize = true;
-            this.ConfirmPasswordLabel.Location = new System.Drawing.Point(12, 83);
+            this.ConfirmPasswordLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.ConfirmPasswordLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.ConfirmPasswordLabel.Location = new System.Drawing.Point(12, 155);
             this.ConfirmPasswordLabel.Name = "ConfirmPasswordLabel";
-            this.ConfirmPasswordLabel.Size = new System.Drawing.Size(91, 13);
+            this.ConfirmPasswordLabel.Size = new System.Drawing.Size(110, 19);
             this.ConfirmPasswordLabel.TabIndex = 2;
             this.ConfirmPasswordLabel.Text = "Confirm Password";
             // 
             // oldPasswordTextBox
             // 
-            this.oldPasswordTextBox.Location = new System.Drawing.Point(109, 22);
+            this.oldPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.oldPasswordTextBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.oldPasswordTextBox.Location = new System.Drawing.Point(154, 63);
             this.oldPasswordTextBox.Name = "oldPasswordTextBox";
-            this.oldPasswordTextBox.Size = new System.Drawing.Size(100, 20);
+            this.oldPasswordTextBox.Size = new System.Drawing.Size(100, 24);
             this.oldPasswordTextBox.TabIndex = 3;
             // 
             // newPasswordTextBox
             // 
-            this.newPasswordTextBox.Location = new System.Drawing.Point(109, 49);
+            this.newPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.newPasswordTextBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.newPasswordTextBox.Location = new System.Drawing.Point(154, 105);
             this.newPasswordTextBox.Name = "newPasswordTextBox";
             this.newPasswordTextBox.PasswordChar = '*';
-            this.newPasswordTextBox.Size = new System.Drawing.Size(100, 20);
+            this.newPasswordTextBox.Size = new System.Drawing.Size(100, 24);
             this.newPasswordTextBox.TabIndex = 4;
             // 
             // confirmNewPasswordTextBox
             // 
-            this.confirmNewPasswordTextBox.Location = new System.Drawing.Point(109, 75);
+            this.confirmNewPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.confirmNewPasswordTextBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.confirmNewPasswordTextBox.Location = new System.Drawing.Point(154, 150);
             this.confirmNewPasswordTextBox.Name = "confirmNewPasswordTextBox";
             this.confirmNewPasswordTextBox.PasswordChar = '*';
-            this.confirmNewPasswordTextBox.Size = new System.Drawing.Size(100, 20);
+            this.confirmNewPasswordTextBox.Size = new System.Drawing.Size(100, 24);
             this.confirmNewPasswordTextBox.TabIndex = 5;
             // 
             // changePasswordButton
             // 
-            this.changePasswordButton.Location = new System.Drawing.Point(87, 112);
+            this.changePasswordButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.changePasswordButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.changePasswordButton.Location = new System.Drawing.Point(102, 195);
             this.changePasswordButton.Name = "changePasswordButton";
-            this.changePasswordButton.Size = new System.Drawing.Size(90, 40);
+            this.changePasswordButton.Size = new System.Drawing.Size(90, 52);
             this.changePasswordButton.TabIndex = 6;
             this.changePasswordButton.Text = "Change Password";
-            this.changePasswordButton.UseVisualStyleBackColor = true;
+            this.changePasswordButton.UseVisualStyleBackColor = false;
             this.changePasswordButton.Click += new System.EventHandler(this.changePasswordButton_Click);
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(214, 161);
+            this.closeButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.closeButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.closeButton.Location = new System.Drawing.Point(243, 221);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(90, 40);
+            this.closeButton.Size = new System.Drawing.Size(90, 49);
             this.closeButton.TabIndex = 7;
             this.closeButton.Text = "Close";
-            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.UseVisualStyleBackColor = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // visibleCheckBox
             // 
             this.visibleCheckBox.AutoSize = true;
-            this.visibleCheckBox.Location = new System.Drawing.Point(231, 49);
+            this.visibleCheckBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.visibleCheckBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.visibleCheckBox.Location = new System.Drawing.Point(266, 107);
             this.visibleCheckBox.Name = "visibleCheckBox";
-            this.visibleCheckBox.Size = new System.Drawing.Size(56, 17);
+            this.visibleCheckBox.Size = new System.Drawing.Size(67, 23);
             this.visibleCheckBox.TabIndex = 9;
             this.visibleCheckBox.Text = "Visible";
-            this.visibleCheckBox.UseVisualStyleBackColor = true;
+            this.visibleCheckBox.UseVisualStyleBackColor = false;
             this.visibleCheckBox.CheckedChanged += new System.EventHandler(this.visibleCheckBox_CheckedChanged);
             // 
             // ChangePasswordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(316, 213);
+            this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            this.ClientSize = new System.Drawing.Size(345, 282);
             this.Controls.Add(this.visibleCheckBox);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.changePasswordButton);

@@ -16,6 +16,29 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             InitializeComponent();
         }
 
+        public ParentForm(string language)
+        {
+            InitializeComponent();
+            if(language=="Bulgarian")
+            {
+                selectButton.Text = "Избери";
+                gradeButton.Text = "Оценка";
+                closeButton.Text = "Затвори";
+                languageLabel.Text = "Език";
+                emailLabel.Text = "Имейл";
+                phonenumberLabel.Text = "Телефонен номер";
+            }
+            else
+            {
+                selectButton.Text = "Select";
+                gradeButton.Text = "Grade";
+                closeButton.Text = "Close";
+                languageLabel.Text = "Language";
+                emailLabel.Text = "Email";
+                phonenumberLabel.Text = "Phone Number";
+            }
+        }
+
         private bool Validate()
         {
             if (teacherListBox.SelectedItem.ToString() != null)
@@ -52,6 +75,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
             StudentViewGradesForm studentgrade = new StudentViewGradesForm();
             studentgrade.ShowDialog();
+        }
+
+        private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 }

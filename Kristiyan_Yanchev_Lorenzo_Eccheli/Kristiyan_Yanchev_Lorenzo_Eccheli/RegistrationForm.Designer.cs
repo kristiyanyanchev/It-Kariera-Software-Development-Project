@@ -61,6 +61,9 @@
             this.nameofchildTextBox = new System.Windows.Forms.TextBox();
             this.nameLabel = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.backButton = new System.Windows.Forms.Button();
+            this.languageLabel = new System.Windows.Forms.Label();
+            this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // introductionLabel
@@ -135,7 +138,7 @@
             this.roleLabel.AutoSize = true;
             this.roleLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.roleLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.roleLabel.Location = new System.Drawing.Point(331, 105);
+            this.roleLabel.Location = new System.Drawing.Point(334, 142);
             this.roleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.roleLabel.Name = "roleLabel";
             this.roleLabel.Size = new System.Drawing.Size(33, 19);
@@ -151,7 +154,7 @@
             "Parent",
             "Teacher",
             "Principal"});
-            this.roleComboBox.Location = new System.Drawing.Point(464, 103);
+            this.roleComboBox.Location = new System.Drawing.Point(467, 140);
             this.roleComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.roleComboBox.Name = "roleComboBox";
             this.roleComboBox.Size = new System.Drawing.Size(92, 21);
@@ -289,7 +292,7 @@
             // 
             // birthdatePicker
             // 
-            this.birthdatePicker.Location = new System.Drawing.Point(464, 296);
+            this.birthdatePicker.Location = new System.Drawing.Point(467, 333);
             this.birthdatePicker.Name = "birthdatePicker";
             this.birthdatePicker.Size = new System.Drawing.Size(159, 20);
             this.birthdatePicker.TabIndex = 21;
@@ -298,7 +301,7 @@
             // ucnTextBox
             // 
             this.ucnTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.ucnTextBox.Location = new System.Drawing.Point(464, 252);
+            this.ucnTextBox.Location = new System.Drawing.Point(467, 289);
             this.ucnTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.ucnTextBox.Name = "ucnTextBox";
             this.ucnTextBox.Size = new System.Drawing.Size(98, 20);
@@ -310,7 +313,7 @@
             this.birthdayLabel.AutoSize = true;
             this.birthdayLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.birthdayLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.birthdayLabel.Location = new System.Drawing.Point(326, 298);
+            this.birthdayLabel.Location = new System.Drawing.Point(329, 335);
             this.birthdayLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.birthdayLabel.Name = "birthdayLabel";
             this.birthdayLabel.Size = new System.Drawing.Size(75, 19);
@@ -323,7 +326,7 @@
             this.ucnLabel.AutoSize = true;
             this.ucnLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.ucnLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.ucnLabel.Location = new System.Drawing.Point(326, 253);
+            this.ucnLabel.Location = new System.Drawing.Point(329, 290);
             this.ucnLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ucnLabel.Name = "ucnLabel";
             this.ucnLabel.Size = new System.Drawing.Size(33, 19);
@@ -336,7 +339,7 @@
             this.classnameLabel.AutoSize = true;
             this.classnameLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.classnameLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.classnameLabel.Location = new System.Drawing.Point(326, 196);
+            this.classnameLabel.Location = new System.Drawing.Point(329, 233);
             this.classnameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.classnameLabel.Name = "classnameLabel";
             this.classnameLabel.Size = new System.Drawing.Size(38, 19);
@@ -347,7 +350,7 @@
             // classnameTextBox
             // 
             this.classnameTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.classnameTextBox.Location = new System.Drawing.Point(464, 195);
+            this.classnameTextBox.Location = new System.Drawing.Point(467, 232);
             this.classnameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.classnameTextBox.Name = "classnameTextBox";
             this.classnameTextBox.Size = new System.Drawing.Size(98, 20);
@@ -359,7 +362,7 @@
             this.nameofchildLabel.AutoSize = true;
             this.nameofchildLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.nameofchildLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.nameofchildLabel.Location = new System.Drawing.Point(326, 149);
+            this.nameofchildLabel.Location = new System.Drawing.Point(329, 186);
             this.nameofchildLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nameofchildLabel.Name = "nameofchildLabel";
             this.nameofchildLabel.Size = new System.Drawing.Size(83, 19);
@@ -371,7 +374,7 @@
             // nameofchildTextBox
             // 
             this.nameofchildTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.nameofchildTextBox.Location = new System.Drawing.Point(464, 149);
+            this.nameofchildTextBox.Location = new System.Drawing.Point(467, 186);
             this.nameofchildTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameofchildTextBox.Name = "nameofchildTextBox";
             this.nameofchildTextBox.Size = new System.Drawing.Size(98, 20);
@@ -398,12 +401,56 @@
             this.nameTextBox.Size = new System.Drawing.Size(98, 20);
             this.nameTextBox.TabIndex = 32;
             // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.backButton.FlatAppearance.BorderSize = 0;
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.backButton.Location = new System.Drawing.Point(582, 383);
+            this.backButton.Margin = new System.Windows.Forms.Padding(2);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(82, 59);
+            this.backButton.TabIndex = 33;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // languageLabel
+            // 
+            this.languageLabel.AutoSize = true;
+            this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.languageLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.languageLabel.Location = new System.Drawing.Point(334, 103);
+            this.languageLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.languageLabel.Name = "languageLabel";
+            this.languageLabel.Size = new System.Drawing.Size(62, 19);
+            this.languageLabel.TabIndex = 34;
+            this.languageLabel.Text = "Language";
+            // 
+            // languageComboBox
+            // 
+            this.languageComboBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.languageComboBox.FormattingEnabled = true;
+            this.languageComboBox.Items.AddRange(new object[] {
+            "English",
+            "Bulgarian"});
+            this.languageComboBox.Location = new System.Drawing.Point(467, 101);
+            this.languageComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.languageComboBox.Name = "languageComboBox";
+            this.languageComboBox.Size = new System.Drawing.Size(92, 21);
+            this.languageComboBox.TabIndex = 35;
+            this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
+            // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(675, 519);
+            this.Controls.Add(this.languageComboBox);
+            this.Controls.Add(this.languageLabel);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.nameofchildTextBox);
@@ -479,5 +526,8 @@
         private System.Windows.Forms.TextBox nameofchildTextBox;
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Label languageLabel;
+        private System.Windows.Forms.ComboBox languageComboBox;
     }
 }

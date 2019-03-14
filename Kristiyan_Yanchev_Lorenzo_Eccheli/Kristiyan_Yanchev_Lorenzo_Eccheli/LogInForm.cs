@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
-    public partial class E_Journal : Form
+    public partial class LogInForm : Form
     {
-        public E_Journal()
+        public LogInForm()
         {
             InitializeComponent();
         }

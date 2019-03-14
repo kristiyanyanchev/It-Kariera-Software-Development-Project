@@ -19,8 +19,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private bool ValidateData()
         {
             if(oldPasswordTextBox.Text!=null && newPasswordTextBox.Text!=null &&
-                confirmNewPasswordTextBox.Text!=null &&
-                confirmNewPasswordTextBox.Text==newPasswordTextBox.Text)
+                confirmNewPasswordTextBox.Text!=null)
             {
                 return true;
             }
@@ -28,7 +27,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             {
                 return false;
             }
-            //мойе да даде грешка
         }
 
         private void visibleCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -47,7 +45,14 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void changePasswordButton_Click(object sender, EventArgs e)
         {
+            if(Validate())
+            {
 
+            }
+            else
+            {
+                MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void closeButton_Click(object sender, EventArgs e)
