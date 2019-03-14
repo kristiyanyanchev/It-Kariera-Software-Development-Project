@@ -35,7 +35,15 @@ namespace Data.Repositories
             using (var context = new ClassBookContext())
             {
                 var result = context.Teachers.Single(x => x.Id == entity.Id);
-                result = entity;
+                result.Class = entity.Class;
+                result.Email = entity.Email;
+                result.FirstName = entity.FirstName;
+                result.LastName = entity.LastName;
+                result.PhoneNumber = entity.PhoneNumber;
+                result.Position = entity.Position;
+                result.Subject = entity.Subject;
+                result.Ucn = entity.Ucn;
+                result.ValidationCode = entity.ValidationCode;
                 context.SaveChanges();
             }
             

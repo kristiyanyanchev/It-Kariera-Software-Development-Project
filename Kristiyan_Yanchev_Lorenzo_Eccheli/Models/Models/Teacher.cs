@@ -20,7 +20,6 @@ namespace Data.Models
         public string Email { get; set; }
         [Required]
         public string Position { get; set; }
-        [Required]
         public string Ucn { get; set; }
         
 
@@ -34,13 +33,12 @@ namespace Data.Models
 
         }
 
-        public Teacher(string firstName, string lastName, string subject, string position, string ucn, string validationCode)
+        public Teacher(string firstName, string lastName, string subject, string position, string validationCode)
         {
             FirstName = firstName;
             LastName = lastName;
             Subject = subject;
             Position = position;
-            Ucn = ucn;
             ValidationCode = validationCode;
         }
     }
