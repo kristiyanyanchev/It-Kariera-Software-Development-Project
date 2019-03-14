@@ -65,7 +65,7 @@ namespace Data.Test
             repo.Add(grade);
             grade.Grade = 5.00;
             repo.Edit(grade);
-            Assert.AreNotEqual(repo.List().Last().Grade, grade.Grade);
+            Assert.AreNotEqual(repo.List().Last().Grade, 5.00);
         }
 
         [Test]

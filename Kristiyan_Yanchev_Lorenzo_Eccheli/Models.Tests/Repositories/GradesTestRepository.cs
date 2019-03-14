@@ -34,7 +34,11 @@ namespace Data.Test.Repositories
             using (var context = new TestClassbookContext())
             {
                 var result = context.GradeRecords.Single(x => x.Id == entity.Id);
-                result = entity;
+                result.Date = entity.Date;
+                result.Grade = entity.Grade;
+                result.Student = entity.Student;
+                result.StudentId = entity.StudentId;
+                result.Subject = entity.Subject;
                 context.SaveChanges();
             }
         }

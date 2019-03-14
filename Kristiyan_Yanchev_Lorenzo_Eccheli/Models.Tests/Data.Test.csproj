@@ -60,11 +60,12 @@
     <Compile Include="AbsencesTest.cs" />
     <Compile Include="ClassTest.cs" />
     <Compile Include="GradeRecordTest.cs" />
+    <Compile Include="ParentsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AbsenceTestRepository.cs" />
     <Compile Include="Repositories\ClassesTestRepository.cs" />
     <Compile Include="Repositories\GradesTestRepository.cs" />
-    <Compile Include="Repositories\ParentsTestRepositroy.cs" />
+    <Compile Include="Repositories\ParentsTestRepository.cs" />
     <Compile Include="Repositories\StudentsTestRepository.cs" />
     <Compile Include="Repositories\TeachersTestRepository.cs" />
     <Compile Include="Repositories\ValidationCodeTestRepository.cs" />

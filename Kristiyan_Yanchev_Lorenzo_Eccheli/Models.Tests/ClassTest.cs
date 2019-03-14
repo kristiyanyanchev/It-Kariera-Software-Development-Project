@@ -65,8 +65,8 @@ namespace Data.Test
             var @class = new Class("Math", teacher);
             repo.Add(@class);
             var editedEntity = repo.List().Last();
-            editedEntity.Name = "George";
-            Assert.AreNotEqual(repo.List().Last().Name, "John");
+            editedEntity.Name = "Science";
+            Assert.AreNotEqual(repo.List().Last().Name, "Science");
         }
 
         [Test]

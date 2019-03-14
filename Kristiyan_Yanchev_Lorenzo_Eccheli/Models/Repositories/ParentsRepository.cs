@@ -36,7 +36,13 @@ namespace Data.Repositories
             using (var context = new ClassBookContext())
             {
                 var result = context.Parents.Single(x => x.Id == entity.Id);
-                result = entity;
+                result.Address = entity.Address;
+                result.Children = entity.Children;
+                result.Email = entity.Email;
+                result.FirstName = entity.FirstName;
+                result.LastName = entity.LastName;
+                result.PhoneNumber = entity.PhoneNumber;
+                result.ValidationCode = entity.ValidationCode;
                 context.SaveChanges();
             }
             

@@ -24,6 +24,17 @@ namespace Data.Models
 
         public ICollection<Student> Children { get; set; }
 
-        
+        public Parent()
+        {
+
+        }
+
+        public Parent(string firstName, string lastName, string address, string validationCode)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Address = address;
+            ValidationCode = validationCode;
+        }
     }
 }

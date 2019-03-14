@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Data.Test.Repositories
 {
-    class ParentsTestRepositroy : ParentsRepository
+    class ParentsTestRepository : ParentsRepository
     {
         public override void Add(Parent entity)
         {
@@ -23,6 +23,7 @@ namespace Data.Test.Repositories
         {
             using (var context = new TestClassbookContext())
             {
+                context.Parents.Attach(entity);
                 context.Parents.Remove(entity);
                 context.SaveChanges();
             }
@@ -33,7 +34,13 @@ namespace Data.Test.Repositories
             using (var context = new TestClassbookContext())
             {
                 var result = context.Parents.Single(x => x.Id == entity.Id);
-                result = entity;
+                result.Address = entity.Address;
+                result.Children = entity.Children;
+                result.Email = entity.Email;
+                result.FirstName = entity.FirstName;
+                result.LastName = entity.LastName;
+                result.PhoneNumber = entity.PhoneNumber;
+                result.ValidationCode = entity.ValidationCode;
                 context.SaveChanges();
             }
         }

@@ -34,7 +34,8 @@ namespace Data.Test.Repositories
             using (var context = new TestClassbookContext())
             {
                 var result = context.Classes.Single(x => x.Id == entity.Id);
-                result = entity;
+                result.Name = entity.Name;
+                result.Teacher = entity.Teacher;
                 context.SaveChanges();
             }
         }

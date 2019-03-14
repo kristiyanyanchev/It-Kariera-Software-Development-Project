@@ -36,6 +36,7 @@ namespace Data.Repositories
             using (var context = new ClassBookContext())
             {
                 var result = context.Classes.Single(x => x.Id == entity.Id);
+                
                 result = entity;
                 context.SaveChanges();
             }

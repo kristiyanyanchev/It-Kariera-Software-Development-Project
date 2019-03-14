@@ -23,6 +23,7 @@ namespace Data.Test.Repositories
         {
             using (var context = new TestClassbookContext())
             {
+                context.Students.Attach(entity);
                 context.Students.Remove(entity);
                 context.SaveChanges();
             }
