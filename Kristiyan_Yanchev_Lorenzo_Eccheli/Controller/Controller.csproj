@@ -33,6 +33,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +52,8 @@
     <Compile Include="ValidationClasses\Email\IEmailValidator.cs" />
     <Compile Include="ValidationClasses\FirstNameAndLastName\DefaultNameValidator.cs" />
     <Compile Include="ValidationClasses\FirstNameAndLastName\INameValidator.cs" />
+    <Compile Include="ValidationClasses\Money\DefaultMoneyValidator.cs" />
+    <Compile Include="ValidationClasses\Money\IMoneyValidator.cs" />
     <Compile Include="ValidationClasses\NameOfChild\DefaultNameOfChildValidator.cs" />
     <Compile Include="ValidationClasses\NameOfChild\INameOfChildValidator.cs" />
     <Compile Include="ValidationClasses\Password\DefaultPasswordValidator.cs" />
@@ -57,15 +61,14 @@
     <Compile Include="ValidationClasses\PhoneNumber\DefaultPhoneNumberValidator.cs" />
     <Compile Include="ValidationClasses\PhoneNumber\IPhoneNumberValidator.cs" />
     <Compile Include="ValidationClasses\StudentValidator.cs" />
+    <Compile Include="ValidationClasses\UCN\DefaultUcnValidator.cs" />
+    <Compile Include="ValidationClasses\UCN\IUcnValidator.cs" />
     <Compile Include="ValidationClasses\Username\DefaultUsernameValidator.cs" />
     <Compile Include="ValidationClasses\Username\IUsernameValidator.cs" />
     <Compile Include="ValidationClasses\ValidationCode\DefaultValidationCodeValidator.cs" />
     <Compile Include="ValidationClasses\ValidationCode\IValidationCodeValidator.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ValidationClasses\Money\" />
-    <Folder Include="ValidationClasses\UCN\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Models\Data.csproj">
       <Project>{5ff175c7-39e5-4c47-985e-0a568f03e77c}</Project>
