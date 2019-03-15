@@ -19,7 +19,7 @@ namespace Data.Test
         public void Add_NormalConditions()
         {
             var repo = new ClassesTestRepository();
-            var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "1234567890", "0001");
+            var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "0001");
             var @class = new Class("Math", teacher);
             repo.Add(@class);
             Assert.AreEqual(@class.Id, repo.List().Last().Id);
@@ -39,7 +39,7 @@ namespace Data.Test
         public void Delete_NormalConditions()
         {
             var repo = new ClassesTestRepository();
-            var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "1234567890", "0001");
+            var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "0001");
             var @class = new Class("Math", teacher);
             repo.Add(@class);
             var count = repo.List().Count();
@@ -52,7 +52,7 @@ namespace Data.Test
         public void Delete_DbDoesNotContainElement()
         {
             var repo = new ClassesTestRepository();
-            var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "1234567890", "0001");
+            var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "0001");
             var @class = new Class("Math", teacher);
             Assert.Throws<DbUpdateConcurrencyException>(() => repo.Delete(@class));
         }
@@ -61,7 +61,7 @@ namespace Data.Test
         public void Edit_NormalCondtions()
         {
             var repo = new ClassesTestRepository();
-            var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "1234567890", "0001");
+            var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "0001");
             var @class = new Class("Math", teacher);
             repo.Add(@class);
             var editedEntity = repo.List().Last();
@@ -73,7 +73,7 @@ namespace Data.Test
         public void GetById_NormalConditions()
         {
             var repo = new ClassesTestRepository();
-            var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "1234567890", "0001");
+            var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "0001");
             var @class = new Class("Math", teacher);
             repo.Add(@class);
             Assert.AreEqual(repo.GetById(repo.List().Last().Id).Id, repo.List().Last().Id);

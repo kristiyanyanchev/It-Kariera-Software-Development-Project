@@ -69,6 +69,8 @@
     <Compile Include="Repositories\StudentsTestRepository.cs" />
     <Compile Include="Repositories\TeachersTestRepository.cs" />
     <Compile Include="Repositories\ValidationCodeTestRepository.cs" />
+    <Compile Include="StudentTest.cs" />
+    <Compile Include="TeachersTest.cs" />
     <Compile Include="TestClassbookContext.cs" />
     <Compile Include="ValidationCodeTest.cs" />
   </ItemGroup>

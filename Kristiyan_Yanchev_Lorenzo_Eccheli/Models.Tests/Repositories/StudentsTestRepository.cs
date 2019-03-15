@@ -34,7 +34,20 @@ namespace Data.Test.Repositories
             using (var context = new TestClassbookContext())
             {
                 var result = context.Students.Single(x => x.Id == entity.Id);
-                result = entity;
+                result.Absences = entity.Absences;
+                result.Address = entity.Address;
+                result.BirthDate = entity.BirthDate;
+                result.Class = entity.Class;
+                result.Email = entity.Email;
+                result.FirstName = entity.FirstName;
+                result.GradeRecords = entity.GradeRecords;
+                result.InAbsentia = entity.InAbsentia;
+                result.LastName = entity.LastName;
+                result.Parents = entity.Parents;
+                result.PhoneNumber = entity.PhoneNumber;
+                result.Schoolarship = entity.Schoolarship;
+                result.Ucn = entity.Ucn;
+                result.ValidationCode = entity.ValidationCode;
                 context.SaveChanges();
             }
         }
