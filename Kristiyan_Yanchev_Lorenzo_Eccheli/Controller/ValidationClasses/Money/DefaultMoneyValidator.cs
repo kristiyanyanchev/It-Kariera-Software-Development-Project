@@ -12,7 +12,7 @@ namespace Controller.ValidationClasses.Money
 
         public DefaultMoneyValidator()
         {
-            RegexPattern = @"[0-9]";
+            RegexPattern = @"[0-9]+,[0-9]+";
         }
 
         public bool Validate(string money)

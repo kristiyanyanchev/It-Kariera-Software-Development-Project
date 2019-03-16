@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Query.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentDataTransferObject.cs" />
     <Compile Include="ValidationClasses\Address\DefaultAddressValidator.cs" />
     <Compile Include="ValidationClasses\Address\IAddressValidator.cs" />
     <Compile Include="ValidationClasses\Class\DefaultClassValidator.cs" />

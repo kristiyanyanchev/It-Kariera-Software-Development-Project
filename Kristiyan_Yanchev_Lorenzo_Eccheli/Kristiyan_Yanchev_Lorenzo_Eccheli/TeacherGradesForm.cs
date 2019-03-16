@@ -70,10 +70,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void newGradeButton_Click(object sender, EventArgs e)
         {
-            if(gradeTextBox.Text!=null && int.TryParse(gradeTextBox.Text,out int a))
-            {
-                gradesListBox.Items.Add(gradesListBox.Text);
-            }
+            //if(gradeTextBox.Text!=null && int.TryParse(gradeTextBox.Text,out int a))
+            //{
+            //    gradesListBox.Items.Add(gradesListBox.Text);
+            //}
         }
     }
 }

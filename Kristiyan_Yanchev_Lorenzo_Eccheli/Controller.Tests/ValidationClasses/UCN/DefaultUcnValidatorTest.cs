@@ -29,7 +29,7 @@ namespace Controller.Tests.ValidationClasses.UCN
         }
 
         [TestCase("sds1232")]
-        [TestCase("1a123")];
+        [TestCase("1a123")]
         public void Validate_WrongFormat_ReturnsFalse(string ucn)
         {
             var validator = new DefaultUcnValidator();

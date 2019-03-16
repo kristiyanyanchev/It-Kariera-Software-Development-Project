@@ -80,14 +80,14 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private bool ValidateData()
         {
-            if(firstNameTextBox.Text!=null && lastNameTextBox.Text!=null && 
-               passwordTextBox.Text!=null && emailTextBox.Text!=null && 
-               nameTextBox.Text!=null &&
-               addressTextBox.Text!=null && phoneNumberTextBox.Text!=null && 
-               roleComboBox.SelectedItem!=null && double.TryParse(phoneNumberTextBox.Text,out double a))
-            {
-                return true;
-            }
+            //if(firstNameTextBox.Text!=null && lastNameTextBox.Text!=null && 
+            //   passwordTextBox.Text!=null && emailTextBox.Text!=null && 
+            //   nameTextBox.Text!=null &&
+            //   addressTextBox.Text!=null && phoneNumberTextBox.Text!=null && 
+            //   roleComboBox.SelectedItem!=null && double.TryParse(phoneNumberTextBox.Text,out double a))
+            //{
+            //    return true;
+            //}
             return false;
         }
 

@@ -21,7 +21,12 @@ namespace Data.Models
         [Required]
         public string Position { get; set; }
         public string Ucn { get; set; }
-        
+
+        [Required]
+        public string Username { get; set; }
+
+        [Required]
+        public string Password { get; set; }
 
         [Required]
         public string ValidationCode { get; set; }
