@@ -20,13 +20,16 @@ namespace Data.Models
         public string Email { get; set; }
         [Required]
         public string Position { get; set; }
-        public string Ucn { get; set; }
-        
+
+        public string Username { get; set; }
+
+        public string Password { get; set; }
 
         [Required]
         public string ValidationCode { get; set; }
 
         public Class Class { get; set; }
+        public string Address { get; set; }
 
         public Teacher()
         {
@@ -41,5 +44,6 @@ namespace Data.Models
             Position = position;
             ValidationCode = validationCode;
         }
+        
     }
 }

@@ -42,8 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Query.cs" />
+    <Compile Include="ParentDataTransferObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentDataTransferObject.cs" />
+    <Compile Include="TeacherDataTransferObject.cs" />
     <Compile Include="ValidationClasses\Address\DefaultAddressValidator.cs" />
     <Compile Include="ValidationClasses\Address\IAddressValidator.cs" />
     <Compile Include="ValidationClasses\Class\DefaultClassValidator.cs" />
@@ -56,11 +58,13 @@
     <Compile Include="ValidationClasses\Money\IMoneyValidator.cs" />
     <Compile Include="ValidationClasses\NameOfChild\DefaultNameOfChildValidator.cs" />
     <Compile Include="ValidationClasses\NameOfChild\INameOfChildValidator.cs" />
+    <Compile Include="ValidationClasses\ParentValidator.cs" />
     <Compile Include="ValidationClasses\Password\DefaultPasswordValidator.cs" />
     <Compile Include="ValidationClasses\Password\IPasswordValidator.cs" />
     <Compile Include="ValidationClasses\PhoneNumber\DefaultPhoneNumberValidator.cs" />
     <Compile Include="ValidationClasses\PhoneNumber\IPhoneNumberValidator.cs" />
     <Compile Include="ValidationClasses\StudentValidator.cs" />
+    <Compile Include="ValidationClasses\TeacherValidator.cs" />
     <Compile Include="ValidationClasses\UCN\DefaultUcnValidator.cs" />
     <Compile Include="ValidationClasses\UCN\IUcnValidator.cs" />
     <Compile Include="ValidationClasses\Username\DefaultUsernameValidator.cs" />
