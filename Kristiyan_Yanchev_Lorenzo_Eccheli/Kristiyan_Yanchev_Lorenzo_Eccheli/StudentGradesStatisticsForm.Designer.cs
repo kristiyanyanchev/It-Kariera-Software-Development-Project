@@ -45,7 +45,7 @@
             this.GradesChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.GradesChart.Legends.Add(legend1);
-            this.GradesChart.Location = new System.Drawing.Point(379, 44);
+            this.GradesChart.Location = new System.Drawing.Point(347, 44);
             this.GradesChart.Name = "GradesChart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";

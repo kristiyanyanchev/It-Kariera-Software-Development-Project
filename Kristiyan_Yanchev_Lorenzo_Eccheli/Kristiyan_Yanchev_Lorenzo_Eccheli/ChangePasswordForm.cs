@@ -6,6 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
+using System.Resources;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -13,6 +16,20 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
     {
         public ChangePasswordForm()
         {
+            InitializeComponent();
+        }
+
+        public ChangePasswordForm(string language)
+        {
+
+            if (language == "English")
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
+            }
             InitializeComponent();
         }
         
@@ -58,6 +75,21 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void closeButton_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            if (languageComboBox.SelectedItem.ToString() == "English" ||
+                languageComboBox.SelectedItem.ToString() == "Английски")
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
+            }
+            InitializeComponent();
         }
     }
 }

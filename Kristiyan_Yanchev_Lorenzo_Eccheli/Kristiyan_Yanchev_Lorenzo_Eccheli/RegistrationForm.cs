@@ -233,15 +233,31 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void FormCLosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (GetLanguage() == "Bulgarian")
+            {
+                DialogResult dialog = MessageBox.Show("Наистина ли искате да излезете", "Въпрос", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
-            if(dialog==DialogResult.Yes)
-            {
-                Application.ExitThread();
+                if (dialog == DialogResult.OK)
+                {
+                    Application.ExitThread();
+                }
+                else if(dialog==DialogResult.Cancel)
+                {
+                    e.Cancel = true;
+                }
             }
-            else if(dialog==DialogResult.No)
+            else
             {
-                e.Cancel = true;
+                DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                if (dialog == DialogResult.OK)
+                {
+                    Application.ExitThread();
+                }
+                else if(dialog==DialogResult.Cancel)
+                {
+                    e.Cancel = true;
+                }
             }
         }
 

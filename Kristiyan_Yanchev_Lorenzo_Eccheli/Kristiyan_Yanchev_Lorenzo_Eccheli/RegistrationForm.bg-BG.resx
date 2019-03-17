@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="introductionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 9</value>
+  </data>
   <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>339, 28</value>
   </data>
@@ -160,38 +163,77 @@
   <data name="roleLabel.Text" xml:space="preserve">
     <value>Роля</value>
   </data>
+  <data name="roleComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="roleComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 27</value>
+  </data>
   <data name="roleComboBox.ToolTip" xml:space="preserve">
     <value>Изберете ролята си</value>
+  </data>
+  <data name="firstNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="firstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 101</value>
   </data>
+  <data name="firstNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
+  </data>
   <data name="firstNameTextBox.ToolTip" xml:space="preserve">
     <value>Въведете си потребителско име</value>
+  </data>
+  <data name="passwordTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="passwordTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 207</value>
   </data>
+  <data name="passwordTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
+  </data>
   <data name="passwordTextBox.ToolTip" xml:space="preserve">
     <value>Напишете паролата си</value>
+  </data>
+  <data name="emailTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="emailTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 247</value>
   </data>
+  <data name="emailTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
+  </data>
   <data name="emailTextBox.ToolTip" xml:space="preserve">
     <value>Напишете имейла си</value>
+  </data>
+  <data name="addressTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="addressTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 290</value>
   </data>
+  <data name="addressTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
+  </data>
   <data name="addressTextBox.ToolTip" xml:space="preserve">
     <value>Слойете адреса си</value>
+  </data>
+  <data name="phoneNumberTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="phoneNumberTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 333</value>
   </data>
+  <data name="phoneNumberTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
+  </data>
   <data name="phoneNumberTextBox.ToolTip" xml:space="preserve">
     <value>Напишете телефонният си номер</value>
+  </data>
+  <data name="registrationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 51</value>
   </data>
   <data name="registrationButton.Text" xml:space="preserve">
     <value>Регистрация</value>
@@ -211,14 +253,17 @@
   <data name="lastNameLabel.Text" xml:space="preserve">
     <value>Фамилия</value>
   </data>
+  <data name="lastNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
   <data name="lastNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 167</value>
   </data>
+  <data name="lastNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
+  </data>
   <data name="lastNameTextBox.ToolTip" xml:space="preserve">
     <value>въведете фамилията си</value>
-  </data>
-  <data name="visibleCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 210</value>
   </data>
   <data name="visibleCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 23</value>
@@ -235,35 +280,71 @@
   <data name="validationCodeLabel.Text" xml:space="preserve">
     <value>*Код</value>
   </data>
+  <data name="validationCodeTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
   <data name="validationCodeTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 381</value>
+  </data>
+  <data name="validationCodeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
   </data>
   <data name="validationCodeTextBox.ToolTip" xml:space="preserve">
     <value>Напишете кодът даден от даскало</value>
   </data>
+  <data name="birthdatePicker.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
   <data name="birthdatePicker.Location" type="System.Drawing.Point, System.Drawing">
     <value>467, 349</value>
+  </data>
+  <data name="birthdatePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 24</value>
   </data>
   <data name="birthdatePicker.ToolTip" xml:space="preserve">
     <value>Слойете датата ви на раждане</value>
   </data>
+  <data name="ucnTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
   <data name="ucnTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>467, 299</value>
+  </data>
+  <data name="ucnTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
   </data>
   <data name="ucnTextBox.ToolTip" xml:space="preserve">
     <value>Напишете егнто си</value>
   </data>
+  <data name="classnameTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="classnameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
+  </data>
   <data name="classnameTextBox.ToolTip" xml:space="preserve">
     <value>Напишете класът си</value>
+  </data>
+  <data name="nameofchildTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="nameofchildTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>467, 176</value>
   </data>
+  <data name="nameofchildTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
+  </data>
   <data name="nameofchildTextBox.ToolTip" xml:space="preserve">
     <value>Име на детето</value>
   </data>
+  <data name="nameTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
   <data name="nameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 135</value>
+  </data>
+  <data name="nameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
   </data>
   <data name="nameTextBox.ToolTip" xml:space="preserve">
     <value>Въведете името си</value>
@@ -274,17 +355,35 @@
   <data name="backButton.ToolTip" xml:space="preserve">
     <value>Върнете в предишния прозорец</value>
   </data>
+  <data name="languageComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
   <data name="languageComboBox.Items" xml:space="preserve">
     <value>Английски</value>
   </data>
   <data name="languageComboBox.Items1" xml:space="preserve">
     <value>Български</value>
   </data>
+  <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 27</value>
+  </data>
   <data name="languageComboBox.ToolTip" xml:space="preserve">
     <value>Изберете езика си</value>
   </data>
+  <data name="subjectTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="subjectTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
+  </data>
+  <data name="possitionTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
   <data name="possitionTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>467, 266</value>
+  </data>
+  <data name="possitionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
   </data>
   <data name="birthdayLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>329, 349</value>

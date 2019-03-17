@@ -74,7 +74,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            if(usernameTextBox.Text=="Username")
+            if(GetLanguage()=="English")
             {
                 DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
@@ -180,17 +180,32 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void E_Journal_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (GetLanguage() == "English")
+            {
+                DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if(dialog==DialogResult.Yes)
-            {
-                Application.ExitThread();
+                if (dialog == DialogResult.Yes)
+                {
+                    Application.ExitThread();
+                }
+                else if (dialog == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
             }
-            else if(dialog==DialogResult.No)
+            else
             {
-                e.Cancel = true;
+                DialogResult dialog = MessageBox.Show("Наистина ли искате да излезете", "Въпрос", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (dialog == DialogResult.Yes)
+                {
+                    Application.ExitThread();
+                }
+                else if (dialog == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
             }
         }
-
     }
 }
