@@ -146,6 +146,14 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             {
                 return "Bulgarian";
             }
+            //if(firstNameTextBox.Text!=null && lastNameTextBox.Text!=null && 
+            //   passwordTextBox.Text!=null && emailTextBox.Text!=null && 
+            //   nameTextBox.Text!=null &&
+            //   addressTextBox.Text!=null && phoneNumberTextBox.Text!=null && 
+            //   roleComboBox.SelectedItem!=null && double.TryParse(phoneNumberTextBox.Text,out double a))
+            //{
+            //    return true;
+            //}
         }
 
         private void exitButton_Click(object sender, EventArgs e)
