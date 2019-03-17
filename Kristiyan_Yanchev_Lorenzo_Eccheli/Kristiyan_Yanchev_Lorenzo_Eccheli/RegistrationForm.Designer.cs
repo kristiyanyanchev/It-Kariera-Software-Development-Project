@@ -70,66 +70,66 @@
             // 
             this.introductionLabel.AutoSize = true;
             this.introductionLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.introductionLabel.Font = new System.Drawing.Font("Sitka Heading", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.introductionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.introductionLabel.Location = new System.Drawing.Point(132, 9);
             this.introductionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.introductionLabel.Name = "introductionLabel";
-            this.introductionLabel.Size = new System.Drawing.Size(288, 28);
+            this.introductionLabel.Size = new System.Drawing.Size(316, 24);
             this.introductionLabel.TabIndex = 0;
             this.introductionLabel.Text = "Registration  to School E-Journal";
             // 
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.usernameLabel.Location = new System.Drawing.Point(8, 105);
             this.usernameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(64, 19);
+            this.usernameLabel.Size = new System.Drawing.Size(79, 16);
             this.usernameLabel.TabIndex = 1;
             this.usernameLabel.Text = "Username";
             // 
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.passwordLabel.Location = new System.Drawing.Point(9, 210);
             this.passwordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(63, 19);
+            this.passwordLabel.Size = new System.Drawing.Size(76, 16);
             this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "Password";
             // 
             // emailLabel
             // 
             this.emailLabel.AutoSize = true;
-            this.emailLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.emailLabel.Location = new System.Drawing.Point(11, 250);
             this.emailLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(44, 19);
+            this.emailLabel.Size = new System.Drawing.Size(52, 16);
             this.emailLabel.TabIndex = 3;
             this.emailLabel.Text = "E-mail";
             // 
             // addressLabel
             // 
             this.addressLabel.AutoSize = true;
-            this.addressLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.addressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.addressLabel.Location = new System.Drawing.Point(9, 296);
             this.addressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.addressLabel.Name = "addressLabel";
-            this.addressLabel.Size = new System.Drawing.Size(55, 19);
+            this.addressLabel.Size = new System.Drawing.Size(66, 16);
             this.addressLabel.TabIndex = 4;
             this.addressLabel.Text = "Address";
             // 
             // phoneLabel
             // 
             this.phoneLabel.AutoSize = true;
-            this.phoneLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.phoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.phoneLabel.Location = new System.Drawing.Point(9, 336);
             this.phoneLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.phoneLabel.Name = "phoneLabel";
-            this.phoneLabel.Size = new System.Drawing.Size(90, 19);
+            this.phoneLabel.Size = new System.Drawing.Size(110, 16);
             this.phoneLabel.TabIndex = 5;
             this.phoneLabel.Text = "Phone Number";
             // 
@@ -137,11 +137,11 @@
             // 
             this.roleLabel.AutoSize = true;
             this.roleLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.roleLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.roleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.roleLabel.Location = new System.Drawing.Point(334, 142);
             this.roleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.roleLabel.Name = "roleLabel";
-            this.roleLabel.Size = new System.Drawing.Size(33, 19);
+            this.roleLabel.Size = new System.Drawing.Size(41, 16);
             this.roleLabel.TabIndex = 6;
             this.roleLabel.Text = "Role";
             // 
@@ -212,7 +212,7 @@
             this.registrationButton.BackColor = System.Drawing.Color.FloralWhite;
             this.registrationButton.FlatAppearance.BorderSize = 0;
             this.registrationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.registrationButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.registrationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.registrationButton.Location = new System.Drawing.Point(322, 449);
             this.registrationButton.Margin = new System.Windows.Forms.Padding(2);
             this.registrationButton.Name = "registrationButton";
@@ -227,7 +227,7 @@
             this.exitButton.BackColor = System.Drawing.Color.FloralWhite;
             this.exitButton.FlatAppearance.BorderSize = 0;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.exitButton.Location = new System.Drawing.Point(582, 449);
             this.exitButton.Margin = new System.Windows.Forms.Padding(2);
             this.exitButton.Name = "exitButton";
@@ -240,11 +240,11 @@
             // lastNameLabel
             // 
             this.lastNameLabel.AutoSize = true;
-            this.lastNameLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.lastNameLabel.Location = new System.Drawing.Point(8, 175);
             this.lastNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(47, 19);
+            this.lastNameLabel.Size = new System.Drawing.Size(54, 16);
             this.lastNameLabel.TabIndex = 16;
             this.lastNameLabel.Text = "Family";
             // 
@@ -261,11 +261,11 @@
             // 
             this.visibleCheckBox.AutoSize = true;
             this.visibleCheckBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.visibleCheckBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.visibleCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.visibleCheckBox.Location = new System.Drawing.Point(242, 213);
             this.visibleCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.visibleCheckBox.Name = "visibleCheckBox";
-            this.visibleCheckBox.Size = new System.Drawing.Size(67, 23);
+            this.visibleCheckBox.Size = new System.Drawing.Size(75, 20);
             this.visibleCheckBox.TabIndex = 18;
             this.visibleCheckBox.Text = "Visible";
             this.visibleCheckBox.UseVisualStyleBackColor = false;
@@ -274,10 +274,10 @@
             // validationCodeLabel
             // 
             this.validationCodeLabel.AutoSize = true;
-            this.validationCodeLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.validationCodeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.validationCodeLabel.Location = new System.Drawing.Point(9, 383);
             this.validationCodeLabel.Name = "validationCodeLabel";
-            this.validationCodeLabel.Size = new System.Drawing.Size(101, 19);
+            this.validationCodeLabel.Size = new System.Drawing.Size(125, 16);
             this.validationCodeLabel.TabIndex = 19;
             this.validationCodeLabel.Text = "*Validation Code";
             this.formToolTip.SetToolTip(this.validationCodeLabel, "This field is required");
@@ -312,11 +312,11 @@
             // 
             this.birthdayLabel.AutoSize = true;
             this.birthdayLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.birthdayLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.birthdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.birthdayLabel.Location = new System.Drawing.Point(329, 335);
             this.birthdayLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.birthdayLabel.Name = "birthdayLabel";
-            this.birthdayLabel.Size = new System.Drawing.Size(75, 19);
+            this.birthdayLabel.Size = new System.Drawing.Size(87, 16);
             this.birthdayLabel.TabIndex = 23;
             this.birthdayLabel.Text = "Day of birth";
             this.birthdayLabel.Visible = false;
@@ -325,11 +325,11 @@
             // 
             this.ucnLabel.AutoSize = true;
             this.ucnLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.ucnLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.ucnLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.ucnLabel.Location = new System.Drawing.Point(329, 290);
             this.ucnLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ucnLabel.Name = "ucnLabel";
-            this.ucnLabel.Size = new System.Drawing.Size(33, 19);
+            this.ucnLabel.Size = new System.Drawing.Size(40, 16);
             this.ucnLabel.TabIndex = 24;
             this.ucnLabel.Text = "UCN";
             this.ucnLabel.Visible = false;
@@ -338,11 +338,11 @@
             // 
             this.classnameLabel.AutoSize = true;
             this.classnameLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.classnameLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.classnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.classnameLabel.Location = new System.Drawing.Point(329, 233);
             this.classnameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.classnameLabel.Name = "classnameLabel";
-            this.classnameLabel.Size = new System.Drawing.Size(38, 19);
+            this.classnameLabel.Size = new System.Drawing.Size(47, 16);
             this.classnameLabel.TabIndex = 27;
             this.classnameLabel.Text = "Class";
             this.classnameLabel.Visible = false;
@@ -361,11 +361,11 @@
             // 
             this.nameofchildLabel.AutoSize = true;
             this.nameofchildLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.nameofchildLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.nameofchildLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.nameofchildLabel.Location = new System.Drawing.Point(329, 186);
             this.nameofchildLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nameofchildLabel.Name = "nameofchildLabel";
-            this.nameofchildLabel.Size = new System.Drawing.Size(83, 19);
+            this.nameofchildLabel.Size = new System.Drawing.Size(103, 16);
             this.nameofchildLabel.TabIndex = 29;
             this.nameofchildLabel.Text = "Name of child";
             this.nameofchildLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -384,11 +384,11 @@
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.nameLabel.Location = new System.Drawing.Point(11, 139);
             this.nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(40, 19);
+            this.nameLabel.Size = new System.Drawing.Size(49, 16);
             this.nameLabel.TabIndex = 31;
             this.nameLabel.Text = "Name";
             // 
@@ -406,7 +406,7 @@
             this.backButton.BackColor = System.Drawing.Color.FloralWhite;
             this.backButton.FlatAppearance.BorderSize = 0;
             this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.backButton.Location = new System.Drawing.Point(582, 383);
             this.backButton.Margin = new System.Windows.Forms.Padding(2);
             this.backButton.Name = "backButton";
@@ -420,11 +420,11 @@
             // 
             this.languageLabel.AutoSize = true;
             this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.languageLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.languageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.languageLabel.Location = new System.Drawing.Point(334, 103);
             this.languageLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.languageLabel.Name = "languageLabel";
-            this.languageLabel.Size = new System.Drawing.Size(62, 19);
+            this.languageLabel.Size = new System.Drawing.Size(77, 16);
             this.languageLabel.TabIndex = 34;
             this.languageLabel.Text = "Language";
             // 

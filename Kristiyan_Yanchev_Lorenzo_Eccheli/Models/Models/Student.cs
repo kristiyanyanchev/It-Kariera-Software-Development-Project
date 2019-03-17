@@ -21,14 +21,11 @@ namespace Data.Models
         public bool InAbsentia { get; set; }
         [Required]
         public string Address { get; set; }
-        public decimal? Schoolarship { get; set; }
         public string Ucn { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
 
-        [Required]
         public string Username { get; set; }
-        [Required]
         public string Password { get; set; }
 
 
@@ -66,11 +63,6 @@ namespace Data.Models
             PhoneNumber = phonenumber;
             Email = email;
             ValidationCode = validationCode;
-        }
-
-        public void AddScholarship(decimal scolarship)
-        {
-            Schoolarship = scolarship;
         }
 
     }

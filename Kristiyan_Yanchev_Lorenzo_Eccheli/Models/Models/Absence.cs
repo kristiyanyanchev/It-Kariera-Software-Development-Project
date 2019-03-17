@@ -19,5 +19,6 @@ namespace Data.Models
         [Required]
         public bool IsLate { get; set; }
 
+
     }
 }

@@ -10,6 +10,8 @@ using Controller.ValidationClasses.ValidationCode;
 using Controller.ValidationClasses.Address;
 using Controller.ValidationClasses.PhoneNumber;
 using Data.Repositories;
+using Controller.ValidationClasses.Class;
+using Controller.ValidationClasses.UCN;
 
 namespace Controller.ValidationClasses
 {
@@ -23,17 +25,22 @@ namespace Controller.ValidationClasses
         public IValidationCodeValidator ValidationCodeValidator { get; set; }
         public IAddressValidator AddressValidator { get; set; }
         public IPhoneNumberValidator PhoneNumberValidator { get; set; }
+        public IClassValidator ClassValidator { get; set; }
+        public IUcnValidator UcnValidator { get; set; }
 
         public string ValidateStudent(StudentDataTransferObject studentDTO)
         {
             var validationCodeRepo = new ValidationCodeRepository();
             var studentsRepo = new StudentsRepository();
+            var classRepo = new ClassesRepository();
+            var teacherRepo = new TeachersRepository();
             if (UsernameValidator.Validate(studentDTO.Username) == false)
             {
                 return "Username error! ";
             }
 
-            if (studentsRepo.List().Select(x => x.Username).Contains(studentDTO.Username) == true)
+            if (studentsRepo.List().Select(x => x.Username).Contains(studentDTO.Username) == true ||
+                teacherRepo.List().Select(x => x.Username).Contains(studentDTO.Username) == true)
             {
                 return "This Username alredy exist!";
             }
@@ -83,7 +90,27 @@ namespace Controller.ValidationClasses
                 return "Phone number error! ";
             }
 
-            return "Successful Registration";
+            if (ClassValidator.Validate(studentDTO.Class) == false)
+            {
+                return "Class error! ";
+            }
+
+            if (UcnValidator.Validate(studentDTO.Ucn) == false)
+            {
+                return "Ucn error! ";
+            }
+
+            if (studentsRepo.List().Select(x => x.Ucn).Contains(studentDTO.Ucn) == true)
+            {
+                return "Ucn alredy used! ";
+            }
+
+            if (studentDTO.BirthDate.CompareTo(DateTime.Now) >= 0)
+            {
+                return "Student is too young! ";
+            }
+
+            return "Successful Registration! ";
         }
 
         public StudentValidator()
@@ -96,6 +123,8 @@ namespace Controller.ValidationClasses
             ValidationCodeValidator = new DefaultValidationCodeValidator();
             AddressValidator = new DefaultAddressValidator();
             PhoneNumberValidator = new DefaultPhoneNumberValidator();
+            ClassValidator = new DefaultClassValidator();
+            UcnValidator = new DefaultUcnValidator();
         }
 
     }

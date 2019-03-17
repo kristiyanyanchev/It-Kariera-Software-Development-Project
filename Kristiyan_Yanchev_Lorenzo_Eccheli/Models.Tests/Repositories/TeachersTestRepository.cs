@@ -41,7 +41,6 @@ namespace Data.Test.Repositories
                 result.PhoneNumber = entity.PhoneNumber;
                 result.Position = entity.Position;
                 result.Subject = entity.Subject;
-                result.Ucn = entity.Ucn;
                 result.ValidationCode = entity.ValidationCode;
                 context.SaveChanges();
             }

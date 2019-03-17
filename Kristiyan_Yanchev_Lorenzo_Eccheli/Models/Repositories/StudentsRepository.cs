@@ -47,7 +47,6 @@ namespace Data.Repositories
                 result.LastName = entity.LastName;
                 result.Parents = entity.Parents;
                 result.PhoneNumber = entity.PhoneNumber;
-                result.Schoolarship = entity.Schoolarship;
                 result.Ucn = entity.Ucn;
                 result.ValidationCode = entity.ValidationCode;
                 context.SaveChanges();
