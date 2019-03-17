@@ -6,6 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
+using System.Resources;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -69,6 +72,18 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.Controls.Clear();
+            if (languageComboBox.SelectedItem.ToString() == "English" ||
+                languageComboBox.SelectedItem.ToString() == "Английски")
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
+            }
+            InitializeComponent();
+            /*
             if(languageComboBox.SelectedItem.ToString()=="English")
             {
                 introductionLabel.Text = "Welcome to E-journal ,Teacher";
@@ -93,6 +108,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 changeinformationButton.Text = "Смени информация";
                 exitButton.Text = "Изход";
             }
+            */
         }
 
         private void TeacherMainForm_FormClosing(object sender, FormClosingEventArgs e)

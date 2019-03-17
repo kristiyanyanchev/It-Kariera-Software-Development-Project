@@ -6,6 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
+using System.Resources;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -16,6 +19,18 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             InitializeComponent();
         }
 
+        public LogInForm(string language)
+        {
+            if(language=="Bulgarian")
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
+            }
+            InitializeComponent();
+        }
 
         private bool Validation()
         {
@@ -29,10 +44,22 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
         }
 
+        private string GetLanguage()
+        {
+            if(languageLabel.Text=="Language")
+            {
+                return "English";
+            }
+            else
+            {
+                return "Bulgarian";
+            }
+        }
+
         private void registerBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RegistrationForm registration = new RegistrationForm(languageComboBox.SelectedItem.ToString());
+            RegistrationForm registration = new RegistrationForm(GetLanguage());
             registration.ShowDialog();
         }
 
@@ -47,11 +74,23 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (dialog == DialogResult.Yes)
+            if(usernameTextBox.Text=="Username")
             {
-                Application.ExitThread();
+                DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (dialog == DialogResult.Yes)
+                {
+                    Application.ExitThread();
+                }
+            }
+            else
+            {
+                DialogResult dialog = MessageBox.Show("Наистина ли искате да излезете", "Въпрос", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (dialog == DialogResult.Yes)
+                {
+                    Application.ExitThread();
+                }
             }
         }
 
@@ -83,8 +122,22 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
         }
 
+        //Смяна на езика
         private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.Controls.Clear();
+            if (languageComboBox.SelectedItem.ToString() == "English" ||
+                languageComboBox.SelectedItem.ToString() == "Английски")
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
+            }
+            InitializeComponent();
+            /*
+             * стар начин
             if(languageComboBox.SelectedItem.ToString()=="English")
             {
                 this.Text = "School E-journal";
@@ -122,7 +175,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 formToolTip.SetToolTip(visiblepasswordCheckBox, "Влезте в съществуващ вече акаунт.");
                 formToolTip.SetToolTip(languageComboBox, "Сменете езика.");
                 formToolTip.SetToolTip(exitBtn, "Излезте от приложението.");
-            }
+            }*/
         }
 
         private void E_Journal_FormClosing(object sender, FormClosingEventArgs e)
@@ -138,5 +191,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 e.Cancel = true;
             }
         }
+
     }
 }

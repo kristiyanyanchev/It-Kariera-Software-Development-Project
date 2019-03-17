@@ -28,72 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangeInformationForm));
             this.phoneNumberLabel = new System.Windows.Forms.Label();
             this.PhoneNumberTextBox = new System.Windows.Forms.TextBox();
             this.emailLabel = new System.Windows.Forms.Label();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.saveChangesButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
+            this.languageLabel = new System.Windows.Forms.Label();
+            this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // phoneNumberLabel
             // 
-            this.phoneNumberLabel.AutoSize = true;
-            this.phoneNumberLabel.Location = new System.Drawing.Point(32, 29);
+            resources.ApplyResources(this.phoneNumberLabel, "phoneNumberLabel");
+            this.phoneNumberLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.phoneNumberLabel.Name = "phoneNumberLabel";
-            this.phoneNumberLabel.Size = new System.Drawing.Size(78, 13);
-            this.phoneNumberLabel.TabIndex = 0;
-            this.phoneNumberLabel.Text = "Phone Number";
             // 
             // PhoneNumberTextBox
             // 
-            this.PhoneNumberTextBox.Location = new System.Drawing.Point(151, 26);
+            this.PhoneNumberTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.PhoneNumberTextBox, "PhoneNumberTextBox");
             this.PhoneNumberTextBox.Name = "PhoneNumberTextBox";
-            this.PhoneNumberTextBox.Size = new System.Drawing.Size(100, 20);
-            this.PhoneNumberTextBox.TabIndex = 1;
             // 
             // emailLabel
             // 
-            this.emailLabel.AutoSize = true;
-            this.emailLabel.Location = new System.Drawing.Point(32, 64);
+            resources.ApplyResources(this.emailLabel, "emailLabel");
+            this.emailLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(32, 13);
-            this.emailLabel.TabIndex = 2;
-            this.emailLabel.Text = "Email";
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(151, 57);
+            this.emailTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.emailTextBox, "emailTextBox");
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(100, 20);
-            this.emailTextBox.TabIndex = 3;
             // 
             // saveChangesButton
             // 
-            this.saveChangesButton.Location = new System.Drawing.Point(93, 116);
+            this.saveChangesButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.saveChangesButton, "saveChangesButton");
             this.saveChangesButton.Name = "saveChangesButton";
-            this.saveChangesButton.Size = new System.Drawing.Size(105, 41);
-            this.saveChangesButton.TabIndex = 4;
-            this.saveChangesButton.Text = "Save Changes";
-            this.saveChangesButton.UseVisualStyleBackColor = true;
+            this.saveChangesButton.UseVisualStyleBackColor = false;
             this.saveChangesButton.Click += new System.EventHandler(this.saveChangesButton_Click);
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(225, 180);
+            this.closeButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.closeButton, "closeButton");
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(75, 41);
-            this.closeButton.TabIndex = 5;
-            this.closeButton.Text = "Close";
-            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.UseVisualStyleBackColor = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // languageLabel
+            // 
+            resources.ApplyResources(this.languageLabel, "languageLabel");
+            this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.languageLabel.Name = "languageLabel";
+            // 
+            // languageComboBox
+            // 
+            this.languageComboBox.FormattingEnabled = true;
+            this.languageComboBox.Items.AddRange(new object[] {
+            resources.GetString("languageComboBox.Items"),
+            resources.GetString("languageComboBox.Items1")});
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
+            this.languageComboBox.Name = "languageComboBox";
+            this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
             // 
             // ChangeInformationForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
-            this.ClientSize = new System.Drawing.Size(312, 233);
+            this.Controls.Add(this.languageComboBox);
+            this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.saveChangesButton);
             this.Controls.Add(this.emailTextBox);
@@ -101,7 +109,6 @@
             this.Controls.Add(this.PhoneNumberTextBox);
             this.Controls.Add(this.phoneNumberLabel);
             this.Name = "ChangeInformationForm";
-            this.Text = "Change information";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,5 +122,7 @@
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Button saveChangesButton;
         private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.Label languageLabel;
+        private System.Windows.Forms.ComboBox languageComboBox;
     }
 }

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentMainForm));
             this.viewGradesButton = new System.Windows.Forms.Button();
             this.viewAbsencesButton = new System.Windows.Forms.Button();
             this.changePassword = new System.Windows.Forms.Button();
@@ -36,120 +38,90 @@
             this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.languageLabel = new System.Windows.Forms.Label();
             this.introductionLabel = new System.Windows.Forms.Label();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // viewGradesButton
             // 
+            resources.ApplyResources(this.viewGradesButton, "viewGradesButton");
             this.viewGradesButton.BackColor = System.Drawing.Color.FloralWhite;
             this.viewGradesButton.FlatAppearance.BorderSize = 0;
-            this.viewGradesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.viewGradesButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.viewGradesButton.Location = new System.Drawing.Point(100, 162);
             this.viewGradesButton.Name = "viewGradesButton";
-            this.viewGradesButton.Size = new System.Drawing.Size(130, 60);
-            this.viewGradesButton.TabIndex = 0;
-            this.viewGradesButton.Text = "Grades";
+            this.toolTip.SetToolTip(this.viewGradesButton, resources.GetString("viewGradesButton.ToolTip"));
             this.viewGradesButton.UseVisualStyleBackColor = false;
             this.viewGradesButton.Click += new System.EventHandler(this.viewGradesButton_Click);
             // 
             // viewAbsencesButton
             // 
+            resources.ApplyResources(this.viewAbsencesButton, "viewAbsencesButton");
             this.viewAbsencesButton.BackColor = System.Drawing.Color.FloralWhite;
             this.viewAbsencesButton.FlatAppearance.BorderSize = 0;
-            this.viewAbsencesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.viewAbsencesButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.viewAbsencesButton.Location = new System.Drawing.Point(100, 293);
             this.viewAbsencesButton.Name = "viewAbsencesButton";
-            this.viewAbsencesButton.Size = new System.Drawing.Size(130, 60);
-            this.viewAbsencesButton.TabIndex = 1;
-            this.viewAbsencesButton.Text = "Absence";
+            this.toolTip.SetToolTip(this.viewAbsencesButton, resources.GetString("viewAbsencesButton.ToolTip"));
             this.viewAbsencesButton.UseVisualStyleBackColor = false;
             this.viewAbsencesButton.Click += new System.EventHandler(this.viewAbsencesButton_Click);
             // 
             // changePassword
             // 
+            resources.ApplyResources(this.changePassword, "changePassword");
             this.changePassword.BackColor = System.Drawing.Color.FloralWhite;
             this.changePassword.FlatAppearance.BorderSize = 0;
-            this.changePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changePassword.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.changePassword.Location = new System.Drawing.Point(341, 162);
             this.changePassword.Name = "changePassword";
-            this.changePassword.Size = new System.Drawing.Size(130, 60);
-            this.changePassword.TabIndex = 5;
-            this.changePassword.Text = "Change Password";
+            this.toolTip.SetToolTip(this.changePassword, resources.GetString("changePassword.ToolTip"));
             this.changePassword.UseVisualStyleBackColor = false;
             this.changePassword.Click += new System.EventHandler(this.changePassword_Click);
             // 
             // exitButton
             // 
+            resources.ApplyResources(this.exitButton, "exitButton");
             this.exitButton.BackColor = System.Drawing.Color.FloralWhite;
             this.exitButton.FlatAppearance.BorderSize = 0;
-            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.exitButton.Location = new System.Drawing.Point(462, 434);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(144, 66);
-            this.exitButton.TabIndex = 8;
-            this.exitButton.Text = "Exit";
+            this.toolTip.SetToolTip(this.exitButton, resources.GetString("exitButton.ToolTip"));
             this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // changeInformation
             // 
+            resources.ApplyResources(this.changeInformation, "changeInformation");
             this.changeInformation.BackColor = System.Drawing.Color.FloralWhite;
             this.changeInformation.FlatAppearance.BorderSize = 0;
-            this.changeInformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changeInformation.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.changeInformation.Location = new System.Drawing.Point(341, 293);
             this.changeInformation.Name = "changeInformation";
-            this.changeInformation.Size = new System.Drawing.Size(130, 60);
-            this.changeInformation.TabIndex = 9;
-            this.changeInformation.Text = "Change Information";
+            this.toolTip.SetToolTip(this.changeInformation, resources.GetString("changeInformation.ToolTip"));
             this.changeInformation.UseVisualStyleBackColor = false;
             this.changeInformation.Click += new System.EventHandler(this.changeInformationButton_Click);
             // 
             // languageComboBox
             // 
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.languageComboBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
-            "Bulgarian",
-            "English"});
-            this.languageComboBox.Location = new System.Drawing.Point(510, 97);
+            resources.GetString("languageComboBox.Items"),
+            resources.GetString("languageComboBox.Items1")});
             this.languageComboBox.Name = "languageComboBox";
-            this.languageComboBox.Size = new System.Drawing.Size(76, 27);
-            this.languageComboBox.TabIndex = 10;
+            this.toolTip.SetToolTip(this.languageComboBox, resources.GetString("languageComboBox.ToolTip"));
             this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
             // 
             // languageLabel
             // 
-            this.languageLabel.AutoSize = true;
+            resources.ApplyResources(this.languageLabel, "languageLabel");
             this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.languageLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.languageLabel.Location = new System.Drawing.Point(420, 97);
             this.languageLabel.Name = "languageLabel";
-            this.languageLabel.Size = new System.Drawing.Size(62, 19);
-            this.languageLabel.TabIndex = 11;
-            this.languageLabel.Text = "Language";
+            this.toolTip.SetToolTip(this.languageLabel, resources.GetString("languageLabel.ToolTip"));
             // 
             // introductionLabel
             // 
-            this.introductionLabel.AutoSize = true;
+            resources.ApplyResources(this.introductionLabel, "introductionLabel");
             this.introductionLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.introductionLabel.Font = new System.Drawing.Font("Sitka Heading", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.introductionLabel.Location = new System.Drawing.Point(149, 20);
             this.introductionLabel.Name = "introductionLabel";
-            this.introductionLabel.Size = new System.Drawing.Size(273, 28);
-            this.introductionLabel.TabIndex = 12;
-            this.introductionLabel.Text = "Welcome to E-journal , Student\r\n";
+            this.toolTip.SetToolTip(this.introductionLabel, resources.GetString("introductionLabel.ToolTip"));
             // 
             // StudentMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
-            this.ClientSize = new System.Drawing.Size(618, 512);
             this.Controls.Add(this.introductionLabel);
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.languageComboBox);
@@ -159,7 +131,7 @@
             this.Controls.Add(this.viewAbsencesButton);
             this.Controls.Add(this.viewGradesButton);
             this.Name = "StudentMainForm";
-            this.Text = "E-journal";
+            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StudentMainForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -176,5 +148,6 @@
         private System.Windows.Forms.ComboBox languageComboBox;
         private System.Windows.Forms.Label languageLabel;
         private System.Windows.Forms.Label introductionLabel;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }

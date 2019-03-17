@@ -125,11 +125,26 @@
     <Compile Include="TeacherGradesForm.Designer.cs">
       <DependentUpon>TeacherGradesForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChangeInformationForm.bg-BG.resx">
+      <DependentUpon>ChangeInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChangePasswordForm.resx">
       <DependentUpon>ChangePasswordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangeInformationForm.resx">
       <DependentUpon>ChangeInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.aa.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.bg-BG.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.bg.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.en-150.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParentForm.resx">
       <DependentUpon>ParentForm.cs</DependentUpon>
@@ -147,11 +162,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegistrationForm.aa.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationForm.bg-BG.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationForm.brx-IN.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentGradesStatisticsForm.resx">
       <DependentUpon>StudentGradesStatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMainForm.bg-BG.resx">
+      <DependentUpon>StudentMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentMainForm.resx">
       <DependentUpon>StudentMainForm.cs</DependentUpon>
@@ -161,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentViewGradesForm.resx">
       <DependentUpon>StudentViewGradesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherMainForm.bg-BG.resx">
+      <DependentUpon>TeacherMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherViewStudentsForm.resx">
       <DependentUpon>TeacherViewStudentsForm.cs</DependentUpon>

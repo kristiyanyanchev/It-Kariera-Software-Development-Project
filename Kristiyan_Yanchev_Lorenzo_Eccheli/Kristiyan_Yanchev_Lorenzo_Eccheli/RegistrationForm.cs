@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Windows.Forms;
+
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -16,11 +12,20 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             InitializeComponent();
         }
 
-        private string nextformlanguage;
-
         public RegistrationForm(string language)
         {
-            if (language == "Bulgarian")
+            if(language=="English")
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
+               
+            }
+            InitializeComponent();
+            /*
+            if (language == "Bulgarian" || language=="Български")
             {
                 nextformlanguage = language;
                 InitializeComponent();
@@ -48,7 +53,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 formToolTip.SetToolTip(exitButton, "Излезте от приложението.");
                 formToolTip.SetToolTip(validationCodeLabel, "Задължителен код даден от училището.");
             }
-            else if(language=="English")
+            else 
             {
                 nextformlanguage = language;
                 InitializeComponent();
@@ -75,31 +80,94 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 formToolTip.SetToolTip(registrationButton, "Your account will be registered.");
                 formToolTip.SetToolTip(exitButton, "Exit the application.");
                 formToolTip.SetToolTip(validationCodeLabel, "Required code given by the school.");
-            }
+            }*/
         }
 
         private bool ValidateData()
         {
-            if(firstNameTextBox.Text!=null && lastNameTextBox.Text!=null && 
-               passwordTextBox.Text!=null && emailTextBox.Text!=null && 
-               nameTextBox.Text!=null &&
-               addressTextBox.Text!=null && phoneNumberTextBox.Text!=null && 
-               roleComboBox.SelectedItem!=null && double.TryParse(phoneNumberTextBox.Text,out double a))
+            if(roleComboBox.SelectedItem.ToString()=="Teacher")
             {
-                return true;
+                if (firstNameTextBox.Text != null && lastNameTextBox.Text != null &&
+               passwordTextBox.Text != null && emailTextBox.Text != null &&
+               nameTextBox.Text != null &&
+               addressTextBox.Text != null && phoneNumberTextBox.Text != null &&
+               roleComboBox.SelectedItem != null && double.TryParse(phoneNumberTextBox.Text, out double a) &&
+               classnameTextBox.Text!=null && subjectTextBox.Text!=null && possitionTextBox.Text!=null &&
+               classnameTextBox.Text!=null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            return false;
+            else if(roleComboBox.SelectedItem.ToString()=="Student")
+            {
+                if (firstNameTextBox.Text != null && lastNameTextBox.Text != null &&
+               passwordTextBox.Text != null && emailTextBox.Text != null &&
+               nameTextBox.Text != null &&
+               addressTextBox.Text != null && phoneNumberTextBox.Text != null &&
+               roleComboBox.SelectedItem != null && double.TryParse(phoneNumberTextBox.Text, out double a)&&
+               classnameTextBox.Text!=null && ucnTextBox.Text!=null && birthdatePicker.Text!=DateTime.Today.ToString())
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                if (firstNameTextBox.Text != null && lastNameTextBox.Text != null &&
+               passwordTextBox.Text != null && emailTextBox.Text != null &&
+               nameTextBox.Text != null &&
+               addressTextBox.Text != null && phoneNumberTextBox.Text != null &&
+               roleComboBox.SelectedItem != null && double.TryParse(phoneNumberTextBox.Text, out double a)&&
+               nameofchildTextBox.Text!=null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
+        private string GetLanguage()
+        {
+            if(usernameLabel.Text=="Username")
+            {
+                return "English";
+            }
+            else
+            {
+                return "Bulgarian";
+            }
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-
-            if (dialog == DialogResult.OK)
+            if (GetLanguage() == "Bulgarian")
             {
-                Application.ExitThread();
+                DialogResult dialog = MessageBox.Show("Наистина ли искате да излезете", "Въпрос", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                if (dialog == DialogResult.OK)
+                {
+                    Application.ExitThread();
+                }
             }
-            
+            else
+            {
+                DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                if (dialog == DialogResult.OK)
+                {
+                    Application.ExitThread();
+                }
+            }
         }
 
         private void registrationButton_Click(object sender, EventArgs e)
@@ -107,29 +175,39 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
             if (ValidateData())
             {
-                if(roleComboBox.SelectedItem.ToString()=="Student")
+                if(roleComboBox.SelectedItem.ToString()=="Student" ||
+                    roleComboBox.SelectedItem.ToString()=="Ученик")
                 {
                     this.Hide();
                     StudentMainForm studentform = new StudentMainForm();
                     studentform.ShowDialog();
                 }
-                else if(roleComboBox.SelectedItem.ToString() == "Teacher")
+                else if(roleComboBox.SelectedItem.ToString() == "Teacher" ||
+                    roleComboBox.SelectedItem.ToString()=="Учител")
                 {
                     this.Hide();
                     TeacherMainForm teacherform = new TeacherMainForm();
                     teacherform.ShowDialog();
                 }
-                else if(roleComboBox.SelectedItem.ToString() == "Parent")
+                else if(roleComboBox.SelectedItem.ToString() == "Parent" ||
+                    roleComboBox.SelectedItem.ToString()=="Родител")
                 {
                     this.Hide();
-                    ParentForm parentform = new ParentForm(nextformlanguage);
+                    ParentForm parentform = new ParentForm(GetLanguage());
                     parentform.ShowDialog();
                 }
                 
             }
             else
             {
-                MessageBox.Show("Invalid data ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (GetLanguage() == "Bulgarian")
+                {
+                    MessageBox.Show("Грешни данни", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid data ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -175,63 +253,31 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void roleComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             Makeinvisible();
-            if(roleComboBox.SelectedItem.ToString()=="Student")
+            if(roleComboBox.SelectedItem.ToString()=="Student" ||
+                roleComboBox.SelectedItem.ToString() == "Ученик")
             {
-                if (usernameLabel.Text == "Name")
-                {
-                    ucnLabel.Visible = true;
-                    ucnTextBox.Visible = true;
-                    birthdayLabel.Visible = true;
-                    birthdatePicker.Visible = true;
-                    classnameLabel.Visible = true;
-                    classnameTextBox.Visible = true;
-                    ucnLabel.Text = "UCN" ;
-                    birthdayLabel.Text = "Date of birth";
-                    classnameLabel.Text = "Class";
-                }
-                else
-                {
-                    ucnLabel.Visible = true;
-                    ucnTextBox.Visible = true;
-                    birthdayLabel.Visible = true;
-                    birthdatePicker.Visible = true;
-                    classnameLabel.Visible = true;
-                    classnameTextBox.Visible = true;
-                    ucnLabel.Text = "ЕГН";
-                    birthdayLabel.Text = "Дата на раждане";
-                    classnameLabel.Text = "Клас";
-                }
+                ucnLabel.Visible = true;
+                ucnTextBox.Visible = true;
+                birthdayLabel.Visible = true;
+                birthdatePicker.Visible = true;
+                classnameLabel.Visible = true;
+                classnameTextBox.Visible = true;
             }
-            else if(roleComboBox.SelectedItem.ToString()=="Parent")
+            else if(roleComboBox.SelectedItem.ToString()=="Parent" ||
+                roleComboBox.SelectedItem.ToString() == "Родител")
             {
-                if(usernameLabel.Text=="Name")
-                {
-                    nameofchildLabel.Visible = true;
-                    nameofchildTextBox.Visible = true;
-                    nameofchildLabel.Text = "Name of child";
-                }
-                else
-                {
-                    nameofchildLabel.Visible = true;
-                    nameofchildTextBox.Visible = true;
-                    nameofchildLabel.Text = "Име на детето";
-                }
+                nameofchildLabel.Visible = true;
+                nameofchildTextBox.Visible = true;
             }
-            else if(roleComboBox.SelectedItem.ToString() == "Teacher")
+            else if(roleComboBox.SelectedItem.ToString() == "Teacher" ||
+                roleComboBox.SelectedItem.ToString() == "Учител")
             {
-                if (usernameLabel.Text == "Name")
-                {
-                    classnameLabel.Visible = true;
-                    classnameTextBox.Visible = true;
-                    classnameLabel.Text = "Class";
-
-                }
-                else
-                {
-                    classnameLabel.Visible = true;
-                    classnameTextBox.Visible = true;
-                    classnameLabel.Text = "Клас";
-                }
+                classnameLabel.Visible = true;
+                classnameTextBox.Visible = true;
+                subjectLabel.Visible = true;
+                subjectTextBox.Visible = true;
+                possitionLabel.Visible = true;
+                possitionLabel.Visible = true;
             }
             else
             {
@@ -242,13 +288,26 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void backButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LogInForm login = new LogInForm();
+            LogInForm login = new LogInForm(GetLanguage());
             login.ShowDialog();
         }
 
         private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(languageComboBox.SelectedItem.ToString()== "Bulgarian")
+            this.Controls.Clear();
+            if (languageComboBox.SelectedItem.ToString() == "English" ||
+                languageComboBox.SelectedItem.ToString() == "Английски")
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
+            }
+            InitializeComponent();
+            
+            /*
+            if (languageComboBox.SelectedItem.ToString() == "Bulgarian")
             {
                 nextformlanguage = "Bulgarian";
                 introductionLabel.Text = "Регистрация в електронния училищен дневник";
@@ -301,6 +360,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 formToolTip.SetToolTip(exitButton, "Exit the application.");
                 formToolTip.SetToolTip(validationCodeLabel, "Required code given by the school.");
             }
+            */
         }
     }
+           
 }

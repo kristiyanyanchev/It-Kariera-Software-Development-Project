@@ -117,4 +117,325 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="introductionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;absensesButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="addgradeButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="absensesButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 127</value>
+  </data>
+  <data name="exitButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 70</value>
+  </data>
+  <data name="viewstudentsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 130</value>
+  </data>
+  <data name="addgradeButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;changePasswordButton.Name" xml:space="preserve">
+    <value>changePasswordButton</value>
+  </data>
+  <data name="&gt;&gt;viewstudentsButton.Name" xml:space="preserve">
+    <value>viewstudentsButton</value>
+  </data>
+  <data name="addstudentButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;changePasswordButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TeacherMainForm</value>
+  </data>
+  <data name="changeinformationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 325</value>
+  </data>
+  <data name="viewstudentsButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="languageComboBox.Items1" xml:space="preserve">
+    <value>Bulgarian</value>
+  </data>
+  <data name="exitButton.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="languageComboBox.Items" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="absensesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 70</value>
+  </data>
+  <data name="absensesButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="&gt;&gt;viewstudentsButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;absensesButton.Name" xml:space="preserve">
+    <value>absensesButton</value>
+  </data>
+  <data name="&gt;&gt;viewstudentsButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;viewstudentsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="changePasswordButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="viewstudentsButton.Text" xml:space="preserve">
+    <value>View Students</value>
+  </data>
+  <data name="viewstudentsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="introductionLabel.Text" xml:space="preserve">
+    <value>Welcome to E-journal ,Teacher</value>
+  </data>
+  <data name="&gt;&gt;absensesButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>546, 130</value>
+  </data>
+  <data name="addstudentButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="addstudentButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 70</value>
+  </data>
+  <data name="addstudentButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;introductionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;changeinformationButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="absensesButton.Text" xml:space="preserve">
+    <value>Absenses</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 28</value>
+  </data>
+  <data name="languageLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="&gt;&gt;introductionLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="addgradeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 70</value>
+  </data>
+  <data name="&gt;&gt;addgradeButton.Name" xml:space="preserve">
+    <value>addgradeButton</value>
+  </data>
+  <data name="introductionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 32</value>
+  </data>
+  <data name="exitButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;changePasswordButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addstudentButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;changeinformationButton.Name" xml:space="preserve">
+    <value>changeinformationButton</value>
+  </data>
+  <data name="changePasswordButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 222</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Name" xml:space="preserve">
+    <value>languageLabel</value>
+  </data>
+  <data name="introductionLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Heading, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="changePasswordButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="&gt;&gt;exitButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;introductionLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="addgradeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="changeinformationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 70</value>
+  </data>
+  <data name="changeinformationButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="changePasswordButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 70</value>
+  </data>
+  <data name="addstudentButton.Text" xml:space="preserve">
+    <value>Add Student</value>
+  </data>
+  <data name="languageComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 27</value>
+  </data>
+  <data name="absensesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 130</value>
+  </data>
+  <data name="changeinformationButton.Text" xml:space="preserve">
+    <value>Change Information</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;addgradeButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;addgradeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exitButton.Name" xml:space="preserve">
+    <value>exitButton</value>
+  </data>
+  <data name="changePasswordButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;addstudentButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="languageLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;changePasswordButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="viewstudentsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;changeinformationButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 19</value>
+  </data>
+  <data name="addstudentButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 325</value>
+  </data>
+  <data name="&gt;&gt;addstudentButton.Name" xml:space="preserve">
+    <value>addstudentButton</value>
+  </data>
+  <data name="absensesButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="exitButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>618, 437</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>E-journal</value>
+  </data>
+  <data name="changeinformationButton.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="exitButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="addgradeButton.Text" xml:space="preserve">
+    <value>Add Grade</value>
+  </data>
+  <data name="exitButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;introductionLabel.Name" xml:space="preserve">
+    <value>introductionLabel</value>
+  </data>
+  <data name="changePasswordButton.Text" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="introductionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;exitButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;absensesButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;addgradeButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="languageLabel.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="&gt;&gt;changeinformationButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="addgradeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 222</value>
+  </data>
+  <data name="&gt;&gt;exitButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addstudentButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>769, 519</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="changeinformationButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Name" xml:space="preserve">
+    <value>languageComboBox</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="viewstudentsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 70</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
