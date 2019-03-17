@@ -44,13 +44,16 @@ namespace Controller.ValidationClasses
             var validationCodeRepo = new ValidationCodeRepository();
             var teacherRepo = new TeachersRepository();
             var studentsRepo = new StudentsRepository();
+            var parents = new ParentsRepository();
+            var classes = new ClassesRepository();
             if (UsernameValidator.Validate(teacherDTO.Username) == false)
             {
                 return "Username error! ";
             }
 
             if (studentsRepo.List().Select(x => x.Username).Contains(teacherDTO.Username) == true ||
-               teacherRepo.List().Select(x => x.Username).Contains(teacherDTO.Username) == true)
+               teacherRepo.List().Select(x => x.Username).Contains(teacherDTO.Username) == true ||
+               parents.List().Select(x => x.Username).Contains(teacherDTO.Username) == true )
             {
                 return "This Username alredy exist!";
             }
@@ -96,6 +99,10 @@ namespace Controller.ValidationClasses
             if (ClassValidator.Validate(teacherDTO.Class) == false)
             {
                 return "Class error";
+            }
+            if (classes.List().Select(x => x.Name).Contains(teacherDTO.Class) == false)
+            {
+                return "Class does not exist";
             }
 
             return "Registration successful";

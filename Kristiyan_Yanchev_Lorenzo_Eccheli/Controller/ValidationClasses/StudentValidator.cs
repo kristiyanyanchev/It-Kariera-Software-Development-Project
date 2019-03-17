@@ -31,16 +31,18 @@ namespace Controller.ValidationClasses
         public string ValidateStudent(StudentDataTransferObject studentDTO)
         {
             var validationCodeRepo = new ValidationCodeRepository();
-            var studentsRepo = new StudentsRepository();
-            var classRepo = new ClassesRepository();
-            var teacherRepo = new TeachersRepository();
+            var students = new StudentsRepository();
+            var classes = new ClassesRepository();
+            var teachers = new TeachersRepository();
+            var parents = new ParentsRepository();
             if (UsernameValidator.Validate(studentDTO.Username) == false)
             {
                 return "Username error! ";
             }
 
-            if (studentsRepo.List().Select(x => x.Username).Contains(studentDTO.Username) == true ||
-                teacherRepo.List().Select(x => x.Username).Contains(studentDTO.Username) == true)
+            if (students.List().Select(x => x.Username).Contains(studentDTO.Username) == true ||
+                teachers.List().Select(x => x.Username).Contains(studentDTO.Username) == true ||
+                parents.List().Select(x => x.Username).Contains(studentDTO.Username) == true)
             {
                 return "This Username alredy exist!";
             }
@@ -100,7 +102,7 @@ namespace Controller.ValidationClasses
                 return "Ucn error! ";
             }
 
-            if (studentsRepo.List().Select(x => x.Ucn).Contains(studentDTO.Ucn) == true)
+            if (students.List().Select(x => x.Ucn).Contains(studentDTO.Ucn) == true)
             {
                 return "Ucn alredy used! ";
             }

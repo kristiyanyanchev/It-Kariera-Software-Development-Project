@@ -20,7 +20,7 @@ namespace Data.Test
         {
             var repo = new ClassesTestRepository();
             var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "0001");
-            var @class = new Class("Math", teacher);
+            var @class = new Class("11G", teacher);
             repo.Add(@class);
             Assert.AreEqual(@class.Id, repo.List().Last().Id);
         }
@@ -30,7 +30,7 @@ namespace Data.Test
         {
             var repo = new ClassesTestRepository();
             Teacher teacher = null;
-            var @class = new Class("Math", teacher);
+            var @class = new Class("11G", teacher);
             Assert.Throws<DbEntityValidationException>(() => repo.Add(@class));
             
         }
@@ -40,7 +40,7 @@ namespace Data.Test
         {
             var repo = new ClassesTestRepository();
             var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "0001");
-            var @class = new Class("Math", teacher);
+            var @class = new Class("11G", teacher);
             repo.Add(@class);
             var count = repo.List().Count();
             repo.Delete(repo.List().Last());
@@ -53,7 +53,7 @@ namespace Data.Test
         {
             var repo = new ClassesTestRepository();
             var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "0001");
-            var @class = new Class("Math", teacher);
+            var @class = new Class("11G", teacher);
             Assert.Throws<DbUpdateConcurrencyException>(() => repo.Delete(@class));
         }
 
@@ -62,7 +62,7 @@ namespace Data.Test
         {
             var repo = new ClassesTestRepository();
             var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "0001");
-            var @class = new Class("Math", teacher);
+            var @class = new Class("11G", teacher);
             repo.Add(@class);
             var editedEntity = repo.List().Last();
             editedEntity.Name = "Science";
@@ -74,7 +74,7 @@ namespace Data.Test
         {
             var repo = new ClassesTestRepository();
             var teacher = new Teacher("John", "Smith", "Math", "Junior Teacher", "0001");
-            var @class = new Class("Math", teacher);
+            var @class = new Class("11G", teacher);
             repo.Add(@class);
             Assert.AreEqual(repo.GetById(repo.List().Last().Id).Id, repo.List().Last().Id);
         }

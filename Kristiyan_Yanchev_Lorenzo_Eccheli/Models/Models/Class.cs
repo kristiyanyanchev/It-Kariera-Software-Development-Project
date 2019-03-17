@@ -15,6 +15,7 @@ namespace Data.Models
         [Required]
         public Teacher Teacher { get; set; }
 
+        public ICollection<Student> Students { get; set; }
 
         public Class()
         {
