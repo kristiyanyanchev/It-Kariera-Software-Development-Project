@@ -186,6 +186,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 if(roleComboBox.SelectedItem.ToString()=="Student" ||
                     roleComboBox.SelectedItem.ToString()=="Ученик")
                 {
+                    var studentDto = new StudentDataTransferObject();
+
+
+
                     this.Hide();
                     StudentMainForm studentform = new StudentMainForm();
                     studentform.ShowDialog();
