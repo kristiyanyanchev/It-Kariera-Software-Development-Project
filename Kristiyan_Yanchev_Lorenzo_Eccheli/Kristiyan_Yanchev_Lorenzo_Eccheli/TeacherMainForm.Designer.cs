@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherMainForm));
             this.addgradeButton = new System.Windows.Forms.Button();
             this.changePasswordButton = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@
             this.introductionLabel = new System.Windows.Forms.Label();
             this.languageLabel = new System.Windows.Forms.Label();
             this.languageComboBox = new System.Windows.Forms.ComboBox();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // addgradeButton
@@ -47,6 +49,7 @@
             this.addgradeButton.BackColor = System.Drawing.Color.FloralWhite;
             this.addgradeButton.FlatAppearance.BorderSize = 0;
             this.addgradeButton.Name = "addgradeButton";
+            this.toolTip.SetToolTip(this.addgradeButton, resources.GetString("addgradeButton.ToolTip"));
             this.addgradeButton.UseVisualStyleBackColor = false;
             this.addgradeButton.Click += new System.EventHandler(this.addgradeButton_Click);
             // 
@@ -56,6 +59,7 @@
             this.changePasswordButton.BackColor = System.Drawing.Color.FloralWhite;
             this.changePasswordButton.FlatAppearance.BorderSize = 0;
             this.changePasswordButton.Name = "changePasswordButton";
+            this.toolTip.SetToolTip(this.changePasswordButton, resources.GetString("changePasswordButton.ToolTip"));
             this.changePasswordButton.UseVisualStyleBackColor = false;
             this.changePasswordButton.Click += new System.EventHandler(this.changePasswordButton_Click);
             // 
@@ -65,6 +69,7 @@
             this.exitButton.BackColor = System.Drawing.Color.FloralWhite;
             this.exitButton.FlatAppearance.BorderSize = 0;
             this.exitButton.Name = "exitButton";
+            this.toolTip.SetToolTip(this.exitButton, resources.GetString("exitButton.ToolTip"));
             this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
@@ -74,6 +79,7 @@
             this.absensesButton.BackColor = System.Drawing.Color.FloralWhite;
             this.absensesButton.FlatAppearance.BorderSize = 0;
             this.absensesButton.Name = "absensesButton";
+            this.toolTip.SetToolTip(this.absensesButton, resources.GetString("absensesButton.ToolTip"));
             this.absensesButton.UseVisualStyleBackColor = false;
             this.absensesButton.Click += new System.EventHandler(this.absensesButton_Click);
             // 
@@ -83,6 +89,7 @@
             this.addstudentButton.BackColor = System.Drawing.Color.FloralWhite;
             this.addstudentButton.FlatAppearance.BorderSize = 0;
             this.addstudentButton.Name = "addstudentButton";
+            this.toolTip.SetToolTip(this.addstudentButton, resources.GetString("addstudentButton.ToolTip"));
             this.addstudentButton.UseVisualStyleBackColor = false;
             this.addstudentButton.Click += new System.EventHandler(this.addstudentButton_Click);
             // 
@@ -92,6 +99,7 @@
             this.changeinformationButton.BackColor = System.Drawing.Color.FloralWhite;
             this.changeinformationButton.FlatAppearance.BorderSize = 0;
             this.changeinformationButton.Name = "changeinformationButton";
+            this.toolTip.SetToolTip(this.changeinformationButton, resources.GetString("changeinformationButton.ToolTip"));
             this.changeinformationButton.UseVisualStyleBackColor = false;
             this.changeinformationButton.Click += new System.EventHandler(this.changeinformationButton_Click);
             // 
@@ -101,6 +109,7 @@
             this.viewstudentsButton.BackColor = System.Drawing.Color.FloralWhite;
             this.viewstudentsButton.FlatAppearance.BorderSize = 0;
             this.viewstudentsButton.Name = "viewstudentsButton";
+            this.toolTip.SetToolTip(this.viewstudentsButton, resources.GetString("viewstudentsButton.ToolTip"));
             this.viewstudentsButton.UseVisualStyleBackColor = false;
             this.viewstudentsButton.Click += new System.EventHandler(this.viewstudentsButton_Click);
             // 
@@ -109,12 +118,14 @@
             resources.ApplyResources(this.introductionLabel, "introductionLabel");
             this.introductionLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.introductionLabel.Name = "introductionLabel";
+            this.toolTip.SetToolTip(this.introductionLabel, resources.GetString("introductionLabel.ToolTip"));
             // 
             // languageLabel
             // 
             resources.ApplyResources(this.languageLabel, "languageLabel");
             this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.languageLabel.Name = "languageLabel";
+            this.toolTip.SetToolTip(this.languageLabel, resources.GetString("languageLabel.ToolTip"));
             // 
             // languageComboBox
             // 
@@ -125,6 +136,7 @@
             resources.GetString("languageComboBox.Items"),
             resources.GetString("languageComboBox.Items1")});
             this.languageComboBox.Name = "languageComboBox";
+            this.toolTip.SetToolTip(this.languageComboBox, resources.GetString("languageComboBox.ToolTip"));
             this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
             // 
             // TeacherMainForm
@@ -143,6 +155,7 @@
             this.Controls.Add(this.changePasswordButton);
             this.Controls.Add(this.addgradeButton);
             this.Name = "TeacherMainForm";
+            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TeacherMainForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -161,5 +174,6 @@
         private System.Windows.Forms.Label introductionLabel;
         private System.Windows.Forms.Label languageLabel;
         private System.Windows.Forms.ComboBox languageComboBox;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }

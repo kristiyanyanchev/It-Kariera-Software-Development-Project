@@ -117,4 +117,375 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gradeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="classesListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gradeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 24</value>
+  </data>
+  <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>531, 70</value>
+  </data>
+  <data name="studentsListbox.ItemHeight" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;gradeTextBox.Name" xml:space="preserve">
+    <value>gradeTextBox</value>
+  </data>
+  <data name="studentsListbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 226</value>
+  </data>
+  <data name="&gt;&gt;gradeLabel.Name" xml:space="preserve">
+    <value>gradeLabel</value>
+  </data>
+  <data name="&gt;&gt;classesListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;closeButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="classesListBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="&gt;&gt;studentsListbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TeacherGradesForm</value>
+  </data>
+  <data name="&gt;&gt;studentsListbox.Name" xml:space="preserve">
+    <value>studentsListbox</value>
+  </data>
+  <data name="languageComboBox.Items1" xml:space="preserve">
+    <value>Bulgarian</value>
+  </data>
+  <data name="closeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 80</value>
+  </data>
+  <data name="classesListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 118</value>
+  </data>
+  <data name="instructionLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="removeGradeButton.Text" xml:space="preserve">
+    <value>Remove Grade</value>
+  </data>
+  <data name="&gt;&gt;removeGradeButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="closeButton.ToolTip" xml:space="preserve">
+    <value>Close window</value>
+  </data>
+  <data name="&gt;&gt;instructionLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="studentsListbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 118</value>
+  </data>
+  <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>463, 72</value>
+  </data>
+  <data name="gradeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 292</value>
+  </data>
+  <data name="studentsListbox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="studentsListbox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="gradeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="&gt;&gt;instructionLabel.Name" xml:space="preserve">
+    <value>instructionLabel</value>
+  </data>
+  <data name="languageLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="instructionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>195, 9</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="newGradeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 80</value>
+  </data>
+  <data name="&gt;&gt;newGradeButton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;closeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="closeButton.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="closeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="gradeLabel.Text" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="&gt;&gt;studentsListbox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;gradesListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gradeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 19</value>
+  </data>
+  <data name="&gt;&gt;gradesListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gradesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 368</value>
+  </data>
+  <data name="newGradeButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;gradeTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="gradeLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="newGradeButton.ToolTip" xml:space="preserve">
+    <value>Add new grade</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="removeGradeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 406</value>
+  </data>
+  <data name="&gt;&gt;gradeTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;newGradeButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="newGradeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="instructionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="removeGradeButton.ToolTip" xml:space="preserve">
+    <value>Remove selected grade</value>
+  </data>
+  <data name="gradesListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="closeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>565, 406</value>
+  </data>
+  <data name="gradesListBox.ToolTip" xml:space="preserve">
+    <value>Select grades</value>
+  </data>
+  <data name="studentsListbox.ToolTip" xml:space="preserve">
+    <value>Select students</value>
+  </data>
+  <data name="removeGradeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gradesListBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="&gt;&gt;classesListBox.Name" xml:space="preserve">
+    <value>classesListBox</value>
+  </data>
+  <data name="classesListBox.ToolTip" xml:space="preserve">
+    <value>Select classes</value>
+  </data>
+  <data name="&gt;&gt;newGradeButton.Name" xml:space="preserve">
+    <value>newGradeButton</value>
+  </data>
+  <data name="gradesListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="removeGradeButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="&gt;&gt;gradesListBox.Name" xml:space="preserve">
+    <value>gradesListBox</value>
+  </data>
+  <data name="&gt;&gt;removeGradeButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gradeTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="&gt;&gt;classesListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="newGradeButton.Text" xml:space="preserve">
+    <value>New Grade</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gradesListBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 19</value>
+  </data>
+  <data name="instructionLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Heading, 14.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="languageComboBox.ToolTip" xml:space="preserve">
+    <value>Change the language</value>
+  </data>
+  <data name="closeButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="gradeTextBox.ToolTip" xml:space="preserve">
+    <value>Enter new grade</value>
+  </data>
+  <data name="classesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 72</value>
+  </data>
+  <data name="gradeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>427, 292</value>
+  </data>
+  <data name="&gt;&gt;closeButton.Name" xml:space="preserve">
+    <value>closeButton</value>
+  </data>
+  <data name="gradesListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 118</value>
+  </data>
+  <data name="&gt;&gt;removeGradeButton.Name" xml:space="preserve">
+    <value>removeGradeButton</value>
+  </data>
+  <data name="&gt;&gt;gradeLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Grades</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;removeGradeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;instructionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="instructionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="instructionLabel.Text" xml:space="preserve">
+    <value>Select grade and you can remove it or add new grade</value>
+  </data>
+  <data name="&gt;&gt;gradeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;closeButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gradeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;gradeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Name" xml:space="preserve">
+    <value>languageLabel</value>
+  </data>
+  <data name="classesListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gradeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;instructionLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="newGradeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>565, 264</value>
+  </data>
+  <data name="languageComboBox.Items" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="languageLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>677, 498</value>
+  </data>
+  <data name="removeGradeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 80</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;studentsListbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Name" xml:space="preserve">
+    <value>languageComboBox</value>
+  </data>
+  <data name="languageLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="instructionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>457, 28</value>
+  </data>
+  <data name="languageLabel.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="gradeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;classesListBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;newGradeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>bg-BG</value>
+  </metadata>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

@@ -149,6 +149,9 @@
     <EmbeddedResource Include="LogInForm.en-150.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ParentForm.bg-BG.resx">
+      <DependentUpon>ParentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ParentForm.resx">
       <DependentUpon>ParentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +180,9 @@
     <EmbeddedResource Include="RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StudentGradesStatisticsForm.bg-BG.resx">
+      <DependentUpon>StudentGradesStatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentGradesStatisticsForm.resx">
       <DependentUpon>StudentGradesStatisticsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,8 +198,14 @@
     <EmbeddedResource Include="StudentViewGradesForm.resx">
       <DependentUpon>StudentViewGradesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TeacherGradesForm.bg-BG.resx">
+      <DependentUpon>TeacherGradesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherMainForm.bg-BG.resx">
       <DependentUpon>TeacherMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherViewStudentsForm.bg-BG.resx">
+      <DependentUpon>TeacherViewStudentsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherViewStudentsForm.resx">
       <DependentUpon>TeacherViewStudentsForm.cs</DependentUpon>
@@ -221,9 +233,9 @@
     <None Include="Resources\Background.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Models\Data.csproj">
-      <Project>{5ff175c7-39e5-4c47-985e-0a568f03e77c}</Project>
-      <Name>Data</Name>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{281173a8-5e85-4e35-b4fa-57482e71e8a4}</Project>
+      <Name>Controller</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

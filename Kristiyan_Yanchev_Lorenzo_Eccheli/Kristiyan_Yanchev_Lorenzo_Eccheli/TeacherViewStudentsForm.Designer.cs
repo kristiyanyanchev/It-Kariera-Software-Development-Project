@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherViewStudentsForm));
             this.searchFirstNameTextBox = new System.Windows.Forms.TextBox();
             this.firstNameLabel = new System.Windows.Forms.Label();
@@ -55,13 +56,17 @@
             this.ucnLabel = new System.Windows.Forms.Label();
             this.phonenumberLabel = new System.Windows.Forms.Label();
             this.emailLabel = new System.Windows.Forms.Label();
+            this.languageLabel = new System.Windows.Forms.Label();
+            this.languageComboBox = new System.Windows.Forms.ComboBox();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // searchFirstNameTextBox
             // 
-            resources.ApplyResources(this.searchFirstNameTextBox, "searchFirstNameTextBox");
             this.searchFirstNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.searchFirstNameTextBox, "searchFirstNameTextBox");
             this.searchFirstNameTextBox.Name = "searchFirstNameTextBox";
+            this.toolTip.SetToolTip(this.searchFirstNameTextBox, resources.GetString("searchFirstNameTextBox.ToolTip"));
             // 
             // firstNameLabel
             // 
@@ -77,43 +82,45 @@
             // 
             // searchLastNameTextBox
             // 
-            resources.ApplyResources(this.searchLastNameTextBox, "searchLastNameTextBox");
             this.searchLastNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.searchLastNameTextBox, "searchLastNameTextBox");
             this.searchLastNameTextBox.Name = "searchLastNameTextBox";
+            this.toolTip.SetToolTip(this.searchLastNameTextBox, resources.GetString("searchLastNameTextBox.ToolTip"));
             // 
             // searchButton
             // 
-            resources.ApplyResources(this.searchButton, "searchButton");
             this.searchButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.searchButton, "searchButton");
             this.searchButton.Name = "searchButton";
+            this.toolTip.SetToolTip(this.searchButton, resources.GetString("searchButton.ToolTip"));
             this.searchButton.UseVisualStyleBackColor = false;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // firstNameTextbox
             // 
-            resources.ApplyResources(this.firstNameTextbox, "firstNameTextbox");
             this.firstNameTextbox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.firstNameTextbox, "firstNameTextbox");
             this.firstNameTextbox.Name = "firstNameTextbox";
             this.firstNameTextbox.ReadOnly = true;
             // 
             // lastNameTextBox
             // 
-            resources.ApplyResources(this.lastNameTextBox, "lastNameTextBox");
             this.lastNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.lastNameTextBox, "lastNameTextBox");
             this.lastNameTextBox.Name = "lastNameTextBox";
             this.lastNameTextBox.ReadOnly = true;
             // 
             // classTextBox
             // 
-            resources.ApplyResources(this.classTextBox, "classTextBox");
             this.classTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.classTextBox, "classTextBox");
             this.classTextBox.Name = "classTextBox";
             this.classTextBox.ReadOnly = true;
             // 
             // birthDateTextBox
             // 
-            resources.ApplyResources(this.birthDateTextBox, "birthDateTextBox");
             this.birthDateTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.birthDateTextBox, "birthDateTextBox");
             this.birthDateTextBox.Name = "birthDateTextBox";
             this.birthDateTextBox.ReadOnly = true;
             // 
@@ -125,8 +132,8 @@
             // 
             // inAbsentiaTextBox
             // 
-            resources.ApplyResources(this.inAbsentiaTextBox, "inAbsentiaTextBox");
             this.inAbsentiaTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.inAbsentiaTextBox, "inAbsentiaTextBox");
             this.inAbsentiaTextBox.Name = "inAbsentiaTextBox";
             this.inAbsentiaTextBox.ReadOnly = true;
             // 
@@ -138,8 +145,8 @@
             // 
             // addressTextBox
             // 
-            resources.ApplyResources(this.addressTextBox, "addressTextBox");
             this.addressTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.addressTextBox, "addressTextBox");
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.ReadOnly = true;
             // 
@@ -151,37 +158,38 @@
             // 
             // schoolarshipTextBox
             // 
-            resources.ApplyResources(this.schoolarshipTextBox, "schoolarshipTextBox");
             this.schoolarshipTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.schoolarshipTextBox, "schoolarshipTextBox");
             this.schoolarshipTextBox.Name = "schoolarshipTextBox";
             this.schoolarshipTextBox.ReadOnly = true;
             // 
             // ucnTextBox
             // 
-            resources.ApplyResources(this.ucnTextBox, "ucnTextBox");
             this.ucnTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.ucnTextBox, "ucnTextBox");
             this.ucnTextBox.Name = "ucnTextBox";
             this.ucnTextBox.ReadOnly = true;
             // 
             // phoneNumberTextBox
             // 
-            resources.ApplyResources(this.phoneNumberTextBox, "phoneNumberTextBox");
             this.phoneNumberTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.phoneNumberTextBox, "phoneNumberTextBox");
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.ReadOnly = true;
             // 
             // emailTextBox
             // 
-            resources.ApplyResources(this.emailTextBox, "emailTextBox");
             this.emailTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.emailTextBox, "emailTextBox");
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.ReadOnly = true;
             // 
             // closeButton
             // 
-            resources.ApplyResources(this.closeButton, "closeButton");
             this.closeButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.closeButton, "closeButton");
             this.closeButton.Name = "closeButton";
+            this.toolTip.SetToolTip(this.closeButton, resources.GetString("closeButton.ToolTip"));
             this.closeButton.UseVisualStyleBackColor = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
@@ -227,11 +235,31 @@
             this.emailLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.emailLabel.Name = "emailLabel";
             // 
+            // languageLabel
+            // 
+            resources.ApplyResources(this.languageLabel, "languageLabel");
+            this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.languageLabel.Name = "languageLabel";
+            // 
+            // languageComboBox
+            // 
+            this.languageComboBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.languageComboBox.FormattingEnabled = true;
+            this.languageComboBox.Items.AddRange(new object[] {
+            resources.GetString("languageComboBox.Items"),
+            resources.GetString("languageComboBox.Items1")});
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
+            this.languageComboBox.Name = "languageComboBox";
+            this.toolTip.SetToolTip(this.languageComboBox, resources.GetString("languageComboBox.ToolTip"));
+            this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
+            // 
             // TeacherViewStudentsForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            this.Controls.Add(this.languageComboBox);
+            this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.emailLabel);
             this.Controls.Add(this.phonenumberLabel);
             this.Controls.Add(this.ucnLabel);
@@ -292,5 +320,8 @@
         private System.Windows.Forms.Label ucnLabel;
         private System.Windows.Forms.Label phonenumberLabel;
         private System.Windows.Forms.Label emailLabel;
+        private System.Windows.Forms.Label languageLabel;
+        private System.Windows.Forms.ComboBox languageComboBox;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }

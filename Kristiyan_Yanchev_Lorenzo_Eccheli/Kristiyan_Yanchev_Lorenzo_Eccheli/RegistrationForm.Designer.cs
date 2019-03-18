@@ -38,7 +38,7 @@
             this.phoneLabel = new System.Windows.Forms.Label();
             this.roleLabel = new System.Windows.Forms.Label();
             this.roleComboBox = new System.Windows.Forms.ComboBox();
-            this.firstNameTextBox = new System.Windows.Forms.TextBox();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.addressTextBox = new System.Windows.Forms.TextBox();
@@ -55,7 +55,7 @@
             this.ucnTextBox = new System.Windows.Forms.TextBox();
             this.classnameTextBox = new System.Windows.Forms.TextBox();
             this.nameofchildTextBox = new System.Windows.Forms.TextBox();
-            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.firstNameTextBox = new System.Windows.Forms.TextBox();
             this.backButton = new System.Windows.Forms.Button();
             this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.subjectTextBox = new System.Windows.Forms.TextBox();
@@ -121,12 +121,12 @@
             this.formToolTip.SetToolTip(this.roleComboBox, resources.GetString("roleComboBox.ToolTip"));
             this.roleComboBox.SelectedIndexChanged += new System.EventHandler(this.roleComboBox_SelectedIndexChanged);
             // 
-            // firstNameTextBox
+            // usernameTextBox
             // 
-            this.firstNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            resources.ApplyResources(this.firstNameTextBox, "firstNameTextBox");
-            this.firstNameTextBox.Name = "firstNameTextBox";
-            this.formToolTip.SetToolTip(this.firstNameTextBox, resources.GetString("firstNameTextBox.ToolTip"));
+            this.usernameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.usernameTextBox, "usernameTextBox");
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.formToolTip.SetToolTip(this.usernameTextBox, resources.GetString("usernameTextBox.ToolTip"));
             // 
             // passwordTextBox
             // 
@@ -237,12 +237,12 @@
             this.nameofchildTextBox.Name = "nameofchildTextBox";
             this.formToolTip.SetToolTip(this.nameofchildTextBox, resources.GetString("nameofchildTextBox.ToolTip"));
             // 
-            // nameTextBox
+            // firstNameTextBox
             // 
-            this.nameTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            resources.ApplyResources(this.nameTextBox, "nameTextBox");
-            this.nameTextBox.Name = "nameTextBox";
-            this.formToolTip.SetToolTip(this.nameTextBox, resources.GetString("nameTextBox.ToolTip"));
+            this.firstNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.firstNameTextBox, "firstNameTextBox");
+            this.firstNameTextBox.Name = "firstNameTextBox";
+            this.formToolTip.SetToolTip(this.firstNameTextBox, resources.GetString("firstNameTextBox.ToolTip"));
             // 
             // backButton
             // 
@@ -339,7 +339,7 @@
             this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.backButton);
-            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(this.firstNameTextBox);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.nameofchildTextBox);
             this.Controls.Add(this.nameofchildLabel);
@@ -360,7 +360,7 @@
             this.Controls.Add(this.addressTextBox);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.passwordTextBox);
-            this.Controls.Add(this.firstNameTextBox);
+            this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.roleComboBox);
             this.Controls.Add(this.roleLabel);
             this.Controls.Add(this.phoneLabel);
@@ -387,7 +387,7 @@
         private System.Windows.Forms.Label phoneLabel;
         private System.Windows.Forms.Label roleLabel;
         private System.Windows.Forms.ComboBox roleComboBox;
-        private System.Windows.Forms.TextBox firstNameTextBox;
+        private System.Windows.Forms.TextBox usernameTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.TextBox addressTextBox;
@@ -409,7 +409,7 @@
         private System.Windows.Forms.Label nameofchildLabel;
         private System.Windows.Forms.TextBox nameofchildTextBox;
         private System.Windows.Forms.Label nameLabel;
-        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.TextBox firstNameTextBox;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Label languageLabel;
         private System.Windows.Forms.ComboBox languageComboBox;

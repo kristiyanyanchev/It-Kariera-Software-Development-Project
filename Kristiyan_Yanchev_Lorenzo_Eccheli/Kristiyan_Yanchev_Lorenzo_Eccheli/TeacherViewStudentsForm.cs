@@ -6,6 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
+using System.Resources;
+
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -13,6 +17,19 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
     {
         public TeacherViewStudentsForm()
         {
+            InitializeComponent();
+        }
+
+        public TeacherViewStudentsForm(string language)
+        {
+            if (language == "Bulgarian")
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
+            }
             InitializeComponent();
         }
 
@@ -43,6 +60,21 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             {
                 MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            if (languageComboBox.SelectedItem.ToString() == "English" ||
+                languageComboBox.SelectedItem.ToString() == "Английски")
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
+            }
+            InitializeComponent();
         }
     }
 }

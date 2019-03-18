@@ -117,58 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="addgradeButton.Text" xml:space="preserve">
-    <value>Добави Оценки</value>
+  <data name="newGradeButton.Text" xml:space="preserve">
+    <value>Нова Оценка</value>
   </data>
-  <data name="addgradeButton.ToolTip" xml:space="preserve">
-    <value>Добави нови оценки на уцениците си</value>
-  </data>
-  <data name="changePasswordButton.Text" xml:space="preserve">
-    <value>Смени Паролата</value>
-  </data>
-  <data name="changePasswordButton.ToolTip" xml:space="preserve">
-    <value>Сменете паролата</value>
-  </data>
-  <data name="exitButton.Text" xml:space="preserve">
-    <value>Изход</value>
-  </data>
-  <data name="exitButton.ToolTip" xml:space="preserve">
-    <value>Излезте от приложението</value>
-  </data>
-  <data name="absensesButton.Text" xml:space="preserve">
-    <value>Отсъствия</value>
-  </data>
-  <data name="absensesButton.ToolTip" xml:space="preserve">
-    <value>Вижте отсъствията</value>
-  </data>
-  <data name="addstudentButton.Text" xml:space="preserve">
-    <value>Добави Ученици</value>
-  </data>
-  <data name="addstudentButton.ToolTip" xml:space="preserve">
-    <value>Добави нов ученик в клас
+  <data name="newGradeButton.ToolTip" xml:space="preserve">
+    <value>Добави нова оценка
 </value>
   </data>
-  <data name="changeinformationButton.Text" xml:space="preserve">
-    <value>Смени Информацията</value>
+  <data name="classesListBox.ToolTip" xml:space="preserve">
+    <value>Избери клас</value>
   </data>
-  <data name="changeinformationButton.ToolTip" xml:space="preserve">
-    <value>Сменете информацията</value>
+  <data name="studentsListbox.ToolTip" xml:space="preserve">
+    <value>Избери ученици</value>
   </data>
-  <data name="viewstudentsButton.Text" xml:space="preserve">
-    <value>Ученици</value>
+  <data name="gradesListBox.ToolTip" xml:space="preserve">
+    <value>Избери оценка</value>
   </data>
-  <data name="viewstudentsButton.ToolTip" xml:space="preserve">
-    <value>Вижте всички ученици</value>
+  <data name="gradeTextBox.ToolTip" xml:space="preserve">
+    <value>Добави оценка</value>
+  </data>
+  <data name="removeGradeButton.Text" xml:space="preserve">
+    <value>Махни оценка</value>
+  </data>
+  <data name="removeGradeButton.ToolTip" xml:space="preserve">
+    <value>Премахва избрана оценка
+</value>
+  </data>
+  <data name="closeButton.Text" xml:space="preserve">
+    <value>Затвори</value>
+  </data>
+  <data name="closeButton.ToolTip" xml:space="preserve">
+    <value>Затвори прозореца</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 28</value>
+  <data name="gradeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 19</value>
   </data>
-  <data name="introductionLabel.Text" xml:space="preserve">
-    <value>Добре дошли в училищния дневник</value>
-  </data>
-  <data name="introductionLabel.ToolTip" xml:space="preserve">
-    <value />
+  <data name="gradeLabel.Text" xml:space="preserve">
+    <value>Оценка</value>
   </data>
   <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 19</value>
@@ -176,13 +162,7 @@
   <data name="languageLabel.Text" xml:space="preserve">
     <value>Език</value>
   </data>
-  <data name="languageLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="languageComboBox.ToolTip" xml:space="preserve">
-    <value>Сменете езика</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
+    <value>Смени езика</value>
   </data>
 </root>
