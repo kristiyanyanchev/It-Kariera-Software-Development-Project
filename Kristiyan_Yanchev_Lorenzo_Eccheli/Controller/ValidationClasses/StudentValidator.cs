@@ -15,18 +15,18 @@ using Controller.ValidationClasses.UCN;
 
 namespace Controller.ValidationClasses
 {
-    class StudentValidator
+    public class StudentValidator
     {
-        public IUsernameValidator UsernameValidator { get; set; }
-        public INameValidator FirstNameValidator { get; set; }
-        public INameValidator LastNameValidator { get; set; }
-        public IPasswordValidator PasswordValidator { get; set; }
-        public IEmailValidator EmailValidator { get; set; }
-        public IValidationCodeValidator ValidationCodeValidator { get; set; }
-        public IAddressValidator AddressValidator { get; set; }
-        public IPhoneNumberValidator PhoneNumberValidator { get; set; }
-        public IClassValidator ClassValidator { get; set; }
-        public IUcnValidator UcnValidator { get; set; }
+        internal IUsernameValidator UsernameValidator { get; set; }
+        internal INameValidator FirstNameValidator { get; set; }
+        internal INameValidator LastNameValidator { get; set; }
+        internal IPasswordValidator PasswordValidator { get; set; }
+        internal IEmailValidator EmailValidator { get; set; }
+        internal IValidationCodeValidator ValidationCodeValidator { get; set; }
+        internal IAddressValidator AddressValidator { get; set; }
+        internal IPhoneNumberValidator PhoneNumberValidator { get; set; }
+        internal IClassValidator ClassValidator { get; set; }
+        internal IUcnValidator UcnValidator { get; set; }
 
         public string ValidateStudent(StudentDataTransferObject studentDTO)
         {
@@ -129,5 +129,6 @@ namespace Controller.ValidationClasses
             UcnValidator = new DefaultUcnValidator();
         }
 
+       
     }
 }

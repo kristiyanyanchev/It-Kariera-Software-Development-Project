@@ -393,31 +393,31 @@
   <data name="&gt;&gt;roleComboBox.ZOrder" xml:space="preserve">
     <value>29</value>
   </data>
-  <data name="firstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="usernameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>121, 104</value>
   </data>
-  <data name="firstNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="usernameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="firstNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="usernameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 20</value>
   </data>
-  <data name="firstNameTextBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="usernameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="firstNameTextBox.ToolTip" xml:space="preserve">
+  <data name="usernameTextBox.ToolTip" xml:space="preserve">
     <value>Enter your username</value>
   </data>
-  <data name="&gt;&gt;firstNameTextBox.Name" xml:space="preserve">
-    <value>firstNameTextBox</value>
+  <data name="&gt;&gt;usernameTextBox.Name" xml:space="preserve">
+    <value>usernameTextBox</value>
   </data>
-  <data name="&gt;&gt;firstNameTextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;usernameTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;firstNameTextBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;usernameTextBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;firstNameTextBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;usernameTextBox.ZOrder" xml:space="preserve">
     <value>28</value>
   </data>
   <data name="passwordTextBox.Location" type="System.Drawing.Point, System.Drawing">
@@ -873,31 +873,31 @@
   <data name="&gt;&gt;nameofchildTextBox.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="nameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="firstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>121, 138</value>
   </data>
-  <data name="nameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="firstNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="nameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="firstNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 20</value>
   </data>
-  <data name="nameTextBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="firstNameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="nameTextBox.ToolTip" xml:space="preserve">
+  <data name="firstNameTextBox.ToolTip" xml:space="preserve">
     <value>Enter your name</value>
   </data>
-  <data name="&gt;&gt;nameTextBox.Name" xml:space="preserve">
-    <value>nameTextBox</value>
+  <data name="&gt;&gt;firstNameTextBox.Name" xml:space="preserve">
+    <value>firstNameTextBox</value>
   </data>
-  <data name="&gt;&gt;nameTextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;firstNameTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nameTextBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;firstNameTextBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;nameTextBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;firstNameTextBox.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="backButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">

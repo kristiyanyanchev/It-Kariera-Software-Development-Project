@@ -18,5 +18,22 @@ namespace Controller
         public string ValidationCode { get; set; }
         public string Class { get; set; }
         public string Address { get; set; }
+        public string Position { get; set; }
+
+        public TeacherDataTransferObject(string firstName, string lastName, string subject, string phoneNumber,
+            string email, string ucn, string username, string password, string validationCode, string @class, string address)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Subject = subject;
+            PhoneNumber = phoneNumber;
+            Email = email;
+            Ucn = ucn;
+            Username = username;
+            Password = password;
+            ValidationCode = validationCode;
+            Class = @class;
+            Address = address;
+        }
     }
 }

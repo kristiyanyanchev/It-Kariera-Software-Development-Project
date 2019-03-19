@@ -12,7 +12,7 @@ namespace Controller.ValidationClasses.UCN
 
         public DefaultUcnValidator()
         {
-            RegexPattern = @"[0-9]";
+            RegexPattern = @"[0-9]+";
         }
 
         public bool Validate(string ucn)

@@ -11,7 +11,7 @@ namespace Controller.ValidationClasses.ValidationCode
 
         public DefaultValidationCodeValidator()
         {
-            RegexPattern = @"[A-Za-z0-9]";
+            RegexPattern = @"[A-Za-z0-9]+";
         }
 
         public bool Validate(string code)

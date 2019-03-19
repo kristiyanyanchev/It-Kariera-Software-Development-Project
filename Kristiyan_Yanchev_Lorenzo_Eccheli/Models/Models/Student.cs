@@ -53,17 +53,20 @@ namespace Data.Models
             ValidationCode = validationCode;
         }
 
-        public Student(string firstname,string lastname,DateTime birthdate,string address,string ucn,string phonenumber,string email, string validationCode)
+        public Student(string firstName, string lastName, DateTime birthDate, string address, string ucn, string phoneNumber,
+            string email, string username, string password, string validationCode, Class @class)
         {
-            FirstName = firstname;
-            LastName = lastname;
-            BirthDate = birthdate;
+            FirstName = firstName;
+            LastName = lastName;
+            BirthDate = birthDate;
             Address = address;
             Ucn = ucn;
-            PhoneNumber = phonenumber;
+            PhoneNumber = phoneNumber;
             Email = email;
+            Username = username;
+            Password = password;
             ValidationCode = validationCode;
+            Class = @class;
         }
-
     }
 }

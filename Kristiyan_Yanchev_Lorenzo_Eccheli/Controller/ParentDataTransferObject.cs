@@ -17,5 +17,18 @@ namespace Controller
         public string ValidationCode { get; set; }
         public string UsernameOfChild { get; set; }
 
+        public ParentDataTransferObject(string username, string firstName, string lastName, string password,
+            string email, string address, string phoneNumber, string validationCode, string usernameOfChild)
+        {
+            Username = username;
+            FirstName = firstName;
+            LastName = lastName;
+            Password = password;
+            Email = email;
+            Address = address;
+            PhoneNumber = phoneNumber;
+            ValidationCode = validationCode;
+            UsernameOfChild = usernameOfChild;
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
+using SqlProviderServices = System.Data.Entity.SqlServer.SqlProviderServices;
 
 namespace Data
 {

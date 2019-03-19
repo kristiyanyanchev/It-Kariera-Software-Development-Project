@@ -44,6 +44,21 @@ namespace Data.Models
             Position = position;
             ValidationCode = validationCode;
         }
-        
+
+        public Teacher(int id, string firstName, string lastName, string subject, string phoneNumber, string email, 
+            string position, string username, string password, string validationCode, string address)
+        {
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
+            Subject = subject;
+            PhoneNumber = phoneNumber;
+            Email = email;
+            Position = position;
+            Username = username;
+            Password = password;
+            ValidationCode = validationCode;
+            Address = address;
+        }
     }
 }
