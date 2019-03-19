@@ -152,6 +152,9 @@
     <EmbeddedResource Include="LogInForm.en-150.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ParentForm.bg-BG.resx">
+      <DependentUpon>ParentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ParentForm.resx">
       <DependentUpon>ParentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +183,9 @@
     <EmbeddedResource Include="RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StudentGradesStatisticsForm.bg-BG.resx">
+      <DependentUpon>StudentGradesStatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentGradesStatisticsForm.resx">
       <DependentUpon>StudentGradesStatisticsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,8 +201,14 @@
     <EmbeddedResource Include="StudentViewGradesForm.resx">
       <DependentUpon>StudentViewGradesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TeacherGradesForm.bg-BG.resx">
+      <DependentUpon>TeacherGradesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherMainForm.bg-BG.resx">
       <DependentUpon>TeacherMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherViewStudentsForm.bg-BG.resx">
+      <DependentUpon>TeacherViewStudentsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherViewStudentsForm.resx">
       <DependentUpon>TeacherViewStudentsForm.cs</DependentUpon>

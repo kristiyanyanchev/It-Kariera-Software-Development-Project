@@ -118,725 +118,810 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ucnLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 19</value>
-  </data>
-  <data name="&gt;&gt;addressLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="phoneNumberTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 24</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="birthDateLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;searchButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;searchLastNameTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;inAbsentiaLabel.Name" xml:space="preserve">
-    <value>inAbsentiaLabel</value>
-  </data>
-  <data name="&gt;&gt;schoolarshipLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;searchButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;searchLastNameTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ucnTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;phonenumberLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;addressTextBox.Name" xml:space="preserve">
-    <value>addressTextBox</value>
-  </data>
-  <data name="&gt;&gt;lastNameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lastNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 24</value>
-  </data>
-  <data name="searchButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 242</value>
-  </data>
-  <data name="showfirstnameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 19</value>
-  </data>
-  <data name="&gt;&gt;addressLabel.Name" xml:space="preserve">
-    <value>addressLabel</value>
-  </data>
-  <data name="firstNameLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;firstNameTextbox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;searchFirstNameTextBox.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="classLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;ucnLabel.Name" xml:space="preserve">
-    <value>ucnLabel</value>
-  </data>
-  <data name="&gt;&gt;inAbsentiaTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;birthDateTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;closeButton.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="addressLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="inAbsentiaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 211</value>
-  </data>
-  <data name="&gt;&gt;firstNameLabel.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="searchButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;inAbsentiaLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ucnTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;searchButton.Name" xml:space="preserve">
-    <value>searchButton</value>
-  </data>
-  <data name="&gt;&gt;firstNameTextbox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;classLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="showlastnameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 19</value>
-  </data>
-  <data name="addressTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;emailTextBox.Name" xml:space="preserve">
-    <value>emailTextBox</value>
-  </data>
-  <data name="birthDateLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="birthDateLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;schoolarshipLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;firstNameLabel.Name" xml:space="preserve">
-    <value>firstNameLabel</value>
-  </data>
-  <data name="birthDateLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>585, 145</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>TeacerViewStudentsForm</value>
-  </data>
-  <data name="birthDateLabel.Text" xml:space="preserve">
-    <value>Birth Date</value>
-  </data>
-  <data name="inAbsentiaLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ucnLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;showlastnameLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;searchFirstNameTextBox.Name" xml:space="preserve">
-    <value>searchFirstNameTextBox</value>
-  </data>
-  <data name="&gt;&gt;schoolarshipTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ucnLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="lastNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>675, 79</value>
-  </data>
-  <data name="emailLabel.Text" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="firstNameTextbox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;classTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="classLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="firstNameTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 79</value>
-  </data>
-  <data name="classTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 138</value>
-  </data>
-  <data name="phoneNumberTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;addressTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="showlastnameLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="phonenumberLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="ucnTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>675, 280</value>
-  </data>
-  <data name="lastNameLabel.Text" xml:space="preserve">
-    <value>Last Name</value>
-  </data>
   <data name="searchFirstNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;showfirstnameLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="searchLastNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 24</value>
-  </data>
-  <data name="firstNameTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 24</value>
-  </data>
-  <data name="emailLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="lastNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="schoolarshipLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 19</value>
-  </data>
-  <data name="firstNameLabel.Text" xml:space="preserve">
-    <value>First Name</value>
-  </data>
-  <data name="showfirstnameLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lastNameTextBox.Name" xml:space="preserve">
-    <value>lastNameTextBox</value>
-  </data>
-  <data name="firstNameLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="addressLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 19</value>
-  </data>
-  <data name="&gt;&gt;showfirstnameLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="firstNameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lastNameLabel.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="searchButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 19</value>
-  </data>
-  <data name="birthDateTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>675, 140</value>
-  </data>
-  <data name="ucnTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="searchFirstNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 24</value>
-  </data>
-  <data name="&gt;&gt;firstNameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="inAbsentiaLabel.Text" xml:space="preserve">
-    <value>In Absentia</value>
-  </data>
-  <data name="addressLabel.Text" xml:space="preserve">
-    <value>Address</value>
-  </data>
-  <data name="&gt;&gt;phoneNumberTextBox.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;phoneNumberTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="inAbsentiaTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
   </data>
   <data name="searchFirstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>148, 79</value>
   </data>
-  <data name="emailTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;birthDateTextBox.Name" xml:space="preserve">
-    <value>birthDateTextBox</value>
-  </data>
-  <data name="&gt;&gt;closeButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="addressTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>675, 206</value>
-  </data>
-  <data name="schoolarshipLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 280</value>
-  </data>
-  <data name="schoolarshipTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="lastNameTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;emailLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ucnTextBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="searchFirstNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 24</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>TeacherViewStudentsForm</value>
-  </data>
-  <data name="&gt;&gt;schoolarshipTextBox.Name" xml:space="preserve">
-    <value>schoolarshipTextBox</value>
-  </data>
-  <data name="classLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 141</value>
-  </data>
-  <data name="&gt;&gt;searchButton.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;ucnTextBox.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;addressTextBox.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;classTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="searchLastNameTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="classLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;emailLabel.Name" xml:space="preserve">
-    <value>emailLabel</value>
-  </data>
-  <data name="closeButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;emailTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;addressLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emailLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="phoneNumberTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="emailTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 24</value>
-  </data>
-  <data name="addressLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="phonenumberLabel.Text" xml:space="preserve">
-    <value>Phone Number</value>
-  </data>
-  <data name="schoolarshipLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;phonenumberLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="showlastnameLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;phoneNumberTextBox.Name" xml:space="preserve">
-    <value>phoneNumberTextBox</value>
-  </data>
-  <data name="&gt;&gt;birthDateLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;closeButton.Name" xml:space="preserve">
-    <value>closeButton</value>
-  </data>
-  <data name="showfirstnameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 84</value>
-  </data>
-  <data name="searchLastNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 138</value>
-  </data>
-  <data name="&gt;&gt;emailLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;inAbsentiaLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;birthDateTextBox.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="addressTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 24</value>
-  </data>
-  <data name="birthDateTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;showlastnameLabel.Name" xml:space="preserve">
-    <value>showlastnameLabel</value>
-  </data>
-  <data name="showlastnameLabel.Text" xml:space="preserve">
-    <value>Last Name</value>
-  </data>
-  <data name="&gt;&gt;searchFirstNameTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="phoneNumberTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 353</value>
-  </data>
-  <data name="&gt;&gt;searchLastNameTextBox.Name" xml:space="preserve">
-    <value>searchLastNameTextBox</value>
-  </data>
-  <data name="&gt;&gt;lastNameTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ucnLabel.Text" xml:space="preserve">
-    <value>UCN</value>
-  </data>
-  <data name="&gt;&gt;emailTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;searchLastNameTextBox.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;classTextBox.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;ucnLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="showlastnameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;classLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="showlastnameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>585, 79</value>
-  </data>
-  <data name="emailTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>675, 353</value>
-  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="searchFirstNameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;phonenumberLabel.Name" xml:space="preserve">
-    <value>phonenumberLabel</value>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="searchFirstNameTextBox.ToolTip" xml:space="preserve">
+    <value>Enter student name</value>
   </data>
-  <data name="&gt;&gt;schoolarshipLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="schoolarshipTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="inAbsentiaLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="emailLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="searchButton.Text" xml:space="preserve">
-    <value>Search</value>
-  </data>
-  <data name="closeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 72</value>
-  </data>
-  <data name="classTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 24</value>
-  </data>
-  <data name="&gt;&gt;classLabel.Name" xml:space="preserve">
-    <value>classLabel</value>
-  </data>
-  <data name="&gt;&gt;firstNameLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;schoolarshipLabel.Name" xml:space="preserve">
-    <value>schoolarshipLabel</value>
-  </data>
-  <data name="inAbsentiaTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 24</value>
-  </data>
-  <data name="&gt;&gt;schoolarshipTextBox.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;inAbsentiaTextBox.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="inAbsentiaLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="phonenumberLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 19</value>
-  </data>
-  <data name="&gt;&gt;addressLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;schoolarshipTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="addressTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="&gt;&gt;searchFirstNameTextBox.Name" xml:space="preserve">
+    <value>searchFirstNameTextBox</value>
   </data>
   <data name="&gt;&gt;searchFirstNameTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addressTextBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;searchFirstNameTextBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;showfirstnameLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;searchFirstNameTextBox.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="firstNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="firstNameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="firstNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 79</value>
+  </data>
+  <data name="firstNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 19</value>
+  </data>
+  <data name="firstNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="firstNameLabel.Text" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="&gt;&gt;firstNameLabel.Name" xml:space="preserve">
+    <value>firstNameLabel</value>
+  </data>
+  <data name="&gt;&gt;firstNameLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="emailLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>585, 353</value>
-  </data>
-  <data name="&gt;&gt;phoneNumberTextBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;firstNameLabel.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;firstNameLabel.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="lastNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lastNameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="lastNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 143</value>
+  </data>
+  <data name="lastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 19</value>
   </data>
   <data name="lastNameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="lastNameLabel.Text" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
   <data name="&gt;&gt;lastNameLabel.Name" xml:space="preserve">
     <value>lastNameLabel</value>
   </data>
-  <data name="&gt;&gt;birthDateLabel.Name" xml:space="preserve">
-    <value>birthDateLabel</value>
-  </data>
-  <data name="addressLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>585, 211</value>
-  </data>
-  <data name="&gt;&gt;birthDateTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="classLabel.Text" xml:space="preserve">
-    <value>Class</value>
-  </data>
-  <data name="ucnLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>585, 283</value>
-  </data>
-  <data name="&gt;&gt;closeButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="inAbsentiaTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="birthDateLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 19</value>
-  </data>
-  <data name="showfirstnameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;birthDateLabel.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="ucnLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="emailLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 19</value>
-  </data>
-  <data name="&gt;&gt;showlastnameLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="birthDateTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;showfirstnameLabel.Name" xml:space="preserve">
-    <value>showfirstnameLabel</value>
-  </data>
-  <data name="&gt;&gt;ucnTextBox.Name" xml:space="preserve">
-    <value>ucnTextBox</value>
-  </data>
-  <data name="&gt;&gt;firstNameTextbox.Name" xml:space="preserve">
-    <value>firstNameTextbox</value>
-  </data>
-  <data name="schoolarshipTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 24</value>
-  </data>
-  <data name="&gt;&gt;ucnLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="searchButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 72</value>
-  </data>
-  <data name="&gt;&gt;birthDateLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="schoolarshipTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 277</value>
-  </data>
-  <data name="inAbsentiaTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 206</value>
-  </data>
-  <data name="&gt;&gt;ucnTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="phonenumberLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;showlastnameLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;lastNameLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lastNameLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="schoolarshipLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="phonenumberLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 353</value>
-  </data>
-  <data name="emailLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;classTextBox.Name" xml:space="preserve">
-    <value>classTextBox</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>853, 510</value>
-  </data>
-  <data name="&gt;&gt;inAbsentiaTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inAbsentiaTextBox.Name" xml:space="preserve">
-    <value>inAbsentiaTextBox</value>
-  </data>
-  <data name="showfirstnameLabel.Text" xml:space="preserve">
-    <value>First Name</value>
-  </data>
-  <data name="showfirstnameLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;phonenumberLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="addressLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;lastNameTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="schoolarshipLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="classTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  <data name="&gt;&gt;lastNameLabel.ZOrder" xml:space="preserve">
+    <value>25</value>
   </data>
   <data name="searchLastNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
-  <data name="classLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 19</value>
+  <data name="searchLastNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 138</value>
   </data>
-  <data name="&gt;&gt;ucnLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="classTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="schoolarshipLabel.Text" xml:space="preserve">
-    <value>Schoolarship</value>
-  </data>
-  <data name="&gt;&gt;inAbsentiaLabel.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="firstNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 79</value>
-  </data>
-  <data name="closeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>713, 426</value>
-  </data>
-  <data name="inAbsentiaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 19</value>
-  </data>
-  <data name="emailTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="phonenumberLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;emailTextBox.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="birthDateTextBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="searchLastNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 24</value>
   </data>
-  <data name="&gt;&gt;firstNameTextbox.ZOrder" xml:space="preserve">
-    <value>20</value>
+  <data name="searchLastNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="lastNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 143</value>
+  <data name="searchLastNameTextBox.ToolTip" xml:space="preserve">
+    <value>Enter student last name</value>
   </data>
-  <data name="&gt;&gt;lastNameTextBox.ZOrder" xml:space="preserve">
-    <value>19</value>
+  <data name="&gt;&gt;searchLastNameTextBox.Name" xml:space="preserve">
+    <value>searchLastNameTextBox</value>
   </data>
-  <data name="firstNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 19</value>
+  <data name="&gt;&gt;searchLastNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="closeButton.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="&gt;&gt;searchLastNameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;searchLastNameTextBox.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="searchButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="searchButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 242</value>
+  </data>
+  <data name="searchButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 72</value>
+  </data>
+  <data name="searchButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="searchButton.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="searchButton.ToolTip" xml:space="preserve">
+    <value>Search student</value>
+  </data>
+  <data name="&gt;&gt;searchButton.Name" xml:space="preserve">
+    <value>searchButton</value>
+  </data>
+  <data name="&gt;&gt;searchButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;searchButton.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="firstNameTextbox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="firstNameTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 79</value>
+  </data>
+  <data name="firstNameTextbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 24</value>
   </data>
   <data name="firstNameTextbox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="lastNameLabel.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="&gt;&gt;firstNameTextbox.Name" xml:space="preserve">
+    <value>firstNameTextbox</value>
+  </data>
+  <data name="&gt;&gt;firstNameTextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;firstNameTextbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;firstNameTextbox.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="lastNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
-  <data name="lastNameLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lastNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>675, 79</value>
+  </data>
+  <data name="lastNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 24</value>
+  </data>
+  <data name="lastNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lastNameTextBox.Name" xml:space="preserve">
+    <value>lastNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;lastNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lastNameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lastNameTextBox.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="classTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="classTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 138</value>
+  </data>
+  <data name="classTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 24</value>
+  </data>
+  <data name="classTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;classTextBox.Name" xml:space="preserve">
+    <value>classTextBox</value>
+  </data>
+  <data name="&gt;&gt;classTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;classTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;classTextBox.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="birthDateTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="birthDateTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>675, 140</value>
+  </data>
+  <data name="birthDateTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 24</value>
+  </data>
+  <data name="birthDateTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;birthDateTextBox.Name" xml:space="preserve">
+    <value>birthDateTextBox</value>
+  </data>
+  <data name="&gt;&gt;birthDateTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;birthDateTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;birthDateTextBox.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="inAbsentiaLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;classLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="inAbsentiaLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="inAbsentiaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 211</value>
+  </data>
+  <data name="inAbsentiaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 19</value>
+  </data>
+  <data name="inAbsentiaLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="inAbsentiaLabel.Text" xml:space="preserve">
+    <value>In Absentia</value>
+  </data>
+  <data name="&gt;&gt;inAbsentiaLabel.Name" xml:space="preserve">
+    <value>inAbsentiaLabel</value>
+  </data>
+  <data name="&gt;&gt;inAbsentiaLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inAbsentiaLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;inAbsentiaLabel.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="inAbsentiaTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="inAbsentiaTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 206</value>
+  </data>
+  <data name="inAbsentiaTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 24</value>
+  </data>
+  <data name="inAbsentiaTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;inAbsentiaTextBox.Name" xml:space="preserve">
+    <value>inAbsentiaTextBox</value>
+  </data>
+  <data name="&gt;&gt;inAbsentiaTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inAbsentiaTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;inAbsentiaTextBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="birthDateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="birthDateLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="birthDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 145</value>
+  </data>
+  <data name="birthDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 19</value>
+  </data>
+  <data name="birthDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="birthDateLabel.Text" xml:space="preserve">
+    <value>Birth Date</value>
+  </data>
+  <data name="&gt;&gt;birthDateLabel.Name" xml:space="preserve">
+    <value>birthDateLabel</value>
+  </data>
+  <data name="&gt;&gt;birthDateLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;birthDateLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;birthDateLabel.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="addressTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="addressTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>675, 206</value>
+  </data>
+  <data name="addressTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 24</value>
+  </data>
+  <data name="addressTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;addressTextBox.Name" xml:space="preserve">
+    <value>addressTextBox</value>
+  </data>
+  <data name="&gt;&gt;addressTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addressTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;addressTextBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="schoolarshipLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="schoolarshipLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="schoolarshipLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 280</value>
+  </data>
+  <data name="schoolarshipLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 19</value>
+  </data>
+  <data name="schoolarshipLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="schoolarshipLabel.Text" xml:space="preserve">
+    <value>Schoolarship</value>
+  </data>
+  <data name="&gt;&gt;schoolarshipLabel.Name" xml:space="preserve">
+    <value>schoolarshipLabel</value>
+  </data>
+  <data name="&gt;&gt;schoolarshipLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;schoolarshipLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;schoolarshipLabel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="schoolarshipTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="schoolarshipTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 277</value>
+  </data>
+  <data name="schoolarshipTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 24</value>
+  </data>
+  <data name="schoolarshipTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;schoolarshipTextBox.Name" xml:space="preserve">
+    <value>schoolarshipTextBox</value>
+  </data>
+  <data name="&gt;&gt;schoolarshipTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;schoolarshipTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;schoolarshipTextBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ucnTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="ucnTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>675, 280</value>
+  </data>
+  <data name="ucnTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 24</value>
+  </data>
+  <data name="ucnTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;ucnTextBox.Name" xml:space="preserve">
+    <value>ucnTextBox</value>
+  </data>
+  <data name="&gt;&gt;ucnTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ucnTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ucnTextBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="phoneNumberTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="phoneNumberTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 353</value>
+  </data>
+  <data name="phoneNumberTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 24</value>
+  </data>
+  <data name="phoneNumberTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;phoneNumberTextBox.Name" xml:space="preserve">
+    <value>phoneNumberTextBox</value>
+  </data>
+  <data name="&gt;&gt;phoneNumberTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;phoneNumberTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;phoneNumberTextBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="emailTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="emailTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>675, 353</value>
+  </data>
+  <data name="emailTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 24</value>
+  </data>
+  <data name="emailTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;emailTextBox.Name" xml:space="preserve">
+    <value>emailTextBox</value>
+  </data>
+  <data name="&gt;&gt;emailTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emailTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;emailTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="closeButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="closeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>713, 426</value>
+  </data>
+  <data name="closeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 72</value>
+  </data>
+  <data name="closeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
   <data name="closeButton.Text" xml:space="preserve">
     <value>Close</value>
   </data>
+  <data name="closeButton.ToolTip" xml:space="preserve">
+    <value>Close the window</value>
+  </data>
+  <data name="&gt;&gt;closeButton.Name" xml:space="preserve">
+    <value>closeButton</value>
+  </data>
+  <data name="&gt;&gt;closeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;closeButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;closeButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="showfirstnameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="showfirstnameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="showfirstnameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 84</value>
+  </data>
+  <data name="showfirstnameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 19</value>
+  </data>
+  <data name="showfirstnameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="showfirstnameLabel.Text" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="&gt;&gt;showfirstnameLabel.Name" xml:space="preserve">
+    <value>showfirstnameLabel</value>
+  </data>
+  <data name="&gt;&gt;showfirstnameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;showfirstnameLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;showfirstnameLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="showlastnameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="showlastnameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="showlastnameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 79</value>
+  </data>
+  <data name="showlastnameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 19</value>
+  </data>
+  <data name="showlastnameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="showlastnameLabel.Text" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="&gt;&gt;showlastnameLabel.Name" xml:space="preserve">
+    <value>showlastnameLabel</value>
+  </data>
+  <data name="&gt;&gt;showlastnameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;showlastnameLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;showlastnameLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="classLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="classLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="classLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 141</value>
+  </data>
+  <data name="classLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 19</value>
+  </data>
+  <data name="classLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="classLabel.Text" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="&gt;&gt;classLabel.Name" xml:space="preserve">
+    <value>classLabel</value>
+  </data>
+  <data name="&gt;&gt;classLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;classLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;classLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="addressLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="addressLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="addressLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 211</value>
+  </data>
+  <data name="addressLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 19</value>
+  </data>
+  <data name="addressLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="addressLabel.Text" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="&gt;&gt;addressLabel.Name" xml:space="preserve">
+    <value>addressLabel</value>
+  </data>
+  <data name="&gt;&gt;addressLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addressLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;addressLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ucnLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ucnLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="ucnLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 283</value>
+  </data>
+  <data name="ucnLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 19</value>
+  </data>
+  <data name="ucnLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="ucnLabel.Text" xml:space="preserve">
+    <value>UCN</value>
+  </data>
+  <data name="&gt;&gt;ucnLabel.Name" xml:space="preserve">
+    <value>ucnLabel</value>
+  </data>
+  <data name="&gt;&gt;ucnLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ucnLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ucnLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="phonenumberLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="phonenumberLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="phonenumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 353</value>
+  </data>
+  <data name="phonenumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 19</value>
+  </data>
+  <data name="phonenumberLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="phonenumberLabel.Text" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="&gt;&gt;phonenumberLabel.Name" xml:space="preserve">
+    <value>phonenumberLabel</value>
+  </data>
+  <data name="&gt;&gt;phonenumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;phonenumberLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;phonenumberLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="emailLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="emailLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="emailLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 353</value>
+  </data>
+  <data name="emailLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 19</value>
+  </data>
+  <data name="emailLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="emailLabel.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="&gt;&gt;emailLabel.Name" xml:space="preserve">
+    <value>emailLabel</value>
+  </data>
+  <data name="&gt;&gt;emailLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emailLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;emailLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="languageLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="languageLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="languageLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 27</value>
+  </data>
+  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 19</value>
+  </data>
+  <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="languageLabel.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Name" xml:space="preserve">
+    <value>languageLabel</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="languageComboBox.Items" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="languageComboBox.Items1" xml:space="preserve">
+    <value>Bulgarian</value>
+  </data>
+  <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>675, 28</value>
+  </data>
+  <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="languageComboBox.ToolTip" xml:space="preserve">
+    <value>Change the language</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Name" xml:space="preserve">
+    <value>languageComboBox</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>853, 510</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>TeacerViewStudentsForm</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TeacherViewStudentsForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -117,57 +117,167 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="addgradeButton.Text" xml:space="preserve">
-    <value>Добави Оценки</value>
-  </data>
-  <data name="addgradeButton.ToolTip" xml:space="preserve">
-    <value>Добави нови оценки на уцениците си</value>
-  </data>
-  <data name="changePasswordButton.Text" xml:space="preserve">
-    <value>Смени Паролата</value>
-  </data>
-  <data name="changePasswordButton.ToolTip" xml:space="preserve">
-    <value>Сменете паролата</value>
-  </data>
-  <data name="exitButton.Text" xml:space="preserve">
-    <value>Изход</value>
-  </data>
-  <data name="exitButton.ToolTip" xml:space="preserve">
-    <value>Излезте от приложението</value>
-  </data>
-  <data name="absensesButton.Text" xml:space="preserve">
-    <value>Отсъствия</value>
-  </data>
-  <data name="absensesButton.ToolTip" xml:space="preserve">
-    <value>Вижте отсъствията</value>
-  </data>
-  <data name="addstudentButton.Text" xml:space="preserve">
-    <value>Добави Ученици</value>
-  </data>
-  <data name="addstudentButton.ToolTip" xml:space="preserve">
-    <value>Добави нов ученик в клас
+  <data name="searchFirstNameTextBox.ToolTip" xml:space="preserve">
+    <value>Напишете името на ученика
 </value>
   </data>
-  <data name="changeinformationButton.Text" xml:space="preserve">
-    <value>Смени Информацията</value>
-  </data>
-  <data name="changeinformationButton.ToolTip" xml:space="preserve">
-    <value>Сменете информацията</value>
-  </data>
-  <data name="viewstudentsButton.Text" xml:space="preserve">
-    <value>Ученици</value>
-  </data>
-  <data name="viewstudentsButton.ToolTip" xml:space="preserve">
-    <value>Вижте всички ученици</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 28</value>
+  <data name="firstNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 19</value>
   </data>
-  <data name="introductionLabel.Text" xml:space="preserve">
-    <value>Добре дошли в училищния дневник</value>
+  <data name="firstNameLabel.Text" xml:space="preserve">
+    <value>Име</value>
   </data>
-  <data name="introductionLabel.ToolTip" xml:space="preserve">
+  <data name="firstNameLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 19</value>
+  </data>
+  <data name="lastNameLabel.Text" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="lastNameLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="searchLastNameTextBox.ToolTip" xml:space="preserve">
+    <value>Напише фамилията на ученика
+</value>
+  </data>
+  <data name="searchButton.Text" xml:space="preserve">
+    <value>Търси</value>
+  </data>
+  <data name="searchButton.ToolTip" xml:space="preserve">
+    <value>Търси ученик</value>
+  </data>
+  <data name="firstNameTextbox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lastNameTextBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="classTextBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="birthDateTextBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="inAbsentiaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 19</value>
+  </data>
+  <data name="inAbsentiaLabel.Text" xml:space="preserve">
+    <value>Отсъствия</value>
+  </data>
+  <data name="inAbsentiaLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="inAbsentiaTextBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="birthDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>559, 143</value>
+  </data>
+  <data name="birthDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 19</value>
+  </data>
+  <data name="birthDateLabel.Text" xml:space="preserve">
+    <value>Дата На Раждане</value>
+  </data>
+  <data name="birthDateLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="addressTextBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="schoolarshipLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 19</value>
+  </data>
+  <data name="schoolarshipLabel.Text" xml:space="preserve">
+    <value>Стипендия
+</value>
+  </data>
+  <data name="schoolarshipLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="schoolarshipTextBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ucnTextBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="phoneNumberTextBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="emailTextBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="closeButton.Text" xml:space="preserve">
+    <value>Затвори</value>
+  </data>
+  <data name="closeButton.ToolTip" xml:space="preserve">
+    <value>Затвори прозореца</value>
+  </data>
+  <data name="showfirstnameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 19</value>
+  </data>
+  <data name="showfirstnameLabel.Text" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="showfirstnameLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="showlastnameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 19</value>
+  </data>
+  <data name="showlastnameLabel.Text" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="showlastnameLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="classLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 19</value>
+  </data>
+  <data name="classLabel.Text" xml:space="preserve">
+    <value>Клас</value>
+  </data>
+  <data name="classLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="addressLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 19</value>
+  </data>
+  <data name="addressLabel.Text" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="addressLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ucnLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 19</value>
+  </data>
+  <data name="ucnLabel.Text" xml:space="preserve">
+    <value>ЕГН</value>
+  </data>
+  <data name="ucnLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="phonenumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 19</value>
+  </data>
+  <data name="phonenumberLabel.Text" xml:space="preserve">
+    <value>Телефонен Номер</value>
+  </data>
+  <data name="phonenumberLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="emailLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 19</value>
+  </data>
+  <data name="emailLabel.Text" xml:space="preserve">
+    <value>Имейл</value>
+  </data>
+  <data name="emailLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
@@ -179,8 +289,17 @@
   <data name="languageLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="languageComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 27</value>
+  </data>
   <data name="languageComboBox.ToolTip" xml:space="preserve">
     <value>Сменете езика</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>866, 510</value>
   </data>
   <data name="$this.ToolTip" xml:space="preserve">
     <value />

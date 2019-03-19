@@ -6,6 +6,7 @@ using System;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
+using Controller;
 
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
@@ -97,7 +98,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                firstNameTextBox.Text != null &&
                addressTextBox.Text != null && phoneNumberTextBox.Text != null &&
                roleComboBox.SelectedItem != null && double.TryParse(phoneNumberTextBox.Text, out double a) &&
-               classnameTextBox.Text!=null && subjectTextBox.Text!=null && possitionTextBox.Text!=null &&
+               classnameTextBox.Text!=null && subjectTextBox.Text!=null && positionTextBox.Text!=null &&
                classnameTextBox.Text!=null)
                 {
                     return true;
@@ -206,34 +207,49 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                             studentDto.ValidationCode, classes.List().Single(x => x.Name == studentDto.Class));
                         studentsRepo.Add(student);
 
-                        MessageBox.Show(studentValidator.ValidateStudent(studentDto));
+                        
                         this.Hide();
                         StudentMainForm studentform = new StudentMainForm();
                         studentform.ShowDialog();
                     }
-                    else
-                    {
-                        MessageBox.Show(studentValidator.ValidateStudent(studentDto));
-                    }
+       
+                    MessageBox.Show(studentValidator.ValidateStudent(studentDto));
 
 
-                    
+
                 }
                 else if(roleComboBox.SelectedItem.ToString() == "Teacher" ||
                     roleComboBox.SelectedItem.ToString()=="Учител")
                 {
-                    var teacherDto = new TeacherDataTransferObject(firstNameTextBox.Text, lastNameTextBox.Text, subjectTextBox.Text, phoneNumberTextBox.Text,
-                        emailTextBox.Text, ucnTextBox.Text, usernameTextBox.Text, passwordTextBox.Text,
-                        validationCodeTextBox.Text, classnameTextBox.Text, addressTextBox.Text);
+                    var teacherDto = new TeacherDataTransferObject(firstNameTextBox.Text, lastNameTextBox.Text,
+                        subjectTextBox.Text, phoneNumberTextBox.Text, emailTextBox.Text, positionTextBox.Text,
+                        usernameTextBox.Text, passwordTextBox.Text, validationCodeTextBox.Text, classnameTextBox.Text, addressTextBox.Text);
+
                     var teacherValidator = new TeacherValidator();
+                    var teacherRepo = new TeachersRepository();
 
                     if (teacherValidator.ValidateTeacher(teacherDto) == "Successful Registration! ")
                     {
-                        var teacher = new Teacher()
+                        var teacher = new Teacher(teacherDto.FirstName, teacherDto.LastName, teacherDto.Subject, teacherDto.PhoneNumber,
+                            teacherDto.Email, teacherDto.Position, teacherDto.Username, teacherDto.Password, teacherDto.ValidationCode, teacherDto.Address);
+
+                        if (teacherDto.Class == "none")
+                        {
+                            teacher.Class = null;
+                        }
+                        else
+                        {
+                            teacher.Class = new ClassesRepository().List().Single(x => x.Name == teacherDto.Class);
+                        }
+
+                        teacherRepo.Add(teacher);
+
+                        
                         this.Hide();
                         TeacherMainForm teacherform = new TeacherMainForm();
                         teacherform.ShowDialog();
                     }
+                    MessageBox.Show(teacherValidator.ValidateTeacher(teacherDto));
                     
                 }
                 else if(roleComboBox.SelectedItem.ToString() == "Parent" ||
@@ -339,8 +355,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 classnameTextBox.Visible = true;
                 subjectLabel.Visible = true;
                 subjectTextBox.Visible = true;
-                possitionLabel.Visible = true;
-                possitionLabel.Visible = true;
+                positionLabel.Visible = true;
+                positionLabel.Visible = true;
             }
             else
             {
