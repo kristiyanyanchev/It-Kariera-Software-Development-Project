@@ -999,34 +999,34 @@
   <data name="&gt;&gt;subjectTextBox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="possitionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="positionTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>467, 253</value>
   </data>
-  <data name="possitionTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="positionTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="possitionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="positionTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 20</value>
   </data>
-  <data name="possitionTextBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="positionTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
-  <data name="possitionTextBox.ToolTip" xml:space="preserve">
+  <data name="positionTextBox.ToolTip" xml:space="preserve">
     <value>Enter your class</value>
   </data>
-  <data name="possitionTextBox.Visible" type="System.Boolean, mscorlib">
+  <data name="positionTextBox.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;possitionTextBox.Name" xml:space="preserve">
-    <value>possitionTextBox</value>
+  <data name="&gt;&gt;positionTextBox.Name" xml:space="preserve">
+    <value>positionTextBox</value>
   </data>
-  <data name="&gt;&gt;possitionTextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;positionTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;possitionTextBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;positionTextBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;possitionTextBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;positionTextBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="birthdayLabel.AutoSize" type="System.Boolean, mscorlib">
@@ -1281,50 +1281,50 @@
   <data name="&gt;&gt;subjectLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="possitionLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="positionLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="possitionLabel.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="positionLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
-  <data name="possitionLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="positionLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="possitionLabel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="positionLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>329, 252</value>
   </data>
-  <data name="possitionLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="positionLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
-  <data name="possitionLabel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="positionLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 19</value>
   </data>
-  <data name="possitionLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="positionLabel.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
-  <data name="possitionLabel.Text" xml:space="preserve">
+  <data name="positionLabel.Text" xml:space="preserve">
     <value>Possition</value>
   </data>
-  <data name="possitionLabel.Visible" type="System.Boolean, mscorlib">
+  <data name="positionLabel.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;possitionLabel.Name" xml:space="preserve">
-    <value>possitionLabel</value>
+  <data name="&gt;&gt;positionLabel.Name" xml:space="preserve">
+    <value>positionLabel</value>
   </data>
-  <data name="&gt;&gt;possitionLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;positionLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;possitionLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;positionLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;possitionLabel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;positionLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>57</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>

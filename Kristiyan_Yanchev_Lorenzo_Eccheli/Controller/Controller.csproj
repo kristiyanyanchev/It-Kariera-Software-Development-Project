@@ -53,6 +53,7 @@
     <Compile Include="ValidationClasses\Address\IAddressValidator.cs" />
     <Compile Include="ValidationClasses\Class\DefaultClassValidator.cs" />
     <Compile Include="ValidationClasses\Class\IClassValidator.cs" />
+    <Compile Include="ValidationClasses\Class\TeacherClassValidator.cs" />
     <Compile Include="ValidationClasses\Email\DefaultEmailValidator.cs" />
     <Compile Include="ValidationClasses\Email\IEmailValidator.cs" />
     <Compile Include="ValidationClasses\FirstNameAndLastName\DefaultNameValidator.cs" />

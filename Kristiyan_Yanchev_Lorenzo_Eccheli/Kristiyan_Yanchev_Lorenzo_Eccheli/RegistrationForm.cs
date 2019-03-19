@@ -205,6 +205,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                         var student = new Student(studentDto.FirstName, studentDto.LastName, studentDto.BirthDate,
                             studentDto.Address, studentDto.Ucn, studentDto.PhoneNumber, studentDto.Email, studentDto.Username, studentDto.Password,
                             studentDto.ValidationCode, classes.List().Single(x => x.Name == studentDto.Class));
+                        
                         studentsRepo.Add(student);
 
                         
@@ -356,7 +357,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 subjectLabel.Visible = true;
                 subjectTextBox.Visible = true;
                 positionLabel.Visible = true;
-                positionLabel.Visible = true;
+                positionTextBox.Visible = true;
             }
             else
             {

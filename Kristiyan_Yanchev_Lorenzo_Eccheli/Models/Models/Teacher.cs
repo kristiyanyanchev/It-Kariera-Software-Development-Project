@@ -45,10 +45,9 @@ namespace Data.Models
             ValidationCode = validationCode;
         }
 
-        public Teacher(int id, string firstName, string lastName, string subject, string phoneNumber, string email, 
+        public Teacher(string firstName, string lastName, string subject, string phoneNumber, string email, 
             string position, string username, string password, string validationCode, string address)
         {
-            Id = id;
             FirstName = firstName;
             LastName = lastName;
             Subject = subject;

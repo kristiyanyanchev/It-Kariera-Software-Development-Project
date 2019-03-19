@@ -36,7 +36,7 @@ namespace Controller.ValidationClasses
             AddressValidator = new DefaultAddressValidator();
             PhoneNumberValidator = new DefaultPhoneNumberValidator();
             ValidationCodeValidator = new DefaultValidationCodeValidator();
-            ClassValidator = new DefaultClassValidator();
+            ClassValidator = new TeacherClassValidator();
         }
 
         public string ValidateTeacher(TeacherDataTransferObject teacherDTO)
@@ -100,12 +100,16 @@ namespace Controller.ValidationClasses
             {
                 return "Class error";
             }
-            if (classes.List().Select(x => x.Name).Contains(teacherDTO.Class) == false)
+            if (teacherDTO.Class != "none")
             {
-                return "Class does not exist";
+                if (classes.List().Select(x => x.Name).Contains(teacherDTO.Class) == false)
+                {
+                    return "Class does not exist";
+                }
             }
+            
 
-            return "Registration successful";
+            return "Successful Registration! ";
         }
     }
 }

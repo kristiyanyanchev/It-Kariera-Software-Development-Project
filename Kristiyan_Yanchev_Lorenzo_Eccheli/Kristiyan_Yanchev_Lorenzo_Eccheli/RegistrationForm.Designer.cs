@@ -59,7 +59,7 @@
             this.backButton = new System.Windows.Forms.Button();
             this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.subjectTextBox = new System.Windows.Forms.TextBox();
-            this.possitionTextBox = new System.Windows.Forms.TextBox();
+            this.positionTextBox = new System.Windows.Forms.TextBox();
             this.birthdayLabel = new System.Windows.Forms.Label();
             this.ucnLabel = new System.Windows.Forms.Label();
             this.classnameLabel = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@
             this.nameLabel = new System.Windows.Forms.Label();
             this.languageLabel = new System.Windows.Forms.Label();
             this.subjectLabel = new System.Windows.Forms.Label();
-            this.possitionLabel = new System.Windows.Forms.Label();
+            this.positionLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // introductionLabel
@@ -273,12 +273,12 @@
             this.subjectTextBox.Name = "subjectTextBox";
             this.formToolTip.SetToolTip(this.subjectTextBox, resources.GetString("subjectTextBox.ToolTip"));
             // 
-            // possitionTextBox
+            // positionTextBox
             // 
-            this.possitionTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            resources.ApplyResources(this.possitionTextBox, "possitionTextBox");
-            this.possitionTextBox.Name = "possitionTextBox";
-            this.formToolTip.SetToolTip(this.possitionTextBox, resources.GetString("possitionTextBox.ToolTip"));
+            this.positionTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.positionTextBox, "positionTextBox");
+            this.positionTextBox.Name = "positionTextBox";
+            this.formToolTip.SetToolTip(this.positionTextBox, resources.GetString("positionTextBox.ToolTip"));
             // 
             // birthdayLabel
             // 
@@ -321,19 +321,19 @@
             this.subjectLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.subjectLabel.Name = "subjectLabel";
             // 
-            // possitionLabel
+            // positionLabel
             // 
-            resources.ApplyResources(this.possitionLabel, "possitionLabel");
-            this.possitionLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.possitionLabel.Name = "possitionLabel";
+            resources.ApplyResources(this.positionLabel, "positionLabel");
+            this.positionLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.positionLabel.Name = "positionLabel";
             // 
             // RegistrationForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
-            this.Controls.Add(this.possitionTextBox);
-            this.Controls.Add(this.possitionLabel);
+            this.Controls.Add(this.positionTextBox);
+            this.Controls.Add(this.positionLabel);
             this.Controls.Add(this.subjectTextBox);
             this.Controls.Add(this.subjectLabel);
             this.Controls.Add(this.languageComboBox);
@@ -415,7 +415,7 @@
         private System.Windows.Forms.ComboBox languageComboBox;
         private System.Windows.Forms.Label subjectLabel;
         private System.Windows.Forms.TextBox subjectTextBox;
-        private System.Windows.Forms.Label possitionLabel;
-        private System.Windows.Forms.TextBox possitionTextBox;
+        private System.Windows.Forms.Label positionLabel;
+        private System.Windows.Forms.TextBox positionTextBox;
     }
 }
