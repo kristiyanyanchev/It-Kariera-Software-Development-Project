@@ -80,11 +80,23 @@
     <Compile Include="RegistrationForm.Designer.cs">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentControls\StudentViewAbsencesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentControls\StudentViewAbsencesControl.Designer.cs">
+      <DependentUpon>StudentViewAbsencesControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentGradesStatisticsForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StudentGradesStatisticsForm.Designer.cs">
       <DependentUpon>StudentGradesStatisticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentControls\StudentGradeStatisticContol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentControls\StudentGradeStatisticContol.Designer.cs">
+      <DependentUpon>StudentGradeStatisticContol.cs</DependentUpon>
     </Compile>
     <Compile Include="StudentMainForm.cs">
       <SubType>Form</SubType>
@@ -183,11 +195,20 @@
     <EmbeddedResource Include="RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StudentControls\StudentGradeStatisticContol.bg-BG.resx">
+      <DependentUpon>StudentGradeStatisticContol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentControls\StudentViewAbsencesControl.resx">
+      <DependentUpon>StudentViewAbsencesControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentGradesStatisticsForm.bg-BG.resx">
       <DependentUpon>StudentGradesStatisticsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentGradesStatisticsForm.resx">
       <DependentUpon>StudentGradesStatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentControls\StudentGradeStatisticContol.resx">
+      <DependentUpon>StudentGradeStatisticContol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentMainForm.bg-BG.resx">
       <DependentUpon>StudentMainForm.cs</DependentUpon>

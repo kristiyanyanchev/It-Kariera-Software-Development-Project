@@ -117,53 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="viewGradesButton.Text" xml:space="preserve">
-    <value>Оценки</value>
-  </data>
-  <data name="viewGradesButton.ToolTip" xml:space="preserve">
-    <value>Вижте си оценките</value>
-  </data>
-  <data name="viewAbsencesButton.Text" xml:space="preserve">
-    <value>Отсъствия</value>
-  </data>
-  <data name="viewAbsencesButton.ToolTip" xml:space="preserve">
-    <value>Вижте си отсъствията</value>
-  </data>
-  <data name="changePassword.Text" xml:space="preserve">
-    <value>Смени паролата</value>
-  </data>
-  <data name="changePassword.ToolTip" xml:space="preserve">
-    <value>Сменете си паролата</value>
-  </data>
-  <data name="exitButton.Text" xml:space="preserve">
-    <value>Изход</value>
-  </data>
-  <data name="exitButton.ToolTip" xml:space="preserve">
-    <value>Излезте от приложението</value>
-  </data>
-  <data name="changeInformation.Text" xml:space="preserve">
-    <value>Смени информацията</value>
-  </data>
-  <data name="changeInformation.ToolTip" xml:space="preserve">
-    <value>Смени си информацията</value>
-  </data>
-  <data name="languageComboBox.ToolTip" xml:space="preserve">
-    <value>Сменте си езика</value>
+  <data name="selectSubjectButton.Text" xml:space="preserve">
+    <value>Избери Предмет</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 19</value>
-  </data>
-  <data name="languageLabel.Text" xml:space="preserve">
-    <value>Език</value>
-  </data>
-  <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 28</value>
-  </data>
-  <data name="introductionLabel.Text" xml:space="preserve">
-    <value>Добре дошъл в електронния дневник</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>\</value>
+  <data name="GradesChart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 27</value>
   </data>
 </root>

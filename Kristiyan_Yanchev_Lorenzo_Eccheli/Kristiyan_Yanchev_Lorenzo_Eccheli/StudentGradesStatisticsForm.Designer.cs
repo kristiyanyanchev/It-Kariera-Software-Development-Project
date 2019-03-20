@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentGradesStatisticsForm));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.GradesChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.selectSubjectListbox = new System.Windows.Forms.ListBox();
             this.selectSubjectButton = new System.Windows.Forms.Button();
@@ -48,15 +48,15 @@
             resources.ApplyResources(this.GradesChart, "GradesChart");
             this.GradesChart.BackColor = System.Drawing.Color.FloralWhite;
             this.GradesChart.BorderlineColor = System.Drawing.Color.FloralWhite;
-            chartArea2.Name = "ChartArea1";
-            this.GradesChart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.GradesChart.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.GradesChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.GradesChart.Legends.Add(legend1);
             this.GradesChart.Name = "GradesChart";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.GradesChart.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.GradesChart.Series.Add(series1);
             this.toolTip.SetToolTip(this.GradesChart, resources.GetString("GradesChart.ToolTip"));
             // 
             // selectSubjectListbox

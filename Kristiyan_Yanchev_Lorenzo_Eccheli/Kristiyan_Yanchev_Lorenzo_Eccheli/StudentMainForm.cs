@@ -106,5 +106,18 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 e.Cancel = true;
             }
         }
+
+        private void gradesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+         
+            StudentGradeStatisticContol studentcontrol = new StudentGradeStatisticContol();
+            panelInformation.Container.Add(studentcontrol);
+            
+        }
+
+        private void absencesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StudentVi
+        }
     }
 }

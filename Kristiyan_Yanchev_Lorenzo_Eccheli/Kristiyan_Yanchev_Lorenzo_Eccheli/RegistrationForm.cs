@@ -6,7 +6,6 @@ using System;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
-using Controller;
 
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
@@ -186,7 +185,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void registrationButton_Click(object sender, EventArgs e)
         {
-
             if (ValidateData())
             {
                 if(roleComboBox.SelectedItem.ToString()=="Student" ||
@@ -200,9 +198,9 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                     var studentsRepo = new StudentsRepository();
                     var studentValidator = new StudentValidator();
 
-                    if (studentValidator.ValidateStudent(studentDto) == "Successful Registration! ")
+                    /*if (studentValidator.ValidateStudent(studentDto) == "Successful Registration! ")
                     { 
-                        var student = new Student(studentDto.FirstName, studentDto.LastName, studentDto.BirthDate,
+                        Student student = new Student(studentDto.FirstName, studentDto.LastName, studentDto.BirthDate,
                             studentDto.Address, studentDto.Ucn, studentDto.PhoneNumber, studentDto.Email, studentDto.Username, studentDto.Password,
                             studentDto.ValidationCode, classes.List().Single(x => x.Name == studentDto.Class));
                         
@@ -213,6 +211,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                         StudentMainForm studentform = new StudentMainForm();
                         studentform.ShowDialog();
                     }
+                    */
        
                     MessageBox.Show(studentValidator.ValidateStudent(studentDto));
 
