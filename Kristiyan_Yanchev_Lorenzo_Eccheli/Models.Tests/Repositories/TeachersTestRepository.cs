@@ -62,7 +62,7 @@ namespace Data.Test.Repositories
             List<Teacher> result;
             using (var context = new TestClassbookContext())
             {
-                result = context.Teachers.ToList();
+                return context.Teachers.ToList();
             }
             return result;
         }

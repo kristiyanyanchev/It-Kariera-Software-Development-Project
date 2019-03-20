@@ -35,7 +35,6 @@ namespace Data.Test.Repositories
             {
                 var result = context.Classes.Single(x => x.Id == entity.Id);
                 result.Name = entity.Name;
-                result.Teacher = entity.Teacher;
                 context.SaveChanges();
             }
         }

@@ -100,12 +100,9 @@ namespace Controller.ValidationClasses
             {
                 return "Class error";
             }
-            if (teacherDTO.Class != "none")
+            if (classes.List().Select(x => x.Name == teacherDTO.Class).Count() > 1)
             {
-                if (classes.List().Select(x => x.Name).Contains(teacherDTO.Class) == false)
-                {
-                    return "Class does not exist";
-                }
+                return "Class error there is two or more classes with same name"; 
             }
             
 

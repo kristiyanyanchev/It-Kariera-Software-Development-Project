@@ -39,6 +39,18 @@ namespace Data.Models
             LastName = lastName;
             Address = address;
             ValidationCode = validationCode;
+            Children = new List<Student>();
+        }
+
+        public Parent(string firstName, string lastName, string address, string email,
+            string phoneNumber, string username, string password, string validationCode)
+            : this(firstName, lastName, address, email)
+        {
+            PhoneNumber = phoneNumber;
+            Username = username;
+            Password = password;
+            ValidationCode = validationCode;
+            Children = new List<Student>();
         }
     }
 }

@@ -198,20 +198,24 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                     var studentsRepo = new StudentsRepository();
                     var studentValidator = new StudentValidator();
 
-                    /*if (studentValidator.ValidateStudent(studentDto) == "Successful Registration! ")
-                    { 
+                    if (studentValidator.ValidateStudent(studentDto) == "Successful Registration! ")
+                    {
+                        var studentClass = classes.List().Single(x => x.Name == studentDto.Class).Id;
+
                         Student student = new Student(studentDto.FirstName, studentDto.LastName, studentDto.BirthDate,
                             studentDto.Address, studentDto.Ucn, studentDto.PhoneNumber, studentDto.Email, studentDto.Username, studentDto.Password,
-                            studentDto.ValidationCode, classes.List().Single(x => x.Name == studentDto.Class));
+                            studentDto.ValidationCode, studentClass);
                         
                         studentsRepo.Add(student);
+
+                        new ValidationCodeRepository().List().Single(x => x.Code == studentDto.ValidationCode).Used = true;
 
                         
                         this.Hide();
                         StudentMainForm studentform = new StudentMainForm();
                         studentform.ShowDialog();
                     }
-                    */
+                    
        
                     MessageBox.Show(studentValidator.ValidateStudent(studentDto));
 
@@ -239,12 +243,13 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                         }
                         else
                         {
-                            teacher.Class = new ClassesRepository().List().Single(x => x.Name == teacherDto.Class);
+
+                            teacher.Class = new Class(teacherDto.Class);
                         }
 
                         teacherRepo.Add(teacher);
+                        new ValidationCodeRepository().List().Single(x => x.Code == teacherDto.ValidationCode).Used = true;
 
-                        
                         this.Hide();
                         TeacherMainForm teacherform = new TeacherMainForm();
                         teacherform.ShowDialog();
@@ -255,10 +260,28 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 else if(roleComboBox.SelectedItem.ToString() == "Parent" ||
                     roleComboBox.SelectedItem.ToString()=="Родител")
                 {
+                    var parentDto = new ParentDataTransferObject(usernameTextBox.Text, firstNameTextBox.Text, lastNameTextBox.Text,
+                        passwordTextBox.Text, emailTextBox.Text, addressTextBox.Text, phoneNumberTextBox.Text, validationCodeTextBox.Text,
+                        usernameOfChildTextBox.Text);
 
-                    this.Hide();
-                    ParentForm parentform = new ParentForm(GetLanguage());
-                    parentform.ShowDialog();
+                    var parentValidator = new ParentValidator();
+                    var parentRepo = new ParentsRepository();
+                    if (parentValidator.ValidateParent(parentDto) == "Registration Successful! ")
+                    {
+                        var parent = new Parent(parentDto.FirstName, parentDto.LastName, parentDto.Address, parentDto.Email,
+                            parentDto.PhoneNumber, parentDto.Username, parentDto.Password, parentDto.ValidationCode);
+                        var studentRepo = new StudentsRepository();
+                        parent.Children.Add(studentRepo.List().Single(x => x.Username == parentDto.UsernameOfChild));
+
+                        parentRepo.Add(parent);
+                        new ValidationCodeRepository().List().Single(x => x.Code == parentDto.ValidationCode).Used = true;
+
+                        this.Hide();
+                        ParentForm parentform = new ParentForm(GetLanguage());
+                        parentform.ShowDialog();
+                    }
+                    MessageBox.Show(parentValidator.ValidateParent(parentDto));
+                    
                 }
                 
             }

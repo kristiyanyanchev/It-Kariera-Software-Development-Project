@@ -35,7 +35,7 @@ namespace Data.Repositories
             using (var context = new ClassBookContext())
             {
                 var result = context.Teachers.Single(x => x.Id == entity.Id);
-                result.Class = entity.Class;
+                //result.Class = entity.Class;
                 result.Email = entity.Email;
                 result.FirstName = entity.FirstName;
                 result.LastName = entity.LastName;

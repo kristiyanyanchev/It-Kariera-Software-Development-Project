@@ -33,6 +33,7 @@ namespace Data.Models
         public string ValidationCode { get; set; }
 
         public Class Class { get; set; }
+        public int ClassId { get; set; }
 
         public ICollection<Parent> Parents { get; set; }
         public ICollection<Absence> Absences { get; set; }
@@ -68,5 +69,21 @@ namespace Data.Models
             ValidationCode = validationCode;
             Class = @class;
         }
+        public Student(string firstName, string lastName, DateTime birthDate, string address, string ucn, string phoneNumber,
+            string email, string username, string password, string validationCode, int classId)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            BirthDate = birthDate;
+            Address = address;
+            Ucn = ucn;
+            PhoneNumber = phoneNumber;
+            Email = email;
+            Username = username;
+            Password = password;
+            ValidationCode = validationCode;
+            ClassId = classId;
+        }
+
     }
 }

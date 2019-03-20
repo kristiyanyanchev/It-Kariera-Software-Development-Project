@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 
@@ -12,8 +13,8 @@ namespace Data.Models
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
-        [Required]
-        public Teacher Teacher { get; set; }
+        
+
 
         public ICollection<Student> Students { get; set; }
 
@@ -22,10 +23,10 @@ namespace Data.Models
 
         }
 
-        public Class(string name, Teacher teacher)
+        public Class(string name)
         {
             Name = name;
-            Teacher = teacher;
+            
         }
     }
 }

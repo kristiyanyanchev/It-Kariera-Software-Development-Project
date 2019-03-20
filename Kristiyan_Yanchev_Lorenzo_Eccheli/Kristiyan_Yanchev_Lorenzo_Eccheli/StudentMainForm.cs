@@ -117,7 +117,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void absencesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StudentVi
+            //StudentVi
         }
     }
 }

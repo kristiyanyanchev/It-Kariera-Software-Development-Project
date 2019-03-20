@@ -60,7 +60,7 @@ namespace Data.Repositories
             {
                 result = context.Classes.ToList();
             }
-            return result;
+            return  result;
         }
     }
 }

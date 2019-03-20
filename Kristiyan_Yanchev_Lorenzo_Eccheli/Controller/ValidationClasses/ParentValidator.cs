@@ -38,7 +38,7 @@ namespace Controller.ValidationClasses
             UsernameOfChildValidator = new DefaultUsernameValidator();
         }
 
-        string ValidateParent(ParentDataTransferObject parentDTO)
+        public string ValidateParent(ParentDataTransferObject parentDTO)
         {
             var students = new StudentsRepository();
             var parents = new ParentsRepository();
@@ -105,7 +105,7 @@ namespace Controller.ValidationClasses
                 return "Username of Child does not exist!";
             }
 
-            return "Registration Successful!";
+            return "Registration Successful! ";
         }
     }
 }
