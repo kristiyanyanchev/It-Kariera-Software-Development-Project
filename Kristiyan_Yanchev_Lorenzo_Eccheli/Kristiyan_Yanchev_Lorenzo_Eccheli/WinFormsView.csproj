@@ -276,6 +276,9 @@
     <EmbeddedResource Include="TeacherControls\TeacherGradeControl.resx">
       <DependentUpon>TeacherGradeControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TeacherControls\TeacherViewStudentControl.bg-BG.resx">
+      <DependentUpon>TeacherViewStudentControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherControls\TeacherViewStudentControl.resx">
       <DependentUpon>TeacherViewStudentControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -336,6 +339,8 @@
       <Name>Data</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ParentControls\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

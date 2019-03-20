@@ -126,4 +126,17 @@
   <data name="IsLate.HeaderText" xml:space="preserve">
     <value>Закъснявал ли е</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="absencesDataGrid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 78</value>
+  </data>
+  <data name="absencesDataGrid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 240</value>
+  </data>
+  <data name="absencesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 19</value>
+  </data>
+  <data name="absencesLabel.Text" xml:space="preserve">
+    <value>Информация за отсъствия</value>
+  </data>
 </root>

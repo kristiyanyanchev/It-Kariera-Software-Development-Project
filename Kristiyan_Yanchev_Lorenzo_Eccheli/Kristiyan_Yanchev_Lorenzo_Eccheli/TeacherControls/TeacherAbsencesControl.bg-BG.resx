@@ -124,11 +124,29 @@
   <data name="isLateCheckBox.Text" xml:space="preserve">
     <value>Закъснял</value>
   </data>
+  <data name="studentsListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 212</value>
+  </data>
+  <data name="classesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 22</value>
+  </data>
   <data name="removeAbsenceButton.Text" xml:space="preserve">
     <value>Махни Отсъствия</value>
   </data>
   <data name="newAbsenceButton.Text" xml:space="preserve">
     <value>Ново Отсъствие</value>
+  </data>
+  <data name="classesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 28</value>
+  </data>
+  <data name="classesLabel.Text" xml:space="preserve">
+    <value>Класове</value>
+  </data>
+  <data name="studentsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 212</value>
+  </data>
+  <data name="studentsLabel.Text" xml:space="preserve">
+    <value>Ученици</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>600, 400</value>

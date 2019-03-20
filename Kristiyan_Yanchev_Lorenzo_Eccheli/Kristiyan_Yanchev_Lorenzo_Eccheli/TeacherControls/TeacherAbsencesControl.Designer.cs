@@ -34,6 +34,8 @@
             this.classesListBox = new System.Windows.Forms.ListView();
             this.removeAbsenceButton = new System.Windows.Forms.Button();
             this.newAbsenceButton = new System.Windows.Forms.Button();
+            this.classesLabel = new System.Windows.Forms.Label();
+            this.studentsLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // isLateCheckBox
@@ -45,37 +47,53 @@
             // 
             // studentsListBox
             // 
-            resources.ApplyResources(this.studentsListBox, "studentsListBox");
             this.studentsListBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.studentsListBox, "studentsListBox");
             this.studentsListBox.Name = "studentsListBox";
             this.studentsListBox.UseCompatibleStateImageBehavior = false;
             // 
             // classesListBox
             // 
-            resources.ApplyResources(this.classesListBox, "classesListBox");
             this.classesListBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.classesListBox, "classesListBox");
             this.classesListBox.Name = "classesListBox";
             this.classesListBox.UseCompatibleStateImageBehavior = false;
             // 
             // removeAbsenceButton
             // 
-            resources.ApplyResources(this.removeAbsenceButton, "removeAbsenceButton");
             this.removeAbsenceButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.removeAbsenceButton, "removeAbsenceButton");
             this.removeAbsenceButton.Name = "removeAbsenceButton";
             this.removeAbsenceButton.UseVisualStyleBackColor = false;
+            this.removeAbsenceButton.Click += new System.EventHandler(this.removeAbsenceButton_Click);
             // 
             // newAbsenceButton
             // 
-            resources.ApplyResources(this.newAbsenceButton, "newAbsenceButton");
             this.newAbsenceButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.newAbsenceButton, "newAbsenceButton");
             this.newAbsenceButton.Name = "newAbsenceButton";
             this.newAbsenceButton.UseVisualStyleBackColor = false;
+            this.newAbsenceButton.Click += new System.EventHandler(this.newAbsenceButton_Click);
+            // 
+            // classesLabel
+            // 
+            resources.ApplyResources(this.classesLabel, "classesLabel");
+            this.classesLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.classesLabel.Name = "classesLabel";
+            // 
+            // studentsLabel
+            // 
+            resources.ApplyResources(this.studentsLabel, "studentsLabel");
+            this.studentsLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.studentsLabel.Name = "studentsLabel";
             // 
             // TeacherAbsencesControl
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            this.Controls.Add(this.studentsLabel);
+            this.Controls.Add(this.classesLabel);
             this.Controls.Add(this.isLateCheckBox);
             this.Controls.Add(this.studentsListBox);
             this.Controls.Add(this.classesListBox);
@@ -94,5 +112,7 @@
         private System.Windows.Forms.ListView classesListBox;
         private System.Windows.Forms.Button removeAbsenceButton;
         private System.Windows.Forms.Button newAbsenceButton;
+        private System.Windows.Forms.Label classesLabel;
+        private System.Windows.Forms.Label studentsLabel;
     }
 }

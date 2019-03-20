@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentGradeStatisticControl));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentGradeStatisticControl));
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.GradesChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.selectSubjectButton = new System.Windows.Forms.Button();
@@ -40,13 +40,13 @@
             // 
             // GradesChart
             // 
-            resources.ApplyResources(this.GradesChart, "GradesChart");
             this.GradesChart.BackColor = System.Drawing.Color.FloralWhite;
             this.GradesChart.BorderlineColor = System.Drawing.Color.FloralWhite;
             chartArea1.Name = "ChartArea1";
             this.GradesChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.GradesChart.Legends.Add(legend1);
+            resources.ApplyResources(this.GradesChart, "GradesChart");
             this.GradesChart.Name = "GradesChart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -55,15 +55,16 @@
             // 
             // selectSubjectButton
             // 
-            resources.ApplyResources(this.selectSubjectButton, "selectSubjectButton");
             this.selectSubjectButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.selectSubjectButton, "selectSubjectButton");
             this.selectSubjectButton.Name = "selectSubjectButton";
             this.selectSubjectButton.UseVisualStyleBackColor = false;
+            this.selectSubjectButton.Click += new System.EventHandler(this.selectSubjectButton_Click);
             // 
             // selectSubjectListbox
             // 
-            resources.ApplyResources(this.selectSubjectListbox, "selectSubjectListbox");
             this.selectSubjectListbox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.selectSubjectListbox, "selectSubjectListbox");
             this.selectSubjectListbox.FormattingEnabled = true;
             this.selectSubjectListbox.Name = "selectSubjectListbox";
             // 

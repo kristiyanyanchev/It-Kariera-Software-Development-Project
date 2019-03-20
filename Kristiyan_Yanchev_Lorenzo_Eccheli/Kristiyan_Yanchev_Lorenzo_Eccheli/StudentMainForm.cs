@@ -10,7 +10,6 @@ using System.Globalization;
 using System.Threading;
 using System.Resources;
 
-
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
     public partial class StudentMainForm : Form

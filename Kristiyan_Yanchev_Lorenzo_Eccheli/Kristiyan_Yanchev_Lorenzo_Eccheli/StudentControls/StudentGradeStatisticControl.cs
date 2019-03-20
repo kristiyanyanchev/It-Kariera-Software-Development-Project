@@ -32,5 +32,45 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
             }
             InitializeComponent();
         }
+
+        private bool Validate()
+        {
+            if(selectSubjectListbox.SelectedItem!=null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private string GetLanguage()
+        {
+            if (selectSubjectButton.Text == "Choose Subject")
+            {
+                return "English";
+            }
+            else
+            {
+                return "Bulgarian";
+            }
+        }
+
+        private void selectSubjectButton_Click(object sender, EventArgs e)
+        {
+            if(Validate())
+            {
+
+            }
+            else if(GetLanguage()=="Bulgarian")
+            {
+                MessageBox.Show("Не сте избрали предмет", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("You haven't selected subject", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

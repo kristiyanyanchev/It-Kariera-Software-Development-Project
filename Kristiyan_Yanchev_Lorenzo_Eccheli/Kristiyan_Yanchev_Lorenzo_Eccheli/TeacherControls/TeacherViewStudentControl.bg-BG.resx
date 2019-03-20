@@ -118,102 +118,64 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="GradesChart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 42</value>
+  <data name="emailLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 19</value>
   </data>
-  <data name="GradesChart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 192</value>
+  <data name="emailLabel.Text" xml:space="preserve">
+    <value>Имейл</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="GradesChart.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="phonenumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 19</value>
   </data>
-  <data name="GradesChart.Text" xml:space="preserve">
-    <value>chart1</value>
+  <data name="phonenumberLabel.Text" xml:space="preserve">
+    <value>Телефонен Номер</value>
   </data>
-  <data name="&gt;&gt;GradesChart.Name" xml:space="preserve">
-    <value>GradesChart</value>
+  <data name="ucnLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 19</value>
   </data>
-  <data name="&gt;&gt;GradesChart.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  <data name="ucnLabel.Text" xml:space="preserve">
+    <value>ЕГН</value>
   </data>
-  <data name="&gt;&gt;GradesChart.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="addressLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 19</value>
   </data>
-  <data name="&gt;&gt;GradesChart.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="addressLabel.Text" xml:space="preserve">
+    <value>Адрес</value>
   </data>
-  <data name="selectSubjectButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  <data name="classLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 19</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="selectSubjectButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="classLabel.Text" xml:space="preserve">
+    <value>Клас</value>
   </data>
-  <data name="selectSubjectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 262</value>
+  <data name="schoolarshipLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 19</value>
   </data>
-  <data name="selectSubjectButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 66</value>
+  <data name="schoolarshipLabel.Text" xml:space="preserve">
+    <value>Стипендия</value>
   </data>
-  <data name="selectSubjectButton.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="birthDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 56</value>
   </data>
-  <data name="selectSubjectButton.Text" xml:space="preserve">
-    <value>Choose Subject</value>
+  <data name="birthDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 19</value>
   </data>
-  <data name="&gt;&gt;selectSubjectButton.Name" xml:space="preserve">
-    <value>selectSubjectButton</value>
+  <data name="birthDateLabel.Text" xml:space="preserve">
+    <value>Дата На Раждане</value>
   </data>
-  <data name="&gt;&gt;selectSubjectButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="inAbsentiaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 19</value>
   </data>
-  <data name="&gt;&gt;selectSubjectButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="inAbsentiaLabel.Text" xml:space="preserve">
+    <value>Болнични</value>
   </data>
-  <data name="&gt;&gt;selectSubjectButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="lastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 19</value>
   </data>
-  <data name="selectSubjectListbox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  <data name="lastNameLabel.Text" xml:space="preserve">
+    <value>Фамилия</value>
   </data>
-  <data name="selectSubjectListbox.ItemHeight" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="selectSubjectListbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 42</value>
-  </data>
-  <data name="selectSubjectListbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 175</value>
-  </data>
-  <data name="selectSubjectListbox.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;selectSubjectListbox.Name" xml:space="preserve">
-    <value>selectSubjectListbox</value>
-  </data>
-  <data name="&gt;&gt;selectSubjectListbox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;selectSubjectListbox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;selectSubjectListbox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 370</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>StudentGradeStatisticControl</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="firstNameLabel.Text" xml:space="preserve">
+    <value>Първо Име</value>
   </data>
 </root>
