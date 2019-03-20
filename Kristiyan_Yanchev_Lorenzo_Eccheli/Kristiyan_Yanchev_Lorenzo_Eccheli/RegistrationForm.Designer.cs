@@ -54,7 +54,7 @@
             this.birthdatePicker = new System.Windows.Forms.DateTimePicker();
             this.ucnTextBox = new System.Windows.Forms.TextBox();
             this.classnameTextBox = new System.Windows.Forms.TextBox();
-            this.nameofchildTextBox = new System.Windows.Forms.TextBox();
+            this.usernameOfChildTextBox = new System.Windows.Forms.TextBox();
             this.firstNameTextBox = new System.Windows.Forms.TextBox();
             this.backButton = new System.Windows.Forms.Button();
             this.languageComboBox = new System.Windows.Forms.ComboBox();
@@ -63,7 +63,7 @@
             this.birthdayLabel = new System.Windows.Forms.Label();
             this.ucnLabel = new System.Windows.Forms.Label();
             this.classnameLabel = new System.Windows.Forms.Label();
-            this.nameofchildLabel = new System.Windows.Forms.Label();
+            this.usernameOfChildLabel = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
             this.languageLabel = new System.Windows.Forms.Label();
             this.subjectLabel = new System.Windows.Forms.Label();
@@ -230,12 +230,12 @@
             this.classnameTextBox.Name = "classnameTextBox";
             this.formToolTip.SetToolTip(this.classnameTextBox, resources.GetString("classnameTextBox.ToolTip"));
             // 
-            // nameofchildTextBox
+            // usernameOfChildTextBox
             // 
-            this.nameofchildTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            resources.ApplyResources(this.nameofchildTextBox, "nameofchildTextBox");
-            this.nameofchildTextBox.Name = "nameofchildTextBox";
-            this.formToolTip.SetToolTip(this.nameofchildTextBox, resources.GetString("nameofchildTextBox.ToolTip"));
+            this.usernameOfChildTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.usernameOfChildTextBox, "usernameOfChildTextBox");
+            this.usernameOfChildTextBox.Name = "usernameOfChildTextBox";
+            this.formToolTip.SetToolTip(this.usernameOfChildTextBox, resources.GetString("usernameOfChildTextBox.ToolTip"));
             // 
             // firstNameTextBox
             // 
@@ -298,11 +298,11 @@
             this.classnameLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.classnameLabel.Name = "classnameLabel";
             // 
-            // nameofchildLabel
+            // usernameOfChildLabel
             // 
-            resources.ApplyResources(this.nameofchildLabel, "nameofchildLabel");
-            this.nameofchildLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.nameofchildLabel.Name = "nameofchildLabel";
+            resources.ApplyResources(this.usernameOfChildLabel, "usernameOfChildLabel");
+            this.usernameOfChildLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.usernameOfChildLabel.Name = "usernameOfChildLabel";
             // 
             // nameLabel
             // 
@@ -341,8 +341,8 @@
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.firstNameTextBox);
             this.Controls.Add(this.nameLabel);
-            this.Controls.Add(this.nameofchildTextBox);
-            this.Controls.Add(this.nameofchildLabel);
+            this.Controls.Add(this.usernameOfChildTextBox);
+            this.Controls.Add(this.usernameOfChildLabel);
             this.Controls.Add(this.classnameTextBox);
             this.Controls.Add(this.classnameLabel);
             this.Controls.Add(this.ucnLabel);
@@ -406,8 +406,8 @@
         private System.Windows.Forms.Label ucnLabel;
         private System.Windows.Forms.Label classnameLabel;
         private System.Windows.Forms.TextBox classnameTextBox;
-        private System.Windows.Forms.Label nameofchildLabel;
-        private System.Windows.Forms.TextBox nameofchildTextBox;
+        private System.Windows.Forms.Label usernameOfChildLabel;
+        private System.Windows.Forms.TextBox usernameOfChildTextBox;
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.TextBox firstNameTextBox;
         private System.Windows.Forms.Button backButton;

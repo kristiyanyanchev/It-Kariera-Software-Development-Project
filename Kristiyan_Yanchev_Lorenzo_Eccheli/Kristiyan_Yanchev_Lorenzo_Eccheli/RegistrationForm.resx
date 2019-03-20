@@ -843,34 +843,34 @@
   <data name="&gt;&gt;classnameTextBox.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="nameofchildTextBox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="usernameOfChildTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>467, 186</value>
   </data>
-  <data name="nameofchildTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="usernameOfChildTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="nameofchildTextBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="usernameOfChildTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 20</value>
   </data>
-  <data name="nameofchildTextBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="usernameOfChildTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
-  <data name="nameofchildTextBox.ToolTip" xml:space="preserve">
+  <data name="usernameOfChildTextBox.ToolTip" xml:space="preserve">
     <value>Enter your child name</value>
   </data>
-  <data name="nameofchildTextBox.Visible" type="System.Boolean, mscorlib">
+  <data name="usernameOfChildTextBox.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;nameofchildTextBox.Name" xml:space="preserve">
-    <value>nameofchildTextBox</value>
+  <data name="&gt;&gt;usernameOfChildTextBox.Name" xml:space="preserve">
+    <value>usernameOfChildTextBox</value>
   </data>
-  <data name="&gt;&gt;nameofchildTextBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;usernameOfChildTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nameofchildTextBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;usernameOfChildTextBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;nameofchildTextBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;usernameOfChildTextBox.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
   <data name="firstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
@@ -1137,43 +1137,43 @@
   <data name="&gt;&gt;classnameLabel.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="nameofchildLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="usernameOfChildLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="nameofchildLabel.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="usernameOfChildLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
-  <data name="nameofchildLabel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="usernameOfChildLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>329, 186</value>
   </data>
-  <data name="nameofchildLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="usernameOfChildLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
-  <data name="nameofchildLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 19</value>
+  <data name="usernameOfChildLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 19</value>
   </data>
-  <data name="nameofchildLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="usernameOfChildLabel.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="nameofchildLabel.Text" xml:space="preserve">
-    <value>Name of child</value>
+  <data name="usernameOfChildLabel.Text" xml:space="preserve">
+    <value>Username of child</value>
   </data>
-  <data name="nameofchildLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="usernameOfChildLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="nameofchildLabel.Visible" type="System.Boolean, mscorlib">
+  <data name="usernameOfChildLabel.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;nameofchildLabel.Name" xml:space="preserve">
-    <value>nameofchildLabel</value>
+  <data name="&gt;&gt;usernameOfChildLabel.Name" xml:space="preserve">
+    <value>usernameOfChildLabel</value>
   </data>
-  <data name="&gt;&gt;nameofchildLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;usernameOfChildLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nameofchildLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;usernameOfChildLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;nameofchildLabel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;usernameOfChildLabel.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="nameLabel.AutoSize" type="System.Boolean, mscorlib">

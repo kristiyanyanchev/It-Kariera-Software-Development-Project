@@ -96,6 +96,10 @@ namespace Controller.ValidationClasses
             {
                 return "Class error! ";
             }
+            if (classes.List().Select(x => x.Name).Contains(studentDTO.Class) == false)
+            {
+                return "Class Does not exist! ";
+            }
 
             if (UcnValidator.Validate(studentDTO.Ucn) == false)
             {
