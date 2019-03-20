@@ -167,22 +167,13 @@
   <data name="introductionLabel.Text" xml:space="preserve">
     <value>Добре дошли в училищния дневник</value>
   </data>
-  <data name="introductionLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 19</value>
   </data>
   <data name="languageLabel.Text" xml:space="preserve">
     <value>Език</value>
   </data>
-  <data name="languageLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="languageComboBox.ToolTip" xml:space="preserve">
     <value>Сменете езика</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>

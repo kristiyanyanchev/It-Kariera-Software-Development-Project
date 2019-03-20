@@ -28,19 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentViewAbsencesControl));
+            this.absencesDataGrid = new System.Windows.Forms.DataGridView();
+            this.PeriodStartTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PeriodEndTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IsLate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.absencesDataGrid)).BeginInit();
             this.SuspendLayout();
+            // 
+            // absencesDataGrid
+            // 
+            resources.ApplyResources(this.absencesDataGrid, "absencesDataGrid");
+            this.absencesDataGrid.BackgroundColor = System.Drawing.Color.FloralWhite;
+            this.absencesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.absencesDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PeriodStartTime,
+            this.PeriodEndTime,
+            this.IsLate});
+            this.absencesDataGrid.Name = "absencesDataGrid";
+            // 
+            // PeriodStartTime
+            // 
+            resources.ApplyResources(this.PeriodStartTime, "PeriodStartTime");
+            this.PeriodStartTime.Name = "PeriodStartTime";
+            this.PeriodStartTime.ReadOnly = true;
+            // 
+            // PeriodEndTime
+            // 
+            resources.ApplyResources(this.PeriodEndTime, "PeriodEndTime");
+            this.PeriodEndTime.Name = "PeriodEndTime";
+            this.PeriodEndTime.ReadOnly = true;
+            // 
+            // IsLate
+            // 
+            resources.ApplyResources(this.IsLate, "IsLate");
+            this.IsLate.Name = "IsLate";
+            this.IsLate.ReadOnly = true;
             // 
             // StudentViewAbsencesControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            this.Controls.Add(this.absencesDataGrid);
             this.Name = "StudentViewAbsencesControl";
-            this.Size = new System.Drawing.Size(550, 370);
+            ((System.ComponentModel.ISupportInitialize)(this.absencesDataGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView absencesDataGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PeriodStartTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PeriodEndTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IsLate;
     }
 }

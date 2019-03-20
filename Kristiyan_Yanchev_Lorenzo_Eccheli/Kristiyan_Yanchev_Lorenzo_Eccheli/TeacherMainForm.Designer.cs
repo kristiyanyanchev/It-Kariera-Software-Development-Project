@@ -41,13 +41,14 @@
             this.languageLabel = new System.Windows.Forms.Label();
             this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // addgradeButton
             // 
-            resources.ApplyResources(this.addgradeButton, "addgradeButton");
             this.addgradeButton.BackColor = System.Drawing.Color.FloralWhite;
             this.addgradeButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.addgradeButton, "addgradeButton");
             this.addgradeButton.Name = "addgradeButton";
             this.toolTip.SetToolTip(this.addgradeButton, resources.GetString("addgradeButton.ToolTip"));
             this.addgradeButton.UseVisualStyleBackColor = false;
@@ -55,9 +56,9 @@
             // 
             // changePasswordButton
             // 
-            resources.ApplyResources(this.changePasswordButton, "changePasswordButton");
             this.changePasswordButton.BackColor = System.Drawing.Color.FloralWhite;
             this.changePasswordButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.changePasswordButton, "changePasswordButton");
             this.changePasswordButton.Name = "changePasswordButton";
             this.toolTip.SetToolTip(this.changePasswordButton, resources.GetString("changePasswordButton.ToolTip"));
             this.changePasswordButton.UseVisualStyleBackColor = false;
@@ -65,9 +66,9 @@
             // 
             // exitButton
             // 
-            resources.ApplyResources(this.exitButton, "exitButton");
             this.exitButton.BackColor = System.Drawing.Color.FloralWhite;
             this.exitButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.exitButton, "exitButton");
             this.exitButton.Name = "exitButton";
             this.toolTip.SetToolTip(this.exitButton, resources.GetString("exitButton.ToolTip"));
             this.exitButton.UseVisualStyleBackColor = false;
@@ -75,9 +76,9 @@
             // 
             // absensesButton
             // 
-            resources.ApplyResources(this.absensesButton, "absensesButton");
             this.absensesButton.BackColor = System.Drawing.Color.FloralWhite;
             this.absensesButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.absensesButton, "absensesButton");
             this.absensesButton.Name = "absensesButton";
             this.toolTip.SetToolTip(this.absensesButton, resources.GetString("absensesButton.ToolTip"));
             this.absensesButton.UseVisualStyleBackColor = false;
@@ -85,9 +86,9 @@
             // 
             // addstudentButton
             // 
-            resources.ApplyResources(this.addstudentButton, "addstudentButton");
             this.addstudentButton.BackColor = System.Drawing.Color.FloralWhite;
             this.addstudentButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.addstudentButton, "addstudentButton");
             this.addstudentButton.Name = "addstudentButton";
             this.toolTip.SetToolTip(this.addstudentButton, resources.GetString("addstudentButton.ToolTip"));
             this.addstudentButton.UseVisualStyleBackColor = false;
@@ -95,9 +96,9 @@
             // 
             // changeinformationButton
             // 
-            resources.ApplyResources(this.changeinformationButton, "changeinformationButton");
             this.changeinformationButton.BackColor = System.Drawing.Color.FloralWhite;
             this.changeinformationButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.changeinformationButton, "changeinformationButton");
             this.changeinformationButton.Name = "changeinformationButton";
             this.toolTip.SetToolTip(this.changeinformationButton, resources.GetString("changeinformationButton.ToolTip"));
             this.changeinformationButton.UseVisualStyleBackColor = false;
@@ -105,9 +106,9 @@
             // 
             // viewstudentsButton
             // 
-            resources.ApplyResources(this.viewstudentsButton, "viewstudentsButton");
             this.viewstudentsButton.BackColor = System.Drawing.Color.FloralWhite;
             this.viewstudentsButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.viewstudentsButton, "viewstudentsButton");
             this.viewstudentsButton.Name = "viewstudentsButton";
             this.toolTip.SetToolTip(this.viewstudentsButton, resources.GetString("viewstudentsButton.ToolTip"));
             this.viewstudentsButton.UseVisualStyleBackColor = false;
@@ -118,19 +119,17 @@
             resources.ApplyResources(this.introductionLabel, "introductionLabel");
             this.introductionLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.introductionLabel.Name = "introductionLabel";
-            this.toolTip.SetToolTip(this.introductionLabel, resources.GetString("introductionLabel.ToolTip"));
             // 
             // languageLabel
             // 
             resources.ApplyResources(this.languageLabel, "languageLabel");
             this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.languageLabel.Name = "languageLabel";
-            this.toolTip.SetToolTip(this.languageLabel, resources.GetString("languageLabel.ToolTip"));
             // 
             // languageComboBox
             // 
-            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
             resources.GetString("languageComboBox.Items"),
@@ -139,11 +138,17 @@
             this.toolTip.SetToolTip(this.languageComboBox, resources.GetString("languageComboBox.ToolTip"));
             this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
             // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
             // TeacherMainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.introductionLabel);
@@ -155,7 +160,6 @@
             this.Controls.Add(this.changePasswordButton);
             this.Controls.Add(this.addgradeButton);
             this.Name = "TeacherMainForm";
-            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TeacherMainForm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -175,5 +179,6 @@
         private System.Windows.Forms.Label languageLabel;
         private System.Windows.Forms.ComboBox languageComboBox;
         private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.Panel panel1;
     }
 }

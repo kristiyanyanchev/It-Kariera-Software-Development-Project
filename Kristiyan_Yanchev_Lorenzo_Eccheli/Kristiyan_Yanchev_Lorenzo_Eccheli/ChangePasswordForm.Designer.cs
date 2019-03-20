@@ -49,56 +49,52 @@
             resources.ApplyResources(this.oldPasswordLabel, "oldPasswordLabel");
             this.oldPasswordLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.oldPasswordLabel.Name = "oldPasswordLabel";
-            this.toolTip.SetToolTip(this.oldPasswordLabel, resources.GetString("oldPasswordLabel.ToolTip"));
             // 
             // newPasswordLabel
             // 
             resources.ApplyResources(this.newPasswordLabel, "newPasswordLabel");
             this.newPasswordLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.newPasswordLabel.Name = "newPasswordLabel";
-            this.toolTip.SetToolTip(this.newPasswordLabel, resources.GetString("newPasswordLabel.ToolTip"));
             // 
             // ConfirmPasswordLabel
             // 
             resources.ApplyResources(this.ConfirmPasswordLabel, "ConfirmPasswordLabel");
             this.ConfirmPasswordLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.ConfirmPasswordLabel.Name = "ConfirmPasswordLabel";
-            this.toolTip.SetToolTip(this.ConfirmPasswordLabel, resources.GetString("ConfirmPasswordLabel.ToolTip"));
             // 
             // oldPasswordTextBox
             // 
-            resources.ApplyResources(this.oldPasswordTextBox, "oldPasswordTextBox");
             this.oldPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.oldPasswordTextBox, "oldPasswordTextBox");
             this.oldPasswordTextBox.Name = "oldPasswordTextBox";
             this.toolTip.SetToolTip(this.oldPasswordTextBox, resources.GetString("oldPasswordTextBox.ToolTip"));
             // 
             // newPasswordTextBox
             // 
-            resources.ApplyResources(this.newPasswordTextBox, "newPasswordTextBox");
             this.newPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.newPasswordTextBox, "newPasswordTextBox");
             this.newPasswordTextBox.Name = "newPasswordTextBox";
             this.toolTip.SetToolTip(this.newPasswordTextBox, resources.GetString("newPasswordTextBox.ToolTip"));
             // 
             // confirmNewPasswordTextBox
             // 
-            resources.ApplyResources(this.confirmNewPasswordTextBox, "confirmNewPasswordTextBox");
             this.confirmNewPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.confirmNewPasswordTextBox, "confirmNewPasswordTextBox");
             this.confirmNewPasswordTextBox.Name = "confirmNewPasswordTextBox";
             this.toolTip.SetToolTip(this.confirmNewPasswordTextBox, resources.GetString("confirmNewPasswordTextBox.ToolTip"));
             // 
             // changePasswordButton
             // 
-            resources.ApplyResources(this.changePasswordButton, "changePasswordButton");
             this.changePasswordButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.changePasswordButton, "changePasswordButton");
             this.changePasswordButton.Name = "changePasswordButton";
-            this.toolTip.SetToolTip(this.changePasswordButton, resources.GetString("changePasswordButton.ToolTip"));
             this.changePasswordButton.UseVisualStyleBackColor = false;
             this.changePasswordButton.Click += new System.EventHandler(this.changePasswordButton_Click);
             // 
             // closeButton
             // 
-            resources.ApplyResources(this.closeButton, "closeButton");
             this.closeButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.closeButton, "closeButton");
             this.closeButton.Name = "closeButton";
             this.toolTip.SetToolTip(this.closeButton, resources.GetString("closeButton.ToolTip"));
             this.closeButton.UseVisualStyleBackColor = false;
@@ -118,16 +114,15 @@
             resources.ApplyResources(this.languageLabel, "languageLabel");
             this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.languageLabel.Name = "languageLabel";
-            this.toolTip.SetToolTip(this.languageLabel, resources.GetString("languageLabel.ToolTip"));
             // 
             // languageComboBox
             // 
-            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.BackColor = System.Drawing.Color.FloralWhite;
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
             resources.GetString("languageComboBox.Items"),
             resources.GetString("languageComboBox.Items1")});
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.Name = "languageComboBox";
             this.toolTip.SetToolTip(this.languageComboBox, resources.GetString("languageComboBox.ToolTip"));
             this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
@@ -149,7 +144,6 @@
             this.Controls.Add(this.newPasswordLabel);
             this.Controls.Add(this.oldPasswordLabel);
             this.Name = "ChangePasswordForm";
-            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.ResumeLayout(false);
             this.PerformLayout();
 

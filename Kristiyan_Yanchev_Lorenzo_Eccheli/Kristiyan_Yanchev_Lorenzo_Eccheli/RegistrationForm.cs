@@ -185,6 +185,9 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void registrationButton_Click(object sender, EventArgs e)
         {
+            StudentMainForm student = new StudentMainForm();
+            student.ShowDialog();
+            /*
             if (ValidateData())
             {
                 if(roleComboBox.SelectedItem.ToString()=="Student" ||
@@ -198,7 +201,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                     var studentsRepo = new StudentsRepository();
                     var studentValidator = new StudentValidator();
 
-                    /*if (studentValidator.ValidateStudent(studentDto) == "Successful Registration! ")
+                    if (studentValidator.ValidateStudent(studentDto) == "Successful Registration! ")
                     { 
                         Student student = new Student(studentDto.FirstName, studentDto.LastName, studentDto.BirthDate,
                             studentDto.Address, studentDto.Ucn, studentDto.PhoneNumber, studentDto.Email, studentDto.Username, studentDto.Password,
@@ -211,7 +214,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                         StudentMainForm studentform = new StudentMainForm();
                         studentform.ShowDialog();
                     }
-                    */
+                    
        
                     MessageBox.Show(studentValidator.ValidateStudent(studentDto));
 
@@ -272,6 +275,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                     MessageBox.Show("Invalid data ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            */
         }
 
         private void visibleCheckBox_CheckedChanged(object sender, EventArgs e)

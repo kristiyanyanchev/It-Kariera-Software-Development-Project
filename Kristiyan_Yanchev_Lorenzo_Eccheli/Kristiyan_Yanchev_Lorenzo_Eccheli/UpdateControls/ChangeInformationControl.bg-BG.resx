@@ -118,80 +118,38 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 370</value>
+  <data name="saveChangesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 195</value>
   </data>
-  <data name="absencesDataGrid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 240</value>
+  <data name="saveChangesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 60</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="saveChangesButton.Text" xml:space="preserve">
+    <value>Запази промените</value>
   </data>
-  <data name="PeriodEndTime.HeaderText" xml:space="preserve">
-    <value>Period End Time</value>
+  <data name="emailTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 106</value>
   </data>
-  <data name="&gt;&gt;absencesDataGrid.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="emailLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 113</value>
   </data>
-  <data name="&gt;&gt;absencesDataGrid.Name" xml:space="preserve">
-    <value>absencesDataGrid</value>
+  <data name="emailLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 19</value>
   </data>
-  <data name="&gt;&gt;absencesDataGrid.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="emailLabel.Text" xml:space="preserve">
+    <value>Имейл</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="PhoneNumberTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 75</value>
   </data>
-  <data name="IsLate.HeaderText" xml:space="preserve">
-    <value>Is Late</value>
+  <data name="phoneNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 78</value>
   </data>
-  <data name="PeriodStartTime.HeaderText" xml:space="preserve">
-    <value>Period Start Time</value>
+  <data name="phoneNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 19</value>
   </data>
-  <data name="&gt;&gt;PeriodEndTime.Name" xml:space="preserve">
-    <value>PeriodEndTime</value>
+  <data name="phoneNumberLabel.Text" xml:space="preserve">
+    <value>Телефонен номер
+</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>StudentViewAbsencesControl</value>
-  </data>
-  <data name="&gt;&gt;IsLate.Name" xml:space="preserve">
-    <value>IsLate</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="absencesDataGrid.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;PeriodStartTime.Name" xml:space="preserve">
-    <value>PeriodStartTime</value>
-  </data>
-  <data name="&gt;&gt;absencesDataGrid.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PeriodEndTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="absencesDataGrid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 45</value>
-  </data>
-  <data name="&gt;&gt;IsLate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PeriodStartTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="PeriodEndTime.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="PeriodStartTime.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>bg-BG</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="IsLate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

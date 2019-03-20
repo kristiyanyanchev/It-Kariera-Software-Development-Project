@@ -6,6 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
+using System.Resources;
+
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -14,32 +18,34 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         public StudentMainForm()
         {
             InitializeComponent();
-            languageComboBox.SelectedItem = "English";
+            StudentControls.StudentViewGradeContol studentcontrol = new StudentControls.StudentViewGradeContol();
+            panelInformation.Controls.Add(studentcontrol);
         }
 
-        private void viewGradesButton_Click(object sender, EventArgs e)
+        public StudentMainForm(string language)
         {
-            this.Hide();
-            StudentViewGradesForm studentgrades = new StudentViewGradesForm();
-            studentgrades.ShowDialog();
+            if (language == "English")
+            {
+
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
+            }
+            InitializeComponent();
         }
 
-        private void viewAbsencesButton_Click(object sender, EventArgs e)
+        private string GetLanguage()
         {
-            this.Hide();
-            StudentViewAbsencesForm studentabsences = new StudentViewAbsencesForm();
-            studentabsences.ShowDialog();
-        }
-
-        private void viewSubjectsButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void changePassword_Click(object sender, EventArgs e)
-        {
-            ChangePasswordForm changepassword = new ChangePasswordForm();
-            changepassword.ShowDialog();
+            if(languageLabel.Text=="Language")
+            {
+                return "English";
+            }
+            else
+            {
+                return "BUlgarian";
+            }
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -52,45 +58,23 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
         }
 
-        private void viewScheduleButton_Click(object sender, EventArgs e)
-        {
-            //this.Hide();
-            //StudentScheludeForm studentschelude = new StudentScheludeForm();
-            //studentschelude.ShowDialog();
-        }
-
-        private void changeInformationButton_Click(object sender, EventArgs e)
-        {
-            ChangeInformationForm changeInformation = new ChangeInformationForm();
-            changeInformation.ShowDialog();
-        }
-
         private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(languageComboBox.SelectedIndex.ToString()== "Bulgarian")
+            this.Controls.Clear();
+            if (languageComboBox.SelectedItem.ToString() == "English" ||
+                languageComboBox.SelectedItem.ToString() == "Английски")
             {
-                introductionLabel.Text = "Добре дошли в електронния дневник";
-                viewGradesButton.Text = "Оценки";
-                //viewSubjectsButton.Text = "Предмети";
-                //viewScheduleButton.Text = "Програма";
-                viewAbsencesButton.Text = "Отсъствия";
-                changePassword.Text = "Смени паролата";
-                changeInformation.Text = "Смени информация";
-                languageLabel.Text = "Език";
-                exitButton.Text = "Изход";
+                StudentControls.StudentGradeStatisticControl studentsgrades = new StudentControls.StudentGradeStatisticControl(GetLanguage());
+                panelInformation.Controls.Add(studentsgrades);
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
             }
             else
             {
-                introductionLabel.Text = "Welcome to E-journal , Student";
-                viewGradesButton.Text = "Grades";
-                //viewSubjectsButton.Text = "Subjects";
-                //viewScheduleButton.Text = "Schedule";
-                viewAbsencesButton.Text = "Absence";
-                changePassword.Text = "Change Password";
-                changeInformation.Text = "Change Information";
-                languageLabel.Text = "Language";
-                exitButton.Text = "Exit";
+                StudentControls.StudentGradeStatisticControl studentsgrades = new StudentControls.StudentGradeStatisticControl(GetLanguage());
+                panelInformation.Controls.Add(studentsgrades);
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
+            InitializeComponent();
         }
 
         private void StudentMainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -109,15 +93,31 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void gradesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-         
-            StudentGradeStatisticContol studentcontrol = new StudentGradeStatisticContol();
-            panelInformation.Container.Add(studentcontrol);
+            panelInformation.Controls.Clear();
+            StudentControls.StudentViewGradeContol studentcontrol = new StudentControls.StudentViewGradeContol();
+            panelInformation.Controls.Add(studentcontrol);
             
         }
 
         private void absencesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StudentVi
+            panelInformation.Controls.Clear();
+            StudentControls.StudentViewAbsencesControl studentabsences = new StudentControls.StudentViewAbsencesControl();
+            panelInformation.Controls.Add(studentabsences);
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelInformation.Controls.Clear();
+            UpdateControls.ChangePasswordControl changepassword = new UpdateControls.ChangePasswordControl();
+            panelInformation.Controls.Add(changepassword);
+        }
+
+        private void changeInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelInformation.Controls.Clear();
+            UpdateControls.ChangeInformationControl changeinformation = new UpdateControls.ChangeInformationControl();
+            panelInformation.Controls.Add(changeinformation);
         }
     }
 }
