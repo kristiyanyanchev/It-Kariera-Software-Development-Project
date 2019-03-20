@@ -117,63 +117,87 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="addgradeButton.Text" xml:space="preserve">
-    <value>Добави Оценки</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gradeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 61</value>
   </data>
-  <data name="addgradeButton.ToolTip" xml:space="preserve">
-    <value>Добави нови оценки на уцениците си</value>
+  <data name="gradeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 19</value>
   </data>
-  <data name="changePasswordButton.Text" xml:space="preserve">
-    <value>Смени Паролата</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gradeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
   </data>
-  <data name="changePasswordButton.ToolTip" xml:space="preserve">
-    <value>Сменете паролата</value>
+  <data name="gradeLabel.Text" xml:space="preserve">
+    <value>Оценка</value>
   </data>
-  <data name="exitButton.Text" xml:space="preserve">
-    <value>Изход</value>
+  <data name="removeGradeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 249</value>
   </data>
-  <data name="exitButton.ToolTip" xml:space="preserve">
-    <value>Излезте от приложението</value>
+  <data name="removeGradeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
   </data>
-  <data name="absensesButton.Text" xml:space="preserve">
-    <value>Отсъствия</value>
+  <data name="removeGradeButton.Text" xml:space="preserve">
+    <value>Махни оценка</value>
   </data>
-  <data name="absensesButton.ToolTip" xml:space="preserve">
-    <value>Вижте отсъствията</value>
+  <data name="gradeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 61</value>
   </data>
-  <data name="addstudentButton.Text" xml:space="preserve">
-    <value>Добави Ученици</value>
+  <data name="gradeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
   </data>
-  <data name="addstudentButton.ToolTip" xml:space="preserve">
-    <value>Добави нов ученик в клас
-</value>
+  <data name="newGradeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 138</value>
   </data>
-  <data name="changeinformationButton.Text" xml:space="preserve">
-    <value>Смени Информацията</value>
+  <data name="newGradeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
   </data>
-  <data name="changeinformationButton.ToolTip" xml:space="preserve">
-    <value>Сменете информацията</value>
+  <data name="newGradeButton.Text" xml:space="preserve">
+    <value>Нова Оценка</value>
   </data>
-  <data name="viewstudentsButton.Text" xml:space="preserve">
+  <data name="gradesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 258</value>
+  </data>
+  <data name="gradesListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="studentsListbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 158</value>
+  </data>
+  <data name="studentsListbox.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="classesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 61</value>
+  </data>
+  <data name="classesListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="classesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 57</value>
+  </data>
+  <data name="classesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 28</value>
+  </data>
+  <data name="classesLabel.Text" xml:space="preserve">
+    <value>Класове</value>
+  </data>
+  <data name="studentsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 158</value>
+  </data>
+  <data name="studentsLabel.Text" xml:space="preserve">
     <value>Ученици</value>
   </data>
-  <data name="viewstudentsButton.ToolTip" xml:space="preserve">
-    <value>Вижте всички ученици</value>
+  <data name="gradesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 258</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 28</value>
+  <data name="gradesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 28</value>
   </data>
-  <data name="introductionLabel.Text" xml:space="preserve">
-    <value>Добре дошли в училищния дневник</value>
+  <data name="gradesLabel.Text" xml:space="preserve">
+    <value>Оценки</value>
   </data>
-  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 19</value>
-  </data>
-  <data name="languageLabel.Text" xml:space="preserve">
-    <value>Език</value>
-  </data>
-  <data name="languageComboBox.ToolTip" xml:space="preserve">
-    <value>Сменете езика</value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 400</value>
   </data>
 </root>

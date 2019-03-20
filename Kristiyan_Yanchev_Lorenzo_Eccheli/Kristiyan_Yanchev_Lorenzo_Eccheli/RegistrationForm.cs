@@ -185,6 +185,9 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void registrationButton_Click(object sender, EventArgs e)
         {
+            StudentMainForm studentForm = new StudentMainForm();
+            studentForm.ShowDialog();
+            
             if (ValidateData())
             {
                 if(roleComboBox.SelectedItem.ToString()=="Student" ||
@@ -296,6 +299,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                     MessageBox.Show("Invalid data ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            
         }
 
         private void visibleCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -465,6 +469,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
             */
         }
+
     }
            
 }

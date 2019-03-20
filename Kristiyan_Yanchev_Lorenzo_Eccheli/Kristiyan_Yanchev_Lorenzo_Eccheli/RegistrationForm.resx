@@ -351,6 +351,9 @@
   <data name="&gt;&gt;roleLabel.ZOrder" xml:space="preserve">
     <value>30</value>
   </data>
+  <metadata name="formToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="roleComboBox.Items" xml:space="preserve">
     <value>Student</value>
   </data>
@@ -375,9 +378,6 @@
   <data name="roleComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <metadata name="formToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="roleComboBox.ToolTip" xml:space="preserve">
     <value>Change your role</value>
   </data>
@@ -699,6 +699,9 @@
   <data name="&gt;&gt;visibleCheckBox.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
+  <metadata name="formToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="validationCodeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1150,13 +1153,13 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="usernameOfChildLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 19</value>
+    <value>111, 19</value>
   </data>
   <data name="usernameOfChildLabel.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
   <data name="usernameOfChildLabel.Text" xml:space="preserve">
-    <value>Username of child</value>
+    <value>Username Of Child</value>
   </data>
   <data name="usernameOfChildLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>

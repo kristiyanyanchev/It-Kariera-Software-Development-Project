@@ -117,63 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="addgradeButton.Text" xml:space="preserve">
-    <value>Добави Оценки</value>
-  </data>
-  <data name="addgradeButton.ToolTip" xml:space="preserve">
-    <value>Добави нови оценки на уцениците си</value>
-  </data>
-  <data name="changePasswordButton.Text" xml:space="preserve">
-    <value>Смени Паролата</value>
-  </data>
-  <data name="changePasswordButton.ToolTip" xml:space="preserve">
-    <value>Сменете паролата</value>
-  </data>
-  <data name="exitButton.Text" xml:space="preserve">
-    <value>Изход</value>
-  </data>
-  <data name="exitButton.ToolTip" xml:space="preserve">
-    <value>Излезте от приложението</value>
-  </data>
-  <data name="absensesButton.Text" xml:space="preserve">
-    <value>Отсъствия</value>
-  </data>
-  <data name="absensesButton.ToolTip" xml:space="preserve">
-    <value>Вижте отсъствията</value>
-  </data>
-  <data name="addstudentButton.Text" xml:space="preserve">
-    <value>Добави Ученици</value>
-  </data>
-  <data name="addstudentButton.ToolTip" xml:space="preserve">
-    <value>Добави нов ученик в клас
-</value>
-  </data>
-  <data name="changeinformationButton.Text" xml:space="preserve">
-    <value>Смени Информацията</value>
-  </data>
-  <data name="changeinformationButton.ToolTip" xml:space="preserve">
-    <value>Сменете информацията</value>
-  </data>
-  <data name="viewstudentsButton.Text" xml:space="preserve">
-    <value>Ученици</value>
-  </data>
-  <data name="viewstudentsButton.ToolTip" xml:space="preserve">
-    <value>Вижте всички ученици</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>321, 28</value>
-  </data>
-  <data name="introductionLabel.Text" xml:space="preserve">
-    <value>Добре дошли в училищния дневник</value>
-  </data>
-  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 19</value>
-  </data>
-  <data name="languageLabel.Text" xml:space="preserve">
-    <value>Език</value>
-  </data>
-  <data name="languageComboBox.ToolTip" xml:space="preserve">
-    <value>Сменете езика</value>
-  </data>
+  <metadata name="Date.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Grade.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Subject.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Date.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Grade.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Subject.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

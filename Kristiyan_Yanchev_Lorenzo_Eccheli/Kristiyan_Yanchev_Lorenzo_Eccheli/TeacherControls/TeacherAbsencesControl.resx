@@ -117,151 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="newAbsenceButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="newAbsenceButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 178</value>
-  </data>
-  <data name="newAbsenceButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 55</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="newAbsenceButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="newAbsenceButton.Text" xml:space="preserve">
-    <value>New Absence</value>
-  </data>
-  <data name="&gt;&gt;newAbsenceButton.Name" xml:space="preserve">
-    <value>newAbsenceButton</value>
-  </data>
-  <data name="&gt;&gt;newAbsenceButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;newAbsenceButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;newAbsenceButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="removeAbsenceButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="removeAbsenceButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 284</value>
-  </data>
-  <data name="removeAbsenceButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 55</value>
-  </data>
-  <data name="removeAbsenceButton.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="removeAbsenceButton.Text" xml:space="preserve">
-    <value>Remove Absence</value>
-  </data>
-  <data name="&gt;&gt;removeAbsenceButton.Name" xml:space="preserve">
-    <value>removeAbsenceButton</value>
-  </data>
-  <data name="&gt;&gt;removeAbsenceButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;removeAbsenceButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;removeAbsenceButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="classesListBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="classesListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 56</value>
-  </data>
-  <data name="classesListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 156</value>
-  </data>
-  <data name="classesListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;classesListBox.Name" xml:space="preserve">
-    <value>classesListBox</value>
-  </data>
-  <data name="&gt;&gt;classesListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;classesListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;classesListBox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="studentsListBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="studentsListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 246</value>
-  </data>
-  <data name="studentsListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 156</value>
-  </data>
-  <data name="studentsListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;studentsListBox.Name" xml:space="preserve">
-    <value>studentsListBox</value>
-  </data>
-  <data name="&gt;&gt;studentsListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;studentsListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;studentsListBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="closeButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="closeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 383</value>
-  </data>
-  <data name="closeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 55</value>
-  </data>
-  <data name="closeButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="closeButton.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="&gt;&gt;closeButton.Name" xml:space="preserve">
-    <value>closeButton</value>
-  </data>
-  <data name="&gt;&gt;closeButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;closeButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;closeButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="isLateCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="isLateCheckBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="isLateCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 66</value>
+    <value>401, 22</value>
   </data>
   <data name="isLateCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 23</value>
   </data>
   <data name="isLateCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>10</value>
   </data>
   <data name="isLateCheckBox.Text" xml:space="preserve">
     <value>Is Late</value>
@@ -276,27 +147,187 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;isLateCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="studentsListBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="studentsListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 198</value>
+  </data>
+  <data name="studentsListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 156</value>
+  </data>
+  <data name="studentsListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;studentsListBox.Name" xml:space="preserve">
+    <value>studentsListBox</value>
+  </data>
+  <data name="&gt;&gt;studentsListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;studentsListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;studentsListBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="classesListBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="classesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="classesListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 156</value>
+  </data>
+  <data name="classesListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;classesListBox.Name" xml:space="preserve">
+    <value>classesListBox</value>
+  </data>
+  <data name="&gt;&gt;classesListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;classesListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;classesListBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="removeAbsenceButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="removeAbsenceButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 299</value>
+  </data>
+  <data name="removeAbsenceButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 55</value>
+  </data>
+  <data name="removeAbsenceButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="removeAbsenceButton.Text" xml:space="preserve">
+    <value>Remove Absence</value>
+  </data>
+  <data name="&gt;&gt;removeAbsenceButton.Name" xml:space="preserve">
+    <value>removeAbsenceButton</value>
+  </data>
+  <data name="&gt;&gt;removeAbsenceButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeAbsenceButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;removeAbsenceButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="newAbsenceButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="newAbsenceButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 197</value>
+  </data>
+  <data name="newAbsenceButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 55</value>
+  </data>
+  <data name="newAbsenceButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="newAbsenceButton.Text" xml:space="preserve">
+    <value>New Absence</value>
+  </data>
+  <data name="&gt;&gt;newAbsenceButton.Name" xml:space="preserve">
+    <value>newAbsenceButton</value>
+  </data>
+  <data name="&gt;&gt;newAbsenceButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newAbsenceButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;newAbsenceButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="classesLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="classesLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 14.249999pt, style=Bold, Italic</value>
+  </data>
+  <data name="classesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 22</value>
+  </data>
+  <data name="classesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 28</value>
+  </data>
+  <data name="classesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="classesLabel.Text" xml:space="preserve">
+    <value>Classes</value>
+  </data>
+  <data name="&gt;&gt;classesLabel.Name" xml:space="preserve">
+    <value>classesLabel</value>
+  </data>
+  <data name="&gt;&gt;classesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;classesLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;classesLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="studentsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="studentsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 14.249999pt, style=Bold, Italic</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="studentsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="studentsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 198</value>
+  </data>
+  <data name="studentsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 28</value>
+  </data>
+  <data name="studentsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="studentsLabel.Text" xml:space="preserve">
+    <value>Students</value>
+  </data>
+  <data name="&gt;&gt;studentsLabel.Name" xml:space="preserve">
+    <value>studentsLabel</value>
+  </data>
+  <data name="&gt;&gt;studentsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;studentsLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;studentsLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>bg-BG</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>574, 450</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>TeacherAbsencesForm</value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 370</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>TeacherAbsencesForm</value>
+    <value>TeacherAbsencesControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
