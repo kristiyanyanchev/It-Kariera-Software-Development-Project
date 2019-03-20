@@ -130,7 +130,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                firstNameTextBox.Text != null &&
                addressTextBox.Text != null && phoneNumberTextBox.Text != null &&
                roleComboBox.SelectedItem != null && double.TryParse(phoneNumberTextBox.Text, out double a)&&
-               nameofchildTextBox.Text!=null)
+               usernameOfChildTextBox.Text!=null)
                 {
                     return true;
                 }
@@ -258,6 +258,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 else if(roleComboBox.SelectedItem.ToString() == "Parent" ||
                     roleComboBox.SelectedItem.ToString()=="Родител")
                 {
+
                     this.Hide();
                     ParentForm parentform = new ParentForm(GetLanguage());
                     parentform.ShowDialog();
@@ -322,8 +323,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void Makeinvisible()
         {
-            nameofchildLabel.Visible = false;
-            nameofchildTextBox.Visible = false;
+            usernameOfChildLabel.Visible = false;
+            usernameOfChildTextBox.Visible = false;
             ucnLabel.Visible = false;
             ucnTextBox.Visible = false;
             birthdayLabel.Visible = false;
@@ -349,8 +350,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             else if(roleComboBox.SelectedItem.ToString()=="Parent" ||
                 roleComboBox.SelectedItem.ToString() == "Родител")
             {
-                nameofchildLabel.Visible = true;
-                nameofchildTextBox.Visible = true;
+                usernameOfChildLabel.Visible = true;
+                usernameOfChildTextBox.Visible = true;
             }
             else if(roleComboBox.SelectedItem.ToString() == "Teacher" ||
                 roleComboBox.SelectedItem.ToString() == "Учител")
