@@ -243,6 +243,9 @@
     <EmbeddedResource Include="StudentControls\StudentViewAbsencesControl.resx">
       <DependentUpon>StudentViewAbsencesControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StudentControls\StudentViewGradeContol.bg-BG.resx">
+      <DependentUpon>StudentViewGradeContol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentControls\StudentViewGradeContol.resx">
       <DependentUpon>StudentViewGradeContol.cs</DependentUpon>
     </EmbeddedResource>

@@ -43,7 +43,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
             else
             {
-                return "BUlgarian";
+                return "Bulgarian";
             }
         }
 
@@ -60,20 +60,17 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.Controls.Clear();
-            if (languageComboBox.SelectedItem.ToString() == "English" ||
-                languageComboBox.SelectedItem.ToString() == "Английски")
+            if (GetLanguage() == "English")
             {
-                StudentControls.StudentGradeStatisticControl studentsgrades = new StudentControls.StudentGradeStatisticControl(GetLanguage());
-                panelInformation.Controls.Add(studentsgrades);
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
             else
             {
-                StudentControls.StudentGradeStatisticControl studentsgrades = new StudentControls.StudentGradeStatisticControl(GetLanguage());
-                panelInformation.Controls.Add(studentsgrades);
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
             }
             InitializeComponent();
+            StudentControls.StudentViewGradeContol studentsgrades = new StudentControls.StudentViewGradeContol(GetLanguage());
+            panelInformation.Controls.Add(studentsgrades);
         }
 
         private void StudentMainForm_FormClosing(object sender, FormClosingEventArgs e)

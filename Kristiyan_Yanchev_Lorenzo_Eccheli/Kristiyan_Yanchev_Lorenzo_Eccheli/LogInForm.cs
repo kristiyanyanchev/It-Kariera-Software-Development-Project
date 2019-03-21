@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
 using System.Resources;
+using Controller;
+using Data.Repositories;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -67,6 +69,24 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
 
             if(Validate())
+            {
+                TeachersRepository teacherrepository = new TeachersRepository();
+                StudentsRepository studentrepository = new StudentsRepository();
+                ParentsRepository parentrepository = new ParentsRepository();
+                if(teacherrepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text))
+                {
+
+                }
+                else if(studentrepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text))
+                {
+
+                }
+                else if(parentrepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text))
+                {
+
+                }
+            }
+            else
             {
 
             }

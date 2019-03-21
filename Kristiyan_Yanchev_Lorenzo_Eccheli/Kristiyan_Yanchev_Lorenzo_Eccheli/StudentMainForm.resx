@@ -124,9 +124,6 @@
   <data name="&gt;&gt;absencesToolStripMenuItem.Name" xml:space="preserve">
     <value>absencesToolStripMenuItem</value>
   </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>667, 127</value>
@@ -140,11 +137,17 @@
   <data name="&gt;&gt;panelInformation.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;languageLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;introductionLabel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
+  </data>
+  <data name="gradesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Grades</value>
+  </data>
+  <data name="panelInformation.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;introductionLabel.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -152,14 +155,17 @@
   <data name="introductionLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>153, 48</value>
   </data>
+  <data name="&gt;&gt;languageLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="languageComboBox.Items1" xml:space="preserve">
     <value>English</value>
   </data>
+  <data name="&gt;&gt;absencesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="exitButton.Text" xml:space="preserve">
     <value>Exit</value>
-  </data>
-  <data name="panelInformation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 127</value>
   </data>
   <data name="languageComboBox.Items" xml:space="preserve">
     <value>Bulgarian</value>
@@ -167,14 +173,11 @@
   <data name="&gt;&gt;panelInformation.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
-  </data>
-  <data name="introductionLabel.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="introductionLabel.Text" xml:space="preserve">
     <value>Welcome to E-journal , Student
@@ -207,21 +210,15 @@
   <data name="changePasswordToolStripMenuItem.Text" xml:space="preserve">
     <value>Change Password</value>
   </data>
+  <data name="absencesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Absences</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="exitButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="absencesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Absences</value>
-  </data>
-  <data name="MenuStrip.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;changePasswordToolStripMenuItem.Name" xml:space="preserve">
-    <value>changePasswordToolStripMenuItem</value>
-  </data>
-  <data name="languageLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
   </data>
   <data name="exitButton.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -232,22 +229,22 @@
   <data name="introductionLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Sitka Heading, 14.25pt, style=Bold, Italic</value>
   </data>
+  <data name="introductionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
   <data name="&gt;&gt;exitButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;changeInformationToolStripMenuItem.Name" xml:space="preserve">
     <value>changeInformationToolStripMenuItem</value>
   </data>
-  <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;introductionLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="changeInformationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Change Information</value>
   </data>
-  <data name="&gt;&gt;changeInformationToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panelInformation.ToolTip" xml:space="preserve">
+  <data name="$this.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="languageComboBox.Font" type="System.Drawing.Font, System.Drawing">
@@ -259,20 +256,23 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 27</value>
-  </data>
-  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
-    <value>toolTip</value>
   </data>
   <data name="&gt;&gt;changePasswordToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="absencesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 23</value>
+  <data name="&gt;&gt;changeInformationToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="panelInformation.Size" type="System.Drawing.Size, System.Drawing">
     <value>550, 370</value>
+  </data>
+  <data name="exitButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>629, 431</value>
   </data>
   <data name="&gt;&gt;exitButton.Name" xml:space="preserve">
     <value>exitButton</value>
@@ -289,11 +289,8 @@
   <data name="panelInformation.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="gradesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Grades</value>
+  <data name="absencesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 23</value>
   </data>
   <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 19</value>
@@ -304,11 +301,8 @@
   <data name="&gt;&gt;gradesToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="exitButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 431</value>
-  </data>
-  <data name="changeInformationToolStripMenuItem.Text" xml:space="preserve">
-    <value>Change Information</value>
+  <data name="&gt;&gt;changePasswordToolStripMenuItem.Name" xml:space="preserve">
+    <value>changePasswordToolStripMenuItem</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>E-journal</value>
@@ -331,8 +325,8 @@
   <data name="changePasswordToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 23</value>
   </data>
-  <data name="introductionLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="panelInformation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 127</value>
   </data>
   <data name="&gt;&gt;languageLabel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -340,8 +334,8 @@
   <data name="&gt;&gt;MenuStrip.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;absencesToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="introductionLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;exitButton.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -351,6 +345,9 @@
   </data>
   <data name="&gt;&gt;exitButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="languageLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>785, 509</value>
@@ -379,6 +376,9 @@
   <data name="MenuStrip.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="MenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>bg-BG</value>
   </metadata>
@@ -386,7 +386,7 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>42</value>
+    <value>26</value>
   </metadata>
   <metadata name="MenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>107, 6</value>

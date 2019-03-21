@@ -126,7 +126,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="isLateCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 22</value>
+    <value>341, 22</value>
   </data>
   <data name="isLateCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 23</value>
@@ -201,7 +201,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="removeAbsenceButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 299</value>
+    <value>341, 299</value>
   </data>
   <data name="removeAbsenceButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 55</value>
@@ -228,7 +228,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="newAbsenceButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 197</value>
+    <value>341, 198</value>
   </data>
   <data name="newAbsenceButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 55</value>
@@ -322,7 +322,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 370</value>
+    <value>465, 370</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>TeacherAbsencesControl</value>

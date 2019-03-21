@@ -49,27 +49,25 @@
             resources.ApplyResources(this.nameLabel, "nameLabel");
             this.nameLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.nameLabel.Name = "nameLabel";
-            this.formToolTip.SetToolTip(this.nameLabel, resources.GetString("nameLabel.ToolTip"));
             // 
             // passwordLabel
             // 
             resources.ApplyResources(this.passwordLabel, "passwordLabel");
             this.passwordLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.passwordLabel.Name = "passwordLabel";
-            this.formToolTip.SetToolTip(this.passwordLabel, resources.GetString("passwordLabel.ToolTip"));
             // 
             // usernameTextBox
             // 
-            resources.ApplyResources(this.usernameTextBox, "usernameTextBox");
             this.usernameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.usernameTextBox, "usernameTextBox");
             this.usernameTextBox.Name = "usernameTextBox";
             this.formToolTip.SetToolTip(this.usernameTextBox, resources.GetString("usernameTextBox.ToolTip"));
             this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
             // 
             // passwordTextBox
             // 
-            resources.ApplyResources(this.passwordTextBox, "passwordTextBox");
             this.passwordTextBox.BackColor = System.Drawing.Color.OldLace;
+            resources.ApplyResources(this.passwordTextBox, "passwordTextBox");
             this.passwordTextBox.Name = "passwordTextBox";
             this.formToolTip.SetToolTip(this.passwordTextBox, resources.GetString("passwordTextBox.ToolTip"));
             this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
@@ -80,12 +78,11 @@
             this.introductionLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.introductionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.introductionLabel.Name = "introductionLabel";
-            this.formToolTip.SetToolTip(this.introductionLabel, resources.GetString("introductionLabel.ToolTip"));
             // 
             // logInBtn
             // 
-            resources.ApplyResources(this.logInBtn, "logInBtn");
             this.logInBtn.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.logInBtn, "logInBtn");
             this.logInBtn.FlatAppearance.BorderSize = 0;
             this.logInBtn.Name = "logInBtn";
             this.formToolTip.SetToolTip(this.logInBtn, resources.GetString("logInBtn.ToolTip"));
@@ -94,8 +91,8 @@
             // 
             // registerBtn
             // 
-            resources.ApplyResources(this.registerBtn, "registerBtn");
             this.registerBtn.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.registerBtn, "registerBtn");
             this.registerBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.registerBtn.FlatAppearance.BorderSize = 0;
             this.registerBtn.Name = "registerBtn";
@@ -105,9 +102,9 @@
             // 
             // exitBtn
             // 
-            resources.ApplyResources(this.exitBtn, "exitBtn");
             this.exitBtn.BackColor = System.Drawing.Color.FloralWhite;
             this.exitBtn.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.exitBtn, "exitBtn");
             this.exitBtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.exitBtn.Name = "exitBtn";
             this.formToolTip.SetToolTip(this.exitBtn, resources.GetString("exitBtn.ToolTip"));
@@ -125,8 +122,8 @@
             // 
             // languageComboBox
             // 
-            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
             resources.GetString("languageComboBox.Items"),
@@ -140,7 +137,6 @@
             resources.ApplyResources(this.languageLabel, "languageLabel");
             this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.languageLabel.Name = "languageLabel";
-            this.formToolTip.SetToolTip(this.languageLabel, resources.GetString("languageLabel.ToolTip"));
             // 
             // LogInForm
             // 
@@ -161,7 +157,6 @@
             this.Controls.Add(this.nameLabel);
             this.MaximizeBox = false;
             this.Name = "LogInForm";
-            this.formToolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.E_Journal_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();

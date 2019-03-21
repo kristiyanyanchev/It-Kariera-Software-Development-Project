@@ -131,7 +131,7 @@
     <value>3, 78</value>
   </data>
   <data name="absencesDataGrid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>346, 240</value>
+    <value>320, 240</value>
   </data>
   <data name="absencesLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>164, 19</value>

@@ -118,11 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="emailLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 229</value>
+  </data>
   <data name="emailLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 19</value>
   </data>
   <data name="emailLabel.Text" xml:space="preserve">
     <value>Имейл</value>
+  </data>
+  <data name="phonenumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 229</value>
   </data>
   <data name="phonenumberLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 19</value>
@@ -130,11 +136,17 @@
   <data name="phonenumberLabel.Text" xml:space="preserve">
     <value>Телефонен Номер</value>
   </data>
+  <data name="ucnLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 158</value>
+  </data>
   <data name="ucnLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 19</value>
   </data>
   <data name="ucnLabel.Text" xml:space="preserve">
     <value>ЕГН</value>
+  </data>
+  <data name="addressLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 87</value>
   </data>
   <data name="addressLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 19</value>
@@ -142,11 +154,29 @@
   <data name="addressLabel.Text" xml:space="preserve">
     <value>Адрес</value>
   </data>
+  <data name="classLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 17</value>
+  </data>
   <data name="classLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 19</value>
   </data>
   <data name="classLabel.Text" xml:space="preserve">
     <value>Клас</value>
+  </data>
+  <data name="emailTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>510, 226</value>
+  </data>
+  <data name="phoneNumberTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 229</value>
+  </data>
+  <data name="ucnTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>510, 156</value>
+  </data>
+  <data name="schoolarshipTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 153</value>
+  </data>
+  <data name="schoolarshipLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 156</value>
   </data>
   <data name="schoolarshipLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 19</value>
@@ -154,8 +184,11 @@
   <data name="schoolarshipLabel.Text" xml:space="preserve">
     <value>Стипендия</value>
   </data>
+  <data name="addressTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>510, 84</value>
+  </data>
   <data name="birthDateLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 56</value>
+    <value>382, 20</value>
   </data>
   <data name="birthDateLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 19</value>
@@ -163,11 +196,32 @@
   <data name="birthDateLabel.Text" xml:space="preserve">
     <value>Дата На Раждане</value>
   </data>
+  <data name="inAbsentiaTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 82</value>
+  </data>
+  <data name="inAbsentiaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 87</value>
+  </data>
   <data name="inAbsentiaLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 19</value>
   </data>
   <data name="inAbsentiaLabel.Text" xml:space="preserve">
     <value>Болнични</value>
+  </data>
+  <data name="birthDateTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>510, 17</value>
+  </data>
+  <data name="classTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 14</value>
+  </data>
+  <data name="searchButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 139</value>
+  </data>
+  <data name="searchLastNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 78</value>
+  </data>
+  <data name="lastNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 83</value>
   </data>
   <data name="lastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 19</value>
@@ -175,7 +229,16 @@
   <data name="lastNameLabel.Text" xml:space="preserve">
     <value>Фамилия</value>
   </data>
+  <data name="firstNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 19</value>
+  </data>
   <data name="firstNameLabel.Text" xml:space="preserve">
     <value>Първо Име</value>
+  </data>
+  <data name="searchFirstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 19</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>612, 285</value>
   </data>
 </root>

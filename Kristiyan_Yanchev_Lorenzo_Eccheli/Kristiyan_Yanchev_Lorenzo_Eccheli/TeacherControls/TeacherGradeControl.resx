@@ -190,7 +190,7 @@
     <value>NoControl</value>
   </data>
   <data name="gradeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>346, 44</value>
+    <value>330, 47</value>
   </data>
   <data name="gradeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 19</value>
@@ -220,7 +220,7 @@
     <value>NoControl</value>
   </data>
   <data name="removeGradeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>408, 227</value>
+    <value>334, 238</value>
   </data>
   <data name="removeGradeButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 80</value>
@@ -247,7 +247,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="gradeTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>408, 44</value>
+    <value>392, 44</value>
   </data>
   <data name="gradeTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 24</value>
@@ -274,7 +274,7 @@
     <value>NoControl</value>
   </data>
   <data name="newGradeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>408, 116</value>
+    <value>334, 114</value>
   </data>
   <data name="newGradeButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 80</value>
@@ -484,7 +484,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 370</value>
+    <value>498, 322</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>TeacherGradeControl</value>

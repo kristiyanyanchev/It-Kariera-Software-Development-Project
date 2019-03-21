@@ -117,33 +117,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="exitButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>569, 431</value>
+  </data>
   <data name="exitButton.Text" xml:space="preserve">
     <value>Изход</value>
   </data>
   <data name="exitButton.ToolTip" xml:space="preserve">
     <value>Излезте от приложението</value>
   </data>
+  <data name="languageComboBox.Items" xml:space="preserve">
+    <value>Български</value>
+  </data>
+  <data name="languageComboBox.Items1" xml:space="preserve">
+    <value>Английски</value>
+  </data>
+  <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 124</value>
+  </data>
   <data name="languageComboBox.ToolTip" xml:space="preserve">
     <value>Сменте си езика</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>539, 127</value>
+  </data>
   <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>36, 19</value>
   </data>
   <data name="languageLabel.Text" xml:space="preserve">
     <value>Език</value>
   </data>
-  <data name="languageLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>337, 28</value>
   </data>
   <data name="introductionLabel.Text" xml:space="preserve">
     <value>Добре дошъл в електронния дневник</value>
-  </data>
-  <data name="introductionLabel.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="gradesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 23</value>
@@ -169,16 +178,16 @@
   <data name="changeInformationToolStripMenuItem.Text" xml:space="preserve">
     <value>Смяна на информацията</value>
   </data>
-  <data name="MenuStrip.ToolTip" xml:space="preserve">
-    <value />
+  <data name="MenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>723, 27</value>
   </data>
-  <data name="panelInformation.ToolTip" xml:space="preserve">
-    <value />
+  <data name="panelInformation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 370</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>723, 516</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Student</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>
