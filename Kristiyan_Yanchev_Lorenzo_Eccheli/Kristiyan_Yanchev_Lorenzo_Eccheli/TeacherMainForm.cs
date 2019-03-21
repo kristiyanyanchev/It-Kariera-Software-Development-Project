@@ -9,13 +9,16 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
 using System.Resources;
+using Data.Models;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
     public partial class TeacherMainForm : Form
     {
-        public TeacherMainForm()
+        public Teacher Teacher { get; set; }
+        public TeacherMainForm(Teacher teacher)
         {
+            Teacher = teacher;
             InitializeComponent();
         }
 
