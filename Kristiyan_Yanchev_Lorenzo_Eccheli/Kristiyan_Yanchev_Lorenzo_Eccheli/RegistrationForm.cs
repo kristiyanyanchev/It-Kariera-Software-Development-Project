@@ -185,7 +185,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void registrationButton_Click(object sender, EventArgs e)
         {
-            StudentMainForm studentForm = new StudentMainForm();
+            StudentMainForm studentForm = new StudentMainForm(GetLanguage());
             studentForm.ShowDialog();
             
             if (ValidateData())

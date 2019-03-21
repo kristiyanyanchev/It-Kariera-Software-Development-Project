@@ -11,6 +11,7 @@ using System.Threading;
 using System.Resources;
 using Controller;
 using Data.Repositories;
+using Data.Models;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -79,7 +80,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 }
                 else if(studentrepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text))
                 {
-
+                    Student student = new Student();
+                    student=studentrepository.List().Single(x => x.Username == usernameTextBox.Text);
                 }
                 else if(parentrepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text))
                 {

@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
 using System.Resources;
+using Data.Models;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -21,8 +22,9 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             panelInformation.Controls.Add(studentcontrol);
         }
 
-        public StudentMainForm(string language)
+        public StudentMainForm(string language,Student student)
         {
+
             if (language == "English")
             {
 
@@ -33,6 +35,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
             InitializeComponent();
+            StudentControls.StudentViewGradeContol studentcontrol = new StudentControls.StudentViewGradeContol(GetLanguage(),student);
+            panelInformation.Controls.Add(studentcontrol);
         }
 
         private string GetLanguage()

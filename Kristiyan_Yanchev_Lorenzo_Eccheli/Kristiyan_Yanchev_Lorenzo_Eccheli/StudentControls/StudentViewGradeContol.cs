@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
+using Data.Models;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
 {
@@ -18,8 +19,9 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
             InitializeComponent();
         }
 
-        public StudentViewGradeContol(string language)
+        public StudentViewGradeContol(string language,Student student)
         {
+
             if (language == "English")
             {
 
@@ -30,6 +32,31 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
             InitializeComponent();
+            AddRows(student);
+        }
+
+        private void AddRows(Student student)
+        {
+            DataGridViewRow dataRow = (DataGridViewRow)gradesDataGrid.Rows[0].Clone();  
+            for(int i=0;i<student.GradeRecords.Count;i++)
+            {
+                dataRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Date;
+            }
+            gradesDataGrid.Rows.Add(dataRow);
+
+            DataGridViewRow gradeRow = (DataGridViewRow)gradesDataGrid.Rows[1].Clone();
+            for (int i = 0; i < student.GradeRecords.Count; i++)
+            {
+                dataRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Grade;
+            }
+            gradesDataGrid.Rows.Add(dataRow);
+
+            DataGridViewRow subjectRow = (DataGridViewRow)gradesDataGrid.Rows[2].Clone();
+            for (int i = 0; i < student.GradeRecords.Count; i++)
+            {
+                subjectRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Grade;
+            }
+            gradesDataGrid.Rows.Add(dataRow);
         }
 
         private string GetLanguage()
