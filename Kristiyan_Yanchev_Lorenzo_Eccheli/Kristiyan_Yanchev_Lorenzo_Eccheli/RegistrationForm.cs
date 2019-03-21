@@ -185,8 +185,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void registrationButton_Click(object sender, EventArgs e)
         {
-            StudentMainForm studentForm = new StudentMainForm();
-            studentForm.ShowDialog();
+            //StudentMainForm studentForm = new StudentMainForm();
+            //studentForm.ShowDialog();
             
             if (ValidateData())
             {
@@ -215,7 +215,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
                         
                         this.Hide();
-                        StudentMainForm studentform = new StudentMainForm();
+                        StudentMainForm studentform = new StudentMainForm(student);
                         studentform.ShowDialog();
                     }
                     
@@ -254,7 +254,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                         new ValidationCodeRepository().List().Single(x => x.Code == teacherDto.ValidationCode).Used = true;
 
                         this.Hide();
-                        TeacherMainForm teacherform = new TeacherMainForm();
+                        TeacherMainForm teacherform = new TeacherMainForm(teacher);
                         teacherform.ShowDialog();
                     }
                     MessageBox.Show(teacherValidator.ValidateTeacher(teacherDto));
@@ -280,7 +280,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                         new ValidationCodeRepository().List().Single(x => x.Code == parentDto.ValidationCode).Used = true;
 
                         this.Hide();
-                        ParentForm parentform = new ParentForm(GetLanguage());
+                        ParentForm parentform = new ParentForm(GetLanguage(),parent);
                         parentform.ShowDialog();
                     }
                     MessageBox.Show(parentValidator.ValidateParent(parentDto));

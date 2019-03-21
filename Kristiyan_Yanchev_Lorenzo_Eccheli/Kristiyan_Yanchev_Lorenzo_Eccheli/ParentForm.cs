@@ -9,18 +9,23 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
 using System.Resources;
+using Data.Models;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
     public partial class ParentForm : Form
     {
-        public ParentForm()
+        public Parent Parent { get; set; }
+        public ParentForm(Parent parent)
         {
+            Parent = parent;
             InitializeComponent();
         }
 
-        public ParentForm(string language)
+        public ParentForm(string language,Parent parent)
         {
+            Parent = parent;
+
             if (language == "Bulgarian")
             {
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");

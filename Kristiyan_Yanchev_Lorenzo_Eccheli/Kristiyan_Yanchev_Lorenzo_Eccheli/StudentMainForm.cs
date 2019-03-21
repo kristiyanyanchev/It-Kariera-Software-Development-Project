@@ -9,13 +9,17 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
 using System.Resources;
+using Data.Models;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
     public partial class StudentMainForm : Form
     {
-        public StudentMainForm()
+        public Student Student { get; set; }
+
+        public StudentMainForm(Student student)
         {
+            Student = student;
             InitializeComponent();
             StudentControls.StudentViewGradeContol studentcontrol = new StudentControls.StudentViewGradeContol();
             panelInformation.Controls.Add(studentcontrol);

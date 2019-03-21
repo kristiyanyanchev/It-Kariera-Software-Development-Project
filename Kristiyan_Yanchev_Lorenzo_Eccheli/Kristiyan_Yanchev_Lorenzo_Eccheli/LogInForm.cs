@@ -70,25 +70,32 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
             if(Validate())
             {
-                TeachersRepository teacherrepository = new TeachersRepository();
-                StudentsRepository studentrepository = new StudentsRepository();
-                ParentsRepository parentrepository = new ParentsRepository();
-                if(teacherrepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text))
-                {
+                TeachersRepository teacherRepository = new TeachersRepository();
+                StudentsRepository studentRepository = new StudentsRepository();
+                ParentsRepository parentRepository = new ParentsRepository();
 
+                if(teacherRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && teacherRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
+                {
+                    var teacher = teacherRepository.List().Single(x => x.Username == usernameTextBox.Text);
+                    var teacherForm = new TeacherMainForm(teacher);
+                    teacherForm.ShowDialog();
                 }
-                else if(studentrepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text))
+                else if(studentRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && studentRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
                 {
-
+                    var student = studentRepository.List().Single(x => x.Username == usernameTextBox.Text);
+                    var studentForm = new StudentMainForm(student);
+                    studentForm.ShowDialog();
                 }
-                else if(parentrepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text))
+                else if(parentRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && parentRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
                 {
-
+                    var parent = parentRepository.List().Single(x => x.Username == usernameTextBox.Text);
+                    var parentForm = new ParentForm(parent);
+                    parentForm.ShowDialog();
                 }
             }
             else
             {
-
+                MessageBox.Show("Invalid Username or Passowrd! ");
             }
         }
 
