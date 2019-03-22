@@ -14,10 +14,6 @@ using Data.Models;
 {
     public partial class StudentViewGradeContol : UserControl
     {
-        public StudentViewGradeContol()
-        {
-            InitializeComponent();
-        }
 
         public StudentViewGradeContol(string language,Student student)
         {

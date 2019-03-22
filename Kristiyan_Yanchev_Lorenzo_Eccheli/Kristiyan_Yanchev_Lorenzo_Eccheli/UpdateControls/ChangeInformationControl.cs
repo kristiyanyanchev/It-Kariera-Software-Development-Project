@@ -13,7 +13,7 @@ namespace WinFormsView.UpdateControls
 {
     public partial class ChangeInformationControl : UserControl
     {
-        public ChangeInformationControl(string language,T)
+        public ChangeInformationControl(string language)
         {
             if(language=="English")
             {
