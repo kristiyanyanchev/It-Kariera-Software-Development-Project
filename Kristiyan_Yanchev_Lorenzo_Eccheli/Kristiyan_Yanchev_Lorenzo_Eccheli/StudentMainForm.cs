@@ -17,15 +17,7 @@ namespace WinFormsView
 {
     public partial class StudentMainForm : Form
     {
-        public Student Student { get; set; }
-
-        public StudentMainForm(Student student)
-        {
-            Student = student;
-            InitializeComponent();
-            StudentViewGradeContol studentcontrol = new StudentViewGradeContol();
-            panelInformation.Controls.Add(studentcontrol);
-        }
+        private Student Student;
 
         public StudentMainForm(string language,Student student)
         {
@@ -42,6 +34,7 @@ namespace WinFormsView
             InitializeComponent();
             StudentControls.StudentViewGradeContol studentcontrol = new StudentControls.StudentViewGradeContol(GetLanguage(),student);
             panelInformation.Controls.Add(studentcontrol);
+            Student = student;
         }
 
         private string GetLanguage()
@@ -99,7 +92,7 @@ namespace WinFormsView
         private void gradesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            StudentViewGradeContol studentcontrol = new StudentViewGradeContol();
+            StudentViewGradeContol studentcontrol = new StudentViewGradeContol(GetLanguage(),Student);
             panelInformation.Controls.Add(studentcontrol);
             
         }
@@ -107,7 +100,7 @@ namespace WinFormsView
         private void absencesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            StudentViewAbsencesControl studentabsences = new StudentViewAbsencesControl();
+            StudentViewAbsencesControl studentabsences = new StudentViewAbsencesControl(GetLanguage(),Student);
             panelInformation.Controls.Add(studentabsences);
         }
 
@@ -121,7 +114,7 @@ namespace WinFormsView
         private void changeInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            ChangeInformationControl changeinformation = new ChangeInformationControl();
+            ChangeInformationControl changeinformation = new ChangeInformationControl(GetLanguage());
             panelInformation.Controls.Add(changeinformation);
         }
 

@@ -29,7 +29,10 @@ using Data.Models;
             }
             InitializeComponent();
             AddRows(student);
+            Student = student;
         }
+
+        private Student Student;
 
         private void AddRows(Student student)
         {
@@ -70,7 +73,7 @@ using Data.Models;
         private void viewStatisticButton_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
-            StudentControls.StudentGradeStatisticControl studentgradestatistic = new StudentGradeStatisticControl();
+            StudentControls.StudentGradeStatisticControl studentgradestatistic = new StudentGradeStatisticControl(GetLanguage(),Student);
             this.Controls.Add(studentgradestatistic);
         }
     }

@@ -352,6 +352,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             birthdatePicker.Visible = false;
             classnameLabel.Visible = false;
             classnameTextBox.Visible = false;
+            subjectLabel.Visible = false;
+            subjectTextBox.Visible = false;
+            positionLabel.Visible = false;
+            positionTextBox.Visible = false;
 
         }
 
