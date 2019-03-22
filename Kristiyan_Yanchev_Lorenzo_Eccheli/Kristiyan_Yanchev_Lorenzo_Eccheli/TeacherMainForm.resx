@@ -118,95 +118,32 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="addgradeButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="addgradeButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="addgradeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 222</value>
-  </data>
-  <data name="addgradeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 70</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="addgradeButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="addgradeButton.Text" xml:space="preserve">
-    <value>Add Grade</value>
-  </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="addgradeButton.ToolTip" xml:space="preserve">
-    <value>Add new grades to the students</value>
-  </data>
-  <data name="&gt;&gt;addgradeButton.Name" xml:space="preserve">
-    <value>addgradeButton</value>
-  </data>
-  <data name="&gt;&gt;addgradeButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addgradeButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;addgradeButton.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="changePasswordButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="changePasswordButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="changePasswordButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 222</value>
-  </data>
-  <data name="changePasswordButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 70</value>
-  </data>
-  <data name="changePasswordButton.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="changePasswordButton.Text" xml:space="preserve">
-    <value>Change Password</value>
-  </data>
-  <data name="changePasswordButton.ToolTip" xml:space="preserve">
-    <value>Change the password</value>
-  </data>
-  <data name="&gt;&gt;changePasswordButton.Name" xml:space="preserve">
-    <value>changePasswordButton</value>
-  </data>
-  <data name="&gt;&gt;changePasswordButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;changePasswordButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;changePasswordButton.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
   <data name="exitButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="exitButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="exitButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>618, 437</value>
+    <value>824, 538</value>
+  </data>
+  <data name="exitButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="exitButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 70</value>
+    <value>173, 86</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="exitButton.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
   <data name="exitButton.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="exitButton.ToolTip" xml:space="preserve">
     <value>Exit the application</value>
   </data>
@@ -220,140 +157,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;exitButton.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="absensesButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="absensesButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="absensesButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 130</value>
-  </data>
-  <data name="absensesButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 70</value>
-  </data>
-  <data name="absensesButton.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="absensesButton.Text" xml:space="preserve">
-    <value>Absenses</value>
-  </data>
-  <data name="absensesButton.ToolTip" xml:space="preserve">
-    <value>Look at the absenses
-</value>
-  </data>
-  <data name="&gt;&gt;absensesButton.Name" xml:space="preserve">
-    <value>absensesButton</value>
-  </data>
-  <data name="&gt;&gt;absensesButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;absensesButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;absensesButton.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="addstudentButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="addstudentButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="addstudentButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 325</value>
-  </data>
-  <data name="addstudentButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 70</value>
-  </data>
-  <data name="addstudentButton.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="addstudentButton.Text" xml:space="preserve">
-    <value>Add Student</value>
-  </data>
-  <data name="addstudentButton.ToolTip" xml:space="preserve">
-    <value>Add new student to your class</value>
-  </data>
-  <data name="&gt;&gt;addstudentButton.Name" xml:space="preserve">
-    <value>addstudentButton</value>
-  </data>
-  <data name="&gt;&gt;addstudentButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addstudentButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;addstudentButton.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="changeinformationButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="changeinformationButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="changeinformationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 325</value>
-  </data>
-  <data name="changeinformationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 70</value>
-  </data>
-  <data name="changeinformationButton.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="changeinformationButton.Text" xml:space="preserve">
-    <value>Change Information</value>
-  </data>
-  <data name="changeinformationButton.ToolTip" xml:space="preserve">
-    <value>Change the information</value>
-  </data>
-  <data name="&gt;&gt;changeinformationButton.Name" xml:space="preserve">
-    <value>changeinformationButton</value>
-  </data>
-  <data name="&gt;&gt;changeinformationButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;changeinformationButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;changeinformationButton.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="viewstudentsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="viewstudentsButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="viewstudentsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 130</value>
-  </data>
-  <data name="viewstudentsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 70</value>
-  </data>
-  <data name="viewstudentsButton.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="viewstudentsButton.Text" xml:space="preserve">
-    <value>View Students</value>
-  </data>
-  <data name="viewstudentsButton.ToolTip" xml:space="preserve">
-    <value>View all students</value>
-  </data>
-  <data name="&gt;&gt;viewstudentsButton.Name" xml:space="preserve">
-    <value>viewstudentsButton</value>
-  </data>
-  <data name="&gt;&gt;viewstudentsButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;viewstudentsButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;viewstudentsButton.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="introductionLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -362,10 +166,13 @@
     <value>Sitka Heading, 14.25pt, style=Bold, Italic</value>
   </data>
   <data name="introductionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 32</value>
+    <value>213, 63</value>
+  </data>
+  <data name="introductionLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 28</value>
+    <value>333, 35</value>
   </data>
   <data name="introductionLabel.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -383,7 +190,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;introductionLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="languageLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -392,10 +199,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>546, 130</value>
+    <value>728, 160</value>
+  </data>
+  <data name="languageLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 19</value>
+    <value>78, 24</value>
   </data>
   <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -413,7 +223,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;languageLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="languageComboBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
@@ -425,10 +235,13 @@
     <value>Bulgarian</value>
   </data>
   <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 127</value>
+    <value>836, 156</value>
+  </data>
+  <data name="languageComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 27</value>
+    <value>160, 31</value>
   </data>
   <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -446,27 +259,96 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 114</value>
+  <data name="panelInformation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 132</value>
   </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>528, 400</value>
+  <data name="panelInformation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+  <data name="panelInformation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>704, 492</value>
+  </data>
+  <data name="panelInformation.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;panelInformation.Name" xml:space="preserve">
+    <value>panelInformation</value>
   </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+  <data name="&gt;&gt;panelInformation.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelInformation.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panelInformation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="MenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 17</value>
+  </metadata>
+  <data name="MenuStrip.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
+  <data name="gradesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 28</value>
+  </data>
+  <data name="gradesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Grades</value>
+  </data>
+  <data name="вижтеУченикToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 28</value>
+  </data>
+  <data name="viewStudentsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 28</value>
+  </data>
+  <data name="viewStudentsToolStripMenuItem.Text" xml:space="preserve">
+    <value>View Students</value>
+  </data>
+  <data name="absencesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 28</value>
+  </data>
+  <data name="absencesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Absences</value>
+  </data>
+  <data name="changePasswordToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 28</value>
+  </data>
+  <data name="changePasswordToolStripMenuItem.Text" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="changeInformationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 28</value>
+  </data>
+  <data name="changeInformationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Change Information</value>
+  </data>
+  <data name="MenuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MenuStrip.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 2, 0, 2</value>
+  </data>
+  <data name="MenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1025, 32</value>
+  </data>
+  <data name="MenuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="MenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.Name" xml:space="preserve">
+    <value>MenuStrip</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -476,10 +358,13 @@
     <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>769, 519</value>
+    <value>1025, 639</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>E-journal</value>
@@ -489,6 +374,42 @@
   </data>
   <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gradesToolStripMenuItem.Name" xml:space="preserve">
+    <value>gradesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;gradesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;вижтеУченикToolStripMenuItem.Name" xml:space="preserve">
+    <value>вижтеУченикToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;вижтеУченикToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;viewStudentsToolStripMenuItem.Name" xml:space="preserve">
+    <value>viewStudentsToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;viewStudentsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;absencesToolStripMenuItem.Name" xml:space="preserve">
+    <value>absencesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;absencesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;changePasswordToolStripMenuItem.Name" xml:space="preserve">
+    <value>changePasswordToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;changePasswordToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;changeInformationToolStripMenuItem.Name" xml:space="preserve">
+    <value>changeInformationToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;changeInformationToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>TeacherMainForm</value>

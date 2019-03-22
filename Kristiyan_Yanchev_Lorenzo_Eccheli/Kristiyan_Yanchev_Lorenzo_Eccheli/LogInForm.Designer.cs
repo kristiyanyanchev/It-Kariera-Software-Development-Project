@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogInForm));
-            this.nameLabel = new System.Windows.Forms.Label();
+            this.usernameLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
@@ -44,11 +44,12 @@
             this.formToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
-            // nameLabel
+            // usernameLabel
             // 
-            resources.ApplyResources(this.nameLabel, "nameLabel");
-            this.nameLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.nameLabel.Name = "nameLabel";
+            resources.ApplyResources(this.usernameLabel, "usernameLabel");
+            this.usernameLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.usernameLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.usernameLabel.Name = "usernameLabel";
             // 
             // passwordLabel
             // 
@@ -154,10 +155,11 @@
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.passwordLabel);
-            this.Controls.Add(this.nameLabel);
+            this.Controls.Add(this.usernameLabel);
             this.MaximizeBox = false;
             this.Name = "LogInForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.E_Journal_FormClosing);
+            this.Load += new System.EventHandler(this.LogInForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,7 +167,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Label usernameLabel;
         private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.TextBox usernameTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;

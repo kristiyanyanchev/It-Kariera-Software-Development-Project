@@ -1,4 +1,4 @@
-﻿namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
+﻿namespace WinFormsView.StudentControls
 {
     partial class StudentViewAbsencesControl
     {

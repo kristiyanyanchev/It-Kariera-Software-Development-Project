@@ -10,24 +10,18 @@ using System.Globalization;
 using System.Threading;
 using System.Resources;
 using Data.Models;
+using WinFormsView.StudentControls;
+using WinFormsView.UpdateControls;
 
-namespace Kristiyan_Yanchev_Lorenzo_Eccheli
+namespace WinFormsView
 {
     public partial class StudentMainForm : Form
     {
-        public Student Student { get; set; }
-
-        public StudentMainForm(Student student)
-        {
-            Student = student;
-            InitializeComponent();
-            StudentControls.StudentViewGradeContol studentcontrol = new StudentControls.StudentViewGradeContol();
-            panelInformation.Controls.Add(studentcontrol);
-        }
+        private Student Student;
 
         public StudentMainForm(string language,Student student)
         {
-
+            Student = student;
             if (language == "English")
             {
 
@@ -40,6 +34,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             InitializeComponent();
             StudentControls.StudentViewGradeContol studentcontrol = new StudentControls.StudentViewGradeContol(GetLanguage(),student);
             panelInformation.Controls.Add(studentcontrol);
+            Student = student;
         }
 
         private string GetLanguage()
@@ -76,7 +71,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
             }
             InitializeComponent();
-            StudentControls.StudentViewGradeContol studentsgrades = new StudentControls.StudentViewGradeContol(GetLanguage());
+            StudentControls.StudentViewGradeContol studentsgrades = new StudentControls.StudentViewGradeContol(GetLanguage(),Student);
             panelInformation.Controls.Add(studentsgrades);
         }
 
@@ -97,7 +92,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void gradesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            StudentControls.StudentViewGradeContol studentcontrol = new StudentControls.StudentViewGradeContol();
+            StudentViewGradeContol studentcontrol = new StudentViewGradeContol(GetLanguage(),Student);
             panelInformation.Controls.Add(studentcontrol);
             
         }
@@ -105,22 +100,27 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void absencesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            StudentControls.StudentViewAbsencesControl studentabsences = new StudentControls.StudentViewAbsencesControl();
+            StudentViewAbsencesControl studentabsences = new StudentViewAbsencesControl(GetLanguage(),Student);
             panelInformation.Controls.Add(studentabsences);
         }
 
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            UpdateControls.ChangePasswordControl changepassword = new UpdateControls.ChangePasswordControl();
+            ChangePasswordControl changepassword = new ChangePasswordControl();
             panelInformation.Controls.Add(changepassword);
         }
 
         private void changeInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            UpdateControls.ChangeInformationControl changeinformation = new UpdateControls.ChangeInformationControl();
+            ChangeInformationControl changeinformation = new ChangeInformationControl(GetLanguage());
             panelInformation.Controls.Add(changeinformation);
+        }
+
+        private void StudentMainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

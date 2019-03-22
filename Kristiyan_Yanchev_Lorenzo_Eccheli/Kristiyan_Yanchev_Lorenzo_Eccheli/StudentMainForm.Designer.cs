@@ -1,4 +1,4 @@
-﻿namespace Kristiyan_Yanchev_Lorenzo_Eccheli
+﻿namespace WinFormsView
 {
     partial class StudentMainForm
     {
@@ -46,9 +46,9 @@
             // 
             // exitButton
             // 
-            resources.ApplyResources(this.exitButton, "exitButton");
             this.exitButton.BackColor = System.Drawing.Color.FloralWhite;
             this.exitButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.exitButton, "exitButton");
             this.exitButton.Name = "exitButton";
             this.toolTip.SetToolTip(this.exitButton, resources.GetString("exitButton.ToolTip"));
             this.exitButton.UseVisualStyleBackColor = false;
@@ -56,8 +56,8 @@
             // 
             // languageComboBox
             // 
-            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
             resources.GetString("languageComboBox.Items"),
@@ -71,58 +71,54 @@
             resources.ApplyResources(this.languageLabel, "languageLabel");
             this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.languageLabel.Name = "languageLabel";
-            this.toolTip.SetToolTip(this.languageLabel, resources.GetString("languageLabel.ToolTip"));
             // 
             // introductionLabel
             // 
             resources.ApplyResources(this.introductionLabel, "introductionLabel");
             this.introductionLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.introductionLabel.Name = "introductionLabel";
-            this.toolTip.SetToolTip(this.introductionLabel, resources.GetString("introductionLabel.ToolTip"));
             // 
             // MenuStrip
             // 
-            resources.ApplyResources(this.MenuStrip, "MenuStrip");
             this.MenuStrip.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.MenuStrip, "MenuStrip");
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gradesToolStripMenuItem,
             this.absencesToolStripMenuItem,
             this.changePasswordToolStripMenuItem,
             this.changeInformationToolStripMenuItem});
             this.MenuStrip.Name = "MenuStrip";
-            this.toolTip.SetToolTip(this.MenuStrip, resources.GetString("MenuStrip.ToolTip"));
             // 
             // gradesToolStripMenuItem
             // 
-            resources.ApplyResources(this.gradesToolStripMenuItem, "gradesToolStripMenuItem");
             this.gradesToolStripMenuItem.Name = "gradesToolStripMenuItem";
+            resources.ApplyResources(this.gradesToolStripMenuItem, "gradesToolStripMenuItem");
             this.gradesToolStripMenuItem.Click += new System.EventHandler(this.gradesToolStripMenuItem_Click);
             // 
             // absencesToolStripMenuItem
             // 
-            resources.ApplyResources(this.absencesToolStripMenuItem, "absencesToolStripMenuItem");
             this.absencesToolStripMenuItem.Name = "absencesToolStripMenuItem";
+            resources.ApplyResources(this.absencesToolStripMenuItem, "absencesToolStripMenuItem");
             this.absencesToolStripMenuItem.Click += new System.EventHandler(this.absencesToolStripMenuItem_Click);
             // 
             // changePasswordToolStripMenuItem
             // 
-            resources.ApplyResources(this.changePasswordToolStripMenuItem, "changePasswordToolStripMenuItem");
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
+            resources.ApplyResources(this.changePasswordToolStripMenuItem, "changePasswordToolStripMenuItem");
             this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
             // 
             // changeInformationToolStripMenuItem
             // 
-            resources.ApplyResources(this.changeInformationToolStripMenuItem, "changeInformationToolStripMenuItem");
             this.changeInformationToolStripMenuItem.Name = "changeInformationToolStripMenuItem";
+            resources.ApplyResources(this.changeInformationToolStripMenuItem, "changeInformationToolStripMenuItem");
             this.changeInformationToolStripMenuItem.Click += new System.EventHandler(this.changeInformationToolStripMenuItem_Click);
             // 
             // panelInformation
             // 
-            resources.ApplyResources(this.panelInformation, "panelInformation");
             this.panelInformation.BackColor = System.Drawing.Color.FloralWhite;
             this.panelInformation.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            resources.ApplyResources(this.panelInformation, "panelInformation");
             this.panelInformation.Name = "panelInformation";
-            this.toolTip.SetToolTip(this.panelInformation, resources.GetString("panelInformation.ToolTip"));
             // 
             // StudentMainForm
             // 
@@ -137,8 +133,8 @@
             this.Controls.Add(this.MenuStrip);
             this.MainMenuStrip = this.MenuStrip;
             this.Name = "StudentMainForm";
-            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StudentMainForm_FormClosing);
+            this.Load += new System.EventHandler(this.StudentMainForm_Load);
             this.MenuStrip.ResumeLayout(false);
             this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);

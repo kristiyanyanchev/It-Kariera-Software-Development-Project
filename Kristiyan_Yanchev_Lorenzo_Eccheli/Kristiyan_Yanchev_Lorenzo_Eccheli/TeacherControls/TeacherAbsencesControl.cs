@@ -8,17 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using Data.Models;
 
-namespace Kristiyan_Yanchev_Lorenzo_Eccheli.TeacherControls
+namespace WinFormsView.TeacherControls
 {
     public partial class TeacherAbsencesControl : UserControl
     {
-        public TeacherAbsencesControl()
-        {
-            InitializeComponent();
-        }
-
-        public TeacherAbsencesControl(string language)
+        public TeacherAbsencesControl(string language,Teacher teacher)
         {
             if (language == "English")
             {
@@ -30,7 +26,11 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli.TeacherControls
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
             InitializeComponent();
+
+            teacherGetter = teacher;
         }
+
+        private Teacher teacherGetter;
 
         private bool Validate()
         {

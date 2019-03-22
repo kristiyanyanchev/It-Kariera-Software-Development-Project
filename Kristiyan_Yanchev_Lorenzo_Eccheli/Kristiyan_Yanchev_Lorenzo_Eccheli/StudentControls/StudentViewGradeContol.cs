@@ -10,14 +10,10 @@ using System.Threading;
 using System.Windows.Forms;
 using Data.Models;
 
-namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
+ namespace WinFormsView.StudentControls
 {
     public partial class StudentViewGradeContol : UserControl
     {
-        public StudentViewGradeContol()
-        {
-            InitializeComponent();
-        }
 
         public StudentViewGradeContol(string language,Student student)
         {
@@ -33,7 +29,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
             }
             InitializeComponent();
             AddRows(student);
+            Student = student;
         }
+
+        private Student Student;
 
         private void AddRows(Student student)
         {
@@ -74,7 +73,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
         private void viewStatisticButton_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
-            StudentControls.StudentGradeStatisticControl studentgradestatistic = new StudentGradeStatisticControl(GetLanguage());
+            StudentControls.StudentGradeStatisticControl studentgradestatistic = new StudentGradeStatisticControl(GetLanguage(),Student);
             this.Controls.Add(studentgradestatistic);
         }
     }

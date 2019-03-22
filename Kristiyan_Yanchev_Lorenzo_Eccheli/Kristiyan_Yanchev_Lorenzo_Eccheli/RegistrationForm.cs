@@ -252,7 +252,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                         new ValidationCodeRepository().List().Single(x => x.Code == teacherDto.ValidationCode).Used = true;
 
                         this.Hide();
-                        TeacherMainForm teacherform = new TeacherMainForm(teacher);
+                        TeacherMainForm teacherform = new TeacherMainForm(GetLanguage(),teacher);
                         teacherform.ShowDialog();
                     }
                     MessageBox.Show(teacherValidator.ValidateTeacher(teacherDto));
@@ -352,6 +352,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             birthdatePicker.Visible = false;
             classnameLabel.Visible = false;
             classnameTextBox.Visible = false;
+            subjectLabel.Visible = false;
+            subjectTextBox.Visible = false;
+            positionLabel.Visible = false;
+            positionTextBox.Visible = false;
 
         }
 

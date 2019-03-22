@@ -8,17 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using Data.Models;
 
-namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
+namespace WinFormsView.StudentControls
 {
     public partial class StudentViewAbsencesControl : UserControl
     {
-        public StudentViewAbsencesControl()
-        {
-            InitializeComponent();
-        }
 
-        public StudentViewAbsencesControl(string language)
+        public StudentViewAbsencesControl(string language,Student student)
         {
             if (language == "English")
             {
@@ -30,6 +27,12 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
             InitializeComponent();
+            List<Absence> absences = new List<Absence>(student.Absences);
+            DataGridViewRow dateofstartingrow = new DataGridViewRow();
+            for (int i=0;i<absences.Count;i++)
+            {
+                //dateofstartingrow.Cells[i].Value=absences[i].Period
+            }
         }
     }
 }

@@ -9,17 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Resources;
+using Data.Models;
+using System.Windows.Forms.DataVisualization.Charting;
 
-namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
+namespace WinFormsView.StudentControls
 {
     public partial class StudentGradeStatisticControl : UserControl
     {
-        public StudentGradeStatisticControl()
-        {
-            InitializeComponent();
-        }
 
-        public StudentGradeStatisticControl(string language)
+        public StudentGradeStatisticControl(string language,Student student)
         {
             if (language == "English")
             {
@@ -31,7 +29,20 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
             InitializeComponent();
+            List<string> subjects = new List<string>();
+            for(int i=0;i<student.GradeRecords.Count;i++)
+            {
+                subjects.Add(student.GradeRecords.ElementAt(i).Subject);
+            }
+            subjects.Distinct();
+            for(int i=0;i<subjects.Count;i++)
+            {
+                selectSubjectListbox.Items.Add(subjects[i]);
+            }
+            studentGrade = student;
         }
+
+        private Student studentGrade;
 
         private bool Validate()
         {
@@ -61,7 +72,14 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
         {
             if(Validate())
             {
-
+                List<GradeRecord> grades = new List<GradeRecord>(studentGrade.GradeRecords.Where(x => x.Subject == selectSubjectListbox.SelectedItem.ToString()));
+                gradesChart.Palette = ChartColorPalette.Fire;
+                gradesChart.Titles.Add(selectSubjectListbox.SelectedItem.ToString());
+                for (int i = 0; i < grades.Count; i++)
+                {
+                    Series series = gradesChart.Series.Add(selectSubjectListbox.SelectedItem.ToString());
+                    series.Points.Add(grades[i].Grade);
+                }
             }
             else if(GetLanguage()=="Bulgarian")
             {
