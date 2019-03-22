@@ -33,7 +33,7 @@ namespace Data.Models
         public string ValidationCode { get; set; }
 
         public Class Class { get; set; }
-        public int ClassId { get; set; }
+        public int? ClassId { get; set; }
 
         public ICollection<Parent> Parents { get; set; }
         public ICollection<Absence> Absences { get; set; }

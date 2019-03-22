@@ -83,8 +83,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 }
                 else if(studentRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && studentRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
                 {
-                    Student student = new Student();
-                    student=studentrepository.List().Single(x => x.Username == usernameTextBox.Text);
                     var student = studentRepository.List().Single(x => x.Username == usernameTextBox.Text);
                     var studentForm = new StudentMainForm(student);
                     studentForm.ShowDialog();
