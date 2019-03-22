@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 
-namespace Kristiyan_Yanchev_Lorenzo_Eccheli.TeacherControls
+namespace WinFormsView.TeacherControls
 {
     public partial class TeacherAbsencesControl : UserControl
     {

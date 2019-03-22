@@ -118,35 +118,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="nameLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="usernameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="nameLabel.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="usernameLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
-  <data name="nameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>122, 109</value>
+  <data name="usernameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 110</value>
   </data>
-  <data name="nameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 19</value>
+  <data name="usernameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 19</value>
   </data>
-  <data name="nameLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="usernameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="nameLabel.Text" xml:space="preserve">
-    <value>Name</value>
+  <data name="usernameLabel.Text" xml:space="preserve">
+    <value>Username</value>
   </data>
-  <data name="&gt;&gt;nameLabel.Name" xml:space="preserve">
-    <value>nameLabel</value>
+  <data name="&gt;&gt;usernameLabel.Name" xml:space="preserve">
+    <value>usernameLabel</value>
   </data>
-  <data name="&gt;&gt;nameLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;usernameLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nameLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;usernameLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;nameLabel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;usernameLabel.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="passwordLabel.AutoSize" type="System.Boolean, mscorlib">
@@ -156,7 +156,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>122, 179</value>
+    <value>33, 180</value>
   </data>
   <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 19</value>
@@ -180,7 +180,7 @@
     <value>9</value>
   </data>
   <data name="usernameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 108</value>
+    <value>126, 109</value>
   </data>
   <data name="usernameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -207,7 +207,7 @@
     <value>8</value>
   </data>
   <data name="passwordTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 179</value>
+    <value>126, 180</value>
   </data>
   <data name="passwordTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
@@ -240,7 +240,7 @@
     <value>Sitka Heading, 14.25pt, style=Bold, Italic</value>
   </data>
   <data name="introductionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 9</value>
+    <value>37, 9</value>
   </data>
   <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>285, 30</value>
@@ -274,7 +274,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="logInBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>359, 308</value>
+    <value>173, 248</value>
   </data>
   <data name="logInBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 46</value>
@@ -310,7 +310,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="registerBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 308</value>
+    <value>37, 248</value>
   </data>
   <data name="registerBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 46</value>
@@ -343,7 +343,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="exitBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>549, 373</value>
+    <value>332, 299</value>
   </data>
   <data name="exitBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 46</value>
@@ -376,7 +376,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="visiblepasswordCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 180</value>
+    <value>260, 180</value>
   </data>
   <data name="visiblepasswordCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 23</value>
@@ -412,7 +412,7 @@
     <value>Bulgarian</value>
   </data>
   <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 106</value>
+    <value>352, 110</value>
   </data>
   <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 27</value>
@@ -442,7 +442,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 107</value>
+    <value>260, 113</value>
   </data>
   <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 19</value>
@@ -475,7 +475,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>682, 441</value>
+    <value>475, 379</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

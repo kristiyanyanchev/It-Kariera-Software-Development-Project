@@ -9,8 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Resources;
+using Data.Models;
 
-namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
+namespace WinFormsView.StudentControls
 {
     public partial class StudentGradeStatisticControl : UserControl
     {
@@ -19,7 +20,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
             InitializeComponent();
         }
 
-        public StudentGradeStatisticControl(string language)
+        public StudentGradeStatisticControl(string language,Student student)
         {
             if (language == "English")
             {

@@ -10,8 +10,10 @@ using System.Globalization;
 using System.Threading;
 using System.Resources;
 using Data.Models;
+using WinFormsView.StudentControls;
+using WinFormsView.UpdateControls;
 
-namespace Kristiyan_Yanchev_Lorenzo_Eccheli
+namespace WinFormsView
 {
     public partial class StudentMainForm : Form
     {
@@ -21,13 +23,13 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
             Student = student;
             InitializeComponent();
-            StudentControls.StudentViewGradeContol studentcontrol = new StudentControls.StudentViewGradeContol();
+            StudentViewGradeContol studentcontrol = new StudentViewGradeContol();
             panelInformation.Controls.Add(studentcontrol);
         }
 
         public StudentMainForm(string language,Student student)
         {
-
+            Student = student;
             if (language == "English")
             {
 
@@ -76,7 +78,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
             }
             InitializeComponent();
-            StudentControls.StudentViewGradeContol studentsgrades = new StudentControls.StudentViewGradeContol(GetLanguage());
+            StudentControls.StudentViewGradeContol studentsgrades = new StudentControls.StudentViewGradeContol(GetLanguage(),Student);
             panelInformation.Controls.Add(studentsgrades);
         }
 
@@ -97,7 +99,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void gradesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            StudentControls.StudentViewGradeContol studentcontrol = new StudentControls.StudentViewGradeContol();
+            StudentViewGradeContol studentcontrol = new StudentViewGradeContol();
             panelInformation.Controls.Add(studentcontrol);
             
         }
@@ -105,22 +107,27 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void absencesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            StudentControls.StudentViewAbsencesControl studentabsences = new StudentControls.StudentViewAbsencesControl();
+            StudentViewAbsencesControl studentabsences = new StudentViewAbsencesControl();
             panelInformation.Controls.Add(studentabsences);
         }
 
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            UpdateControls.ChangePasswordControl changepassword = new UpdateControls.ChangePasswordControl();
+            ChangePasswordControl changepassword = new ChangePasswordControl();
             panelInformation.Controls.Add(changepassword);
         }
 
         private void changeInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            UpdateControls.ChangeInformationControl changeinformation = new UpdateControls.ChangeInformationControl();
+            ChangeInformationControl changeinformation = new ChangeInformationControl();
             panelInformation.Controls.Add(changeinformation);
+        }
+
+        private void StudentMainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -41,7 +41,15 @@
             this.languageLabel = new System.Windows.Forms.Label();
             this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelInformation = new System.Windows.Forms.Panel();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
+            this.gradesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.вижтеУченикToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.absencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewStudentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // addgradeButton
@@ -138,17 +146,62 @@
             this.toolTip.SetToolTip(this.languageComboBox, resources.GetString("languageComboBox.ToolTip"));
             this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
             // 
-            // panel1
+            // panelInformation
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            resources.ApplyResources(this.panelInformation, "panelInformation");
+            this.panelInformation.Name = "panelInformation";
+            // 
+            // MenuStrip
+            // 
+            this.MenuStrip.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.MenuStrip, "MenuStrip");
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gradesToolStripMenuItem,
+            this.вижтеУченикToolStripMenuItem,
+            this.viewStudentsToolStripMenuItem,
+            this.absencesToolStripMenuItem,
+            this.changePasswordToolStripMenuItem,
+            this.changeInformationToolStripMenuItem});
+            this.MenuStrip.Name = "MenuStrip";
+            // 
+            // gradesToolStripMenuItem
+            // 
+            this.gradesToolStripMenuItem.Name = "gradesToolStripMenuItem";
+            resources.ApplyResources(this.gradesToolStripMenuItem, "gradesToolStripMenuItem");
+            this.gradesToolStripMenuItem.Click += new System.EventHandler(this.gradesToolStripMenuItem_Click);
+            // 
+            // вижтеУченикToolStripMenuItem
+            // 
+            this.вижтеУченикToolStripMenuItem.Name = "вижтеУченикToolStripMenuItem";
+            resources.ApplyResources(this.вижтеУченикToolStripMenuItem, "вижтеУченикToolStripMenuItem");
+            // 
+            // absencesToolStripMenuItem
+            // 
+            this.absencesToolStripMenuItem.Name = "absencesToolStripMenuItem";
+            resources.ApplyResources(this.absencesToolStripMenuItem, "absencesToolStripMenuItem");
+            // 
+            // changePasswordToolStripMenuItem
+            // 
+            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
+            resources.ApplyResources(this.changePasswordToolStripMenuItem, "changePasswordToolStripMenuItem");
+            // 
+            // changeInformationToolStripMenuItem
+            // 
+            this.changeInformationToolStripMenuItem.Name = "changeInformationToolStripMenuItem";
+            resources.ApplyResources(this.changeInformationToolStripMenuItem, "changeInformationToolStripMenuItem");
+            // 
+            // viewStudentsToolStripMenuItem
+            // 
+            this.viewStudentsToolStripMenuItem.Name = "viewStudentsToolStripMenuItem";
+            resources.ApplyResources(this.viewStudentsToolStripMenuItem, "viewStudentsToolStripMenuItem");
             // 
             // TeacherMainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.MenuStrip);
+            this.Controls.Add(this.panelInformation);
             this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.introductionLabel);
@@ -161,6 +214,8 @@
             this.Controls.Add(this.addgradeButton);
             this.Name = "TeacherMainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TeacherMainForm_FormClosing);
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,6 +234,13 @@
         private System.Windows.Forms.Label languageLabel;
         private System.Windows.Forms.ComboBox languageComboBox;
         private System.Windows.Forms.ToolTip toolTip;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelInformation;
+        private System.Windows.Forms.MenuStrip MenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem gradesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem вижтеУченикToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem absencesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changeInformationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewStudentsToolStripMenuItem;
     }
 }

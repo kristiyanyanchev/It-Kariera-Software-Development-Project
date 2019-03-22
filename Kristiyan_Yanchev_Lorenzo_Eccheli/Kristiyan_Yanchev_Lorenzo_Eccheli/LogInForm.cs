@@ -78,13 +78,11 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 if(teacherRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && teacherRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
                 {
                     var teacher = teacherRepository.List().Single(x => x.Username == usernameTextBox.Text);
-                    var teacherForm = new TeacherMainForm(teacher);
+                    var teacherForm = new TeacherMainForm(GetLanguage(),teacher);
                     teacherForm.ShowDialog();
                 }
                 else if(studentRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && studentRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
                 {
-                    Student student = new Student();
-                    student=studentrepository.List().Single(x => x.Username == usernameTextBox.Text);
                     var student = studentRepository.List().Single(x => x.Username == usernameTextBox.Text);
                     var studentForm = new StudentMainForm(student);
                     studentForm.ShowDialog();
@@ -236,6 +234,17 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                     e.Cancel = true;
                 }
             }
+        }
+
+        private void LogInForm_Load(object sender, EventArgs e)
+        {
+            usernameLabel.BackColor = Color.Transparent;
+            passwordLabel.BackColor = Color.Transparent;
+            visiblepasswordCheckBox.BackColor = Color.Transparent;
+            languageLabel.BackColor = Color.Transparent;
+            logInBtn.BackColor = Color.Transparent;
+            registerBtn.BackColor = Color.Transparent;
+            exitBtn.BackColor = Color.Transparent;
         }
     }
 }

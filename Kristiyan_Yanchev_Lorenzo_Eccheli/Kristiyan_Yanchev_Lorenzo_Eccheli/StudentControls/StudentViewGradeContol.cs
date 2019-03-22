@@ -10,7 +10,7 @@ using System.Threading;
 using System.Windows.Forms;
 using Data.Models;
 
-namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
+ namespace WinFormsView.StudentControls
 {
     public partial class StudentViewGradeContol : UserControl
     {
@@ -74,7 +74,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli.StudentControls
         private void viewStatisticButton_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
-            StudentControls.StudentGradeStatisticControl studentgradestatistic = new StudentGradeStatisticControl(GetLanguage());
+            StudentControls.StudentGradeStatisticControl studentgradestatistic = new StudentGradeStatisticControl();
             this.Controls.Add(studentgradestatistic);
         }
     }

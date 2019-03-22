@@ -1,4 +1,4 @@
-﻿namespace Kristiyan_Yanchev_Lorenzo_Eccheli.UpdateControls
+﻿namespace WinFormsView.UpdateControls
 {
     partial class ChangePasswordControl
     {

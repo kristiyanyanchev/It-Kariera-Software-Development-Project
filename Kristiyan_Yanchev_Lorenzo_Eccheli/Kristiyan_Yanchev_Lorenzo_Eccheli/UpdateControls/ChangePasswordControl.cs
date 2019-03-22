@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Kristiyan_Yanchev_Lorenzo_Eccheli.UpdateControls
+namespace WinFormsView.UpdateControls
 {
     public partial class ChangePasswordControl : UserControl
     {

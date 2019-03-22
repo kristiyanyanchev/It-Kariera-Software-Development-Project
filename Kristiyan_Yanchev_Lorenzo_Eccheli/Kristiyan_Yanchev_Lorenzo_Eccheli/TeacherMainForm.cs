@@ -16,13 +16,31 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
     public partial class TeacherMainForm : Form
     {
         public Teacher Teacher { get; set; }
-        public TeacherMainForm(Teacher teacher)
+        public TeacherMainForm(string language,Teacher teacher)
         {
+            if (language == "English")
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
+            }
             Teacher = teacher;
             InitializeComponent();
         }
 
-        private string language;
+        private string GetLanguage()
+        {
+            if(languageLabel.Text=="Language")
+            {
+                return "English";
+            }
+            else
+            {
+                return "Bulgarian";
+            }
+        }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
@@ -44,8 +62,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void addgradeButton_Click(object sender, EventArgs e)
         {
-            language = languageComboBox.SelectedItem.ToString();
-            TeacherGradesForm teachergrade = new TeacherGradesForm(language);
+            TeacherGradesForm teachergrade = new TeacherGradesForm(GetLanguage());
             teachergrade.ShowDialog();
         }
 
@@ -126,6 +143,13 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             {
                 e.Cancel = true;
             }
+        }
+
+        private void gradesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelInformation.Controls.Clear();
+            TeacherControls.TeacherGradeControl teachergrade = new TeacherControls.TeacherGradeControl();
+            panelInformation.Controls.Add(teachergrade);
         }
     }
 }
