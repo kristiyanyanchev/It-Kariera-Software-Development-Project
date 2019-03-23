@@ -12,11 +12,12 @@ using System.Resources;
 using Controller;
 using Data.Repositories;
 using Data.Models;
+using WinFormsView;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
     public partial class LogInForm : Form
-    {
+    { 
         public LogInForm()
         {
             InitializeComponent();
@@ -84,7 +85,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 else if(studentRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && studentRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
                 {
                     var student = studentRepository.List().Single(x => x.Username == usernameTextBox.Text);
-                    var studentForm = new StudentMainForm(student);
+                    var studentForm = new StudentMainForm(GetLanguage(),student);
                     studentForm.ShowDialog();
                 }
                 else if(parentRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && parentRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
@@ -96,7 +97,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
             else
             {
-                MessageBox.Show("Invalid Username or Passowrd! ");
+                MessageBox.Show("Invalid Username or Passowrd!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 

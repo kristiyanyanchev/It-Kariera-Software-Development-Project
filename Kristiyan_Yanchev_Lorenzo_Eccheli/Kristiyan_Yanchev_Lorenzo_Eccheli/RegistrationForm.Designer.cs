@@ -75,98 +75,91 @@
             resources.ApplyResources(this.introductionLabel, "introductionLabel");
             this.introductionLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.introductionLabel.Name = "introductionLabel";
-            this.formToolTip.SetToolTip(this.introductionLabel, resources.GetString("introductionLabel.ToolTip"));
             // 
             // usernameLabel
             // 
             resources.ApplyResources(this.usernameLabel, "usernameLabel");
             this.usernameLabel.Name = "usernameLabel";
-            this.formToolTip.SetToolTip(this.usernameLabel, resources.GetString("usernameLabel.ToolTip"));
             // 
             // passwordLabel
             // 
             resources.ApplyResources(this.passwordLabel, "passwordLabel");
             this.passwordLabel.Name = "passwordLabel";
-            this.formToolTip.SetToolTip(this.passwordLabel, resources.GetString("passwordLabel.ToolTip"));
             // 
             // emailLabel
             // 
             resources.ApplyResources(this.emailLabel, "emailLabel");
             this.emailLabel.Name = "emailLabel";
-            this.formToolTip.SetToolTip(this.emailLabel, resources.GetString("emailLabel.ToolTip"));
             // 
             // addressLabel
             // 
             resources.ApplyResources(this.addressLabel, "addressLabel");
             this.addressLabel.Name = "addressLabel";
-            this.formToolTip.SetToolTip(this.addressLabel, resources.GetString("addressLabel.ToolTip"));
             // 
             // phoneLabel
             // 
             resources.ApplyResources(this.phoneLabel, "phoneLabel");
             this.phoneLabel.Name = "phoneLabel";
-            this.formToolTip.SetToolTip(this.phoneLabel, resources.GetString("phoneLabel.ToolTip"));
             // 
             // roleLabel
             // 
             resources.ApplyResources(this.roleLabel, "roleLabel");
             this.roleLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.roleLabel.Name = "roleLabel";
-            this.formToolTip.SetToolTip(this.roleLabel, resources.GetString("roleLabel.ToolTip"));
             // 
             // roleComboBox
             // 
-            resources.ApplyResources(this.roleComboBox, "roleComboBox");
             this.roleComboBox.BackColor = System.Drawing.Color.FloralWhite;
             this.roleComboBox.FormattingEnabled = true;
             this.roleComboBox.Items.AddRange(new object[] {
             resources.GetString("roleComboBox.Items"),
             resources.GetString("roleComboBox.Items1"),
             resources.GetString("roleComboBox.Items2")});
+            resources.ApplyResources(this.roleComboBox, "roleComboBox");
             this.roleComboBox.Name = "roleComboBox";
             this.formToolTip.SetToolTip(this.roleComboBox, resources.GetString("roleComboBox.ToolTip"));
             this.roleComboBox.SelectedIndexChanged += new System.EventHandler(this.roleComboBox_SelectedIndexChanged);
             // 
             // usernameTextBox
             // 
-            resources.ApplyResources(this.usernameTextBox, "usernameTextBox");
             this.usernameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.usernameTextBox, "usernameTextBox");
             this.usernameTextBox.Name = "usernameTextBox";
             this.formToolTip.SetToolTip(this.usernameTextBox, resources.GetString("usernameTextBox.ToolTip"));
             // 
             // passwordTextBox
             // 
-            resources.ApplyResources(this.passwordTextBox, "passwordTextBox");
             this.passwordTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.passwordTextBox, "passwordTextBox");
             this.passwordTextBox.Name = "passwordTextBox";
             this.formToolTip.SetToolTip(this.passwordTextBox, resources.GetString("passwordTextBox.ToolTip"));
             // 
             // emailTextBox
             // 
-            resources.ApplyResources(this.emailTextBox, "emailTextBox");
             this.emailTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.emailTextBox, "emailTextBox");
             this.emailTextBox.Name = "emailTextBox";
             this.formToolTip.SetToolTip(this.emailTextBox, resources.GetString("emailTextBox.ToolTip"));
             // 
             // addressTextBox
             // 
-            resources.ApplyResources(this.addressTextBox, "addressTextBox");
             this.addressTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.addressTextBox, "addressTextBox");
             this.addressTextBox.Name = "addressTextBox";
             this.formToolTip.SetToolTip(this.addressTextBox, resources.GetString("addressTextBox.ToolTip"));
             // 
             // phoneNumberTextBox
             // 
-            resources.ApplyResources(this.phoneNumberTextBox, "phoneNumberTextBox");
             this.phoneNumberTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.phoneNumberTextBox, "phoneNumberTextBox");
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.formToolTip.SetToolTip(this.phoneNumberTextBox, resources.GetString("phoneNumberTextBox.ToolTip"));
             // 
             // registrationButton
             // 
-            resources.ApplyResources(this.registrationButton, "registrationButton");
             this.registrationButton.BackColor = System.Drawing.Color.FloralWhite;
             this.registrationButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.registrationButton, "registrationButton");
             this.registrationButton.Name = "registrationButton";
             this.formToolTip.SetToolTip(this.registrationButton, resources.GetString("registrationButton.ToolTip"));
             this.registrationButton.UseVisualStyleBackColor = false;
@@ -174,9 +167,9 @@
             // 
             // exitButton
             // 
-            resources.ApplyResources(this.exitButton, "exitButton");
             this.exitButton.BackColor = System.Drawing.Color.FloralWhite;
             this.exitButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.exitButton, "exitButton");
             this.exitButton.Name = "exitButton";
             this.formToolTip.SetToolTip(this.exitButton, resources.GetString("exitButton.ToolTip"));
             this.exitButton.UseVisualStyleBackColor = false;
@@ -186,12 +179,11 @@
             // 
             resources.ApplyResources(this.lastNameLabel, "lastNameLabel");
             this.lastNameLabel.Name = "lastNameLabel";
-            this.formToolTip.SetToolTip(this.lastNameLabel, resources.GetString("lastNameLabel.ToolTip"));
             // 
             // lastNameTextBox
             // 
-            resources.ApplyResources(this.lastNameTextBox, "lastNameTextBox");
             this.lastNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.lastNameTextBox, "lastNameTextBox");
             this.lastNameTextBox.Name = "lastNameTextBox";
             this.formToolTip.SetToolTip(this.lastNameTextBox, resources.GetString("lastNameTextBox.ToolTip"));
             // 
@@ -212,8 +204,8 @@
             // 
             // validationCodeTextBox
             // 
-            resources.ApplyResources(this.validationCodeTextBox, "validationCodeTextBox");
             this.validationCodeTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.validationCodeTextBox, "validationCodeTextBox");
             this.validationCodeTextBox.Name = "validationCodeTextBox";
             this.formToolTip.SetToolTip(this.validationCodeTextBox, resources.GetString("validationCodeTextBox.ToolTip"));
             // 
@@ -225,37 +217,37 @@
             // 
             // ucnTextBox
             // 
-            resources.ApplyResources(this.ucnTextBox, "ucnTextBox");
             this.ucnTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.ucnTextBox, "ucnTextBox");
             this.ucnTextBox.Name = "ucnTextBox";
             this.formToolTip.SetToolTip(this.ucnTextBox, resources.GetString("ucnTextBox.ToolTip"));
             // 
             // classnameTextBox
             // 
-            resources.ApplyResources(this.classnameTextBox, "classnameTextBox");
             this.classnameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.classnameTextBox, "classnameTextBox");
             this.classnameTextBox.Name = "classnameTextBox";
             this.formToolTip.SetToolTip(this.classnameTextBox, resources.GetString("classnameTextBox.ToolTip"));
             // 
             // usernameOfChildTextBox
             // 
-            resources.ApplyResources(this.usernameOfChildTextBox, "usernameOfChildTextBox");
             this.usernameOfChildTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.usernameOfChildTextBox, "usernameOfChildTextBox");
             this.usernameOfChildTextBox.Name = "usernameOfChildTextBox";
             this.formToolTip.SetToolTip(this.usernameOfChildTextBox, resources.GetString("usernameOfChildTextBox.ToolTip"));
             // 
             // firstNameTextBox
             // 
-            resources.ApplyResources(this.firstNameTextBox, "firstNameTextBox");
             this.firstNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.firstNameTextBox, "firstNameTextBox");
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.formToolTip.SetToolTip(this.firstNameTextBox, resources.GetString("firstNameTextBox.ToolTip"));
             // 
             // backButton
             // 
-            resources.ApplyResources(this.backButton, "backButton");
             this.backButton.BackColor = System.Drawing.Color.FloralWhite;
             this.backButton.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.backButton, "backButton");
             this.backButton.Name = "backButton";
             this.formToolTip.SetToolTip(this.backButton, resources.GetString("backButton.ToolTip"));
             this.backButton.UseVisualStyleBackColor = false;
@@ -263,27 +255,27 @@
             // 
             // languageComboBox
             // 
-            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.BackColor = System.Drawing.Color.FloralWhite;
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
             resources.GetString("languageComboBox.Items"),
             resources.GetString("languageComboBox.Items1")});
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.Name = "languageComboBox";
             this.formToolTip.SetToolTip(this.languageComboBox, resources.GetString("languageComboBox.ToolTip"));
             this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
             // 
             // subjectTextBox
             // 
-            resources.ApplyResources(this.subjectTextBox, "subjectTextBox");
             this.subjectTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.subjectTextBox, "subjectTextBox");
             this.subjectTextBox.Name = "subjectTextBox";
             this.formToolTip.SetToolTip(this.subjectTextBox, resources.GetString("subjectTextBox.ToolTip"));
             // 
             // positionTextBox
             // 
-            resources.ApplyResources(this.positionTextBox, "positionTextBox");
             this.positionTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.positionTextBox, "positionTextBox");
             this.positionTextBox.Name = "positionTextBox";
             this.formToolTip.SetToolTip(this.positionTextBox, resources.GetString("positionTextBox.ToolTip"));
             // 
@@ -292,55 +284,47 @@
             resources.ApplyResources(this.birthdayLabel, "birthdayLabel");
             this.birthdayLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.birthdayLabel.Name = "birthdayLabel";
-            this.formToolTip.SetToolTip(this.birthdayLabel, resources.GetString("birthdayLabel.ToolTip"));
             // 
             // ucnLabel
             // 
             resources.ApplyResources(this.ucnLabel, "ucnLabel");
             this.ucnLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.ucnLabel.Name = "ucnLabel";
-            this.formToolTip.SetToolTip(this.ucnLabel, resources.GetString("ucnLabel.ToolTip"));
             // 
             // classnameLabel
             // 
             resources.ApplyResources(this.classnameLabel, "classnameLabel");
             this.classnameLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.classnameLabel.Name = "classnameLabel";
-            this.formToolTip.SetToolTip(this.classnameLabel, resources.GetString("classnameLabel.ToolTip"));
             // 
             // usernameOfChildLabel
             // 
             resources.ApplyResources(this.usernameOfChildLabel, "usernameOfChildLabel");
             this.usernameOfChildLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.usernameOfChildLabel.Name = "usernameOfChildLabel";
-            this.formToolTip.SetToolTip(this.usernameOfChildLabel, resources.GetString("usernameOfChildLabel.ToolTip"));
             // 
             // nameLabel
             // 
             resources.ApplyResources(this.nameLabel, "nameLabel");
             this.nameLabel.Name = "nameLabel";
-            this.formToolTip.SetToolTip(this.nameLabel, resources.GetString("nameLabel.ToolTip"));
             // 
             // languageLabel
             // 
             resources.ApplyResources(this.languageLabel, "languageLabel");
             this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.languageLabel.Name = "languageLabel";
-            this.formToolTip.SetToolTip(this.languageLabel, resources.GetString("languageLabel.ToolTip"));
             // 
             // subjectLabel
             // 
             resources.ApplyResources(this.subjectLabel, "subjectLabel");
             this.subjectLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.subjectLabel.Name = "subjectLabel";
-            this.formToolTip.SetToolTip(this.subjectLabel, resources.GetString("subjectLabel.ToolTip"));
             // 
             // positionLabel
             // 
             resources.ApplyResources(this.positionLabel, "positionLabel");
             this.positionLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.positionLabel.Name = "positionLabel";
-            this.formToolTip.SetToolTip(this.positionLabel, resources.GetString("positionLabel.ToolTip"));
             // 
             // RegistrationForm
             // 
@@ -386,7 +370,6 @@
             this.Controls.Add(this.introductionLabel);
             this.MaximizeBox = false;
             this.Name = "RegistrationForm";
-            this.formToolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCLosing);
             this.ResumeLayout(false);
             this.PerformLayout();

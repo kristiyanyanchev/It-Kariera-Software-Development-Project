@@ -90,5 +90,6 @@ namespace WinFormsView.StudentControls
                 MessageBox.Show("You haven't selected subject", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }

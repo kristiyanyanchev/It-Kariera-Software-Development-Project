@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
 using Data.Models;
+using WinFormsView.StudentControls;
 
  namespace WinFormsView.StudentControls
 {
@@ -36,26 +37,26 @@ using Data.Models;
 
         private void AddRows(Student student)
         {
-            DataGridViewRow dataRow = (DataGridViewRow)gradesDataGrid.Rows[0].Clone();  
+            DataGridViewRow dateRow = new DataGridViewRow(); 
             for(int i=0;i<student.GradeRecords.Count;i++)
             {
-                dataRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Date;
+                dateRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Date;
             }
-            gradesDataGrid.Rows.Add(dataRow);
+            gradesDataGrid.Rows.Add(dateRow);
 
-            DataGridViewRow gradeRow = (DataGridViewRow)gradesDataGrid.Rows[1].Clone();
+            DataGridViewRow gradeRow = new DataGridViewRow();
             for (int i = 0; i < student.GradeRecords.Count; i++)
             {
-                dataRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Grade;
+                gradeRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Grade;
             }
-            gradesDataGrid.Rows.Add(dataRow);
+            gradesDataGrid.Rows.Add(gradeRow);
 
-            DataGridViewRow subjectRow = (DataGridViewRow)gradesDataGrid.Rows[2].Clone();
+            DataGridViewRow subjectRow = new DataGridViewRow();
             for (int i = 0; i < student.GradeRecords.Count; i++)
             {
                 subjectRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Grade;
             }
-            gradesDataGrid.Rows.Add(dataRow);
+            gradesDataGrid.Rows.Add(subjectRow);
         }
 
         private string GetLanguage()
@@ -73,7 +74,7 @@ using Data.Models;
         private void viewStatisticButton_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
-            StudentControls.StudentGradeStatisticControl studentgradestatistic = new StudentGradeStatisticControl(GetLanguage(),Student);
+            StudentGradeStatisticControl studentgradestatistic = new StudentGradeStatisticControl(GetLanguage(),Student);
             this.Controls.Add(studentgradestatistic);
         }
     }

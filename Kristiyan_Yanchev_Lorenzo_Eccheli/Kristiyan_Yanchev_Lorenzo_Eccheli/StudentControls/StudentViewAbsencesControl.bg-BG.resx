@@ -117,24 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PeriodStartTime.HeaderText" xml:space="preserve">
-    <value>Дата на начало на отсъствия</value>
-  </data>
-  <data name="PeriodEndTime.HeaderText" xml:space="preserve">
-    <value>Дата на край на отсъствия</value>
+  <data name="periodColumn.HeaderText" xml:space="preserve">
+    <value>Период</value>
   </data>
   <data name="IsLate.HeaderText" xml:space="preserve">
     <value>Закъснявал ли е</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="absencesDataGrid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 78</value>
+    <value>4, 96</value>
   </data>
   <data name="absencesDataGrid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 240</value>
+    <value>427, 295</value>
   </data>
   <data name="absencesLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 19</value>
+    <value>214, 24</value>
   </data>
   <data name="absencesLabel.Text" xml:space="preserve">
     <value>Информация за отсъствия</value>

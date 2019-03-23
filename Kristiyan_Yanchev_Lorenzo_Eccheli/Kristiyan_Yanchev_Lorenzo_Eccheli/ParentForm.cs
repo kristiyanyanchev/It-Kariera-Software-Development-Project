@@ -15,7 +15,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
     public partial class ParentForm : Form
     {
-        public Parent Parent { get; set; }
+        private Parent Parent;
         public ParentForm(Parent parent)
         {
             Parent = parent;
@@ -89,5 +89,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
             InitializeComponent();
         }
+
     }
 }

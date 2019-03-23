@@ -60,6 +60,18 @@
     <Compile Include="ChangeInformationForm.Designer.cs">
       <DependentUpon>ChangeInformationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ParentControls\ParentGradeStatisticControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParentControls\ParentGradeStatisticControl.Designer.cs">
+      <DependentUpon>ParentGradeStatisticControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentControls\ParentViewGradeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParentControls\ParentViewGradeControl.Designer.cs">
+      <DependentUpon>ParentViewGradeControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="ParentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +211,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.en-150.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentControls\ParentGradeStatisticControl.bg-BG.resx">
+      <DependentUpon>ParentGradeStatisticControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentControls\ParentGradeStatisticControl.resx">
+      <DependentUpon>ParentGradeStatisticControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentControls\ParentViewGradeControl.resx">
+      <DependentUpon>ParentViewGradeControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParentForm.bg-BG.resx">
       <DependentUpon>ParentForm.cs</DependentUpon>
@@ -343,7 +364,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ParentControls\" />
+    <None Include="Resources\BackgroundUpdate.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

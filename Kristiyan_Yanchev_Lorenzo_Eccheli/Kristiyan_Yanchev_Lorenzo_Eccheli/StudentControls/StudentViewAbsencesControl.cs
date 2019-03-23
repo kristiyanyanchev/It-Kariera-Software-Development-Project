@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using Data.Models;
+using Data.Repositories;
 
 namespace WinFormsView.StudentControls
 {
@@ -27,12 +28,20 @@ namespace WinFormsView.StudentControls
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
             InitializeComponent();
-            List<Absence> absences = new List<Absence>(student.Absences);
-            DataGridViewRow dateofstartingrow = new DataGridViewRow();
-            for (int i=0;i<absences.Count;i++)
+            AbsencesRepository absences = new AbsencesRepository();
+            var studentAbs = absences.List().Where(x => x.StudentId == student.Id).ToList();
+            
+            absencesDataGrid.DataSource = studentAbs;
+
+            for (int i = 0; i < studentAbs.Count; i++)
             {
-                //dateofstartingrow.Cells[i].Value=absences[i].Period
+                absencesDataGrid.Rows[i].Cells[0].Value = studentAbs[i].Period;
+                absencesDataGrid.Rows[i].Cells[1].Value = studentAbs[i].IsLate;
             }
+
+            
+
+
         }
     }
 }

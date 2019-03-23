@@ -41,12 +41,13 @@
             this.languageLabel = new System.Windows.Forms.Label();
             this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.panelInformation = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // exitButton
             // 
-            resources.ApplyResources(this.exitButton, "exitButton");
             this.exitButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.exitButton, "exitButton");
             this.exitButton.Name = "exitButton";
             this.toolTip.SetToolTip(this.exitButton, resources.GetString("exitButton.ToolTip"));
             this.exitButton.UseVisualStyleBackColor = false;
@@ -54,32 +55,29 @@
             // 
             // teacherListBox
             // 
-            resources.ApplyResources(this.teacherListBox, "teacherListBox");
             this.teacherListBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.teacherListBox, "teacherListBox");
             this.teacherListBox.FormattingEnabled = true;
             this.teacherListBox.Name = "teacherListBox";
-            this.toolTip.SetToolTip(this.teacherListBox, resources.GetString("teacherListBox.ToolTip"));
             // 
             // emailTextBox
             // 
-            resources.ApplyResources(this.emailTextBox, "emailTextBox");
             this.emailTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.emailTextBox, "emailTextBox");
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.ReadOnly = true;
-            this.toolTip.SetToolTip(this.emailTextBox, resources.GetString("emailTextBox.ToolTip"));
             // 
             // phoneNumberTextBox
             // 
-            resources.ApplyResources(this.phoneNumberTextBox, "phoneNumberTextBox");
             this.phoneNumberTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.phoneNumberTextBox, "phoneNumberTextBox");
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.ReadOnly = true;
-            this.toolTip.SetToolTip(this.phoneNumberTextBox, resources.GetString("phoneNumberTextBox.ToolTip"));
             // 
             // selectButton
             // 
-            resources.ApplyResources(this.selectButton, "selectButton");
             this.selectButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.selectButton, "selectButton");
             this.selectButton.Name = "selectButton";
             this.toolTip.SetToolTip(this.selectButton, resources.GetString("selectButton.ToolTip"));
             this.selectButton.UseVisualStyleBackColor = false;
@@ -87,8 +85,8 @@
             // 
             // gradeButton
             // 
-            resources.ApplyResources(this.gradeButton, "gradeButton");
             this.gradeButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.gradeButton, "gradeButton");
             this.gradeButton.Name = "gradeButton";
             this.toolTip.SetToolTip(this.gradeButton, resources.GetString("gradeButton.ToolTip"));
             this.gradeButton.UseVisualStyleBackColor = false;
@@ -99,39 +97,42 @@
             resources.ApplyResources(this.emailLabel, "emailLabel");
             this.emailLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.emailLabel.Name = "emailLabel";
-            this.toolTip.SetToolTip(this.emailLabel, resources.GetString("emailLabel.ToolTip"));
             // 
             // phonenumberLabel
             // 
             resources.ApplyResources(this.phonenumberLabel, "phonenumberLabel");
             this.phonenumberLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.phonenumberLabel.Name = "phonenumberLabel";
-            this.toolTip.SetToolTip(this.phonenumberLabel, resources.GetString("phonenumberLabel.ToolTip"));
             // 
             // languageLabel
             // 
             resources.ApplyResources(this.languageLabel, "languageLabel");
             this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.languageLabel.Name = "languageLabel";
-            this.toolTip.SetToolTip(this.languageLabel, resources.GetString("languageLabel.ToolTip"));
             // 
             // languageComboBox
             // 
-            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.BackColor = System.Drawing.Color.FloralWhite;
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
             resources.GetString("languageComboBox.Items"),
             resources.GetString("languageComboBox.Items1")});
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.Name = "languageComboBox";
-            this.toolTip.SetToolTip(this.languageComboBox, resources.GetString("languageComboBox.ToolTip"));
             this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
+            // 
+            // panelInformation
+            // 
+            this.panelInformation.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            resources.ApplyResources(this.panelInformation, "panelInformation");
+            this.panelInformation.Name = "panelInformation";
             // 
             // ParentForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            this.Controls.Add(this.panelInformation);
             this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.phonenumberLabel);
@@ -143,7 +144,6 @@
             this.Controls.Add(this.teacherListBox);
             this.Controls.Add(this.exitButton);
             this.Name = "ParentForm";
-            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,5 +162,6 @@
         private System.Windows.Forms.Label languageLabel;
         private System.Windows.Forms.ComboBox languageComboBox;
         private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.Panel panelInformation;
     }
 }

@@ -126,10 +126,14 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="usernameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 110</value>
+    <value>44, 135</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="usernameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="usernameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 19</value>
+    <value>80, 24</value>
   </data>
   <data name="usernameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -156,10 +160,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 180</value>
+    <value>44, 222</value>
+  </data>
+  <data name="passwordLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 19</value>
+    <value>77, 24</value>
   </data>
   <data name="passwordLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -179,18 +186,21 @@
   <data name="&gt;&gt;passwordLabel.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <metadata name="formToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="usernameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 109</value>
+    <value>168, 134</value>
+  </data>
+  <data name="usernameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="usernameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>132, 22</value>
   </data>
   <data name="usernameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <metadata name="formToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="usernameTextBox.ToolTip" xml:space="preserve">
     <value>Enter your first name.</value>
   </data>
@@ -207,13 +217,16 @@
     <value>8</value>
   </data>
   <data name="passwordTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 180</value>
+    <value>168, 222</value>
+  </data>
+  <data name="passwordTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="passwordTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
   <data name="passwordTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>132, 22</value>
   </data>
   <data name="passwordTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -240,10 +253,13 @@
     <value>Sitka Heading, 14.25pt, style=Bold, Italic</value>
   </data>
   <data name="introductionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 9</value>
+    <value>49, 11</value>
+  </data>
+  <data name="introductionLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 30</value>
+    <value>351, 37</value>
   </data>
   <data name="introductionLabel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -266,7 +282,6 @@
   <data name="logInBtn.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="logInBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -274,10 +289,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="logInBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 248</value>
+    <value>231, 305</value>
+  </data>
+  <data name="logInBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="logInBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 46</value>
+    <value>143, 57</value>
   </data>
   <data name="logInBtn.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -310,10 +328,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="registerBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 248</value>
+    <value>49, 305</value>
+  </data>
+  <data name="registerBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="registerBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 46</value>
+    <value>140, 57</value>
   </data>
   <data name="registerBtn.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -343,10 +364,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="exitBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 299</value>
+    <value>443, 368</value>
+  </data>
+  <data name="exitBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="exitBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 46</value>
+    <value>143, 57</value>
   </data>
   <data name="exitBtn.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -376,10 +400,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="visiblepasswordCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 180</value>
+    <value>347, 222</value>
+  </data>
+  <data name="visiblepasswordCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="visiblepasswordCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 23</value>
+    <value>80, 28</value>
   </data>
   <data name="visiblepasswordCheckBox.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -412,10 +439,13 @@
     <value>Bulgarian</value>
   </data>
   <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>352, 110</value>
+    <value>469, 135</value>
+  </data>
+  <data name="languageComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 27</value>
+    <value>115, 31</value>
   </data>
   <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -442,10 +472,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 113</value>
+    <value>347, 139</value>
+  </data>
+  <data name="languageLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 19</value>
+    <value>78, 24</value>
   </data>
   <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -465,6 +498,9 @@
   <data name="&gt;&gt;languageLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="formToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -472,10 +508,13 @@
     <value>36</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>475, 379</value>
+    <value>633, 466</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3457,8 +3496,11 @@
         //////////+AAAAP//////////////////8=
 </value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>98, 97</value>
+    <value>125, 109</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

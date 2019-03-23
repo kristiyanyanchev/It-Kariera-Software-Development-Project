@@ -1,6 +1,6 @@
-﻿namespace WinFormsView.StudentControls
+﻿namespace Kristiyan_Yanchev_Lorenzo_Eccheli.ParentControls
 {
-    partial class StudentViewGradeContol
+    partial class ParentGradeStatisticControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentViewGradeContol));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ParentGradeStatisticControl));
             this.gradesDataGrid = new System.Windows.Forms.DataGridView();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,13 +39,13 @@
             // 
             // gradesDataGrid
             // 
+            resources.ApplyResources(this.gradesDataGrid, "gradesDataGrid");
             this.gradesDataGrid.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.gradesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gradesDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Date,
             this.Grade,
             this.Subject});
-            resources.ApplyResources(this.gradesDataGrid, "gradesDataGrid");
             this.gradesDataGrid.Name = "gradesDataGrid";
             // 
             // Date
@@ -68,20 +68,19 @@
             // 
             // viewStatisticButton
             // 
-            this.viewStatisticButton.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.viewStatisticButton, "viewStatisticButton");
+            this.viewStatisticButton.BackColor = System.Drawing.Color.FloralWhite;
             this.viewStatisticButton.Name = "viewStatisticButton";
             this.viewStatisticButton.UseVisualStyleBackColor = false;
-            this.viewStatisticButton.Click += new System.EventHandler(this.viewStatisticButton_Click);
             // 
-            // StudentViewGradeContol
+            // ParentGradeStatisticControl
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
             this.Controls.Add(this.viewStatisticButton);
             this.Controls.Add(this.gradesDataGrid);
-            this.Name = "StudentViewGradeContol";
+            this.Name = "ParentGradeStatisticControl";
             ((System.ComponentModel.ISupportInitialize)(this.gradesDataGrid)).EndInit();
             this.ResumeLayout(false);
 
