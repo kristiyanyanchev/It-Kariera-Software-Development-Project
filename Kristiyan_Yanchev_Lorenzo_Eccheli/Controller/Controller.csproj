@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="ParentDataTransferObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QueryClasses\IQuery.cs" />
     <Compile Include="StudentDataTransferObject.cs" />
     <Compile Include="TeacherDataTransferObject.cs" />
     <Compile Include="ValidationClasses\Address\DefaultAddressValidator.cs" />
