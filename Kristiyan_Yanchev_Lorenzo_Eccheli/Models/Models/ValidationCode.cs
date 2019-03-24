@@ -18,7 +18,7 @@ namespace Data.Models
 
         public ValidationCode()
         {
-            
+
         }
 
         public ValidationCode(string code, string role)

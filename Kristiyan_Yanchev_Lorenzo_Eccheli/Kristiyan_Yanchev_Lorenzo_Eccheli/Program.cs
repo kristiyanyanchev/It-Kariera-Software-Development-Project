@@ -1,6 +1,5 @@
 ﻿using Data.Models;
 using Data.Repositories;
-using Data.ValidationCodeSetUp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +15,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         [STAThread]
         static void Main()
         {
-            ValidationCodeSetUp.CopyCodesFromTextFileToDB();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LogInForm());

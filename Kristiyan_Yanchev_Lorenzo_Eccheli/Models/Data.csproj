@@ -73,7 +73,6 @@
     <Compile Include="Repositories\StudentsRepository.cs" />
     <Compile Include="Repositories\TeachersRepository.cs" />
     <Compile Include="Repositories\ValidationCodeRepository.cs" />
-    <Compile Include="ValidationCodeSetUp\ValidationCodeSetUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
