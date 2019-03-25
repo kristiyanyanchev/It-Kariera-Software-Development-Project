@@ -73,11 +73,14 @@
     <Compile Include="Repositories\StudentsRepository.cs" />
     <Compile Include="Repositories\TeachersRepository.cs" />
     <Compile Include="Repositories\ValidationCodeRepository.cs" />
+    <Compile Include="ValidationCodesSetUp\ValidationCodeSetUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="ValidationCodesSetUp\ValidationCodes.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

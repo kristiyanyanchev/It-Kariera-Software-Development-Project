@@ -1,5 +1,6 @@
 ﻿using Data.Models;
 using Data.Repositories;
+using Data.ValidationCodesSetUp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,11 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         [STAThread]
         static void Main()
         {
+            if(ValidationCodeSetUp.IsExecuted() != true)
+            {
+                var setUp = new ValidationCodeSetUp();
+                setUp.Execute();
+            }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LogInForm());
