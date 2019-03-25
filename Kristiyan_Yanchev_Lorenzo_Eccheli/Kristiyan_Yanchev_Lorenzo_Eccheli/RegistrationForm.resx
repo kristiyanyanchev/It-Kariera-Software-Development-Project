@@ -1084,7 +1084,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="classnameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 287</value>
+    <value>439, 286</value>
   </data>
   <data name="classnameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 24</value>
@@ -1278,9 +1278,6 @@
   <data name="&gt;&gt;positionLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>bg-BG</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

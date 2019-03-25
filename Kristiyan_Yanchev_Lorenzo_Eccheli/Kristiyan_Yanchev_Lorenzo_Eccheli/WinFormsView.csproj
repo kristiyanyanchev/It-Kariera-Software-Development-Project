@@ -264,6 +264,12 @@
     <EmbeddedResource Include="RegistrationControls\ParentRegistrationControl.resx">
       <DependentUpon>ParentRegistrationControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationControls\StudentRegistrationControl.resx">
+      <DependentUpon>StudentRegistrationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationControls\TeacherRegistrationControl.resx">
+      <DependentUpon>TeacherRegistrationControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistrationForm.aa.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
