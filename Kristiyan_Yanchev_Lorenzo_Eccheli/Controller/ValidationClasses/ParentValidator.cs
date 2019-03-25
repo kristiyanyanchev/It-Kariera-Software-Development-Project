@@ -95,6 +95,10 @@ namespace Controller.ValidationClasses
             {
                 return "ValidationCode is alredy used!";
             }
+            if (validationCodes.List().Single(x => x.Code == parentDTO.ValidationCode).Role != "Parent")
+            {
+                return "ValidationCode Role is not Parent! ";
+            }
 
             if (UsernameOfChildValidator.Validate(parentDTO.UsernameOfChild) == false)
             {

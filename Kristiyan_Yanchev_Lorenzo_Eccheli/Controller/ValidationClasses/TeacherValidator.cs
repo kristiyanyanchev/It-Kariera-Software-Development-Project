@@ -91,6 +91,10 @@ namespace Controller.ValidationClasses
 	        {
 		        return "ValidationCode is alredy used!";
 	        }
+            if (validationCodeRepo.List().Single(x => x.Code == teacherDTO.ValidationCode).Role != "Parent")
+            {
+                return "ValidationCode Role is not Teacher! ";
+            }
 
             if (PhoneNumberValidator.Validate(teacherDTO.PhoneNumber) == false)
             {

@@ -74,12 +74,16 @@ namespace Controller.ValidationClasses
 
             if (validationCodeRepo.List().Select(x => x.Code).Contains(studentDTO.ValidationCode) == false)
             {
-                return "ValidationCode is not valid!";
+                return "ValidationCode is not valid! ";
             }
 
             if (validationCodeRepo.List().Single(x => x.Code == studentDTO.ValidationCode).Used == true)
             {
-                return "ValidationCode is alredey used";
+                return "ValidationCode is alredey used! ";
+            }
+            if (validationCodeRepo.List().Single(x => x.Code == studentDTO.ValidationCode).Role != "Student")
+            {
+                return "ValidationCode Role is not Student! ";
             }
 
             if (AddressValidator.Validate(studentDTO.Address) == false)
