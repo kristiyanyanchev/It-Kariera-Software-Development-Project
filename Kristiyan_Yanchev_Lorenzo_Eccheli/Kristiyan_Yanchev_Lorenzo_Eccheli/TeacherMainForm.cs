@@ -137,14 +137,14 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            ChangeInformationControl teacherchangeinformation = new ChangeInformationControl(GetLanguage());
+            ChangeInformationControl teacherchangeinformation = new ChangeInformationControl(GetLanguage(),Teacher);
             panelInformation.Controls.Add(teacherchangeinformation);
         }
 
         private void changeInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            ChangePasswordControl teacherchangepassword = new ChangePasswordControl();
+            ChangePasswordControl teacherchangepassword = new ChangePasswordControl(GetLanguage(),Teacher);
             panelInformation.Controls.Add(teacherchangepassword);
         }
     }

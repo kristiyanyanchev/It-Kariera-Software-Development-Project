@@ -258,6 +258,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegistrationControls\ParentRegistrationControl.bg-BG.resx">
+      <DependentUpon>ParentRegistrationControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistrationControls\ParentRegistrationControl.resx">
       <DependentUpon>ParentRegistrationControl.cs</DependentUpon>
     </EmbeddedResource>
