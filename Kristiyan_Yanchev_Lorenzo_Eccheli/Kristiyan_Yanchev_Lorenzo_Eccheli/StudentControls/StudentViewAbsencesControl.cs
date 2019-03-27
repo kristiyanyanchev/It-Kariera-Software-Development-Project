@@ -30,8 +30,6 @@ namespace WinFormsView.StudentControls
             InitializeComponent();
             AbsencesRepository absences = new AbsencesRepository();
             var studentAbs = absences.List().Where(x => x.StudentId == student.Id).ToList();
-            
-            absencesDataGrid.DataSource = studentAbs;
 
             for (int i = 0; i < studentAbs.Count; i++)
             {
@@ -39,7 +37,7 @@ namespace WinFormsView.StudentControls
                 absencesDataGrid.Rows[i].Cells[1].Value = studentAbs[i].IsLate;
             }
 
-            
+
 
 
         }
