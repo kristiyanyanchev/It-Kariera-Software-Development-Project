@@ -32,21 +32,22 @@
             this.saveChangesButton = new System.Windows.Forms.Button();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.emailLabel = new System.Windows.Forms.Label();
-            this.PhoneNumberTextBox = new System.Windows.Forms.TextBox();
+            this.phoneNumberTextBox = new System.Windows.Forms.TextBox();
             this.phoneNumberLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // saveChangesButton
             // 
-            resources.ApplyResources(this.saveChangesButton, "saveChangesButton");
             this.saveChangesButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.saveChangesButton, "saveChangesButton");
             this.saveChangesButton.Name = "saveChangesButton";
             this.saveChangesButton.UseVisualStyleBackColor = false;
+            this.saveChangesButton.Click += new System.EventHandler(this.saveChangesButton_Click);
             // 
             // emailTextBox
             // 
-            resources.ApplyResources(this.emailTextBox, "emailTextBox");
             this.emailTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.emailTextBox, "emailTextBox");
             this.emailTextBox.Name = "emailTextBox";
             // 
             // emailLabel
@@ -55,11 +56,11 @@
             this.emailLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.emailLabel.Name = "emailLabel";
             // 
-            // PhoneNumberTextBox
+            // phoneNumberTextBox
             // 
-            resources.ApplyResources(this.PhoneNumberTextBox, "PhoneNumberTextBox");
-            this.PhoneNumberTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.PhoneNumberTextBox.Name = "PhoneNumberTextBox";
+            this.phoneNumberTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.phoneNumberTextBox, "phoneNumberTextBox");
+            this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             // 
             // phoneNumberLabel
             // 
@@ -75,7 +76,7 @@
             this.Controls.Add(this.saveChangesButton);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.emailLabel);
-            this.Controls.Add(this.PhoneNumberTextBox);
+            this.Controls.Add(this.phoneNumberTextBox);
             this.Controls.Add(this.phoneNumberLabel);
             this.Name = "ChangeInformationControl";
             this.ResumeLayout(false);
@@ -88,7 +89,7 @@
         private System.Windows.Forms.Button saveChangesButton;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label emailLabel;
-        private System.Windows.Forms.TextBox PhoneNumberTextBox;
+        private System.Windows.Forms.TextBox phoneNumberTextBox;
         private System.Windows.Forms.Label phoneNumberLabel;
     }
 }

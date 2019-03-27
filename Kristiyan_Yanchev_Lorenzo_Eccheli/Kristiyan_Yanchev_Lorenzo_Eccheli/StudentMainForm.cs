@@ -107,14 +107,14 @@ namespace WinFormsView
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            ChangePasswordControl changepassword = new ChangePasswordControl();
+            ChangePasswordControl changepassword = new ChangePasswordControl(GetLanguage(),Student);
             panelInformation.Controls.Add(changepassword);
         }
 
         private void changeInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            ChangeInformationControl changeinformation = new ChangeInformationControl(GetLanguage());
+            ChangeInformationControl changeinformation = new ChangeInformationControl(GetLanguage(),Student);
             panelInformation.Controls.Add(changeinformation);
         }
 

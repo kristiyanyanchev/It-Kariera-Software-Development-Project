@@ -86,15 +86,16 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private bool ValidateData()
         {
-            if(roleComboBox.SelectedItem.ToString()=="Teacher")
+            if (roleComboBox.SelectedItem.ToString() == "Teacher" ||
+                roleComboBox.SelectedItem.ToString() == "Учител")
             {
                 if (usernameTextBox.Text != null && lastNameTextBox.Text != null &&
                passwordTextBox.Text != null && emailTextBox.Text != null &&
                firstNameTextBox.Text != null &&
                addressTextBox.Text != null && phoneNumberTextBox.Text != null &&
                roleComboBox.SelectedItem != null && double.TryParse(phoneNumberTextBox.Text, out double a) &&
-               classnameTextBox.Text!=null && subjectTextBox.Text!=null && positionTextBox.Text!=null &&
-               classnameTextBox.Text!=null)
+               classnameTextBox.Text != null && subjectTextBox.Text != null && positionTextBox.Text != null &&
+               classnameTextBox.Text != null)
                 {
                     return true;
                 }
@@ -103,14 +104,32 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                     return false;
                 }
             }
-            else if(roleComboBox.SelectedItem.ToString()=="Student")
+            else if (roleComboBox.SelectedItem.ToString() == "Student" ||
+                roleComboBox.SelectedItem.ToString() == "Ученик")
             {
                 if (usernameTextBox.Text != null && lastNameTextBox.Text != null &&
                passwordTextBox.Text != null && emailTextBox.Text != null &&
                firstNameTextBox.Text != null &&
                addressTextBox.Text != null && phoneNumberTextBox.Text != null &&
-               roleComboBox.SelectedItem != null && double.TryParse(phoneNumberTextBox.Text, out double a)&&
-               classnameTextBox.Text!=null && ucnTextBox.Text!=null && birthdatePicker.Text!=DateTime.Today.ToString())
+               roleComboBox.SelectedItem != null && double.TryParse(phoneNumberTextBox.Text, out double a) &&
+               classnameTextBox.Text != null && ucnTextBox.Text != null && birthdatePicker.Text != DateTime.Today.ToString())
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else if(roleComboBox.SelectedItem.ToString()=="Parent" ||
+                roleComboBox.SelectedItem.ToString() == "Родител")
+            {
+                if (usernameTextBox.Text != null && lastNameTextBox.Text != null &&
+               passwordTextBox.Text != null && emailTextBox.Text != null &&
+               firstNameTextBox.Text != null &&
+               addressTextBox.Text != null && phoneNumberTextBox.Text != null &&
+               roleComboBox.SelectedItem != null && double.TryParse(phoneNumberTextBox.Text, out double a) &&
+               usernameOfChildTextBox.Text != null)
                 {
                     return true;
                 }
@@ -121,19 +140,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
             else
             {
-                if (usernameTextBox.Text != null && lastNameTextBox.Text != null &&
-               passwordTextBox.Text != null && emailTextBox.Text != null &&
-               firstNameTextBox.Text != null &&
-               addressTextBox.Text != null && phoneNumberTextBox.Text != null &&
-               roleComboBox.SelectedItem != null && double.TryParse(phoneNumberTextBox.Text, out double a)&&
-               usernameOfChildTextBox.Text!=null)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return false;
             }
         }
 
