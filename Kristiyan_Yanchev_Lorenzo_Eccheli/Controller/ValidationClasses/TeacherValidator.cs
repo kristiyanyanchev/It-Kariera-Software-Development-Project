@@ -91,7 +91,7 @@ namespace Controller.ValidationClasses
 	        {
 		        return "ValidationCode is alredy used!";
 	        }
-            if (validationCodeRepo.List().Single(x => x.Code == teacherDTO.ValidationCode).Role != "Parent")
+            if (validationCodeRepo.List().Single(x => x.Code == teacherDTO.ValidationCode).Role != "Teacher")
             {
                 return "ValidationCode Role is not Teacher! ";
             }

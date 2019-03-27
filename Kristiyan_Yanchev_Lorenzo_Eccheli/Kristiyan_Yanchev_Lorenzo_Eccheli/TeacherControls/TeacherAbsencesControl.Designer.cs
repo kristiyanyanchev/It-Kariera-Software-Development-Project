@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherAbsencesControl));
             this.isLateCheckBox = new System.Windows.Forms.CheckBox();
-            this.studentsListBox = new System.Windows.Forms.ListView();
-            this.classesListBox = new System.Windows.Forms.ListView();
             this.removeAbsenceButton = new System.Windows.Forms.Button();
             this.newAbsenceButton = new System.Windows.Forms.Button();
             this.classesLabel = new System.Windows.Forms.Label();
             this.studentsLabel = new System.Windows.Forms.Label();
+            this.studentsListBox = new System.Windows.Forms.ListBox();
+            this.classesListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // isLateCheckBox
@@ -44,20 +44,6 @@
             this.isLateCheckBox.BackColor = System.Drawing.Color.FloralWhite;
             this.isLateCheckBox.Name = "isLateCheckBox";
             this.isLateCheckBox.UseVisualStyleBackColor = false;
-            // 
-            // studentsListBox
-            // 
-            this.studentsListBox.BackColor = System.Drawing.Color.FloralWhite;
-            resources.ApplyResources(this.studentsListBox, "studentsListBox");
-            this.studentsListBox.Name = "studentsListBox";
-            this.studentsListBox.UseCompatibleStateImageBehavior = false;
-            // 
-            // classesListBox
-            // 
-            this.classesListBox.BackColor = System.Drawing.Color.FloralWhite;
-            resources.ApplyResources(this.classesListBox, "classesListBox");
-            this.classesListBox.Name = "classesListBox";
-            this.classesListBox.UseCompatibleStateImageBehavior = false;
             // 
             // removeAbsenceButton
             // 
@@ -87,16 +73,31 @@
             this.studentsLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.studentsLabel.Name = "studentsLabel";
             // 
+            // studentsListBox
+            // 
+            this.studentsListBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.studentsListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.studentsListBox, "studentsListBox");
+            this.studentsListBox.Name = "studentsListBox";
+            // 
+            // classesListBox
+            // 
+            this.classesListBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.classesListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.classesListBox, "classesListBox");
+            this.classesListBox.Name = "classesListBox";
+            this.classesListBox.SelectedIndexChanged += new System.EventHandler(this.classesListBox_SelectedIndexChanged);
+            // 
             // TeacherAbsencesControl
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
+            this.Controls.Add(this.classesListBox);
+            this.Controls.Add(this.studentsListBox);
             this.Controls.Add(this.studentsLabel);
             this.Controls.Add(this.classesLabel);
             this.Controls.Add(this.isLateCheckBox);
-            this.Controls.Add(this.studentsListBox);
-            this.Controls.Add(this.classesListBox);
             this.Controls.Add(this.removeAbsenceButton);
             this.Controls.Add(this.newAbsenceButton);
             this.Name = "TeacherAbsencesControl";
@@ -108,11 +109,11 @@
         #endregion
 
         private System.Windows.Forms.CheckBox isLateCheckBox;
-        private System.Windows.Forms.ListView studentsListBox;
-        private System.Windows.Forms.ListView classesListBox;
         private System.Windows.Forms.Button removeAbsenceButton;
         private System.Windows.Forms.Button newAbsenceButton;
         private System.Windows.Forms.Label classesLabel;
         private System.Windows.Forms.Label studentsLabel;
+        private System.Windows.Forms.ListBox studentsListBox;
+        private System.Windows.Forms.ListBox classesListBox;
     }
 }

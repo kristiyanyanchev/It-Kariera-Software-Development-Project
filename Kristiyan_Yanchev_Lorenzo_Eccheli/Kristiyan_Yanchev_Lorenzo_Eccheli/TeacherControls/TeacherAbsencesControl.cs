@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using Data.Models;
+using Data.Repositories;
 
 namespace WinFormsView.TeacherControls
 {
@@ -25,7 +26,13 @@ namespace WinFormsView.TeacherControls
             {
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
+
             InitializeComponent();
+            var classes = new ClassesRepository();
+            foreach (var @class in classes.List())
+            {
+                classesListBox.Items.Add(@class.ToString());
+            }
 
             teacherGetter = teacher;
         }
@@ -34,7 +41,8 @@ namespace WinFormsView.TeacherControls
 
         private bool Validate()
         {
-            if(classesListBox.SelectedItems!=null && studentsListBox.SelectedItems!=null)
+            
+            if(classesListBox.SelectedItem!=null && studentsListBox.SelectedItem != null)
             {
                 return true;
             }
@@ -60,6 +68,11 @@ namespace WinFormsView.TeacherControls
         {
             if (Validate())
             {
+                var students = new StudentsRepository();
+                var absences = new AbsencesRepository();
+                var studentId = int.Parse(studentsListBox.SelectedItem.ToString().Split(' ').First());
+                absences.Add(new Absence(studentId,DateTime.Now,isLateCheckBox.Checked));
+
 
             }
             else if (GetLanguage() == "English")
@@ -87,6 +100,15 @@ namespace WinFormsView.TeacherControls
             else
             {
                 MessageBox.Show("Трябва да изберете ученик и клас", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void classesListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var students = new StudentsRepository();
+            foreach (var student in students.List())
+            {
+                studentsListBox.Items.Add(student.ToString());
             }
         }
     }

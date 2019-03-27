@@ -41,7 +41,9 @@ namespace Data.Models
 
         public Student()
         {
-
+            Parents = new List<Parent>();
+            Absences = new List<Absence>();
+            GradeRecords = new List<GradeRecord>();
         }
 
         public Student(string firstName, string lastName, DateTime birthDate, bool inAbsentia, string address, string validationCode)
@@ -52,6 +54,9 @@ namespace Data.Models
             InAbsentia = inAbsentia;
             Address = address;
             ValidationCode = validationCode;
+            Parents = new List<Parent>();
+            Absences = new List<Absence>();
+            GradeRecords = new List<GradeRecord>();
         }
 
         public Student(string firstName, string lastName, DateTime birthDate, string address, string ucn, string phoneNumber,
@@ -68,6 +73,9 @@ namespace Data.Models
             Password = password;
             ValidationCode = validationCode;
             Class = @class;
+            Parents = new List<Parent>();
+            Absences = new List<Absence>();
+            GradeRecords = new List<GradeRecord>();
         }
         public Student(string firstName, string lastName, DateTime birthDate, string address, string ucn, string phoneNumber,
             string email, string username, string password, string validationCode, int classId)
@@ -83,6 +91,14 @@ namespace Data.Models
             Password = password;
             ValidationCode = validationCode;
             ClassId = classId;
+            Parents = new List<Parent>();
+            Absences = new List<Absence>();
+            GradeRecords = new List<GradeRecord>();
+        }
+
+        public override string ToString()
+        {
+            return Id + " " + FirstName + " " + LastName;
         }
 
     }

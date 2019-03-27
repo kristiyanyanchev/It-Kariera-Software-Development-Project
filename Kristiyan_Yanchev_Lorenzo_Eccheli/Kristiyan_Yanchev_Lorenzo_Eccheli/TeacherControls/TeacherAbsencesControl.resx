@@ -147,54 +147,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;isLateCheckBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="studentsListBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="studentsListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 198</value>
-  </data>
-  <data name="studentsListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 156</value>
-  </data>
-  <data name="studentsListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;studentsListBox.Name" xml:space="preserve">
-    <value>studentsListBox</value>
-  </data>
-  <data name="&gt;&gt;studentsListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;studentsListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;studentsListBox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="classesListBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
-  </data>
-  <data name="classesListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 22</value>
-  </data>
-  <data name="classesListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 156</value>
-  </data>
-  <data name="classesListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;classesListBox.Name" xml:space="preserve">
-    <value>classesListBox</value>
-  </data>
-  <data name="&gt;&gt;classesListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;classesListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;classesListBox.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="removeAbsenceButton.Font" type="System.Drawing.Font, System.Drawing">
@@ -279,7 +231,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;classesLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="studentsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -313,6 +265,48 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;studentsLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="studentsListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 198</value>
+  </data>
+  <data name="studentsListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 147</value>
+  </data>
+  <data name="studentsListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;studentsListBox.Name" xml:space="preserve">
+    <value>studentsListBox</value>
+  </data>
+  <data name="&gt;&gt;studentsListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;studentsListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;studentsListBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="classesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="classesListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 147</value>
+  </data>
+  <data name="classesListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;classesListBox.Name" xml:space="preserve">
+    <value>classesListBox</value>
+  </data>
+  <data name="&gt;&gt;classesListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;classesListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;classesListBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

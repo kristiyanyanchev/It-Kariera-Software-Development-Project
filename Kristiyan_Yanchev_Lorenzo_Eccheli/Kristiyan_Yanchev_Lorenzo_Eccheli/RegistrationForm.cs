@@ -197,7 +197,11 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                         
                         studentsRepo.Add(student);
 
-                        new ValidationCodeRepository().List().Single(x => x.Code == studentDto.ValidationCode).Used = true;
+                        var validationCodes = new ValidationCodeRepository();
+                        var currentValidationCode = validationCodes.List().Single(x => x.Code == studentDto.ValidationCode);
+                        currentValidationCode.Used = true;
+                        validationCodes.Edit(currentValidationCode);
+
                         this.Hide();
                         StudentMainForm studentform = new StudentMainForm(GetLanguage(),student);
                         studentform.ShowDialog();
@@ -230,7 +234,12 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                         }
 
                         teacherRepo.Add(teacher);
-                        new ValidationCodeRepository().List().Single(x => x.Code == teacherDto.ValidationCode).Used = true;
+
+                        var validationCodes = new ValidationCodeRepository();
+                        var currentValidationCode = validationCodes.List().Single(x => x.Code == teacherDto.ValidationCode);
+                        currentValidationCode.Used = true;
+                        validationCodes.Edit(currentValidationCode);
+                        
 
                         this.Hide();
                         TeacherMainForm teacherform = new TeacherMainForm(GetLanguage(),teacher);
@@ -256,7 +265,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                         parent.Children.Add(studentRepo.List().Single(x => x.Username == parentDto.UsernameOfChild));
 
                         parentRepo.Add(parent);
-                        new ValidationCodeRepository().List().Single(x => x.Code == parentDto.ValidationCode).Used = true;
+                        var validationCodes = new ValidationCodeRepository();
+                        var currentValidationCode = validationCodes.List().Single(x => x.Code == parentDto.ValidationCode);
+                        currentValidationCode.Used = true;
+                        validationCodes.Edit(currentValidationCode);
 
                         this.Hide();
                         ParentForm parentform = new ParentForm(GetLanguage(),parent);

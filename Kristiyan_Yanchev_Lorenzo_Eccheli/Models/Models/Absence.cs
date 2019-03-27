@@ -11,14 +11,30 @@ namespace Data.Models
     {
         [Key]
         public int Id { get; set; }
-        [Required]
         public Student Student { get; set; }
+        [Required]
         public int StudentId { get; set; }
         [Required]
         public DateTime Period { get; set; }
         [Required]
         public bool IsLate { get; set; }
 
+        public override string ToString()
+        {
+            return string.Format("{0} => {1},{2}", StudentId, Period, IsLate);
+        }
 
+        public Absence()
+        {
+
+        }
+
+        public Absence(int studentId, DateTime period, bool isLate)
+        {
+
+            StudentId = studentId;
+            Period = period;
+            IsLate = isLate;
+        }
     }
 }
