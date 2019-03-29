@@ -38,19 +38,6 @@ namespace Data.Test
         }
 
         [Test]
-        public void Add_NullStudent_ThrowsException()
-        {
-            var absence = new Absence()
-            {
-                IsLate = true,
-                Period = DateTime.Today,
-                Student = null
-            };
-            var repo = new AbsenceTestRepository();
-            Assert.Throws<DbEntityValidationException>(() => repo.Add(absence));
-        }
-
-        [Test]
         public void Delete_NormalConditions()
         {
             var absence = new Absence()

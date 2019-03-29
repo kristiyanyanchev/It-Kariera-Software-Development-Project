@@ -30,41 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentViewGradeContol));
             this.gradesDataGrid = new System.Windows.Forms.DataGridView();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.viewStatisticButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gradesDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // gradesDataGrid
             // 
+            this.gradesDataGrid.AllowUserToAddRows = false;
+            this.gradesDataGrid.AllowUserToDeleteRows = false;
             this.gradesDataGrid.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.gradesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gradesDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Date,
-            this.Grade,
-            this.Subject});
             resources.ApplyResources(this.gradesDataGrid, "gradesDataGrid");
             this.gradesDataGrid.Name = "gradesDataGrid";
-            // 
-            // Date
-            // 
-            resources.ApplyResources(this.Date, "Date");
-            this.Date.Name = "Date";
-            this.Date.ReadOnly = true;
-            // 
-            // Grade
-            // 
-            resources.ApplyResources(this.Grade, "Grade");
-            this.Grade.Name = "Grade";
-            this.Grade.ReadOnly = true;
-            // 
-            // Subject
-            // 
-            resources.ApplyResources(this.Subject, "Subject");
-            this.Subject.Name = "Subject";
-            this.Subject.ReadOnly = true;
+            this.gradesDataGrid.ReadOnly = true;
             // 
             // viewStatisticButton
             // 
@@ -91,8 +69,5 @@
 
         private System.Windows.Forms.DataGridView gradesDataGrid;
         private System.Windows.Forms.Button viewStatisticButton;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Grade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Subject;
     }
 }

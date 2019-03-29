@@ -10,8 +10,9 @@ using System.Threading;
 using System.Windows.Forms;
 using Data.Models;
 using WinFormsView.StudentControls;
+using Data.Repositories;
 
- namespace WinFormsView.StudentControls
+namespace WinFormsView.StudentControls
 {
     public partial class StudentViewGradeContol : UserControl
     {
@@ -37,26 +38,28 @@ using WinFormsView.StudentControls;
 
         private void AddRows(Student student)
         {
-            DataGridViewRow dateRow = new DataGridViewRow(); 
-            for(int i=0;i<student.GradeRecords.Count;i++)
-            {
-                dateRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Date;
-            }
-            gradesDataGrid.Rows.Add(dateRow);
+            var grades = new GradesRepository().List().Where(x => x.StudentId == student.Id).Select(x => new {x.Date,x.Grade,x.Subject }).ToList();
+            gradesDataGrid.DataSource = grades;
+            //DataGridViewRow dateRow = new DataGridViewRow(); 
+            //for(int i=0;i<student.GradeRecords.Count;i++)
+            //{
+            //    dateRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Date;
+            //}
+            //gradesDataGrid.Rows.Add(dateRow);
 
-            DataGridViewRow gradeRow = new DataGridViewRow();
-            for (int i = 0; i < student.GradeRecords.Count; i++)
-            {
-                gradeRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Grade;
-            }
-            gradesDataGrid.Rows.Add(gradeRow);
+            //DataGridViewRow gradeRow = new DataGridViewRow();
+            //for (int i = 0; i < student.GradeRecords.Count; i++)
+            //{
+            //    gradeRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Grade;
+            //}
+            //gradesDataGrid.Rows.Add(gradeRow);
 
-            DataGridViewRow subjectRow = new DataGridViewRow();
-            for (int i = 0; i < student.GradeRecords.Count; i++)
-            {
-                subjectRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Grade;
-            }
-            gradesDataGrid.Rows.Add(subjectRow);
+            //DataGridViewRow subjectRow = new DataGridViewRow();
+            //for (int i = 0; i < student.GradeRecords.Count; i++)
+            //{
+            //    subjectRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Grade;
+            //}
+            //gradesDataGrid.Rows.Add(subjectRow);
         }
 
         private string GetLanguage()
