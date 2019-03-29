@@ -25,63 +25,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                
             }
             InitializeComponent();
-            /*
-            if (language == "Bulgarian" || language=="Български")
-            {
-                nextformlanguage = language;
-                InitializeComponent();
-                introductionLabel.Text = "Регистрация в електронния училищен дневник";
-                usernameLabel.Text = "Име";
-                passwordLabel.Text = "Парола";
-                visibleCheckBox.Text = "Видимост";
-                emailLabel.Text = "Емайл";
-                addressLabel.Text = "Адрес";
-                phoneLabel.Text = "Телефонен номер";
-                lastNameLabel.Text = "Фамилия";
-                roleLabel.Text = "Длъжност";
-                registrationButton.Text = "Регистрация";
-                exitButton.Text = "Изход";
-                validationCodeLabel.Text = "*Код";
-                formToolTip.SetToolTip(firstNameTextBox, "Въведете първото си име.");
-                formToolTip.SetToolTip(lastNameTextBox, "Въведете фамилията си.");
-                formToolTip.SetToolTip(passwordTextBox, "Създайте си парола.");
-                formToolTip.SetToolTip(visibleCheckBox, "Направете паролата видима или невидима.");
-                formToolTip.SetToolTip(roleComboBox,"Изберете си длъжност.");
-                formToolTip.SetToolTip(emailTextBox,"Въведете си имайла.");
-                formToolTip.SetToolTip(addressTextBox,"Напишете си адреса.");
-                formToolTip.SetToolTip(phoneNumberTextBox, "Сложете си телефонния номер.");
-                formToolTip.SetToolTip(registrationButton, "Акаунтът ви ще е регистриран.");
-                formToolTip.SetToolTip(exitButton, "Излезте от приложението.");
-                formToolTip.SetToolTip(validationCodeLabel, "Задължителен код даден от училището.");
-            }
-            else 
-            {
-                nextformlanguage = language;
-                InitializeComponent();
-                introductionLabel.Text = "Registration  to School E-Journal";
-                usernameLabel.Text = "Username";
-                passwordLabel.Text = "Password";
-                visibleCheckBox.Text = "Visible";
-                emailLabel.Text = "E-mail";
-                addressLabel.Text = "Address";
-                phoneLabel.Text = "Phone number";
-                lastNameLabel.Text = "Last Name";
-                roleLabel.Text = "Role";
-                registrationButton.Text = "Registration";
-                exitButton.Text = "Exit";
-                validationCodeLabel.Text = "*Validation Code";
-                formToolTip.SetToolTip(firstNameTextBox, "Enter your first name.");
-                formToolTip.SetToolTip(lastNameTextBox, "Enter your family.");
-                formToolTip.SetToolTip(passwordTextBox, "Create new password.");
-                formToolTip.SetToolTip(visibleCheckBox, "Make your password visible or unvisible.");
-                formToolTip.SetToolTip(roleComboBox, "Choose your role.");
-                formToolTip.SetToolTip(emailTextBox, "Enter your e-mail address.");
-                formToolTip.SetToolTip(addressTextBox, "Enter your home address.");
-                formToolTip.SetToolTip(phoneNumberTextBox, "Enter your phone number .");
-                formToolTip.SetToolTip(registrationButton, "Your account will be registered.");
-                formToolTip.SetToolTip(exitButton, "Exit the application.");
-                formToolTip.SetToolTip(validationCodeLabel, "Required code given by the school.");
-            }*/
         }
 
         private bool ValidateData()

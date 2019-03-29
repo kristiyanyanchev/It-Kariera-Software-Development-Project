@@ -46,8 +46,8 @@
             // 
             // newGradeButton
             // 
-            resources.ApplyResources(this.newGradeButton, "newGradeButton");
             this.newGradeButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.newGradeButton, "newGradeButton");
             this.newGradeButton.Name = "newGradeButton";
             this.toolTip.SetToolTip(this.newGradeButton, resources.GetString("newGradeButton.ToolTip"));
             this.newGradeButton.UseVisualStyleBackColor = false;
@@ -55,39 +55,39 @@
             // 
             // classesListBox
             // 
-            resources.ApplyResources(this.classesListBox, "classesListBox");
             this.classesListBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.classesListBox, "classesListBox");
             this.classesListBox.FormattingEnabled = true;
             this.classesListBox.Name = "classesListBox";
             this.toolTip.SetToolTip(this.classesListBox, resources.GetString("classesListBox.ToolTip"));
             // 
             // studentsListbox
             // 
-            resources.ApplyResources(this.studentsListbox, "studentsListbox");
             this.studentsListbox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.studentsListbox, "studentsListbox");
             this.studentsListbox.FormattingEnabled = true;
             this.studentsListbox.Name = "studentsListbox";
             this.toolTip.SetToolTip(this.studentsListbox, resources.GetString("studentsListbox.ToolTip"));
             // 
             // gradesListBox
             // 
-            resources.ApplyResources(this.gradesListBox, "gradesListBox");
             this.gradesListBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.gradesListBox, "gradesListBox");
             this.gradesListBox.FormattingEnabled = true;
             this.gradesListBox.Name = "gradesListBox";
             this.toolTip.SetToolTip(this.gradesListBox, resources.GetString("gradesListBox.ToolTip"));
             // 
             // gradeTextBox
             // 
-            resources.ApplyResources(this.gradeTextBox, "gradeTextBox");
             this.gradeTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.gradeTextBox, "gradeTextBox");
             this.gradeTextBox.Name = "gradeTextBox";
             this.toolTip.SetToolTip(this.gradeTextBox, resources.GetString("gradeTextBox.ToolTip"));
             // 
             // removeGradeButton
             // 
-            resources.ApplyResources(this.removeGradeButton, "removeGradeButton");
             this.removeGradeButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.removeGradeButton, "removeGradeButton");
             this.removeGradeButton.Name = "removeGradeButton";
             this.toolTip.SetToolTip(this.removeGradeButton, resources.GetString("removeGradeButton.ToolTip"));
             this.removeGradeButton.UseVisualStyleBackColor = false;
@@ -95,8 +95,8 @@
             // 
             // closeButton
             // 
-            resources.ApplyResources(this.closeButton, "closeButton");
             this.closeButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.closeButton, "closeButton");
             this.closeButton.Name = "closeButton";
             this.toolTip.SetToolTip(this.closeButton, resources.GetString("closeButton.ToolTip"));
             this.closeButton.UseVisualStyleBackColor = false;
@@ -107,30 +107,27 @@
             resources.ApplyResources(this.gradeLabel, "gradeLabel");
             this.gradeLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.gradeLabel.Name = "gradeLabel";
-            this.toolTip.SetToolTip(this.gradeLabel, resources.GetString("gradeLabel.ToolTip"));
             // 
             // instructionLabel
             // 
             resources.ApplyResources(this.instructionLabel, "instructionLabel");
             this.instructionLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.instructionLabel.Name = "instructionLabel";
-            this.toolTip.SetToolTip(this.instructionLabel, resources.GetString("instructionLabel.ToolTip"));
             // 
             // languageLabel
             // 
             resources.ApplyResources(this.languageLabel, "languageLabel");
             this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.languageLabel.Name = "languageLabel";
-            this.toolTip.SetToolTip(this.languageLabel, resources.GetString("languageLabel.ToolTip"));
             // 
             // languageComboBox
             // 
-            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.BackColor = System.Drawing.Color.FloralWhite;
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
             resources.GetString("languageComboBox.Items"),
             resources.GetString("languageComboBox.Items1")});
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.Name = "languageComboBox";
             this.toolTip.SetToolTip(this.languageComboBox, resources.GetString("languageComboBox.ToolTip"));
             this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
@@ -153,7 +150,6 @@
             this.Controls.Add(this.newGradeButton);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "TeacherGradesForm";
-            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.ResumeLayout(false);
             this.PerformLayout();
 

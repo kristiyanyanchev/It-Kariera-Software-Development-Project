@@ -146,6 +146,9 @@
   <data name="&gt;&gt;Date.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="viewStatisticButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -154,9 +157,6 @@
   </data>
   <data name="&gt;&gt;Subject.Name" xml:space="preserve">
     <value>Subject</value>
-  </data>
-  <data name="viewStatisticButton.Text" xml:space="preserve">
-    <value>View Statistics</value>
   </data>
   <data name="&gt;&gt;viewStatisticButton.Name" xml:space="preserve">
     <value>viewStatisticButton</value>
@@ -183,8 +183,8 @@
   <data name="&gt;&gt;gradesDataGrid.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="gradesDataGrid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>304, 194</value>
+  <data name="viewStatisticButton.Text" xml:space="preserve">
+    <value>View Statistics</value>
   </data>
   <data name="&gt;&gt;gradesDataGrid.Parent" xml:space="preserve">
     <value>$this</value>
@@ -192,14 +192,14 @@
   <data name="&gt;&gt;Subject.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;viewStatisticButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="viewStatisticButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 94</value>
   </data>
-  <data name="viewStatisticButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  <data name="gradesDataGrid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 194</value>
+  </data>
+  <data name="&gt;&gt;viewStatisticButton.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="gradesDataGrid.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -221,9 +221,6 @@
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>bg-BG</value>
   </metadata>
   <metadata name="Subject.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -262,7 +262,7 @@
     <value>2</value>
   </data>
   <data name="panelInformation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 132</value>
+    <value>13, 134</value>
   </data>
   <data name="panelInformation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>

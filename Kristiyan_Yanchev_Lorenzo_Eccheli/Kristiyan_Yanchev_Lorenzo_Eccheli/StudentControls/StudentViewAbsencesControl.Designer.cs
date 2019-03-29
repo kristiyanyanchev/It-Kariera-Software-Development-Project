@@ -30,38 +30,40 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentViewAbsencesControl));
             this.absencesDataGrid = new System.Windows.Forms.DataGridView();
-            this.absencesLabel = new System.Windows.Forms.Label();
             this.periodColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IsLate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.absencesLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.absencesDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // absencesDataGrid
             // 
+            resources.ApplyResources(this.absencesDataGrid, "absencesDataGrid");
             this.absencesDataGrid.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.absencesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.absencesDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.periodColumn,
             this.IsLate});
-            resources.ApplyResources(this.absencesDataGrid, "absencesDataGrid");
             this.absencesDataGrid.Name = "absencesDataGrid";
-            // 
-            // absencesLabel
-            // 
-            resources.ApplyResources(this.absencesLabel, "absencesLabel");
-            this.absencesLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.absencesLabel.Name = "absencesLabel";
+            this.absencesDataGrid.ReadOnly = true;
             // 
             // periodColumn
             // 
             resources.ApplyResources(this.periodColumn, "periodColumn");
             this.periodColumn.Name = "periodColumn";
+            this.periodColumn.ReadOnly = true;
             // 
             // IsLate
             // 
             resources.ApplyResources(this.IsLate, "IsLate");
             this.IsLate.Name = "IsLate";
             this.IsLate.ReadOnly = true;
+            // 
+            // absencesLabel
+            // 
+            resources.ApplyResources(this.absencesLabel, "absencesLabel");
+            this.absencesLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.absencesLabel.Name = "absencesLabel";
             // 
             // StudentViewAbsencesControl
             // 
