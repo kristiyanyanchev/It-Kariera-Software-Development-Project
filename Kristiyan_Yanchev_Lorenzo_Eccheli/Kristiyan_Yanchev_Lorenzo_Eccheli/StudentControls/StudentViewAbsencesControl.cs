@@ -36,10 +36,6 @@ namespace WinFormsView.StudentControls
                 absencesDataGrid.Rows[i].Cells[0].Value = studentAbs[i].Period;
                 absencesDataGrid.Rows[i].Cells[1].Value = studentAbs[i].IsLate;
             }
-
-
-
-
         }
     }
 }

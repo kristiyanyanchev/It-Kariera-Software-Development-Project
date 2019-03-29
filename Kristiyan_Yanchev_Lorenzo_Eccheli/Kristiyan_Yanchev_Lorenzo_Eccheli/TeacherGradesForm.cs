@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
 using System.Resources;
+using Data.Models;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -19,7 +20,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             InitializeComponent();
         }
 
-        public TeacherGradesForm(string language)
+        public TeacherGradesForm(string language,Teacher teacher)
         {
             if (language == "Bulgarian")
             {
@@ -30,6 +31,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
             }
             InitializeComponent();
+            
+            for(int i=0;i<teacher.Class.Students.Count;)
             /*
             if (language == "Bulgarian")
             {
@@ -51,6 +54,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             */
         }
 
+        private Teacher teacher;
+
         private bool ValidateData()
         {
             if(classesListBox.SelectedItem!=null && studentsListbox.SelectedItem!=null &&
@@ -67,6 +72,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void closeButton_Click(object sender, EventArgs e)
         {
             this.Hide();
+
         }
 
         private void removeGradeButton_Click(object sender, EventArgs e)

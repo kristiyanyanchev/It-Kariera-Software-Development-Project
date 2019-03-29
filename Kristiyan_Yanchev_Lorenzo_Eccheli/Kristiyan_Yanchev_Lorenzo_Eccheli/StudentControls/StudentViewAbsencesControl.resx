@@ -130,9 +130,6 @@
   <data name="absencesLabel.Text" xml:space="preserve">
     <value>Absences information</value>
   </data>
-  <data name="&gt;&gt;IsLate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -149,8 +146,8 @@
   <data name="&gt;&gt;absencesLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;absencesLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;IsLate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="absencesDataGrid.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -158,11 +155,9 @@
   <data name="&gt;&gt;absencesLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;absencesDataGrid.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;absencesDataGrid.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="absencesLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="&gt;&gt;periodColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -170,13 +165,18 @@
   <data name="periodColumn.HeaderText" xml:space="preserve">
     <value>Period</value>
   </data>
+  <data name="&gt;&gt;absencesDataGrid.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;absencesLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;absencesLabel.Name" xml:space="preserve">
     <value>absencesLabel</value>
   </data>
   <data name="absencesLabel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="absencesLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>124, 39</value>
   </data>
@@ -186,8 +186,8 @@
   <data name="absencesLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="absencesLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
+  <data name="&gt;&gt;periodColumn.Name" xml:space="preserve">
+    <value>periodColumn</value>
   </data>
   <data name="&gt;&gt;absencesDataGrid.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -198,8 +198,8 @@
   <data name="absencesLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 24</value>
   </data>
-  <data name="&gt;&gt;periodColumn.Name" xml:space="preserve">
-    <value>periodColumn</value>
+  <data name="&gt;&gt;absencesDataGrid.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
