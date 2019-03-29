@@ -108,11 +108,10 @@ namespace WinFormsView.TeacherControls
 
         private void classesListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var students = new StudentsRepository();
-            foreach (var student in students.List())
-            {
-                studentsListBox.Items.Add(student.ToString());
-            }
+            var @class = new ClassesRepository().List().Single(x => x.Name == classesListBox.SelectedItem.ToString());
+            var students = new StudentsRepository().List().Where(x => x.ClassId == @class.Id);
+            studentsListBox.DataSource = students.Select(x => x.ToString()).ToList();
+            
         }
     }
 }

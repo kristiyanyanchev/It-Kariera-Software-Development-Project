@@ -37,7 +37,6 @@ namespace Data.Repositories
                 var result = context.GradeRecords.Single(x => x.Id == entity.Id);
                 result.Date = entity.Date;
                 result.Grade = entity.Grade;
-                result.Student = entity.Student;
                 result.StudentId = entity.StudentId;
                 result.Subject = entity.Subject;
                 context.SaveChanges();

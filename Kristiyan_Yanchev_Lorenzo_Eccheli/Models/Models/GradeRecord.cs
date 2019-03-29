@@ -17,15 +17,14 @@ namespace Data.Models
         [Required]
         public string Subject { get; set; }
         [Required]
-        public Student Student { get; set; }
         public int StudentId { get; set; }
 
-        public GradeRecord(double grade, DateTime date, string subject, Student student)
+        public GradeRecord(double grade, DateTime date, string subject, int studentId)
         {
             Grade = grade;
             Date = date;
             Subject = subject;
-            Student = student;
+            StudentId = studentId;
         }
         public GradeRecord()
         {

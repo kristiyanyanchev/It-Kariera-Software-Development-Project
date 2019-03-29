@@ -29,7 +29,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
             Teacher = teacher;
             InitializeComponent();
-            TeacherGradeControl teachergrade = new TeacherGradeControl();
+            TeacherGradeControl teachergrade = new TeacherGradeControl(language,teacher);
             panelInformation.Controls.Add(teachergrade);
         }
 

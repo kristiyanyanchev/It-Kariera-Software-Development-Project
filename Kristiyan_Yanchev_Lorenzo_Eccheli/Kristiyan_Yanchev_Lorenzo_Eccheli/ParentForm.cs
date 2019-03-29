@@ -16,6 +16,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
     public partial class ParentForm : Form
     {
         private Parent Parent;
+        private string Language;
         public ParentForm(Parent parent)
         {
             Parent = parent;
@@ -25,6 +26,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         public ParentForm(string language,Parent parent)
         {
             Parent = parent;
+            Language = language;
 
             if (language == "Bulgarian")
             {
@@ -71,8 +73,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void gradeButton_Click(object sender, EventArgs e)
         {
-            StudentViewGradesForm studentgrade = new StudentViewGradesForm();
-            studentgrade.ShowDialog();
+            //StudentViewGradesForm studentgrade = new StudentViewGradesForm(language,);
+            //studentgrade.ShowDialog();
         }
 
         private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)

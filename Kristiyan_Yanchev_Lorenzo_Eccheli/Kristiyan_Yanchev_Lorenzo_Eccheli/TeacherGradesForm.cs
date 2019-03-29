@@ -32,8 +32,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
             InitializeComponent();
             
-            for(int i=0;i<teacher.Class.Students.Count;)
-            /*
+            /*for(int i=0;i<teacher.Class.Students.Count;)
+            
             if (language == "Bulgarian")
             {
 

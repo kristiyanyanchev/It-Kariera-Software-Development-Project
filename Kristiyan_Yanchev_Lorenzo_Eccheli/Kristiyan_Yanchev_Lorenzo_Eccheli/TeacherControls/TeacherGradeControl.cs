@@ -35,10 +35,7 @@ namespace WinFormsView.TeacherControls
             InitializeComponent();
 
             var classes = new ClassesRepository();
-            foreach (var @class in classes.List())
-            {
-                classesListBox.Items.Add(@class.ToString());
-            }
+            classesListBox.DataSource = classes.List().ToList();
 
             teacherGetter = teacher;
         }
@@ -46,8 +43,7 @@ namespace WinFormsView.TeacherControls
         private Teacher teacherGetter;
         private bool Validate()
         {
-            if(classesListBox.SelectedItem!=null && studentsListbox.SelectedItem!=null &&
-                gradesListBox.SelectedItem!=null)
+            if(classesListBox.SelectedItem!=null && studentsListbox.SelectedItem!=null)
             {
                 return true;
             }
@@ -74,7 +70,10 @@ namespace WinFormsView.TeacherControls
         {
             if(Validate() && gradeTextBox.Text!=null && Double.TryParse(gradeTextBox.Text,out double a))
             {
-                
+                var studentId = int.Parse(studentsListbox.SelectedItem.ToString().Split(' ').First());
+                var grade = new GradeRecord(double.Parse(gradeTextBox.Text), DateTime.Now, teacherGetter.Subject, studentId);
+                var grades = new GradesRepository();
+                grades.Add(grade);
             }
             else if(GetLanguage()=="English")
             {
@@ -104,11 +103,16 @@ namespace WinFormsView.TeacherControls
 
         private void classesListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            var @class = new ClassesRepository().List().Single(x => x.Name == classesListBox.SelectedItem.ToString());
+            var students = new StudentsRepository().List().Where(x => x.ClassId == @class.Id);
+            studentsListbox.DataSource = students.Select(x => x.ToString()).ToList();
         }
 
         private void studentsListbox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            var grades = new GradesRepository();
+            var studentId = int.Parse(studentsListbox.SelectedItem.ToString().Split(' ').First());
+           gradesListBox.DataSource = grades.List().Where(x => x.StudentId == studentId).ToList();
 
         }
     }
