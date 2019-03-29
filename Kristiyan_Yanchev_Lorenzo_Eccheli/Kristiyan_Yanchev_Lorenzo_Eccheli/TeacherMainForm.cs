@@ -116,7 +116,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void gradesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            TeacherGradeControl teachergrade = new TeacherGradeControl();
+            TeacherGradeControl teachergrade = new TeacherGradeControl(GetLanguage(), Teacher);
             panelInformation.Controls.Add(teachergrade);
         }
 

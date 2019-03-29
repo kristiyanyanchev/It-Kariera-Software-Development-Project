@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using Data.Models;
+using Data.Repositories;
 
 namespace WinFormsView.TeacherControls
 {
@@ -16,9 +18,10 @@ namespace WinFormsView.TeacherControls
         public TeacherGradeControl()
         {
             InitializeComponent();
+            
         }
 
-        public TeacherGradeControl(string language)
+        public TeacherGradeControl(string language,Teacher teacher)
         {
             if (language == "English")
             {
@@ -30,8 +33,17 @@ namespace WinFormsView.TeacherControls
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
             InitializeComponent();
+
+            var classes = new ClassesRepository();
+            foreach (var @class in classes.List())
+            {
+                classesListBox.Items.Add(@class.ToString());
+            }
+
+            teacherGetter = teacher;
         }
 
+        private Teacher teacherGetter;
         private bool Validate()
         {
             if(classesListBox.SelectedItem!=null && studentsListbox.SelectedItem!=null &&
@@ -88,6 +100,16 @@ namespace WinFormsView.TeacherControls
             {
                 MessageBox.Show("Трябва да изберете предмет", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void classesListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void studentsListbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

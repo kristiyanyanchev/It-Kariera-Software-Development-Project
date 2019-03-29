@@ -100,6 +100,7 @@
             resources.ApplyResources(this.studentsListbox, "studentsListbox");
             this.studentsListbox.FormattingEnabled = true;
             this.studentsListbox.Name = "studentsListbox";
+            this.studentsListbox.SelectedIndexChanged += new System.EventHandler(this.studentsListbox_SelectedIndexChanged);
             // 
             // classesListBox
             // 
@@ -107,6 +108,7 @@
             resources.ApplyResources(this.classesListBox, "classesListBox");
             this.classesListBox.FormattingEnabled = true;
             this.classesListBox.Name = "classesListBox";
+            this.classesListBox.SelectedIndexChanged += new System.EventHandler(this.classesListBox_SelectedIndexChanged);
             // 
             // classesLabel
             // 

@@ -90,7 +90,10 @@ namespace WinFormsView.TeacherControls
         {
             if (Validate())
             {
-
+                var students = new StudentsRepository();
+                var absences = new AbsencesRepository();
+                var studentId = int.Parse(studentsListBox.SelectedItem.ToString().Split(' ').First());
+                absences.Delete(absences.List().Where(x => x.StudentId == studentId).Last());
             }
             else if (GetLanguage() == "English")
             {
