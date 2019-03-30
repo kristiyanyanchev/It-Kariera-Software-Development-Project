@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using Data.Repositories;
+using Data.Models;
 
 namespace WinFormsView.TeacherControls
 {
@@ -56,11 +58,33 @@ namespace WinFormsView.TeacherControls
             }
         }
 
+        private void AddFields(Student student)
+        {
+            classTextBox.Text = student.Class.Name;
+            birthDateTextBox.Text = student.BirthDate.ToString();
+            inAbsentiaTextBox.Text = student.InAbsentia.ToString();
+            addressTextBox.Text = student.Address;
+            ucnTextBox.Text = student.Ucn;
+            phoneNumberTextBox.Text = student.PhoneNumber;
+            emailTextBox.Text = student.Email;
+        }
+
         private void searchButton_Click(object sender, EventArgs e)
         {
             if(Validate())
             {
-
+                StudentsRepository studentrepo = new StudentsRepository();
+                for(int i=0;i<studentrepo.List().Count();i++)
+                {
+                    if(searchFirstNameTextBox.Text==studentrepo.List().ElementAt(i).FirstName &&
+                        searchLastNameTextBox.Text==studentrepo.List().ElementAt(i).LastName)
+                    {
+                        Student student = new Student();
+                        student = studentrepo.List().ElementAt(i);
+                        AddFields(student);
+                        break;
+                    }
+                }
             }
             else if(GetLanguage()=="English")
             {

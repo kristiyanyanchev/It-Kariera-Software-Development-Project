@@ -236,6 +236,9 @@
     <EmbeddedResource Include="ParentControls\ParentGradeStatisticControl.resx">
       <DependentUpon>ParentGradeStatisticControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ParentControls\ParentViewGradeControl.bg-BG.resx">
+      <DependentUpon>ParentViewGradeControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ParentControls\ParentViewGradeControl.resx">
       <DependentUpon>ParentViewGradeControl.cs</DependentUpon>
     </EmbeddedResource>

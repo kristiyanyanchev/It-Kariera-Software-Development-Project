@@ -91,13 +91,25 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 else if(parentRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && parentRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
                 {
                     var parent = parentRepository.List().Single(x => x.Username == usernameTextBox.Text);
-                    var parentForm = new ParentForm(parent);
+                    var parentForm = new ParentForm(GetLanguage(),parent);
                     parentForm.ShowDialog();
                 }
+                else if (GetLanguage() == "English")
+                {
+                    MessageBox.Show("You doesn't have account!Please register", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else 
+                {
+                    MessageBox.Show("Нямате акаунт!Моля регистрирайте се", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else if(GetLanguage() == "English")
+            {
+                MessageBox.Show("Invalid Username or Passowrd!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Invalid Username or Passowrd!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Грешно име или парола", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

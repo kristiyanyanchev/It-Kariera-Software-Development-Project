@@ -119,64 +119,64 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="introductionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 11</value>
+    <value>265, 14</value>
   </data>
   <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 28</value>
+    <value>428, 35</value>
   </data>
   <data name="introductionLabel.Text" xml:space="preserve">
     <value>Регистрация в електронния дневник</value>
   </data>
   <data name="usernameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 107</value>
+    <value>20, 132</value>
   </data>
   <data name="usernameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 19</value>
+    <value>163, 24</value>
   </data>
   <data name="usernameLabel.Text" xml:space="preserve">
     <value>Потребителско име</value>
   </data>
   <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 236</value>
+    <value>21, 290</value>
   </data>
   <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 19</value>
+    <value>64, 24</value>
   </data>
   <data name="passwordLabel.Text" xml:space="preserve">
     <value>Парола</value>
   </data>
   <data name="emailLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 286</value>
+    <value>25, 352</value>
   </data>
   <data name="emailLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 19</value>
+    <value>59, 24</value>
   </data>
   <data name="emailLabel.Text" xml:space="preserve">
     <value>Имейл</value>
   </data>
   <data name="addressLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 342</value>
+    <value>21, 421</value>
   </data>
   <data name="addressLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 19</value>
+    <value>51, 24</value>
   </data>
   <data name="addressLabel.Text" xml:space="preserve">
     <value>Адрес</value>
   </data>
   <data name="phoneLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 392</value>
+    <value>21, 482</value>
   </data>
   <data name="phoneLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 19</value>
+    <value>139, 24</value>
   </data>
   <data name="phoneLabel.Text" xml:space="preserve">
     <value>Телефонен Номер</value>
   </data>
   <data name="roleLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 141</value>
+    <value>564, 174</value>
   </data>
   <data name="roleLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 19</value>
+    <value>45, 24</value>
   </data>
   <data name="roleLabel.Text" xml:space="preserve">
     <value>Роля</value>
@@ -194,28 +194,41 @@
     <value>Учител</value>
   </data>
   <data name="roleComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>535, 141</value>
+    <value>713, 174</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="roleComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="roleComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 27</value>
+    <value>160, 31</value>
   </data>
   <data name="roleComboBox.ToolTip" xml:space="preserve">
     <value>Изберете ролята си</value>
   </data>
   <data name="usernameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 107</value>
+    <value>249, 132</value>
+  </data>
+  <data name="usernameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="usernameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 20</value>
+    <value>171, 22</value>
+  </data>
+  <data name="usernameTextBox.ToolTip" xml:space="preserve">
+    <value>Трябва да е по-дълго от 8</value>
   </data>
   <data name="passwordTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="passwordTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 233</value>
+    <value>249, 287</value>
+  </data>
+  <data name="passwordTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="passwordTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
+    <value>171, 28</value>
   </data>
   <data name="passwordTextBox.ToolTip" xml:space="preserve">
     <value>Напишете паролата си</value>
@@ -224,10 +237,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="emailTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 282</value>
+    <value>249, 347</value>
+  </data>
+  <data name="emailTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="emailTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
+    <value>171, 28</value>
   </data>
   <data name="emailTextBox.ToolTip" xml:space="preserve">
     <value>Напишете имейла си</value>
@@ -236,10 +252,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="addressTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 335</value>
+    <value>249, 412</value>
+  </data>
+  <data name="addressTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="addressTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
+    <value>171, 28</value>
   </data>
   <data name="addressTextBox.ToolTip" xml:space="preserve">
     <value>Слойете адреса си</value>
@@ -248,19 +267,25 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="phoneNumberTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 388</value>
+    <value>249, 478</value>
+  </data>
+  <data name="phoneNumberTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="phoneNumberTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
+    <value>171, 28</value>
   </data>
   <data name="phoneNumberTextBox.ToolTip" xml:space="preserve">
     <value>Напишете телефонният си номер</value>
   </data>
   <data name="registrationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>302, 498</value>
+    <value>403, 613</value>
+  </data>
+  <data name="registrationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="registrationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 64</value>
+    <value>184, 79</value>
   </data>
   <data name="registrationButton.Text" xml:space="preserve">
     <value>Регистрация</value>
@@ -269,7 +294,13 @@
     <value>Регистрирайте новия си профил</value>
   </data>
   <data name="exitButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>612, 512</value>
+    <value>816, 630</value>
+  </data>
+  <data name="exitButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="exitButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 73</value>
   </data>
   <data name="exitButton.Text" xml:space="preserve">
     <value>Изход</value>
@@ -278,10 +309,10 @@
     <value>Излезте от приложението си</value>
   </data>
   <data name="lastNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 193</value>
+    <value>20, 238</value>
   </data>
   <data name="lastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 19</value>
+    <value>78, 24</value>
   </data>
   <data name="lastNameLabel.Text" xml:space="preserve">
     <value>Фамилия</value>
@@ -290,19 +321,25 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="lastNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 184</value>
+    <value>249, 226</value>
+  </data>
+  <data name="lastNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="lastNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
+    <value>171, 28</value>
   </data>
   <data name="lastNameTextBox.ToolTip" xml:space="preserve">
     <value>въведете фамилията си</value>
   </data>
   <data name="visibleCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 236</value>
+    <value>449, 290</value>
+  </data>
+  <data name="visibleCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="visibleCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 23</value>
+    <value>80, 28</value>
   </data>
   <data name="visibleCheckBox.Text" xml:space="preserve">
     <value>Видим</value>
@@ -311,10 +348,13 @@
     <value>Скрийте или покайете паролата си</value>
   </data>
   <data name="validationCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 449</value>
+    <value>21, 553</value>
+  </data>
+  <data name="validationCodeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="validationCodeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 19</value>
+    <value>45, 24</value>
   </data>
   <data name="validationCodeLabel.Text" xml:space="preserve">
     <value>*Код</value>
@@ -323,10 +363,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="validationCodeTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 447</value>
+    <value>249, 550</value>
+  </data>
+  <data name="validationCodeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="validationCodeTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
+    <value>171, 28</value>
   </data>
   <data name="validationCodeTextBox.ToolTip" xml:space="preserve">
     <value>Напишете кодът даден от даскало</value>
@@ -335,10 +378,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="birthdatePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 422</value>
+    <value>648, 519</value>
+  </data>
+  <data name="birthdatePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="birthdatePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 24</value>
+    <value>280, 28</value>
   </data>
   <data name="birthdatePicker.ToolTip" xml:space="preserve">
     <value>Слойете датата ви на раждане</value>
@@ -347,10 +393,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="ucnTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>535, 364</value>
+    <value>713, 448</value>
+  </data>
+  <data name="ucnTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="ucnTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
+    <value>171, 28</value>
   </data>
   <data name="ucnTextBox.ToolTip" xml:space="preserve">
     <value>Напишете егнто си</value>
@@ -359,31 +408,49 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="classnameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>535, 285</value>
+    <value>713, 351</value>
+  </data>
+  <data name="classnameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="classnameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
+    <value>171, 28</value>
   </data>
   <data name="classnameTextBox.ToolTip" xml:space="preserve">
     <value>Напишете класът си</value>
   </data>
   <data name="usernameOfChildTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>535, 202</value>
+    <value>713, 249</value>
+  </data>
+  <data name="usernameOfChildTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="usernameOfChildTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 22</value>
   </data>
   <data name="firstNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="firstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 145</value>
+    <value>249, 178</value>
+  </data>
+  <data name="firstNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="firstNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
+    <value>171, 28</value>
   </data>
   <data name="firstNameTextBox.ToolTip" xml:space="preserve">
     <value>Въведете си потребителско име</value>
   </data>
   <data name="backButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>612, 449</value>
+    <value>816, 553</value>
+  </data>
+  <data name="backButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="backButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 73</value>
   </data>
   <data name="backButton.Text" xml:space="preserve">
     <value>Назад</value>
@@ -401,10 +468,13 @@
     <value>Български</value>
   </data>
   <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>535, 101</value>
+    <value>713, 124</value>
+  </data>
+  <data name="languageComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 27</value>
+    <value>160, 31</value>
   </data>
   <data name="languageComboBox.ToolTip" xml:space="preserve">
     <value>Изберете езика си</value>
@@ -413,88 +483,100 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="subjectTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>535, 242</value>
+    <value>713, 298</value>
+  </data>
+  <data name="subjectTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="subjectTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
+    <value>171, 28</value>
   </data>
   <data name="positionTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>535, 329</value>
+    <value>713, 405</value>
+  </data>
+  <data name="positionTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="positionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 22</value>
   </data>
   <data name="birthdayLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>373, 422</value>
+    <value>497, 519</value>
   </data>
   <data name="birthdayLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 19</value>
+    <value>140, 24</value>
   </data>
   <data name="birthdayLabel.Text" xml:space="preserve">
     <value>Дата на раждане</value>
   </data>
   <data name="ucnLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 369</value>
+    <value>564, 454</value>
   </data>
   <data name="ucnLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
+    <value>41, 24</value>
   </data>
   <data name="ucnLabel.Text" xml:space="preserve">
     <value>ЕГН</value>
   </data>
   <data name="classnameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 282</value>
+    <value>564, 347</value>
   </data>
   <data name="classnameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 19</value>
+    <value>45, 24</value>
   </data>
   <data name="classnameLabel.Text" xml:space="preserve">
     <value>Клас</value>
   </data>
   <data name="usernameOfChildLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 193</value>
+    <value>564, 238</value>
   </data>
   <data name="usernameOfChildLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 19</value>
+    <value>124, 24</value>
   </data>
   <data name="usernameOfChildLabel.Text" xml:space="preserve">
     <value>Име на детето</value>
   </data>
   <data name="nameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 149</value>
+    <value>25, 183</value>
   </data>
   <data name="nameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 19</value>
+    <value>41, 24</value>
   </data>
   <data name="nameLabel.Text" xml:space="preserve">
     <value>Име</value>
   </data>
   <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 101</value>
+    <value>564, 124</value>
   </data>
   <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 19</value>
+    <value>45, 24</value>
   </data>
   <data name="languageLabel.Text" xml:space="preserve">
     <value>Език</value>
   </data>
   <data name="subjectLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 233</value>
+    <value>564, 287</value>
   </data>
   <data name="subjectLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 19</value>
+    <value>79, 24</value>
   </data>
   <data name="subjectLabel.Text" xml:space="preserve">
     <value>Предмет</value>
   </data>
   <data name="positionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 320</value>
+    <value>564, 394</value>
   </data>
   <data name="positionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 19</value>
+    <value>73, 24</value>
   </data>
   <data name="positionLabel.Text" xml:space="preserve">
     <value>Позиция</value>
   </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>705, 582</value>
+    <value>940, 716</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3475,5 +3557,8 @@
         ///+AAAAAAAH///////////////////////////////////4AAAAAP//////////////////////////
         //////////+AAAAP//////////////////8=
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
 </root>
