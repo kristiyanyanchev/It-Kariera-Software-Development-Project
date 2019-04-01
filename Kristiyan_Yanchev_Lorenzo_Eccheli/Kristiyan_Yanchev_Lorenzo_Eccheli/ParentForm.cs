@@ -21,6 +21,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
             Parent = parent;
             InitializeComponent();
+            
         }
 
         public ParentForm(string language,Parent parent)
@@ -37,6 +38,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
             }
             InitializeComponent();
+            var gradeControl = new ParentControls.ParentViewGradeControl(Language, Parent);
+            panelInformation.Controls.Add(gradeControl);
         }
 
         private bool Validate()
@@ -73,7 +76,8 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void gradeButton_Click(object sender, EventArgs e)
         {
-            //StudentViewGradesForm studentgrade = new StudentViewGradesForm(language,);
+            //panelInformation.control
+            //StudentViewGradesForm studentgrade = new ParentControls.ParentViewGradeControl(Language, Parent);
             //studentgrade.ShowDialog();
         }
 

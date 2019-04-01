@@ -21,12 +21,12 @@ namespace Data
         private static string connectionString = "Server=.;Database=ClassBookDb;Trusted_Connection=True;";
         public ClassBookContext() : base(connectionString)
         {
-
+            
         }
 
         public ClassBookContext(string connectionString) : base(connectionString)
         {
-
+            Configuration.LazyLoadingEnabled = false;
         }
         
 

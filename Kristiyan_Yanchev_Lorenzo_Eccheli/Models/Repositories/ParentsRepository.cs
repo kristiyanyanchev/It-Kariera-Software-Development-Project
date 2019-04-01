@@ -3,7 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
- 
+using System.Data.Entity;
+
 
 namespace Data.Repositories
 {
@@ -63,9 +64,24 @@ namespace Data.Repositories
             List<Parent> result;
             using (var context = new ClassBookContext())
             {
-                result = context.Parents.ToList();
+                result = context.Parents.Include(b => b.Children).ToList();
             }
             return result;
+
+        }
+
+        public virtual void AddParentWithChildren(Parent parent, IList<Student> students)
+        {
+            using (var context = new ClassBookContext())
+            {
+                
+                students.ToList().ForEach(x => context.Students.Attach(x));
+                students.ToList().ForEach(x => parent.Children.Add(x));
+                context.Parents.Add(parent);
+
+                context.SaveChanges();
+
+            }
 
         }
     }

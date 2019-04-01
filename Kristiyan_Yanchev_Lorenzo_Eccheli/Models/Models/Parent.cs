@@ -30,7 +30,7 @@ namespace Data.Models
 
         public Parent()
         {
-
+            Children = new List<Student>();
         }
 
         public Parent(string firstName, string lastName, string address, string validationCode)
@@ -52,5 +52,7 @@ namespace Data.Models
             ValidationCode = validationCode;
             Children = new List<Student>();
         }
+
+       
     }
 }

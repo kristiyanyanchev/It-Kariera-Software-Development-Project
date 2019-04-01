@@ -29,63 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ParentViewGradeControl));
-            this.viewStatisticButton = new System.Windows.Forms.Button();
             this.gradesDataGrid = new System.Windows.Forms.DataGridView();
-            this.childnameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gradesDataGrid)).BeginInit();
             this.SuspendLayout();
-            // 
-            // viewStatisticButton
-            // 
-            resources.ApplyResources(this.viewStatisticButton, "viewStatisticButton");
-            this.viewStatisticButton.BackColor = System.Drawing.Color.FloralWhite;
-            this.viewStatisticButton.Name = "viewStatisticButton";
-            this.viewStatisticButton.UseVisualStyleBackColor = false;
             // 
             // gradesDataGrid
             // 
             resources.ApplyResources(this.gradesDataGrid, "gradesDataGrid");
             this.gradesDataGrid.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.gradesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gradesDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.childnameColumn,
-            this.Date,
-            this.Grade,
-            this.Subject});
             this.gradesDataGrid.Name = "gradesDataGrid";
-            // 
-            // childnameColumn
-            // 
-            resources.ApplyResources(this.childnameColumn, "childnameColumn");
-            this.childnameColumn.Name = "childnameColumn";
-            // 
-            // Date
-            // 
-            resources.ApplyResources(this.Date, "Date");
-            this.Date.Name = "Date";
-            this.Date.ReadOnly = true;
-            // 
-            // Grade
-            // 
-            resources.ApplyResources(this.Grade, "Grade");
-            this.Grade.Name = "Grade";
-            this.Grade.ReadOnly = true;
-            // 
-            // Subject
-            // 
-            resources.ApplyResources(this.Subject, "Subject");
-            this.Subject.Name = "Subject";
-            this.Subject.ReadOnly = true;
             // 
             // ParentViewGradeControl
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
-            this.Controls.Add(this.viewStatisticButton);
             this.Controls.Add(this.gradesDataGrid);
             this.Name = "ParentViewGradeControl";
             ((System.ComponentModel.ISupportInitialize)(this.gradesDataGrid)).EndInit();
@@ -94,12 +53,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button viewStatisticButton;
         private System.Windows.Forms.DataGridView gradesDataGrid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn childnameColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Grade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Subject;
     }
 }

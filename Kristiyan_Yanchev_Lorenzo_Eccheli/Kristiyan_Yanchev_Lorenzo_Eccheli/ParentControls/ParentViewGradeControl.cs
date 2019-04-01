@@ -27,6 +27,11 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli.ParentControls
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
             InitializeComponent();
+            var parentsRepo = new ParentsRepository();
+            var children = parent.Children;
+            var students = new StudentsRepository();
+            var grades = new GradesRepository().List().Select(x => new { x.Student.FirstName, x.Subject, x.Grade, x.Date }).ToList();
+            gradesDataGrid.DataSource = grades;
         }
 
         private void AddFields(Parent parent)

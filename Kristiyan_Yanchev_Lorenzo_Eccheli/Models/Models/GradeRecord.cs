@@ -19,6 +19,8 @@ namespace Data.Models
         [Required]
         public int StudentId { get; set; }
 
+        public Student Student { get; set; }
+
         public GradeRecord(double grade, DateTime date, string subject, int studentId)
         {
             Grade = grade;

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.Entity;
 
 namespace Data.Repositories
 {
@@ -60,7 +61,7 @@ namespace Data.Repositories
             List<GradeRecord> result;
             using (var context = new ClassBookContext())
             {
-                result = context.GradeRecords.ToList();
+                result = context.GradeRecords.Include(x => x.Student).ToList();
             }
             return result;
 

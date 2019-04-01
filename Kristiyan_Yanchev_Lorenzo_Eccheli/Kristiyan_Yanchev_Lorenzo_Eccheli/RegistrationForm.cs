@@ -211,10 +211,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                     {
                         var parent = new Parent(parentDto.FirstName, parentDto.LastName, parentDto.Address, parentDto.Email,
                             parentDto.PhoneNumber, parentDto.Username, parentDto.Password, parentDto.ValidationCode);
-                        var studentRepo = new StudentsRepository();
-                        parent.Children.Add(studentRepo.List().Single(x => x.Username == parentDto.UsernameOfChild));
+                        var children = new StudentsRepository().List().Where(x => x.Username == parentDto.UsernameOfChild).ToList();
+                        
 
-                        parentRepo.Add(parent);
+                        parentRepo.AddParentWithChildren(parent, children);
                         var validationCodes = new ValidationCodeRepository();
                         var currentValidationCode = validationCodes.List().Single(x => x.Code == parentDto.ValidationCode);
                         currentValidationCode.Used = true;
