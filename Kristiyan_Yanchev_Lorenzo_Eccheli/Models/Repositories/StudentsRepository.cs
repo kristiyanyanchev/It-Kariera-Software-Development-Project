@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.Entity;
 
 namespace Data.Repositories
 {
@@ -70,7 +71,7 @@ namespace Data.Repositories
             List<Student> result;
             using (var context = new ClassBookContext())
             {
-                result = context.Students.ToList();
+                result = context.Students.Include(x => x.Class).ToList();
             }
             return result;
         }

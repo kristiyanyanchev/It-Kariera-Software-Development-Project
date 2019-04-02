@@ -60,13 +60,15 @@ namespace WinFormsView.TeacherControls
 
         private void AddFields(Student student)
         {
-            classTextBox.Text = student.Class.Name;
-            birthDateTextBox.Text = student.BirthDate.ToString();
-            inAbsentiaTextBox.Text = student.InAbsentia.ToString();
+
+            //classTextBox.Text = student.Class.Name;
+            //birthDateTextBox.Text = student.BirthDate.ToString();
             addressTextBox.Text = student.Address;
             ucnTextBox.Text = student.Ucn;
             phoneNumberTextBox.Text = student.PhoneNumber;
             emailTextBox.Text = student.Email;
+            birthDateTextBox.Text = student.BirthDate.ToShortDateString();
+            classTextBox.Text = student.Class.Name;
         }
 
         private void searchButton_Click(object sender, EventArgs e)

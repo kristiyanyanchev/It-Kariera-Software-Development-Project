@@ -37,12 +37,8 @@
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.phoneNumberTextBox = new System.Windows.Forms.TextBox();
             this.ucnTextBox = new System.Windows.Forms.TextBox();
-            this.schoolarshipTextBox = new System.Windows.Forms.TextBox();
-            this.schoolarshipLabel = new System.Windows.Forms.Label();
             this.addressTextBox = new System.Windows.Forms.TextBox();
             this.birthDateLabel = new System.Windows.Forms.Label();
-            this.inAbsentiaTextBox = new System.Windows.Forms.TextBox();
-            this.inAbsentiaLabel = new System.Windows.Forms.Label();
             this.birthDateTextBox = new System.Windows.Forms.TextBox();
             this.classTextBox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
@@ -84,42 +80,29 @@
             // 
             // emailTextBox
             // 
-            resources.ApplyResources(this.emailTextBox, "emailTextBox");
             this.emailTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.emailTextBox, "emailTextBox");
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.ReadOnly = true;
             // 
             // phoneNumberTextBox
             // 
-            resources.ApplyResources(this.phoneNumberTextBox, "phoneNumberTextBox");
             this.phoneNumberTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.phoneNumberTextBox, "phoneNumberTextBox");
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.ReadOnly = true;
             // 
             // ucnTextBox
             // 
-            resources.ApplyResources(this.ucnTextBox, "ucnTextBox");
             this.ucnTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.ucnTextBox, "ucnTextBox");
             this.ucnTextBox.Name = "ucnTextBox";
             this.ucnTextBox.ReadOnly = true;
             // 
-            // schoolarshipTextBox
-            // 
-            resources.ApplyResources(this.schoolarshipTextBox, "schoolarshipTextBox");
-            this.schoolarshipTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.schoolarshipTextBox.Name = "schoolarshipTextBox";
-            this.schoolarshipTextBox.ReadOnly = true;
-            // 
-            // schoolarshipLabel
-            // 
-            resources.ApplyResources(this.schoolarshipLabel, "schoolarshipLabel");
-            this.schoolarshipLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.schoolarshipLabel.Name = "schoolarshipLabel";
-            // 
             // addressTextBox
             // 
-            resources.ApplyResources(this.addressTextBox, "addressTextBox");
             this.addressTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.addressTextBox, "addressTextBox");
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.ReadOnly = true;
             // 
@@ -129,45 +112,32 @@
             this.birthDateLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.birthDateLabel.Name = "birthDateLabel";
             // 
-            // inAbsentiaTextBox
-            // 
-            resources.ApplyResources(this.inAbsentiaTextBox, "inAbsentiaTextBox");
-            this.inAbsentiaTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.inAbsentiaTextBox.Name = "inAbsentiaTextBox";
-            this.inAbsentiaTextBox.ReadOnly = true;
-            // 
-            // inAbsentiaLabel
-            // 
-            resources.ApplyResources(this.inAbsentiaLabel, "inAbsentiaLabel");
-            this.inAbsentiaLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.inAbsentiaLabel.Name = "inAbsentiaLabel";
-            // 
             // birthDateTextBox
             // 
-            resources.ApplyResources(this.birthDateTextBox, "birthDateTextBox");
             this.birthDateTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.birthDateTextBox, "birthDateTextBox");
             this.birthDateTextBox.Name = "birthDateTextBox";
             this.birthDateTextBox.ReadOnly = true;
             // 
             // classTextBox
             // 
-            resources.ApplyResources(this.classTextBox, "classTextBox");
             this.classTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.classTextBox, "classTextBox");
             this.classTextBox.Name = "classTextBox";
             this.classTextBox.ReadOnly = true;
             // 
             // searchButton
             // 
-            resources.ApplyResources(this.searchButton, "searchButton");
             this.searchButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.searchButton, "searchButton");
             this.searchButton.Name = "searchButton";
             this.searchButton.UseVisualStyleBackColor = false;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // searchLastNameTextBox
             // 
-            resources.ApplyResources(this.searchLastNameTextBox, "searchLastNameTextBox");
             this.searchLastNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.searchLastNameTextBox, "searchLastNameTextBox");
             this.searchLastNameTextBox.Name = "searchLastNameTextBox";
             // 
             // lastNameLabel
@@ -184,8 +154,8 @@
             // 
             // searchFirstNameTextBox
             // 
-            resources.ApplyResources(this.searchFirstNameTextBox, "searchFirstNameTextBox");
             this.searchFirstNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.searchFirstNameTextBox, "searchFirstNameTextBox");
             this.searchFirstNameTextBox.Name = "searchFirstNameTextBox";
             // 
             // TeacherViewStudentControl
@@ -201,12 +171,8 @@
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.phoneNumberTextBox);
             this.Controls.Add(this.ucnTextBox);
-            this.Controls.Add(this.schoolarshipTextBox);
-            this.Controls.Add(this.schoolarshipLabel);
             this.Controls.Add(this.addressTextBox);
             this.Controls.Add(this.birthDateLabel);
-            this.Controls.Add(this.inAbsentiaTextBox);
-            this.Controls.Add(this.inAbsentiaLabel);
             this.Controls.Add(this.birthDateTextBox);
             this.Controls.Add(this.classTextBox);
             this.Controls.Add(this.searchButton);
@@ -230,12 +196,8 @@
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.TextBox phoneNumberTextBox;
         private System.Windows.Forms.TextBox ucnTextBox;
-        private System.Windows.Forms.TextBox schoolarshipTextBox;
-        private System.Windows.Forms.Label schoolarshipLabel;
         private System.Windows.Forms.TextBox addressTextBox;
         private System.Windows.Forms.Label birthDateLabel;
-        private System.Windows.Forms.TextBox inAbsentiaTextBox;
-        private System.Windows.Forms.Label inAbsentiaLabel;
         private System.Windows.Forms.TextBox birthDateTextBox;
         private System.Windows.Forms.TextBox classTextBox;
         private System.Windows.Forms.Button searchButton;

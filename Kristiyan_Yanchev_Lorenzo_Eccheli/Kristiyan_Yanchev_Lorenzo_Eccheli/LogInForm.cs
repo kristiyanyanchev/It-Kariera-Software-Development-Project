@@ -91,7 +91,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 else if(parentRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && parentRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
                 {
                     var parent = parentRepository.List().Single(x => x.Username == usernameTextBox.Text);
-                    var parentForm = new ParentForm(GetLanguage(),parent);
+                    var parentForm = new ParentForm(GetLanguage(), parent);
                     parentForm.ShowDialog();
                 }
                 else if (GetLanguage() == "English")

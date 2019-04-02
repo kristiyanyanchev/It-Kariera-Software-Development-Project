@@ -117,36 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="phoneNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 19</value>
-  </data>
-  <data name="phoneNumberLabel.Text" xml:space="preserve">
-    <value>Телефонен номер
-</value>
-  </data>
-  <data name="emailLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 19</value>
-  </data>
   <data name="emailLabel.Text" xml:space="preserve">
     <value>Имейл</value>
   </data>
-  <data name="saveChangesButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 60</value>
+  <data name="firstNameLabel.Text" xml:space="preserve">
+    <value>Име</value>
   </data>
-  <data name="saveChangesButton.Text" xml:space="preserve">
-    <value>Запази промените</value>
+  <data name="lastNameLabel.Text" xml:space="preserve">
+    <value>Фамилия</value>
   </data>
-  <data name="closeButton.Text" xml:space="preserve">
-    <value>Затвори</value>
-  </data>
-  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 19</value>
-  </data>
-  <data name="languageLabel.Text" xml:space="preserve">
-    <value>Език</value>
-  </data>
-  <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 21</value>
+  <data name="phoneNumberLabel.Text" xml:space="preserve">
+    <value>Номер</value>
   </data>
 </root>

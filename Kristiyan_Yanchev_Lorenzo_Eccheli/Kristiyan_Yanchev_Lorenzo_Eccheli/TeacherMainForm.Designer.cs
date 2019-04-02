@@ -38,7 +38,6 @@
             this.panelInformation = new System.Windows.Forms.Panel();
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.gradesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.вижтеУченикToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewStudentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.absencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -92,7 +91,6 @@
             this.MenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gradesToolStripMenuItem,
-            this.вижтеУченикToolStripMenuItem,
             this.viewStudentsToolStripMenuItem,
             this.absencesToolStripMenuItem,
             this.changePasswordToolStripMenuItem,
@@ -104,11 +102,6 @@
             this.gradesToolStripMenuItem.Name = "gradesToolStripMenuItem";
             resources.ApplyResources(this.gradesToolStripMenuItem, "gradesToolStripMenuItem");
             this.gradesToolStripMenuItem.Click += new System.EventHandler(this.gradesToolStripMenuItem_Click);
-            // 
-            // вижтеУченикToolStripMenuItem
-            // 
-            this.вижтеУченикToolStripMenuItem.Name = "вижтеУченикToolStripMenuItem";
-            resources.ApplyResources(this.вижтеУченикToolStripMenuItem, "вижтеУченикToolStripMenuItem");
             // 
             // viewStudentsToolStripMenuItem
             // 
@@ -163,7 +156,6 @@
         private System.Windows.Forms.Panel panelInformation;
         private System.Windows.Forms.MenuStrip MenuStrip;
         private System.Windows.Forms.ToolStripMenuItem gradesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem вижтеУченикToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem absencesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changeInformationToolStripMenuItem;

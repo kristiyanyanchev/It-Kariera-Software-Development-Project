@@ -59,5 +59,11 @@ namespace Data.Models
             ValidationCode = validationCode;
             Address = address;
         }
+
+        public override string ToString()   
+        {
+            return Id + " " + FirstName + " " + LastName + " " + Subject;
+        
+        }
     }
 }

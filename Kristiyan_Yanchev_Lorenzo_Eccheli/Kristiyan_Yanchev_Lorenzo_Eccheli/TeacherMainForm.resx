@@ -126,13 +126,10 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="exitButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>824, 538</value>
-  </data>
-  <data name="exitButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>618, 437</value>
   </data>
   <data name="exitButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 86</value>
+    <value>130, 70</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="exitButton.TabIndex" type="System.Int32, mscorlib">
@@ -166,13 +163,10 @@
     <value>Sitka Heading, 14.25pt, style=Bold, Italic</value>
   </data>
   <data name="introductionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 63</value>
-  </data>
-  <data name="introductionLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>160, 51</value>
   </data>
   <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 35</value>
+    <value>267, 28</value>
   </data>
   <data name="introductionLabel.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -199,13 +193,10 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>728, 160</value>
-  </data>
-  <data name="languageLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>546, 130</value>
   </data>
   <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 24</value>
+    <value>62, 19</value>
   </data>
   <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -235,13 +226,10 @@
     <value>Bulgarian</value>
   </data>
   <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>836, 156</value>
-  </data>
-  <data name="languageComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>627, 127</value>
   </data>
   <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 31</value>
+    <value>121, 27</value>
   </data>
   <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -262,13 +250,10 @@
     <value>2</value>
   </data>
   <data name="panelInformation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 134</value>
-  </data>
-  <data name="panelInformation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>10, 109</value>
   </data>
   <data name="panelInformation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>704, 492</value>
+    <value>528, 400</value>
   </data>
   <data name="panelInformation.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -292,34 +277,31 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="gradesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 28</value>
+    <value>60, 23</value>
   </data>
   <data name="gradesToolStripMenuItem.Text" xml:space="preserve">
     <value>Grades</value>
   </data>
-  <data name="вижтеУченикToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>12, 28</value>
-  </data>
   <data name="viewStudentsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 28</value>
+    <value>102, 23</value>
   </data>
   <data name="viewStudentsToolStripMenuItem.Text" xml:space="preserve">
     <value>View Students</value>
   </data>
   <data name="absencesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 28</value>
+    <value>72, 23</value>
   </data>
   <data name="absencesToolStripMenuItem.Text" xml:space="preserve">
     <value>Absences</value>
   </data>
   <data name="changePasswordToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 28</value>
+    <value>118, 23</value>
   </data>
   <data name="changePasswordToolStripMenuItem.Text" xml:space="preserve">
     <value>Change Password</value>
   </data>
   <data name="changeInformationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 28</value>
+    <value>129, 23</value>
   </data>
   <data name="changeInformationToolStripMenuItem.Text" xml:space="preserve">
     <value>Change Information</value>
@@ -327,11 +309,8 @@
   <data name="MenuStrip.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="MenuStrip.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 2, 0, 2</value>
-  </data>
   <data name="MenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1025, 32</value>
+    <value>769, 27</value>
   </data>
   <data name="MenuStrip.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -358,13 +337,10 @@
     <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1025, 639</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>769, 519</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>E-journal</value>
@@ -379,12 +355,6 @@
     <value>gradesToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;gradesToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;вижтеУченикToolStripMenuItem.Name" xml:space="preserve">
-    <value>вижтеУченикToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;вижтеУченикToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;viewStudentsToolStripMenuItem.Name" xml:space="preserve">

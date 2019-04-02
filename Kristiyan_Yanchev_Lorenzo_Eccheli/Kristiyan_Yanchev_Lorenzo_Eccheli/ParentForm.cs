@@ -1,15 +1,15 @@
-﻿using System;
+﻿using Data.Models;
+using Data.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Windows.Forms;
-using System.Globalization;
 using System.Threading;
-using System.Resources;
-using Data.Models;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -21,10 +21,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
             Parent = parent;
             InitializeComponent();
-            
+
         }
 
-        public ParentForm(string language,Parent parent)
+        public ParentForm(string language, Parent parent)
         {
             Parent = parent;
             Language = language;
@@ -38,6 +38,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
             }
             InitializeComponent();
+            teacherListBox.DataSource = new TeachersRepository().List();
             var gradeControl = new ParentControls.ParentViewGradeControl(Language, Parent);
             panelInformation.Controls.Add(gradeControl);
         }
@@ -63,22 +64,30 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 
         private void selectButton_Click(object sender, EventArgs e)
         {
-            if(Validate())
+            if (Validate())
             {
+                var selectedTeacherId = int.Parse(teacherListBox.SelectedItem.ToString().Split(' ').First());
+                var selectedTeacher = new TeachersRepository().GetById(selectedTeacherId);
 
+                var contactControl = new ParentControls.ParentContactTeacherControl(selectedTeacher, Language);
+                panelInformation.Controls.Clear();
+                panelInformation.Controls.Add(contactControl);
             }
             else
             {
                 MessageBox.Show("You havent selected item", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            
+
             }
         }
 
         private void gradeButton_Click(object sender, EventArgs e)
         {
-            //panelInformation.control
-            //StudentViewGradesForm studentgrade = new ParentControls.ParentViewGradeControl(Language, Parent);
-            //studentgrade.ShowDialog();
+
+            var gradeControl = new ParentControls.ParentViewGradeControl(Language, Parent);
+            panelInformation.Controls.Clear();
+            panelInformation.Controls.Add(gradeControl);
+
+
         }
 
         private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -87,13 +96,18 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             if (languageComboBox.SelectedItem.ToString() == "English" ||
                 languageComboBox.SelectedItem.ToString() == "Английски")
             {
+                Language = "English";
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("aa");
             }
             else
             {
+                Language = "Bulgarian";
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
             InitializeComponent();
+            teacherListBox.DataSource = new TeachersRepository().List();
+            var gradeControl = new ParentControls.ParentViewGradeControl(Language, Parent);
+            panelInformation.Controls.Add(gradeControl);
         }
 
     }

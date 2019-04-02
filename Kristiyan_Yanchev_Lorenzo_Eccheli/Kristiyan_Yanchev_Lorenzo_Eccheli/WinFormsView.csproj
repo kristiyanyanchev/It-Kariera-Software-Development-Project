@@ -48,23 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChangePasswordForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChangePasswordForm.Designer.cs">
-      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChangeInformationForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChangeInformationForm.Designer.cs">
-      <DependentUpon>ChangeInformationForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ParentControls\ParentGradeStatisticControl.cs">
+    <Compile Include="ParentControls\ParentContactTeacherControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ParentControls\ParentGradeStatisticControl.Designer.cs">
-      <DependentUpon>ParentGradeStatisticControl.cs</DependentUpon>
+    <Compile Include="ParentControls\ParentContactTeacherControl.Designer.cs">
+      <DependentUpon>ParentContactTeacherControl.cs</DependentUpon>
     </Compile>
     <Compile Include="ParentControls\ParentViewGradeControl.cs">
       <SubType>UserControl</SubType>
@@ -72,17 +60,17 @@
     <Compile Include="ParentControls\ParentViewGradeControl.Designer.cs">
       <DependentUpon>ParentViewGradeControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="ParentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ParentForm.Designer.cs">
-      <DependentUpon>ParentForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="LogInForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LogInForm.Designer.cs">
       <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentForm.Designer.cs">
+      <DependentUpon>ParentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -128,29 +116,11 @@
     <Compile Include="StudentControls\StudentViewGradeContol.Designer.cs">
       <DependentUpon>StudentViewGradeContol.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentGradesStatisticsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentGradesStatisticsForm.Designer.cs">
-      <DependentUpon>StudentGradesStatisticsForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="StudentMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StudentMainForm.Designer.cs">
       <DependentUpon>StudentMainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StudentViewAbsencesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentViewAbsencesForm.Designer.cs">
-      <DependentUpon>StudentViewAbsencesForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StudentViewGradesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentViewGradesForm.Designer.cs">
-      <DependentUpon>StudentViewGradesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TeacherControls\TeacherAbsencesControl.cs">
       <SubType>UserControl</SubType>
@@ -170,29 +140,11 @@
     <Compile Include="TeacherControls\TeacherViewStudentControl.Designer.cs">
       <DependentUpon>TeacherViewStudentControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherViewStudentsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TeacherViewStudentsForm.Designer.cs">
-      <DependentUpon>TeacherViewStudentsForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TeacherAbsencesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TeacherAbsencesForm.Designer.cs">
-      <DependentUpon>TeacherAbsencesForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="TeacherMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TeacherMainForm.Designer.cs">
       <DependentUpon>TeacherMainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TeacherGradesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TeacherGradesForm.Designer.cs">
-      <DependentUpon>TeacherGradesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateControls\ChangeInformationControl.cs">
       <SubType>UserControl</SubType>
@@ -206,18 +158,6 @@
     <Compile Include="UpdateControls\ChangePasswordControl.Designer.cs">
       <DependentUpon>ChangePasswordControl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ChangeInformationForm.bg-BG.resx">
-      <DependentUpon>ChangeInformationForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChangePasswordForm.bg-BG.resx">
-      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChangePasswordForm.resx">
-      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChangeInformationForm.resx">
-      <DependentUpon>ChangeInformationForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.aa.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,11 +170,11 @@
     <EmbeddedResource Include="LogInForm.en-150.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ParentControls\ParentGradeStatisticControl.bg-BG.resx">
-      <DependentUpon>ParentGradeStatisticControl.cs</DependentUpon>
+    <EmbeddedResource Include="ParentControls\ParentContactTeacherControl.bg-BG.resx">
+      <DependentUpon>ParentContactTeacherControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ParentControls\ParentGradeStatisticControl.resx">
-      <DependentUpon>ParentGradeStatisticControl.cs</DependentUpon>
+    <EmbeddedResource Include="ParentControls\ParentContactTeacherControl.resx">
+      <DependentUpon>ParentContactTeacherControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParentControls\ParentViewGradeControl.bg-BG.resx">
       <DependentUpon>ParentViewGradeControl.cs</DependentUpon>
@@ -245,11 +185,11 @@
     <EmbeddedResource Include="ParentForm.bg-BG.resx">
       <DependentUpon>ParentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ParentForm.resx">
-      <DependentUpon>ParentForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentForm.resx">
+      <DependentUpon>ParentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -303,23 +243,11 @@
     <EmbeddedResource Include="StudentControls\StudentViewGradeContol.resx">
       <DependentUpon>StudentViewGradeContol.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentGradesStatisticsForm.bg-BG.resx">
-      <DependentUpon>StudentGradesStatisticsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentGradesStatisticsForm.resx">
-      <DependentUpon>StudentGradesStatisticsForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="StudentMainForm.bg-BG.resx">
       <DependentUpon>StudentMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentMainForm.resx">
       <DependentUpon>StudentMainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentViewAbsencesForm.resx">
-      <DependentUpon>StudentViewAbsencesForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentViewGradesForm.resx">
-      <DependentUpon>StudentViewGradesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherControls\TeacherAbsencesControl.bg-BG.resx">
       <DependentUpon>TeacherAbsencesControl.cs</DependentUpon>
@@ -339,26 +267,11 @@
     <EmbeddedResource Include="TeacherControls\TeacherViewStudentControl.resx">
       <DependentUpon>TeacherViewStudentControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherGradesForm.bg-BG.resx">
-      <DependentUpon>TeacherGradesForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TeacherMainForm.bg-BG.resx">
       <DependentUpon>TeacherMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherViewStudentsForm.bg-BG.resx">
-      <DependentUpon>TeacherViewStudentsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TeacherViewStudentsForm.resx">
-      <DependentUpon>TeacherViewStudentsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TeacherAbsencesForm.resx">
-      <DependentUpon>TeacherAbsencesForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TeacherMainForm.resx">
       <DependentUpon>TeacherMainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TeacherGradesForm.resx">
-      <DependentUpon>TeacherGradesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateControls\ChangeInformationControl.bg-BG.resx">
       <DependentUpon>ChangeInformationControl.cs</DependentUpon>
