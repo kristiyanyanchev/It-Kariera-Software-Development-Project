@@ -108,6 +108,7 @@ namespace WinFormsView.UpdateControls
                 if (isstudent)
                 {
                     newPasswordTextBox.PasswordChar = '\0';
+                    studentinfo = studentrepo.GetById(studentinfo.Id);
                     studentinfo.Password = newPasswordTextBox.Text;
                     studentrepo.Edit(studentinfo);
                     if(visibleCheckBox.Checked==false)

@@ -12,11 +12,13 @@ using System.Resources;
 using Data.Models;
 using WinFormsView.TeacherControls;
 using WinFormsView.UpdateControls;
+using Kristiyan_Yanchev_Lorenzo_Eccheli.UpdateControls;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
     public partial class TeacherMainForm : Form
     {
+        string Language;
         public TeacherMainForm(string language,Teacher teacher)
         {
             if (language == "English")
@@ -28,6 +30,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
             Teacher = teacher;
+            Language = language;
             InitializeComponent();
             TeacherGradeControl teachergrade = new TeacherGradeControl(language,teacher);
             panelInformation.Controls.Add(teachergrade);
@@ -70,7 +73,11 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             {
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
+
             InitializeComponent();
+            TeacherGradeControl teachergrade = new TeacherGradeControl(Language, Teacher);
+            panelInformation.Controls.Add(teachergrade);
+
             /*
             if(languageComboBox.SelectedItem.ToString()=="English")
             {
@@ -144,7 +151,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void changeInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            ChangeInformationControl teacherchangeinformation = new ChangeInformationControl(GetLanguage(), Teacher);
+            ChangeInformationControl teacherchangeinformation = new ChangeInformationControl(Teacher,GetLanguage());
             
             panelInformation.Controls.Add(teacherchangeinformation);
         }

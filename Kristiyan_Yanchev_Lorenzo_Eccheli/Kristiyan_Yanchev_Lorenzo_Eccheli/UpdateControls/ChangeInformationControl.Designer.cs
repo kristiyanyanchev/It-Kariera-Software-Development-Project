@@ -1,4 +1,4 @@
-﻿namespace WinFormsView.UpdateControls
+﻿namespace Kristiyan_Yanchev_Lorenzo_Eccheli.UpdateControls
 {
     partial class ChangeInformationControl
     {
@@ -29,56 +29,70 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangeInformationControl));
-            this.saveChangesButton = new System.Windows.Forms.Button();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.emailLabel = new System.Windows.Forms.Label();
-            this.phoneNumberTextBox = new System.Windows.Forms.TextBox();
             this.phoneNumberLabel = new System.Windows.Forms.Label();
+            this.phoneNumberTextBox = new System.Windows.Forms.TextBox();
+            this.changeInfrormationButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // saveChangesButton
-            // 
-            this.saveChangesButton.BackColor = System.Drawing.Color.FloralWhite;
-            resources.ApplyResources(this.saveChangesButton, "saveChangesButton");
-            this.saveChangesButton.Name = "saveChangesButton";
-            this.saveChangesButton.UseVisualStyleBackColor = false;
-            this.saveChangesButton.Click += new System.EventHandler(this.saveChangesButton_Click);
             // 
             // emailTextBox
             // 
-            this.emailTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            resources.ApplyResources(this.emailTextBox, "emailTextBox");
+            this.emailTextBox.Location = new System.Drawing.Point(46, 48);
             this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(124, 20);
+            this.emailTextBox.TabIndex = 0;
+            
             // 
             // emailLabel
             // 
-            resources.ApplyResources(this.emailLabel, "emailLabel");
-            this.emailLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.emailLabel.AutoSize = true;
+            this.emailLabel.Location = new System.Drawing.Point(48, 31);
             this.emailLabel.Name = "emailLabel";
-            // 
-            // phoneNumberTextBox
-            // 
-            this.phoneNumberTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            resources.ApplyResources(this.phoneNumberTextBox, "phoneNumberTextBox");
-            this.phoneNumberTextBox.Name = "phoneNumberTextBox";
+            this.emailLabel.Size = new System.Drawing.Size(32, 13);
+            this.emailLabel.TabIndex = 1;
+            this.emailLabel.Text = "Email";
+            resources.ApplyResources(this.emailLabel, "emailLabel");
             // 
             // phoneNumberLabel
             // 
-            resources.ApplyResources(this.phoneNumberLabel, "phoneNumberLabel");
-            this.phoneNumberLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.phoneNumberLabel.AutoSize = true;
+            this.phoneNumberLabel.Location = new System.Drawing.Point(48, 71);
             this.phoneNumberLabel.Name = "phoneNumberLabel";
+            this.phoneNumberLabel.Size = new System.Drawing.Size(78, 13);
+            this.phoneNumberLabel.TabIndex = 2;
+            this.phoneNumberLabel.Text = "Phone Number";
+            resources.ApplyResources(this.phoneNumberLabel, "phoneNumberLabel");
             // 
-            // ChangeInformationControl
+            // phoneNumberTextBox
             // 
-            resources.ApplyResources(this, "$this");
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(46, 87);
+            this.phoneNumberTextBox.Name = "phoneNumberTextBox";
+            this.phoneNumberTextBox.Size = new System.Drawing.Size(124, 20);
+            this.phoneNumberTextBox.TabIndex = 3;
+            // 
+            // changeInfrormationButton
+            // 
+            this.changeInfrormationButton.Location = new System.Drawing.Point(46, 203);
+            this.changeInfrormationButton.Name = "changeInfrormationButton";
+            this.changeInfrormationButton.Size = new System.Drawing.Size(124, 63);
+            this.changeInfrormationButton.TabIndex = 4;
+            this.changeInfrormationButton.Text = "Change Information";
+            this.changeInfrormationButton.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.changeInfrormationButton, "changeInfrormationButton");
+            // 
+            // ChangeInfromationControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
-            this.Controls.Add(this.saveChangesButton);
-            this.Controls.Add(this.emailTextBox);
-            this.Controls.Add(this.emailLabel);
+            this.Controls.Add(this.changeInfrormationButton);
             this.Controls.Add(this.phoneNumberTextBox);
             this.Controls.Add(this.phoneNumberLabel);
-            this.Name = "ChangeInformationControl";
+            this.Controls.Add(this.emailLabel);
+            this.Controls.Add(this.emailTextBox);
+            this.Name = "ChangeInfromationControl";
+            this.Size = new System.Drawing.Size(550, 370);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,10 +100,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button saveChangesButton;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label emailLabel;
-        private System.Windows.Forms.TextBox phoneNumberTextBox;
         private System.Windows.Forms.Label phoneNumberLabel;
+        private System.Windows.Forms.TextBox phoneNumberTextBox;
+        private System.Windows.Forms.Button changeInfrormationButton;
     }
 }

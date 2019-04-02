@@ -12,6 +12,7 @@ using System.Resources;
 using Data.Models;
 using WinFormsView.StudentControls;
 using WinFormsView.UpdateControls;
+using Kristiyan_Yanchev_Lorenzo_Eccheli.UpdateControls;
 
 namespace WinFormsView
 {
@@ -114,7 +115,7 @@ namespace WinFormsView
         private void changeInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            ChangeInformationControl changeinformation = new ChangeInformationControl(GetLanguage(),Student);
+            var changeinformation = new ChangeInformationControl(Student,GetLanguage());
             panelInformation.Controls.Add(changeinformation);
         }
 

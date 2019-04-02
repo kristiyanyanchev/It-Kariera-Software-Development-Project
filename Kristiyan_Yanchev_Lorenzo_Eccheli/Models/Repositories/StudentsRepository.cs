@@ -40,11 +40,12 @@ namespace Data.Repositories
                 result.Absences = entity.Absences;
                 result.Address = entity.Address;
                 result.BirthDate = entity.BirthDate;
-                result.Class = entity.Class;
+                result.ClassId = entity.ClassId;
                 result.Email = entity.Email;
                 result.FirstName = entity.FirstName;
                 result.GradeRecords = entity.GradeRecords;
                 result.InAbsentia = entity.InAbsentia;
+                result.Password = entity.Password;
                 result.LastName = entity.LastName;
                 result.Parents = entity.Parents;
                 result.PhoneNumber = entity.PhoneNumber;
