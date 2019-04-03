@@ -77,32 +77,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             TeacherGradeControl teachergrade = new TeacherGradeControl(GetLanguage(), Teacher);
             panelInformation.Controls.Add(teachergrade);
 
-            /*
-            if(languageComboBox.SelectedItem.ToString()=="English")
-            {
-                introductionLabel.Text = "Welcome to E-journal ,Teacher";
-                languageLabel.Text = "Language";
-                viewstudentsButton.Text = "View Students";
-                addgradeButton.Text = "Add Grade";
-                addstudentButton.Text = "Add Student";
-                absensesButton.Text = "Absenses";
-                changePasswordButton.Text = "Change Password";
-                changeinformationButton.Text = "Change Information";
-                exitButton.Text = "Exit";
-            }
-            else
-            {
-                introductionLabel.Text = "Добре дошли в електронния дневник";
-                languageLabel.Text = "Език";
-                viewstudentsButton.Text = "Виж ученици";
-                addgradeButton.Text = "Добави оценка";
-                addstudentButton.Text = "Добави ученик";
-                absensesButton.Text = "Отсъствия";
-                changePasswordButton.Text = "Смени паролата";
-                changeinformationButton.Text = "Смени информация";
-                exitButton.Text = "Изход";
-            }
-            */
+          
         }
 
         private void TeacherMainForm_FormClosing(object sender, FormClosingEventArgs e)

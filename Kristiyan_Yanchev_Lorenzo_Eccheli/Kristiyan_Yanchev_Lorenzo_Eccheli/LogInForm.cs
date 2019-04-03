@@ -36,7 +36,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             InitializeComponent();
         }
 
-        private bool Validation()
+        private bool ValidateUsernameAndPassword()
         {
             if (passwordTextBox.Text != null && usernameTextBox.Text != null)
             {
@@ -70,34 +70,42 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void logInBtn_Click(object sender, EventArgs e)
         {
 
-            if(Validate())
+            if(ValidateUsernameAndPassword())
             {
                 TeachersRepository teacherRepository = new TeachersRepository();
                 StudentsRepository studentRepository = new StudentsRepository();
                 ParentsRepository parentRepository = new ParentsRepository();
 
-                if(teacherRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && teacherRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
+                if(teacherRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && 
+                    teacherRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
                 {
                     var teacher = teacherRepository.List().Single(x => x.Username == usernameTextBox.Text);
                     var teacherForm = new TeacherMainForm(GetLanguage(),teacher);
                     teacherForm.ShowDialog();
                 }
-                else if(studentRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && studentRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
+
+                else if(studentRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && 
+                    studentRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
                 {
                     var student = studentRepository.List().Single(x => x.Username == usernameTextBox.Text);
                     var studentForm = new StudentMainForm(GetLanguage(),student);
                     studentForm.ShowDialog();
                 }
-                else if(parentRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && parentRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
+
+                else if(parentRepository.List().Select(x=>x.Username).Contains(usernameTextBox.Text) && 
+                    parentRepository.List().Single(x => x.Username == usernameTextBox.Text).Password == passwordTextBox.Text)
                 {
                     var parent = parentRepository.List().Single(x => x.Username == usernameTextBox.Text);
                     var parentForm = new ParentForm(GetLanguage(), parent);
                     parentForm.ShowDialog();
                 }
+
                 else if (GetLanguage() == "English")
                 {
-                    MessageBox.Show("You doesn't have account!Please register", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("You doesn't have account!Please register", "Information",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+
                 else 
                 {
                     MessageBox.Show("Нямате акаунт!Моля регистрирайте се", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -117,7 +125,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         {
             if(GetLanguage()=="English")
             {
-                DialogResult dialog = MessageBox.Show("Do you really want to exit", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dialog = MessageBox.Show("Do you really want to exit?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (dialog == DialogResult.Yes)
                 {
@@ -126,7 +134,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
             else
             {
-                DialogResult dialog = MessageBox.Show("Наистина ли искате да излезете", "Въпрос", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dialog = MessageBox.Show("Наистина ли искате да излезете?", "Въпрос", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (dialog == DialogResult.Yes)
                 {
@@ -163,7 +171,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
         }
 
-        //Смяна на езика
+        
         private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.Controls.Clear();
@@ -177,49 +185,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
             InitializeComponent();
-            /*
-             * стар начин
-            if(languageComboBox.SelectedItem.ToString()=="English")
-            {
-                this.Text = "School E-journal";
-                languageLabel.Text = "Language";
-                visiblepasswordCheckBox.Text = "Visible";
-                introductionLabel.Text = "Welcome to the school E-Journal";
-                nameLabel.Text = "Username";
-                passwordLabel.Text = "Password";
-                logInBtn.Text = "Log in";
-                registerBtn.Text = "Register";
-                exitBtn.Text = "Exit";
-                formToolTip.SetToolTip(usernameTextBox, "Enter your first name.");
-                formToolTip.SetToolTip(passwordTextBox, "Enter your account password.");
-                formToolTip.SetToolTip(registerBtn, "Make new E-journal account.");
-                formToolTip.SetToolTip(logInBtn, "Log in into an existing account.");
-                formToolTip.SetToolTip(visiblepasswordCheckBox, "Make your password visible or unvisible.");
-                formToolTip.SetToolTip(languageComboBox, "Change your language.");
-                formToolTip.SetToolTip(exitBtn, "Exit the application.");
-            }
-            else if(languageComboBox.SelectedItem.ToString()=="Bulgarian")
-            {
-                this.Text = "Електроният училищен дневник";
-                languageLabel.Text = "Език";
-                visiblepasswordCheckBox.Text = "Видимо";
-                introductionLabel.Text = "Добре дошли в електрония училищен дневник";
-                nameLabel.Text = "Име";
-                passwordLabel.Text = "Парола";
-                logInBtn.Text = "Влизане";
-                registerBtn.Text = "Регистрация";
-                exitBtn.Text = "Изход";
-                formToolTip.SetToolTip(usernameTextBox, "Напишете си първото име.");
-                formToolTip.SetToolTip(passwordTextBox, "Напишете си паролата на акаунта.");
-                formToolTip.SetToolTip(registerBtn, "Създайте нов акаунт.");
-                formToolTip.SetToolTip(logInBtn, "");
-                formToolTip.SetToolTip(visiblepasswordCheckBox, "Влезте в съществуващ вече акаунт.");
-                formToolTip.SetToolTip(languageComboBox, "Сменете езика.");
-                formToolTip.SetToolTip(exitBtn, "Излезте от приложението.");
-            }*/
+           
         }
-
-        private void E_Journal_FormClosing(object sender, FormClosingEventArgs e)
+        
+        private void LogInForm_FormClosing(object sender, FormClosingEventArgs eventArgs)
         {
             if (GetLanguage() == "English")
             {
@@ -231,7 +200,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 }
                 else if (dialog == DialogResult.No)
                 {
-                    e.Cancel = true;
+                    eventArgs.Cancel = true;
                 }
             }
             else
@@ -244,7 +213,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 }
                 else if (dialog == DialogResult.No)
                 {
-                    e.Cancel = true;
+                    eventArgs.Cancel = true;
                 }
             }
         }

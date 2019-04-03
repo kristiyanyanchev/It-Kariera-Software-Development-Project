@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="gradeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>355, 61</value>
+    <value>318, 61</value>
   </data>
   <data name="gradeLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 19</value>
@@ -132,7 +132,7 @@
     <value>Оценка</value>
   </data>
   <data name="removeGradeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>422, 249</value>
+    <value>330, 258</value>
   </data>
   <data name="removeGradeButton.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -141,13 +141,13 @@
     <value>Махни оценка</value>
   </data>
   <data name="gradeTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>422, 61</value>
+    <value>388, 61</value>
   </data>
   <data name="gradeTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
   <data name="newGradeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>422, 138</value>
+    <value>330, 134</value>
   </data>
   <data name="newGradeButton.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -196,8 +196,5 @@
   </data>
   <data name="gradesLabel.Text" xml:space="preserve">
     <value>Оценки</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 400</value>
   </data>
 </root>

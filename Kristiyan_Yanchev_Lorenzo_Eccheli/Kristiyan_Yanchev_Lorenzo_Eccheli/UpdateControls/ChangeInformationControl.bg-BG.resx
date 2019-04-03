@@ -117,13 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="changeInformationButton.Text" xml:space="preserve">
-    <value>Промени Информация</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="emailLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 19</value>
   </data>
   <data name="emailLabel.Text" xml:space="preserve">
     <value>Имейл</value>
   </data>
+  <data name="phoneNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 19</value>
+  </data>
   <data name="phoneNumberLabel.Text" xml:space="preserve">
     <value>Телефонен Номер</value>
+  </data>
+  <data name="changeInfrormationButton.Text" xml:space="preserve">
+    <value>Промени Информацията</value>
   </data>
 </root>
