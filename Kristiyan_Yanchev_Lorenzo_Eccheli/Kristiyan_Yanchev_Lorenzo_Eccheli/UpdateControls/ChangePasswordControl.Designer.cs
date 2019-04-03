@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangePasswordControl));
-            this.visibleCheckBox = new System.Windows.Forms.CheckBox();
+            this.visibleNewCheckBox = new System.Windows.Forms.CheckBox();
             this.changePasswordButton = new System.Windows.Forms.Button();
             this.confirmNewPasswordTextBox = new System.Windows.Forms.TextBox();
             this.newPasswordTextBox = new System.Windows.Forms.TextBox();
@@ -37,40 +37,41 @@
             this.ConfirmPasswordLabel = new System.Windows.Forms.Label();
             this.newPasswordLabel = new System.Windows.Forms.Label();
             this.oldPasswordLabel = new System.Windows.Forms.Label();
+            this.visibleOldPasswordCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
-            // visibleCheckBox
+            // visibleNewCheckBox
             // 
-            resources.ApplyResources(this.visibleCheckBox, "visibleCheckBox");
-            this.visibleCheckBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.visibleCheckBox.Name = "visibleCheckBox";
-            this.visibleCheckBox.UseVisualStyleBackColor = false;
-            this.visibleCheckBox.CheckedChanged += new System.EventHandler(this.visibleCheckBox_CheckedChanged);
+            resources.ApplyResources(this.visibleNewCheckBox, "visibleNewCheckBox");
+            this.visibleNewCheckBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.visibleNewCheckBox.Name = "visibleNewCheckBox";
+            this.visibleNewCheckBox.UseVisualStyleBackColor = false;
+            this.visibleNewCheckBox.CheckedChanged += new System.EventHandler(this.visibleCheckBox_CheckedChanged);
             // 
             // changePasswordButton
             // 
-            resources.ApplyResources(this.changePasswordButton, "changePasswordButton");
             this.changePasswordButton.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.changePasswordButton, "changePasswordButton");
             this.changePasswordButton.Name = "changePasswordButton";
             this.changePasswordButton.UseVisualStyleBackColor = false;
             this.changePasswordButton.Click += new System.EventHandler(this.changePasswordButton_Click);
             // 
             // confirmNewPasswordTextBox
             // 
-            resources.ApplyResources(this.confirmNewPasswordTextBox, "confirmNewPasswordTextBox");
             this.confirmNewPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.confirmNewPasswordTextBox, "confirmNewPasswordTextBox");
             this.confirmNewPasswordTextBox.Name = "confirmNewPasswordTextBox";
             // 
             // newPasswordTextBox
             // 
-            resources.ApplyResources(this.newPasswordTextBox, "newPasswordTextBox");
             this.newPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.newPasswordTextBox, "newPasswordTextBox");
             this.newPasswordTextBox.Name = "newPasswordTextBox";
             // 
             // oldPasswordTextBox
             // 
-            resources.ApplyResources(this.oldPasswordTextBox, "oldPasswordTextBox");
             this.oldPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            resources.ApplyResources(this.oldPasswordTextBox, "oldPasswordTextBox");
             this.oldPasswordTextBox.Name = "oldPasswordTextBox";
             // 
             // ConfirmPasswordLabel
@@ -91,12 +92,21 @@
             this.oldPasswordLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.oldPasswordLabel.Name = "oldPasswordLabel";
             // 
+            // visibleOldPasswordCheckBox
+            // 
+            resources.ApplyResources(this.visibleOldPasswordCheckBox, "visibleOldPasswordCheckBox");
+            this.visibleOldPasswordCheckBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.visibleOldPasswordCheckBox.Name = "visibleOldPasswordCheckBox";
+            this.visibleOldPasswordCheckBox.UseVisualStyleBackColor = false;
+            this.visibleOldPasswordCheckBox.CheckedChanged += new System.EventHandler(this.visibleOldPasswordCheckBox_CheckedChanged);
+            // 
             // ChangePasswordControl
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
-            this.Controls.Add(this.visibleCheckBox);
+            this.Controls.Add(this.visibleOldPasswordCheckBox);
+            this.Controls.Add(this.visibleNewCheckBox);
             this.Controls.Add(this.changePasswordButton);
             this.Controls.Add(this.confirmNewPasswordTextBox);
             this.Controls.Add(this.newPasswordTextBox);
@@ -112,7 +122,7 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox visibleCheckBox;
+        private System.Windows.Forms.CheckBox visibleNewCheckBox;
         private System.Windows.Forms.Button changePasswordButton;
         private System.Windows.Forms.TextBox confirmNewPasswordTextBox;
         private System.Windows.Forms.TextBox newPasswordTextBox;
@@ -120,5 +130,6 @@
         private System.Windows.Forms.Label ConfirmPasswordLabel;
         private System.Windows.Forms.Label newPasswordLabel;
         private System.Windows.Forms.Label oldPasswordLabel;
+        private System.Windows.Forms.CheckBox visibleOldPasswordCheckBox;
     }
 }
