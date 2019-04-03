@@ -46,6 +46,7 @@ namespace Data.Models
             string phoneNumber, string username, string password, string validationCode)
             : this(firstName, lastName, address, email)
         {
+            Email = email;
             PhoneNumber = phoneNumber;
             Username = username;
             Password = password;

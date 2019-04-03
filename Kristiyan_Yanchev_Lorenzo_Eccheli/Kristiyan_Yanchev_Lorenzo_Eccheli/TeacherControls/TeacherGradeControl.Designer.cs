@@ -45,12 +45,12 @@
             // 
             // languageComboBox
             // 
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.BackColor = System.Drawing.Color.FloralWhite;
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
             resources.GetString("languageComboBox.Items"),
             resources.GetString("languageComboBox.Items1")});
-            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.Name = "languageComboBox";
             // 
             // languageLabel
@@ -67,45 +67,45 @@
             // 
             // removeGradeButton
             // 
-            this.removeGradeButton.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.removeGradeButton, "removeGradeButton");
+            this.removeGradeButton.BackColor = System.Drawing.Color.FloralWhite;
             this.removeGradeButton.Name = "removeGradeButton";
             this.removeGradeButton.UseVisualStyleBackColor = false;
             this.removeGradeButton.Click += new System.EventHandler(this.removeGradeButton_Click);
             // 
             // gradeTextBox
             // 
-            this.gradeTextBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.gradeTextBox, "gradeTextBox");
+            this.gradeTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.gradeTextBox.Name = "gradeTextBox";
             // 
             // newGradeButton
             // 
-            this.newGradeButton.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.newGradeButton, "newGradeButton");
+            this.newGradeButton.BackColor = System.Drawing.Color.FloralWhite;
             this.newGradeButton.Name = "newGradeButton";
             this.newGradeButton.UseVisualStyleBackColor = false;
             this.newGradeButton.Click += new System.EventHandler(this.newGradeButton_Click);
             // 
             // gradesListBox
             // 
-            this.gradesListBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.gradesListBox, "gradesListBox");
+            this.gradesListBox.BackColor = System.Drawing.Color.FloralWhite;
             this.gradesListBox.FormattingEnabled = true;
             this.gradesListBox.Name = "gradesListBox";
             // 
             // studentsListbox
             // 
-            this.studentsListbox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.studentsListbox, "studentsListbox");
+            this.studentsListbox.BackColor = System.Drawing.Color.FloralWhite;
             this.studentsListbox.FormattingEnabled = true;
             this.studentsListbox.Name = "studentsListbox";
             this.studentsListbox.SelectedIndexChanged += new System.EventHandler(this.studentsListbox_SelectedIndexChanged);
             // 
             // classesListBox
             // 
-            this.classesListBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.classesListBox, "classesListBox");
+            this.classesListBox.BackColor = System.Drawing.Color.FloralWhite;
             this.classesListBox.FormattingEnabled = true;
             this.classesListBox.Name = "classesListBox";
             this.classesListBox.SelectedIndexChanged += new System.EventHandler(this.classesListBox_SelectedIndexChanged);
