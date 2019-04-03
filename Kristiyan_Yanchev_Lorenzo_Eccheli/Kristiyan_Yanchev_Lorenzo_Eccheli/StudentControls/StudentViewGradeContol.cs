@@ -40,45 +40,11 @@ namespace WinFormsView.StudentControls
         {
             var grades = new GradesRepository().List().Where(x => x.StudentId == student.Id).Select(x => new {x.Date,x.Grade,x.Subject }).ToList();
             gradesDataGrid.DataSource = grades;
-            //DataGridViewRow dateRow = new DataGridViewRow(); 
-            //for(int i=0;i<student.GradeRecords.Count;i++)
-            //{
-            //    dateRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Date;
-            //}
-            //gradesDataGrid.Rows.Add(dateRow);
-
-            //DataGridViewRow gradeRow = new DataGridViewRow();
-            //for (int i = 0; i < student.GradeRecords.Count; i++)
-            //{
-            //    gradeRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Grade;
-            //}
-            //gradesDataGrid.Rows.Add(gradeRow);
-
-            //DataGridViewRow subjectRow = new DataGridViewRow();
-            //for (int i = 0; i < student.GradeRecords.Count; i++)
-            //{
-            //    subjectRow.Cells[i].Value = student.GradeRecords.ElementAt(i).Grade;
-            //}
-            //gradesDataGrid.Rows.Add(subjectRow);
+            
         }
 
-        private string GetLanguage()
-        {
-            if(viewStatisticButton.Text=="View Statistics")
-            {
-                return "English";
-            }
-            else
-            {
-                return "Bulgarian";
-            }
-        }
+       
 
-        private void viewStatisticButton_Click(object sender, EventArgs e)
-        {
-            this.Controls.Clear();
-            StudentGradeStatisticControl studentgradestatistic = new StudentGradeStatisticControl(GetLanguage(),Student);
-            this.Controls.Add(studentgradestatistic);
-        }
+        
     }
 }

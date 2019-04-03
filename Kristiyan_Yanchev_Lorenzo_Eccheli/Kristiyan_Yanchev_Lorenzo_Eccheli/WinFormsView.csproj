@@ -98,12 +98,6 @@
     <Compile Include="RegistrationForm.Designer.cs">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentControls\StudentGradeStatisticControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="StudentControls\StudentGradeStatisticControl.Designer.cs">
-      <DependentUpon>StudentGradeStatisticControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="StudentControls\StudentViewAbsencesControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -224,12 +218,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentControls\StudentGradeStatisticControl.bg-BG.resx">
-      <DependentUpon>StudentGradeStatisticControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentControls\StudentGradeStatisticControl.resx">
-      <DependentUpon>StudentGradeStatisticControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentControls\StudentViewAbsencesControl.bg-BG.resx">
       <DependentUpon>StudentViewAbsencesControl.cs</DependentUpon>
