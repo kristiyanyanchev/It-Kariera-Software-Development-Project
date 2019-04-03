@@ -11,7 +11,7 @@ using Data.Repositories;
 using Data.Models;
 using System.Threading;
 
-namespace WinFormsView.ParentControls;
+namespace WinFormsView.ParentControls
 {
     public partial class ParentViewGradeControl : UserControl
     {
