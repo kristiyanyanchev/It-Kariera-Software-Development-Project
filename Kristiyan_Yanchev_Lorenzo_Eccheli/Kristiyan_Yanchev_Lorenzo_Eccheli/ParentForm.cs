@@ -34,7 +34,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
             InitializeComponent();
             teacherListBox.DataSource = new TeachersRepository().List();
-            var gradeControl = new ParentControls.ParentViewGradeControl(Language, Parent);
+            var gradeControl = new ParentViewGradeControl(Language, Parent);
             panelInformation.Controls.Add(gradeControl);
         }
 
@@ -78,7 +78,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void gradeButton_Click(object sender, EventArgs e)
         {
 
-            var gradeControl = new ParentControls.ParentViewGradeControl(Language, Parent);
+            var gradeControl = new ParentViewGradeControl(Language, Parent);
             panelInformation.Controls.Clear();
             panelInformation.Controls.Add(gradeControl);
 
@@ -101,7 +101,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             }
             InitializeComponent();
             teacherListBox.DataSource = new TeachersRepository().List();
-            var gradeControl = new ParentControls.ParentViewGradeControl(Language, Parent);
+            var gradeControl = new ParentViewGradeControl(Language, Parent);
             panelInformation.Controls.Add(gradeControl);
         }
 

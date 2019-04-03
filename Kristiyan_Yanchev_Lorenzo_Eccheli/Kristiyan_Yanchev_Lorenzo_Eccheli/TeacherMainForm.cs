@@ -12,7 +12,6 @@ using System.Resources;
 using Data.Models;
 using WinFormsView.TeacherControls;
 using WinFormsView.UpdateControls;
-using Kristiyan_Yanchev_Lorenzo_Eccheli.UpdateControls;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -130,7 +129,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
         private void viewStudentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelInformation.Controls.Clear();
-            TeacherViewStudentControl teachersearchstudent = new TeacherViewStudentControl();
+            TeacherViewStudentControl teachersearchstudent = new TeacherViewStudentControl(GetLanguage());
             panelInformation.Controls.Add(teachersearchstudent);
         }
 

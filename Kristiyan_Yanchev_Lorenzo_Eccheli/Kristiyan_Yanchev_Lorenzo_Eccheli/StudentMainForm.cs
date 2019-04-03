@@ -12,7 +12,6 @@ using System.Resources;
 using Data.Models;
 using WinFormsView.StudentControls;
 using WinFormsView.UpdateControls;
-using Kristiyan_Yanchev_Lorenzo_Eccheli.UpdateControls;
 
 namespace WinFormsView
 {
