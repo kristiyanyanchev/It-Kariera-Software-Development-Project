@@ -129,6 +129,7 @@
             // searchButton
             // 
             this.searchButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.searchButton.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.searchButton, "searchButton");
             this.searchButton.Name = "searchButton";
             this.searchButton.UseVisualStyleBackColor = false;

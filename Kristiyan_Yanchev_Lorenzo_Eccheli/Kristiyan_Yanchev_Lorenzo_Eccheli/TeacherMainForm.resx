@@ -126,7 +126,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="exitButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>618, 437</value>
+    <value>575, 409</value>
   </data>
   <data name="exitButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 70</value>
@@ -193,7 +193,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>546, 130</value>
+    <value>503, 112</value>
   </data>
   <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 19</value>
@@ -226,7 +226,7 @@
     <value>Bulgarian</value>
   </data>
   <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 127</value>
+    <value>584, 109</value>
   </data>
   <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 27</value>
@@ -253,7 +253,7 @@
     <value>10, 109</value>
   </data>
   <data name="panelInformation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>528, 400</value>
+    <value>465, 370</value>
   </data>
   <data name="panelInformation.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -310,7 +310,7 @@
     <value>0, 0</value>
   </data>
   <data name="MenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>769, 27</value>
+    <value>725, 27</value>
   </data>
   <data name="MenuStrip.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -340,7 +340,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>769, 519</value>
+    <value>725, 489</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>E-journal</value>
