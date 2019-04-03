@@ -35,6 +35,11 @@
             this.selectButton = new System.Windows.Forms.Button();
             this.gradeButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
+            this.gradesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // languageComboBox
@@ -65,10 +70,10 @@
             // panelInformation
             // 
             this.panelInformation.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
-            this.panelInformation.Location = new System.Drawing.Point(334, 159);
+            this.panelInformation.Location = new System.Drawing.Point(327, 151);
             this.panelInformation.Margin = new System.Windows.Forms.Padding(2);
             this.panelInformation.Name = "panelInformation";
-            this.panelInformation.Size = new System.Drawing.Size(340, 232);
+            this.panelInformation.Size = new System.Drawing.Size(350, 230);
             this.panelInformation.TabIndex = 25;
             // 
             // teacherListBox
@@ -121,12 +126,49 @@
             this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
+            // MenuStrip
+            // 
+            this.MenuStrip.BackColor = System.Drawing.Color.FloralWhite;
+            this.MenuStrip.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.MenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gradesToolStripMenuItem,
+            this.changePasswordToolStripMenuItem,
+            this.changeInformationToolStripMenuItem});
+            this.MenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.MenuStrip.Name = "MenuStrip";
+            this.MenuStrip.Size = new System.Drawing.Size(678, 27);
+            this.MenuStrip.TabIndex = 30;
+            this.MenuStrip.Text = "menuStrip1";
+            // 
+            // gradesToolStripMenuItem
+            // 
+            this.gradesToolStripMenuItem.Name = "gradesToolStripMenuItem";
+            this.gradesToolStripMenuItem.Size = new System.Drawing.Size(60, 23);
+            this.gradesToolStripMenuItem.Text = "Grades";
+            this.gradesToolStripMenuItem.Click += new System.EventHandler(this.gradesToolStripMenuItem_Click);
+            // 
+            // changePasswordToolStripMenuItem
+            // 
+            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(118, 23);
+            this.changePasswordToolStripMenuItem.Text = "Change Password";
+            this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
+            // 
+            // changeInformationToolStripMenuItem
+            // 
+            this.changeInformationToolStripMenuItem.Name = "changeInformationToolStripMenuItem";
+            this.changeInformationToolStripMenuItem.Size = new System.Drawing.Size(129, 23);
+            this.changeInformationToolStripMenuItem.Text = "Change Information";
+            this.changeInformationToolStripMenuItem.Click += new System.EventHandler(this.changeInformationToolStripMenuItem_Click);
+            // 
             // ParentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(678, 476);
+            this.Controls.Add(this.MenuStrip);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.gradeButton);
             this.Controls.Add(this.selectButton);
@@ -136,6 +178,8 @@
             this.Controls.Add(this.languageComboBox);
             this.Name = "ParentForm";
             this.Text = "Parent Window";
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,5 +194,9 @@
         private System.Windows.Forms.Button selectButton;
         private System.Windows.Forms.Button gradeButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.MenuStrip MenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem gradesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changeInformationToolStripMenuItem;
     }
 }

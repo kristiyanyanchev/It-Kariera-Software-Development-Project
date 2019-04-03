@@ -1,4 +1,4 @@
-﻿namespace Kristiyan_Yanchev_Lorenzo_Eccheli.UpdateControls
+﻿namespace WinFormsView.UpdateControls
 {
     partial class ChangeInformationControl
     {
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangeInformationControl));
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.emailLabel = new System.Windows.Forms.Label();
             this.phoneNumberLabel = new System.Windows.Forms.Label();
@@ -38,50 +37,58 @@
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Location = new System.Drawing.Point(46, 48);
+            this.emailTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.emailTextBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.emailTextBox.Location = new System.Drawing.Point(52, 53);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(124, 20);
+            this.emailTextBox.Size = new System.Drawing.Size(124, 24);
             this.emailTextBox.TabIndex = 0;
-            
             // 
             // emailLabel
             // 
             this.emailLabel.AutoSize = true;
-            this.emailLabel.Location = new System.Drawing.Point(48, 31);
+            this.emailLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.emailLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.emailLabel.Location = new System.Drawing.Point(48, 11);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(32, 13);
+            this.emailLabel.Size = new System.Drawing.Size(40, 19);
             this.emailLabel.TabIndex = 1;
             this.emailLabel.Text = "Email";
-            resources.ApplyResources(this.emailLabel, "emailLabel");
             // 
             // phoneNumberLabel
             // 
             this.phoneNumberLabel.AutoSize = true;
-            this.phoneNumberLabel.Location = new System.Drawing.Point(48, 71);
+            this.phoneNumberLabel.BackColor = System.Drawing.Color.FloralWhite;
+            this.phoneNumberLabel.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.phoneNumberLabel.Location = new System.Drawing.Point(48, 96);
             this.phoneNumberLabel.Name = "phoneNumberLabel";
-            this.phoneNumberLabel.Size = new System.Drawing.Size(78, 13);
+            this.phoneNumberLabel.Size = new System.Drawing.Size(90, 19);
             this.phoneNumberLabel.TabIndex = 2;
             this.phoneNumberLabel.Text = "Phone Number";
-            resources.ApplyResources(this.phoneNumberLabel, "phoneNumberLabel");
             // 
             // phoneNumberTextBox
             // 
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(46, 87);
+            this.phoneNumberTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.phoneNumberTextBox.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(52, 130);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
-            this.phoneNumberTextBox.Size = new System.Drawing.Size(124, 20);
+            this.phoneNumberTextBox.Size = new System.Drawing.Size(124, 24);
             this.phoneNumberTextBox.TabIndex = 3;
             // 
             // changeInfrormationButton
             // 
+            this.changeInfrormationButton.BackColor = System.Drawing.Color.FloralWhite;
+            this.changeInfrormationButton.FlatAppearance.BorderSize = 0;
+            this.changeInfrormationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.changeInfrormationButton.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.changeInfrormationButton.Location = new System.Drawing.Point(46, 203);
             this.changeInfrormationButton.Name = "changeInfrormationButton";
             this.changeInfrormationButton.Size = new System.Drawing.Size(124, 63);
             this.changeInfrormationButton.TabIndex = 4;
             this.changeInfrormationButton.Text = "Change Information";
-            this.changeInfrormationButton.UseVisualStyleBackColor = true;
-            resources.ApplyResources(this.changeInfrormationButton, "changeInfrormationButton");
+            this.changeInfrormationButton.UseVisualStyleBackColor = false;
             // 
-            // ChangeInfromationControl
+            // ChangeInformationControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -91,7 +98,7 @@
             this.Controls.Add(this.phoneNumberLabel);
             this.Controls.Add(this.emailLabel);
             this.Controls.Add(this.emailTextBox);
-            this.Name = "ChangeInfromationControl";
+            this.Name = "ChangeInformationControl";
             this.Size = new System.Drawing.Size(550, 370);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsView.ParentControls;
+using WinFormsView.UpdateControls;
 
 namespace Kristiyan_Yanchev_Lorenzo_Eccheli
 {
@@ -17,13 +19,6 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
     {
         private Parent Parent;
         private string Language;
-        public ParentForm(Parent parent)
-        {
-            Parent = parent;
-            InitializeComponent();
-
-        }
-
         public ParentForm(string language, Parent parent)
         {
             Parent = parent;
@@ -69,7 +64,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 var selectedTeacherId = int.Parse(teacherListBox.SelectedItem.ToString().Split(' ').First());
                 var selectedTeacher = new TeachersRepository().GetById(selectedTeacherId);
 
-                var contactControl = new ParentControls.ParentContactTeacherControl(selectedTeacher, Language);
+                var contactControl = new ParentContactTeacherControl(selectedTeacher, Language);
                 panelInformation.Controls.Clear();
                 panelInformation.Controls.Add(contactControl);
             }
@@ -110,5 +105,25 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
             panelInformation.Controls.Add(gradeControl);
         }
 
+        private void gradesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelInformation.Controls.Clear();
+            ParentViewGradeControl parentcontrol = new ParentViewGradeControl(Language, Parent);
+            panelInformation.Controls.Add(parentcontrol);
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelInformation.Controls.Clear();
+            ChangePasswordControl parentcontrol = new ChangePasswordControl(Language, Parent);
+            panelInformation.Controls.Add(parentcontrol);
+        }
+
+        private void changeInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelInformation.Controls.Clear();
+            ChangeInformationControl parentcontrol = new ChangeInformationControl(Parent, Language);
+            panelInformation.Controls.Add(parentcontrol);
+        }
     }
 }

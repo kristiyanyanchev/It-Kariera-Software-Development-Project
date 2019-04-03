@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Data.Models;
 using System.Threading;
 
-namespace Kristiyan_Yanchev_Lorenzo_Eccheli.UpdateControls
+namespace WinFormsView.UpdateControls
 {
     public partial class ChangeInformationControl : UserControl
     {

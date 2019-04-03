@@ -1,4 +1,4 @@
-﻿namespace Kristiyan_Yanchev_Lorenzo_Eccheli.ParentControls
+﻿namespace WinFormsView.ParentControls
 {
     partial class ParentViewGradeControl
     {
