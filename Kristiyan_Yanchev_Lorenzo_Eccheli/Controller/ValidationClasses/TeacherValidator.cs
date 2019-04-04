@@ -104,7 +104,7 @@ namespace Controller.ValidationClasses
             {
                 return "Class error";
             }
-            if (classes.List().Select(x => x.Name == teacherDTO.Class).Count() > 1)
+            if (classes.List().Select(x => x.Name).Where(x => x == teacherDTO.Class).Count() > 1)
             {
                 return "Class error there is two or more classes with same name"; 
             }

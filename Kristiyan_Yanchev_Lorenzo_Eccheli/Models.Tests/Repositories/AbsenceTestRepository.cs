@@ -10,7 +10,6 @@ namespace Data.Test.Repositories
 {
     public class AbsenceTestRepository : AbsencesRepository
     {
-        //new TestClassbookContext()
         public override void Add(Absence entity)
         {
             using (var context = new TestClassbookContext())

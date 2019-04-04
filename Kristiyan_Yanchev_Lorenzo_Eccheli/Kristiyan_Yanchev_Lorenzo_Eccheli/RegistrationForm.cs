@@ -1,4 +1,5 @@
 ﻿using Controller;
+using Controller.RegistrationClasses;
 using Controller.ValidationClasses;
 using Data.Models;
 using Data.Repositories;
@@ -133,24 +134,13 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                         passwordTextBox.Text, emailTextBox.Text, addressTextBox.Text, phoneNumberTextBox.Text, validationCodeTextBox.Text, 
                         classnameTextBox.Text,ucnTextBox.Text,birthdatePicker.Value);
 
-                    var classes = new ClassesRepository();
-                    var studentsRepo = new StudentsRepository();
                     var studentValidator = new StudentValidator();
+                    
 
                     if (studentValidator.ValidateStudent(studentDto) == "Successful Registration! ")
                     {
-                        var studentClass = classes.List().Single(x => x.Name == studentDto.Class).Id;
 
-                        Student student = new Student(studentDto.FirstName, studentDto.LastName, studentDto.BirthDate,
-                            studentDto.Address, studentDto.Ucn, studentDto.PhoneNumber, studentDto.Email, studentDto.Username, studentDto.Password,
-                            studentDto.ValidationCode, studentClass);
-                        
-                        studentsRepo.Add(student);
-
-                        var validationCodes = new ValidationCodeRepository();
-                        var currentValidationCode = validationCodes.List().Single(x => x.Code == studentDto.ValidationCode);
-                        currentValidationCode.Used = true;
-                        validationCodes.Edit(currentValidationCode);
+                        var student = new StudentRegistration().Register(studentDto);
 
                         this.Hide();
                         StudentMainForm studentform = new StudentMainForm(GetLanguage(),student);
@@ -166,30 +156,12 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                         usernameTextBox.Text, passwordTextBox.Text, validationCodeTextBox.Text, classnameTextBox.Text, addressTextBox.Text);
 
                     var teacherValidator = new TeacherValidator();
-                    var teacherRepo = new TeachersRepository();
+                  
 
                     if (teacherValidator.ValidateTeacher(teacherDto) == "Successful Registration! ")
                     {
-                        var teacher = new Teacher(teacherDto.FirstName, teacherDto.LastName, teacherDto.Subject, teacherDto.PhoneNumber,
-                            teacherDto.Email, teacherDto.Position, teacherDto.Username, teacherDto.Password, teacherDto.ValidationCode, teacherDto.Address);
 
-                        if (teacherDto.Class == "none")
-                        {
-                            teacher.Class = null;
-                        }
-                        else
-                        {
-
-                            teacher.Class = new Class(teacherDto.Class);
-                        }
-
-                        teacherRepo.Add(teacher);
-
-                        var validationCodes = new ValidationCodeRepository();
-                        var currentValidationCode = validationCodes.List().Single(x => x.Code == teacherDto.ValidationCode);
-                        currentValidationCode.Used = true;
-                        validationCodes.Edit(currentValidationCode);
-                        
+                        var teacher = new TeacherRegistration().Register(teacherDto);
 
                         this.Hide();
                         TeacherMainForm teacherform = new TeacherMainForm(GetLanguage(),teacher);
@@ -206,19 +178,11 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                         usernameOfChildTextBox.Text);
 
                     var parentValidator = new ParentValidator();
-                    var parentRepo = new ParentsRepository();
+
                     if (parentValidator.ValidateParent(parentDto) == "Registration Successful! ")
                     {
-                        var parent = new Parent(parentDto.FirstName, parentDto.LastName, parentDto.Address, parentDto.Email,
-                            parentDto.PhoneNumber, parentDto.Username, parentDto.Password, parentDto.ValidationCode);
-                        var children = new StudentsRepository().List().Where(x => x.Username == parentDto.UsernameOfChild).ToList();
-                        
 
-                        parentRepo.AddParentWithChildren(parent, children);
-                        var validationCodes = new ValidationCodeRepository();
-                        var currentValidationCode = validationCodes.List().Single(x => x.Code == parentDto.ValidationCode);
-                        currentValidationCode.Used = true;
-                        validationCodes.Edit(currentValidationCode);
+                        var parent = new ParentRegistration().Register(parentDto);
 
                         this.Hide();
                         ParentForm parentform = new ParentForm(GetLanguage(),parent);

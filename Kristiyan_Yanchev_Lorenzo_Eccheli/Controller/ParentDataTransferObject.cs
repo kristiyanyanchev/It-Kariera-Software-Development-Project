@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Controller
 {
-    public class ParentDataTransferObject
+    public class ParentDataTransferObject 
     {
         public string Username { get; set; }
         public string FirstName { get; set; }

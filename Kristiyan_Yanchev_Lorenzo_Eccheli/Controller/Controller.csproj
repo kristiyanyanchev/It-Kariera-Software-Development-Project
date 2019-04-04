@@ -47,7 +47,15 @@
   <ItemGroup>
     <Compile Include="ParentDataTransferObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QueryClasses\IQuery.cs" />
+    <Compile Include="RegistrationClasses\ParentRegistration.cs" />
+    <Compile Include="RegistrationClasses\ParentRegistrationStrategies\DefaultParentRegistration.cs" />
+    <Compile Include="RegistrationClasses\ParentRegistrationStrategies\IParentRegistrationStrategy.cs" />
+    <Compile Include="RegistrationClasses\StudentRegistration.cs" />
+    <Compile Include="RegistrationClasses\StudentRegistrationStrategies\DefaultStudentRegistration.cs" />
+    <Compile Include="RegistrationClasses\StudentRegistrationStrategies\IStudentRegistrationStrategy.cs" />
+    <Compile Include="RegistrationClasses\TeacherRegistration.cs" />
+    <Compile Include="RegistrationClasses\TeacherRegitrationStrategies\DefaultTeacherRegistration.cs" />
+    <Compile Include="RegistrationClasses\TeacherRegitrationStrategies\ITeacherRegistrationStrategy.cs" />
     <Compile Include="StudentDataTransferObject.cs" />
     <Compile Include="TeacherDataTransferObject.cs" />
     <Compile Include="ValidationClasses\Address\DefaultAddressValidator.cs" />
