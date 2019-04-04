@@ -126,16 +126,21 @@
     <value>Sitka Heading, 14.25pt, style=Bold, Italic</value>
   </data>
   <data name="introductionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 11</value>
+    <value>132, 9</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="introductionLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>358, 35</value>
+    <value>231, 28</value>
   </data>
   <data name="introductionLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="introductionLabel.Text" xml:space="preserve">
-    <value>Registration  to School E-Journal</value>
+    <value>Registration  to Classbook
+</value>
   </data>
   <data name="&gt;&gt;introductionLabel.Name" xml:space="preserve">
     <value>introductionLabel</value>
@@ -156,10 +161,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="usernameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 129</value>
+    <value>8, 105</value>
+  </data>
+  <data name="usernameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="usernameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 24</value>
+    <value>64, 19</value>
   </data>
   <data name="usernameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -186,10 +194,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 258</value>
+    <value>9, 210</value>
+  </data>
+  <data name="passwordLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 24</value>
+    <value>63, 19</value>
   </data>
   <data name="passwordLabel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -216,10 +227,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="emailLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 308</value>
+    <value>11, 250</value>
+  </data>
+  <data name="emailLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="emailLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 24</value>
+    <value>44, 19</value>
   </data>
   <data name="emailLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -246,10 +260,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="addressLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 364</value>
+    <value>9, 296</value>
+  </data>
+  <data name="addressLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="addressLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 24</value>
+    <value>55, 19</value>
   </data>
   <data name="addressLabel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -276,10 +293,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="phoneLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 414</value>
+    <value>9, 336</value>
+  </data>
+  <data name="phoneLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="phoneLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 24</value>
+    <value>90, 19</value>
   </data>
   <data name="phoneLabel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -306,10 +326,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="roleLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>445, 175</value>
+    <value>334, 142</value>
+  </data>
+  <data name="roleLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="roleLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 24</value>
+    <value>33, 19</value>
   </data>
   <data name="roleLabel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -339,14 +362,13 @@
     <value>Teacher</value>
   </data>
   <data name="roleComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 172</value>
+    <value>467, 140</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="roleComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="roleComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 24</value>
+    <value>92, 21</value>
   </data>
   <data name="roleComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -370,13 +392,13 @@
     <value>29</value>
   </data>
   <data name="usernameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 128</value>
+    <value>121, 104</value>
   </data>
   <data name="usernameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="usernameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>98, 20</value>
   </data>
   <data name="usernameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -397,16 +419,16 @@
     <value>28</value>
   </data>
   <data name="passwordTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 258</value>
+    <value>121, 210</value>
   </data>
   <data name="passwordTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="passwordTextBox.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
   <data name="passwordTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>98, 20</value>
   </data>
   <data name="passwordTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -427,13 +449,13 @@
     <value>27</value>
   </data>
   <data name="emailTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 308</value>
+    <value>121, 250</value>
   </data>
   <data name="emailTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="emailTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>98, 20</value>
   </data>
   <data name="emailTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -454,13 +476,13 @@
     <value>26</value>
   </data>
   <data name="addressTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 361</value>
+    <value>121, 293</value>
   </data>
   <data name="addressTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="addressTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>98, 20</value>
   </data>
   <data name="addressTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -481,13 +503,13 @@
     <value>25</value>
   </data>
   <data name="phoneNumberTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 414</value>
+    <value>121, 336</value>
   </data>
   <data name="phoneNumberTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="phoneNumberTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>98, 20</value>
   </data>
   <data name="phoneNumberTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -514,13 +536,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="registrationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>429, 553</value>
+    <value>322, 449</value>
   </data>
   <data name="registrationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="registrationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 63</value>
+    <value>98, 51</value>
   </data>
   <data name="registrationButton.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -550,13 +572,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="exitButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>776, 553</value>
+    <value>582, 449</value>
   </data>
   <data name="exitButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="exitButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 73</value>
+    <value>82, 59</value>
   </data>
   <data name="exitButton.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -586,10 +608,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="lastNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 215</value>
+    <value>8, 175</value>
+  </data>
+  <data name="lastNameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="lastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 24</value>
+    <value>67, 19</value>
   </data>
   <data name="lastNameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -610,13 +635,13 @@
     <value>21</value>
   </data>
   <data name="lastNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 209</value>
+    <value>121, 170</value>
   </data>
   <data name="lastNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="lastNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>98, 20</value>
   </data>
   <data name="lastNameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -643,13 +668,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="visibleCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 262</value>
+    <value>242, 213</value>
   </data>
   <data name="visibleCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="visibleCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 28</value>
+    <value>67, 23</value>
   </data>
   <data name="visibleCheckBox.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -679,13 +704,10 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="validationCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 471</value>
-  </data>
-  <data name="validationCodeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>9, 383</value>
   </data>
   <data name="validationCodeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 24</value>
+    <value>101, 19</value>
   </data>
   <data name="validationCodeLabel.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -709,13 +731,10 @@
     <value>18</value>
   </data>
   <data name="validationCodeTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 473</value>
-  </data>
-  <data name="validationCodeTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>121, 384</value>
   </data>
   <data name="validationCodeTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>98, 20</value>
   </data>
   <data name="validationCodeTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -736,13 +755,10 @@
     <value>17</value>
   </data>
   <data name="birthdatePicker.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 410</value>
-  </data>
-  <data name="birthdatePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>467, 333</value>
   </data>
   <data name="birthdatePicker.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 22</value>
+    <value>159, 20</value>
   </data>
   <data name="birthdatePicker.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -766,13 +782,13 @@
     <value>16</value>
   </data>
   <data name="ucnTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 356</value>
+    <value>467, 289</value>
   </data>
   <data name="ucnTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="ucnTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>98, 20</value>
   </data>
   <data name="ucnTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -796,13 +812,13 @@
     <value>15</value>
   </data>
   <data name="classnameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 286</value>
+    <value>467, 232</value>
   </data>
   <data name="classnameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="classnameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>98, 20</value>
   </data>
   <data name="classnameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -826,13 +842,13 @@
     <value>11</value>
   </data>
   <data name="usernameOfChildTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 217</value>
+    <value>467, 176</value>
   </data>
   <data name="usernameOfChildTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="usernameOfChildTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>98, 20</value>
   </data>
   <data name="usernameOfChildTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -856,13 +872,13 @@
     <value>9</value>
   </data>
   <data name="firstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 170</value>
+    <value>121, 138</value>
   </data>
   <data name="firstNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="firstNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>98, 20</value>
   </data>
   <data name="firstNameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -889,13 +905,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="backButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>776, 471</value>
+    <value>582, 383</value>
   </data>
   <data name="backButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="backButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 73</value>
+    <value>82, 59</value>
   </data>
   <data name="backButton.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -925,13 +941,13 @@
     <value>Bulgarian</value>
   </data>
   <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 124</value>
+    <value>467, 101</value>
   </data>
   <data name="languageComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 24</value>
+    <value>92, 21</value>
   </data>
   <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -952,13 +968,13 @@
     <value>4</value>
   </data>
   <data name="subjectTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 252</value>
+    <value>467, 205</value>
   </data>
   <data name="subjectTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="subjectTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>98, 20</value>
   </data>
   <data name="subjectTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -982,13 +998,13 @@
     <value>2</value>
   </data>
   <data name="positionTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>623, 330</value>
+    <value>467, 268</value>
   </data>
   <data name="positionTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="positionTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
+    <value>98, 20</value>
   </data>
   <data name="positionTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -1018,10 +1034,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="birthdayLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 412</value>
+    <value>329, 335</value>
+  </data>
+  <data name="birthdayLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="birthdayLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 24</value>
+    <value>75, 19</value>
   </data>
   <data name="birthdayLabel.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -1051,10 +1070,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="ucnLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 357</value>
+    <value>329, 290</value>
+  </data>
+  <data name="ucnLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="ucnLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 24</value>
+    <value>33, 19</value>
   </data>
   <data name="ucnLabel.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -1084,10 +1106,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="classnameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 286</value>
+    <value>329, 232</value>
+  </data>
+  <data name="classnameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="classnameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 24</value>
+    <value>38, 19</value>
   </data>
   <data name="classnameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -1117,10 +1142,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="usernameOfChildLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 215</value>
+    <value>329, 175</value>
+  </data>
+  <data name="usernameOfChildLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="usernameOfChildLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 24</value>
+    <value>111, 19</value>
   </data>
   <data name="usernameOfChildLabel.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -1153,10 +1181,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="nameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 171</value>
+    <value>11, 139</value>
+  </data>
+  <data name="nameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="nameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 24</value>
+    <value>71, 19</value>
   </data>
   <data name="nameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -1183,10 +1214,13 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>445, 127</value>
+    <value>334, 103</value>
+  </data>
+  <data name="languageLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 24</value>
+    <value>62, 19</value>
   </data>
   <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -1216,10 +1250,13 @@
     <value>NoControl</value>
   </data>
   <data name="subjectLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 252</value>
+    <value>329, 205</value>
+  </data>
+  <data name="subjectLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="subjectLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 24</value>
+    <value>50, 19</value>
   </data>
   <data name="subjectLabel.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -1252,10 +1289,13 @@
     <value>NoControl</value>
   </data>
   <data name="positionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 327</value>
+    <value>329, 266</value>
+  </data>
+  <data name="positionLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="positionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
+    <value>54, 19</value>
   </data>
   <data name="positionLabel.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -1285,10 +1325,10 @@
     <value>106</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>900, 639</value>
+    <value>675, 519</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4271,7 +4311,7 @@
 </value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

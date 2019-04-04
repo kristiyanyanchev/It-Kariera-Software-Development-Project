@@ -240,16 +240,16 @@
     <value>Sitka Heading, 14.25pt, style=Bold, Italic</value>
   </data>
   <data name="introductionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 9</value>
+    <value>102, 9</value>
   </data>
   <data name="introductionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 30</value>
+    <value>230, 30</value>
   </data>
   <data name="introductionLabel.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="introductionLabel.Text" xml:space="preserve">
-    <value>Welcome to the school E-Journal</value>
+    <value>Welcome to the Classbook</value>
   </data>
   <data name="&gt;&gt;introductionLabel.Name" xml:space="preserve">
     <value>introductionLabel</value>
@@ -274,7 +274,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="logInBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 248</value>
+    <value>236, 228</value>
   </data>
   <data name="logInBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 46</value>
@@ -310,7 +310,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="registerBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 248</value>
+    <value>73, 228</value>
   </data>
   <data name="registerBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 46</value>
@@ -343,7 +343,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="exitBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 299</value>
+    <value>307, 292</value>
   </data>
   <data name="exitBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 46</value>
@@ -376,7 +376,7 @@
     <value>Sitka Display, 9.749999pt, style=Bold, Italic</value>
   </data>
   <data name="visiblepasswordCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 180</value>
+    <value>255, 178</value>
   </data>
   <data name="visiblepasswordCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 23</value>
@@ -412,7 +412,7 @@
     <value>Bulgarian</value>
   </data>
   <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>352, 110</value>
+    <value>340, 110</value>
   </data>
   <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 27</value>
@@ -478,7 +478,7 @@
     <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>475, 379</value>
+    <value>449, 354</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

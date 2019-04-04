@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherMainForm));
             this.exitButton = new System.Windows.Forms.Button();
-            this.introductionLabel = new System.Windows.Forms.Label();
             this.languageLabel = new System.Windows.Forms.Label();
             this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -54,12 +53,6 @@
             this.toolTip.SetToolTip(this.exitButton, resources.GetString("exitButton.ToolTip"));
             this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
-            // 
-            // introductionLabel
-            // 
-            resources.ApplyResources(this.introductionLabel, "introductionLabel");
-            this.introductionLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.introductionLabel.Name = "introductionLabel";
             // 
             // languageLabel
             // 
@@ -136,7 +129,6 @@
             this.Controls.Add(this.panelInformation);
             this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.languageLabel);
-            this.Controls.Add(this.introductionLabel);
             this.Controls.Add(this.exitButton);
             this.Name = "TeacherMainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TeacherMainForm_FormClosing);
@@ -149,7 +141,6 @@
 
         #endregion
         private System.Windows.Forms.Button exitButton;
-        private System.Windows.Forms.Label introductionLabel;
         private System.Windows.Forms.Label languageLabel;
         private System.Windows.Forms.ComboBox languageComboBox;
         private System.Windows.Forms.ToolTip toolTip;

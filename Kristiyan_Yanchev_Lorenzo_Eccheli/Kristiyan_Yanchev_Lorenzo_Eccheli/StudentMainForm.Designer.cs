@@ -33,7 +33,6 @@
             this.exitButton = new System.Windows.Forms.Button();
             this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.languageLabel = new System.Windows.Forms.Label();
-            this.introductionLabel = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.gradesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,12 +70,6 @@
             resources.ApplyResources(this.languageLabel, "languageLabel");
             this.languageLabel.BackColor = System.Drawing.Color.FloralWhite;
             this.languageLabel.Name = "languageLabel";
-            // 
-            // introductionLabel
-            // 
-            resources.ApplyResources(this.introductionLabel, "introductionLabel");
-            this.introductionLabel.BackColor = System.Drawing.Color.FloralWhite;
-            this.introductionLabel.Name = "introductionLabel";
             // 
             // MenuStrip
             // 
@@ -126,7 +119,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Kristiyan_Yanchev_Lorenzo_Eccheli.Properties.Resources.Background;
             this.Controls.Add(this.panelInformation);
-            this.Controls.Add(this.introductionLabel);
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.exitButton);
@@ -146,7 +138,6 @@
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.ComboBox languageComboBox;
         private System.Windows.Forms.Label languageLabel;
-        private System.Windows.Forms.Label introductionLabel;
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.MenuStrip MenuStrip;
         private System.Windows.Forms.ToolStripMenuItem gradesToolStripMenuItem;
