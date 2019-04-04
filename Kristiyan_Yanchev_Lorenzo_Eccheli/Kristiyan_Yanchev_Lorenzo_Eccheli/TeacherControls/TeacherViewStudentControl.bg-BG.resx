@@ -178,18 +178,6 @@
   <data name="ucnTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 24</value>
   </data>
-  <data name="schoolarshipTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 116</value>
-  </data>
-  <data name="schoolarshipLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 119</value>
-  </data>
-  <data name="schoolarshipLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 19</value>
-  </data>
-  <data name="schoolarshipLabel.Text" xml:space="preserve">
-    <value>Стипендия</value>
-  </data>
   <data name="addressTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 291</value>
   </data>
@@ -212,7 +200,10 @@
     <value>127, 86</value>
   </data>
   <data name="searchButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 19</value>
+    <value>326, 19</value>
+  </data>
+  <data name="searchButton.Text" xml:space="preserve">
+    <value>Търси</value>
   </data>
   <data name="searchLastNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>123, 52</value>
@@ -234,8 +225,5 @@
   </data>
   <data name="searchFirstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>123, 22</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>528, 400</value>
   </data>
 </root>

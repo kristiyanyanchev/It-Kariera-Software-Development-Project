@@ -80,29 +80,29 @@
             // 
             // emailTextBox
             // 
-            this.emailTextBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.emailTextBox, "emailTextBox");
+            this.emailTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.ReadOnly = true;
             // 
             // phoneNumberTextBox
             // 
-            this.phoneNumberTextBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.phoneNumberTextBox, "phoneNumberTextBox");
+            this.phoneNumberTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.ReadOnly = true;
             // 
             // ucnTextBox
             // 
-            this.ucnTextBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.ucnTextBox, "ucnTextBox");
+            this.ucnTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.ucnTextBox.Name = "ucnTextBox";
             this.ucnTextBox.ReadOnly = true;
             // 
             // addressTextBox
             // 
-            this.addressTextBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.addressTextBox, "addressTextBox");
+            this.addressTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.ReadOnly = true;
             // 
@@ -114,31 +114,31 @@
             // 
             // birthDateTextBox
             // 
-            this.birthDateTextBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.birthDateTextBox, "birthDateTextBox");
+            this.birthDateTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.birthDateTextBox.Name = "birthDateTextBox";
             this.birthDateTextBox.ReadOnly = true;
             // 
             // classTextBox
             // 
-            this.classTextBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.classTextBox, "classTextBox");
+            this.classTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.classTextBox.Name = "classTextBox";
             this.classTextBox.ReadOnly = true;
             // 
             // searchButton
             // 
+            resources.ApplyResources(this.searchButton, "searchButton");
             this.searchButton.BackColor = System.Drawing.Color.FloralWhite;
             this.searchButton.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.searchButton, "searchButton");
             this.searchButton.Name = "searchButton";
             this.searchButton.UseVisualStyleBackColor = false;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // searchLastNameTextBox
             // 
-            this.searchLastNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.searchLastNameTextBox, "searchLastNameTextBox");
+            this.searchLastNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.searchLastNameTextBox.Name = "searchLastNameTextBox";
             // 
             // lastNameLabel
@@ -155,8 +155,8 @@
             // 
             // searchFirstNameTextBox
             // 
-            this.searchFirstNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.searchFirstNameTextBox, "searchFirstNameTextBox");
+            this.searchFirstNameTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.searchFirstNameTextBox.Name = "searchFirstNameTextBox";
             // 
             // TeacherViewStudentControl

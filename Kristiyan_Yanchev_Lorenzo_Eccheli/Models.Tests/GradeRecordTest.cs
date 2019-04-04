@@ -20,18 +20,11 @@ namespace Data.Test
         {
             var repo = new GradesTestRepository();
             var student = new Student("John","Smith",DateTime.Today,true,"Johnson St.","0003");
+            new StudentsTestRepository().Add(student);
             var grade = new GradeRecord(6.00, DateTime.Today, "Math", student);
             var count = repo.List().Count();
             repo.Add(grade);
             Assert.AreNotEqual(repo.List().Count(), count);
-        }
-
-        [Test]
-        public void Add_NullStudent_ThrowsException()
-        {
-            var repo = new GradesTestRepository();
-            var grade = new GradeRecord(6.00, DateTime.Today, "Math", null);
-            Assert.Throws<DbEntityValidationException>(() => repo.Add(grade));
         }
 
         [Test]

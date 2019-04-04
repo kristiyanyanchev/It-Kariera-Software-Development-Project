@@ -28,6 +28,14 @@ namespace Data.Models
             Subject = subject;
             StudentId = studentId;
         }
+        public GradeRecord(double grade, DateTime date, string subject, Student student)
+        {
+            Grade = grade;
+            Date = date;
+            Subject = subject;
+            Student = student;
+
+        }
         public GradeRecord()
         {
 

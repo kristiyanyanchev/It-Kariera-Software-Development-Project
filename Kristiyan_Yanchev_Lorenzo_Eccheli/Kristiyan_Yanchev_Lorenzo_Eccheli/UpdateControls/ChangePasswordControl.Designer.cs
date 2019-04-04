@@ -50,28 +50,28 @@
             // 
             // changePasswordButton
             // 
-            this.changePasswordButton.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.changePasswordButton, "changePasswordButton");
+            this.changePasswordButton.BackColor = System.Drawing.Color.FloralWhite;
             this.changePasswordButton.Name = "changePasswordButton";
             this.changePasswordButton.UseVisualStyleBackColor = false;
             this.changePasswordButton.Click += new System.EventHandler(this.changePasswordButton_Click);
             // 
             // confirmNewPasswordTextBox
             // 
-            this.confirmNewPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.confirmNewPasswordTextBox, "confirmNewPasswordTextBox");
+            this.confirmNewPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.confirmNewPasswordTextBox.Name = "confirmNewPasswordTextBox";
             // 
             // newPasswordTextBox
             // 
-            this.newPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.newPasswordTextBox, "newPasswordTextBox");
+            this.newPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.newPasswordTextBox.Name = "newPasswordTextBox";
             // 
             // oldPasswordTextBox
             // 
-            this.oldPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
             resources.ApplyResources(this.oldPasswordTextBox, "oldPasswordTextBox");
+            this.oldPasswordTextBox.BackColor = System.Drawing.Color.FloralWhite;
             this.oldPasswordTextBox.Name = "oldPasswordTextBox";
             // 
             // ConfirmPasswordLabel
