@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ParentForm));
             this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.languageLabel = new System.Windows.Forms.Label();
             this.panelInformation = new System.Windows.Forms.Panel();
@@ -177,7 +176,6 @@
             this.Controls.Add(this.panelInformation);
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.languageComboBox);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ParentForm";
             this.Text = "Parent Window";
             this.MenuStrip.ResumeLayout(false);
