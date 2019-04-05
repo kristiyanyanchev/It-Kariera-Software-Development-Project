@@ -87,9 +87,12 @@ namespace WinFormsView.TeacherControls
 
         private void removeGradeButton_Click(object sender, EventArgs e)
         {
-            if(Validate())
+            if(Validate() && gradesListBox.SelectedItem!=null)
             {
-
+                var studentId = int.Parse(studentsListbox.SelectedItem.ToString().Split(' ').First());
+                var grade = new GradeRecord(double.Parse(gradesListBox.SelectedItem.ToString()), DateTime.Now, teacherGetter.Subject, studentId);
+                var grades = new GradesRepository();
+                grades.Delete(grade);
             }
             else if(GetLanguage()=="English")
             {
