@@ -31,6 +31,7 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli.RegistrationControls
         {
             if(usernameOfChildTextBox.Text!=null)
             {
+                //add if text box has numbers
                 return true;
             }
             else

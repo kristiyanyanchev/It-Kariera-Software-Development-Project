@@ -30,7 +30,7 @@ namespace WinFormsView.StudentControls
             InitializeComponent();
             AbsencesRepository absences = new AbsencesRepository();
             var studentAbs = absences.List().Where(x => x.StudentId == student.Id).ToList();
-            
+
             for (int i = 0; i < studentAbs.Count; i++)
             {
                 absencesDataGrid.Rows[i].Cells[0].Value = studentAbs[i].Period;
