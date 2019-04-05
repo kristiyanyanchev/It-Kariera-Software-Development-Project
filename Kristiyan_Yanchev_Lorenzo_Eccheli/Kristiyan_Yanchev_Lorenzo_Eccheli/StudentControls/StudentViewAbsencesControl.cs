@@ -16,7 +16,7 @@ namespace WinFormsView.StudentControls
     public partial class StudentViewAbsencesControl : UserControl
     {
 
-        public StudentViewAbsencesControl(string language,Student student)
+        public StudentViewAbsencesControl(string language, Student student)
         {
             if (language == "English")
             {
@@ -29,13 +29,9 @@ namespace WinFormsView.StudentControls
             }
             InitializeComponent();
             AbsencesRepository absences = new AbsencesRepository();
-            var studentAbs = absences.List().Where(x => x.StudentId == student.Id).ToList();
+            var studentAbs = absences.List().Where(x => x.StudentId == student.Id).Select(x => new { x.Period, x.IsLate }).ToList();
 
-            for (int i = 0; i < studentAbs.Count; i++)
-            {
-                absencesDataGrid.Rows[i].Cells[0].Value = studentAbs[i].Period;
-                absencesDataGrid.Rows[i].Cells[1].Value = studentAbs[i].IsLate;
-            }
+            absencesDataGrid.DataSource = studentAbs;
         }
     }
 }

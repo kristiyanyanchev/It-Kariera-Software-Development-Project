@@ -180,14 +180,14 @@
   <data name="absencesLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>124, 39</value>
   </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
   <data name="absencesDataGrid.Size" type="System.Drawing.Size, System.Drawing">
     <value>435, 295</value>
   </data>
   <data name="absencesLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
-  </data>
-  <data name="&gt;&gt;periodColumn.Name" xml:space="preserve">
-    <value>periodColumn</value>
   </data>
   <data name="&gt;&gt;absencesDataGrid.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -198,11 +198,11 @@
   <data name="absencesLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 24</value>
   </data>
+  <data name="&gt;&gt;periodColumn.Name" xml:space="preserve">
+    <value>periodColumn</value>
+  </data>
   <data name="&gt;&gt;absencesDataGrid.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>733, 455</value>

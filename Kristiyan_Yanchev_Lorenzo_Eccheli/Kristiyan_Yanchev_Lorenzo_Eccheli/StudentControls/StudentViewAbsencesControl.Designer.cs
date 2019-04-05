@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentViewAbsencesControl));
             this.absencesDataGrid = new System.Windows.Forms.DataGridView();
-            this.periodColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IsLate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.absencesLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.absencesDataGrid)).BeginInit();
             this.SuspendLayout();
@@ -39,25 +37,11 @@
             // absencesDataGrid
             // 
             resources.ApplyResources(this.absencesDataGrid, "absencesDataGrid");
+            this.absencesDataGrid.AllowUserToDeleteRows = false;
             this.absencesDataGrid.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.absencesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.absencesDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.periodColumn,
-            this.IsLate});
             this.absencesDataGrid.Name = "absencesDataGrid";
             this.absencesDataGrid.ReadOnly = true;
-            // 
-            // periodColumn
-            // 
-            resources.ApplyResources(this.periodColumn, "periodColumn");
-            this.periodColumn.Name = "periodColumn";
-            this.periodColumn.ReadOnly = true;
-            // 
-            // IsLate
-            // 
-            resources.ApplyResources(this.IsLate, "IsLate");
-            this.IsLate.Name = "IsLate";
-            this.IsLate.ReadOnly = true;
             // 
             // absencesLabel
             // 
@@ -83,7 +67,5 @@
 
         private System.Windows.Forms.DataGridView absencesDataGrid;
         private System.Windows.Forms.Label absencesLabel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn periodColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IsLate;
     }
 }
