@@ -30,7 +30,7 @@ namespace WinFormsView.ParentControls
             var parentsRepo = new ParentsRepository();
             var children = parent.Children;
             var students = new StudentsRepository();
-            var grades = new GradesRepository().List()
+            var grades = new GradesRepository().List().Where(x => children.Select( y=> y.Id).Contains(x.StudentId))
                 .Select(x => new { x.Student.FirstName, x.Subject, x.Grade, x.Date }).ToList();
             gradesDataGrid.DataSource = grades;
         }
