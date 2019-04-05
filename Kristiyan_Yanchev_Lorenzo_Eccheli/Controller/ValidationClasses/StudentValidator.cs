@@ -15,6 +15,9 @@ using Controller.ValidationClasses.UCN;
 
 namespace Controller.ValidationClasses
 {
+    /// <summary>
+    /// Provides Validation for Student class
+    /// </summary>
     public class StudentValidator
     {
         internal IUsernameValidator UsernameValidator { get; set; }
@@ -28,6 +31,11 @@ namespace Controller.ValidationClasses
         internal IClassValidator ClassValidator { get; set; }
         internal IUcnValidator UcnValidator { get; set; }
 
+        /// <summary>
+        /// Provides validation for student class via studnetDto
+        /// </summary>
+        /// <param name="parentDTO"></param>
+        /// <returns>The value should be showed to the user</returns>
         public string ValidateStudent(StudentDataTransferObject studentDTO)
         {
             var validationCodeRepo = new ValidationCodeRepository();

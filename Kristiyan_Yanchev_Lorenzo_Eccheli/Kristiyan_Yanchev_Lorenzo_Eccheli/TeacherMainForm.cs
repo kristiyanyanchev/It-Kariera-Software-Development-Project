@@ -73,9 +73,10 @@ namespace Kristiyan_Yanchev_Lorenzo_Eccheli
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("bg-BG");
             }
 
-            InitializeComponent();
             TeacherGradeControl teachergrade = new TeacherGradeControl(GetLanguage(), Teacher);
             panelInformation.Controls.Add(teachergrade);
+            InitializeComponent();
+            
 
           
         }

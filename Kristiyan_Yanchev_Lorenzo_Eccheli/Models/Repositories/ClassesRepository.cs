@@ -9,7 +9,7 @@ namespace Data.Repositories
 {
     public class ClassesRepository : IRepository<Class>
     {
-       
+      
         public virtual void Add(Class entity)
         {
             using (var context = new ClassBookContext())
@@ -20,6 +20,7 @@ namespace Data.Repositories
             
         }
 
+        
         public virtual void Delete(Class entity)
         {
             using (var context = new ClassBookContext())

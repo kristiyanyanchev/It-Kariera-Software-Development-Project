@@ -13,6 +13,9 @@ using System.Text;
 
 namespace Controller.ValidationClasses
 {
+    /// <summary>
+    /// Provides Validation for Parent class
+    /// </summary>
     public class ParentValidator
     {
         internal IUsernameValidator UsernameValidator { get; set; }
@@ -38,6 +41,11 @@ namespace Controller.ValidationClasses
             UsernameOfChildValidator = new DefaultUsernameValidator();
         }
 
+        /// <summary>
+        /// Provides validation for parent class via parentDto
+        /// </summary>
+        /// <param name="parentDTO"></param>
+        /// <returns>The value should be showed to the user</returns>
         public string ValidateParent(ParentDataTransferObject parentDTO)
         {
             var students = new StudentsRepository();

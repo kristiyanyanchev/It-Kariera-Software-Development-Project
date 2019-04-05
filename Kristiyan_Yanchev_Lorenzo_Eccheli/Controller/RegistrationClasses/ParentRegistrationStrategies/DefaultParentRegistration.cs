@@ -8,8 +8,14 @@ using Data.Repositories;
 
 namespace Controller.RegistrationClasses.ParentRegistrationStrategies
 {
+    
     class DefaultParentRegistration : IParentRegistrationStrategy
     {
+        /// <summary>
+        /// Gets the 
+        /// </summary>
+        /// <param name="parentDto"></param>
+        /// <returns></returns>
         public Parent Execute(ParentDataTransferObject parentDto)
         {
             

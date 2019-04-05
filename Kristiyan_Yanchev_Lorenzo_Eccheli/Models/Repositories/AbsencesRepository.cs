@@ -9,7 +9,7 @@ namespace Data.Repositories
 {
     public class AbsencesRepository : IRepository<Absence>
     {
-      
+        
         public virtual void Add(Absence entity)
         {
             using (var context = new ClassBookContext())
@@ -19,7 +19,7 @@ namespace Data.Repositories
             }
            
         }
-
+       
         public virtual void Delete(Absence entity)
         {
             using (var context = new ClassBookContext())
@@ -31,6 +31,7 @@ namespace Data.Repositories
                 
         }
 
+       
         public virtual void Edit(Absence entity)
         {
             using (var context = new ClassBookContext())
@@ -44,7 +45,11 @@ namespace Data.Repositories
             }
             
         }
-
+        /// <summary>
+        /// Gets Absence by Id.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public virtual Absence GetById(int id)
         {
             Absence result;
@@ -54,7 +59,10 @@ namespace Data.Repositories
             }
             return result;
         }
-
+        /// <summary>
+        /// Gets all Absences
+        /// </summary>
+        /// <returns></returns>
         public virtual IEnumerable<Absence> List()
         {
             List<Absence> result;

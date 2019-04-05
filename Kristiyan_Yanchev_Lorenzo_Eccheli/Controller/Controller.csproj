@@ -85,7 +85,6 @@
     <Compile Include="ValidationClasses\ValidationCode\DefaultValidationCodeValidator.cs" />
     <Compile Include="ValidationClasses\ValidationCode\IValidationCodeValidator.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Models\Data.csproj">
       <Project>{5ff175c7-39e5-4c47-985e-0a568f03e77c}</Project>

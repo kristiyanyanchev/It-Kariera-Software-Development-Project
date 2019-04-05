@@ -43,7 +43,7 @@ namespace Data.Models
 
         public override string ToString()
         {
-            return String.Format("{0} =>{1},{2},{3}", StudentId, Subject, Grade, Date);
+            return String.Format("{0} {1} {2} {3} {4}", StudentId, Subject, Grade, Date,Id);
         }
     }
 }

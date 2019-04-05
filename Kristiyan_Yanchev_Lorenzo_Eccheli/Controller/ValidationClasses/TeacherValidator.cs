@@ -14,6 +14,11 @@ using Data.Repositories;
 
 namespace Controller.ValidationClasses
 {
+    /// <summary>
+    /// Provides Validation for Student class
+    /// </summary>
+
+    
     public class TeacherValidator
     {
         internal IUsernameValidator UsernameValidator { get; set; }
@@ -38,7 +43,11 @@ namespace Controller.ValidationClasses
             ValidationCodeValidator = new DefaultValidationCodeValidator();
             ClassValidator = new TeacherClassValidator();
         }
-
+        /// <summary>
+        /// Provides validation for teacher class via studnetDto
+        /// </summary>
+        /// <param name="parentDTO"></param>
+        /// <returns>The value should be showed to the user</returns>
         public string ValidateTeacher(TeacherDataTransferObject teacherDTO)
         {
             var validationCodeRepo = new ValidationCodeRepository();

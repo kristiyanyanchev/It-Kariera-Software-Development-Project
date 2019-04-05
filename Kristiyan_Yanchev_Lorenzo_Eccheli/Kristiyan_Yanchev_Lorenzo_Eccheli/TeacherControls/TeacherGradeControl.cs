@@ -15,12 +15,7 @@ namespace WinFormsView.TeacherControls
 {
     public partial class TeacherGradeControl : UserControl
     {
-        public TeacherGradeControl()
-        {
-            InitializeComponent();
-            
-        }
-
+        private Teacher TeacherGetter { get; set; }
         public TeacherGradeControl(string language,Teacher teacher)
         {
             if (language == "English")
@@ -37,10 +32,10 @@ namespace WinFormsView.TeacherControls
             var classes = new ClassesRepository();
             classesListBox.DataSource = classes.List().ToList();
 
-            teacherGetter = teacher;
+            TeacherGetter = teacher;
         }
 
-        private Teacher teacherGetter;
+        
         private bool Validate()
         {
             if(classesListBox.SelectedItem!=null && studentsListbox.SelectedItem!=null)
@@ -71,7 +66,7 @@ namespace WinFormsView.TeacherControls
             if(Validate() && gradeTextBox.Text!=null && Double.TryParse(gradeTextBox.Text,out double a))
             {
                 var studentId = int.Parse(studentsListbox.SelectedItem.ToString().Split(' ').First());
-                var grade = new GradeRecord(double.Parse(gradeTextBox.Text), DateTime.Now, teacherGetter.Subject, studentId);
+                var grade = new GradeRecord(double.Parse(gradeTextBox.Text), DateTime.Now, TeacherGetter.Subject, studentId);
                 var grades = new GradesRepository();
                 grades.Add(grade);
             }
@@ -89,7 +84,19 @@ namespace WinFormsView.TeacherControls
         {
             if(Validate())
             {
-
+                var grades = new GradesRepository();
+                if (gradesListBox.SelectedItem.ToString().Split(' ').Skip(1).First() == TeacherGetter.Subject)
+                {
+                    var gradesTobeRemoved = grades.GetById(int.Parse(gradesListBox.SelectedItem.ToString().Split(' ').Last()));
+                    grades.Delete(gradesTobeRemoved);
+                    
+                }
+                else
+                {
+                    MessageBox.Show("You can only delete grades in you subject! ");
+                }
+                
+                
             }
             else if(GetLanguage()=="English")
             {
